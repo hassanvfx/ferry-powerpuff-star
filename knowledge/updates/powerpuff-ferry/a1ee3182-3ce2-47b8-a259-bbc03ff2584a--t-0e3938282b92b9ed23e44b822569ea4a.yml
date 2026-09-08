@@ -1,0 +1,53 @@
+{
+  "schema": 3,
+  "id": "a1ee3182-3ce2-47b8-a259-bbc03ff2584a",
+  "at": "2026-09-08T21:18:25Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "1df5f62e-f826-44a8-85a1-73758649451c",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/1df5f62e-f826-44a8-85a1-73758649451c--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "300ec634918b96d0907d427140a4a268a184671cdcdcd0ac46f572afbf809f68",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/a1ee3182-3ce2-47b8-a259-bbc03ff2584a.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "local-secret-review-and-partial-v9-publication",
+      "statement": "El player ofrece revisión local con ?review=true y el publicador admite una edición parcial explícita que conserva números reales."
+    },
+    {
+      "ledger": "verification",
+      "id": "local-review-and-partial-v9-proof",
+      "statement": "El player y V9 parcial fueron verificados con sintaxis, seis tests, manifest de 82 pares WebP y navegador local."
+    },
+    {
+      "ledger": "last_session",
+      "id": "partial-v9-ready-to-deploy",
+      "statement": "V9 parcial está publicada localmente desde 82 pares y lista para el commit/push manual autorizado."
+    },
+    {
+      "ledger": "timeline",
+      "id": "local-review-and-partial-v9-applied",
+      "statement": "Se implementó revisión local oculta y se publicó V9 parcial manteniendo los huecos de generación autorizados."
+    }
+  ],
+  "timeline": {
+    "summary": "2026-09-08: se añadió anotación local por query y se preparó la edición parcial V9 de 82 páginas."
+  },
+  "log": {
+    "summary": "El visor incorpora revisión local y docs/ pasa a V9 parcial sin PNG fuente."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

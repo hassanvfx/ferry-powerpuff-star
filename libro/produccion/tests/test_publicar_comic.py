@@ -84,6 +84,16 @@ class ComicPublisherTests(unittest.TestCase):
         with self.assertRaisesRegex(publisher.PublicationError, "par"):
             publisher.collect_pages(odd_finales)
 
+    def test_collect_pages_allows_explicit_sparse_even_edition(self) -> None:
+        finales = self.root / "sparse" / "finales"
+        for number in (1, 3):
+            make_image(finales / f"{number:02d}-page.png")
+            make_image(finales.parent / "guias" / f"{number:02d}-page.png")
+
+        pages = publisher.collect_pages(finales, allow_gaps=True)
+
+        self.assertEqual([1, 3], [page.number for page in pages])
+
     def test_latest_uses_the_newest_valid_run(self) -> None:
         outputs = self.root / "salidas"
         older = make_run(outputs, "older", 2)

@@ -65,7 +65,7 @@ def collect_pngs(directory: Path, label: str) -> list[Path]:
     return sorted(directory.glob("*.png"))
 
 
-def collect_pages(finales_dir: Path) -> list[Page]:
+def collect_pages(finales_dir: Path, *, allow_gaps: bool = False) -> list[Page]:
     if not finales_dir.is_dir():
         raise PublicationError(f"No existe el directorio de finales: {finales_dir}")
     guides_dir = finales_dir.parent / "guias"
@@ -99,9 +99,9 @@ def collect_pages(finales_dir: Path) -> list[Page]:
     pages.sort(key=lambda page: page.number)
     if not pages:
         raise PublicationError(f"No hay PNG finales en {finales_dir}")
-    expected = list(range(1, len(pages) + 1))
     actual = [page.number for page in pages]
-    if actual != expected:
+    expected = list(range(1, len(pages) + 1))
+    if not allow_gaps and actual != expected:
         raise PublicationError(f"Las páginas deben ser consecutivas desde 01; se encontró {actual}")
     if len(pages) % 2:
         raise PublicationError("El interior debe tener un número par de páginas para formar dobles páginas.")
@@ -125,10 +125,12 @@ def valid_run_candidates(outputs_root: Path) -> Iterable[tuple[float, str, Path]
         yield (max(path.stat().st_mtime for path in pngs), run_dir.name, run_dir)
 
 
-def resolve_run(outputs_root: Path, run_id: str | None, latest: bool) -> tuple[str, list[Page]]:
+def resolve_run(
+    outputs_root: Path, run_id: str | None, latest: bool, *, allow_gaps: bool = False
+) -> tuple[str, list[Page]]:
     if run_id:
         final_dir = outputs_root / run_id / "finales"
-        return run_id, collect_pages(final_dir)
+        return run_id, collect_pages(final_dir, allow_gaps=allow_gaps)
     candidates = sorted(valid_run_candidates(outputs_root), reverse=True)
     if not latest or not candidates:
         raise PublicationError("No se encontró una corrida válida para publicar.")
@@ -257,6 +259,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--cover", type=Path, default=DEFAULT_COVER, help="PNG/JPG de portada.")
     parser.add_argument("--back-cover", type=Path, default=DEFAULT_BACK_COVER, help="PNG/JPG de contracubierta.")
     parser.add_argument("--guide-avatar", type=Path, default=DEFAULT_GUIDE_AVATAR, help="PNG/JPG del avatar para alternar guías.")
+    parser.add_argument(
+        "--allow-gaps",
+        action="store_true",
+        help="Permite una edición parcial con huecos, conservando los números originales; exige pares final/guía y un total par.",
+    )
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT, help="Directorio estático publicado.")
     parser.add_argument("--title", default=DEFAULT_TITLE, help="Título mostrado por el player.")
     return parser.parse_args()
@@ -265,7 +272,9 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
     try:
-        run_id, pages = resolve_run(ROOT / "libro/arte/salidas", args.run, args.latest)
+        run_id, pages = resolve_run(
+            ROOT / "libro/arte/salidas", args.run, args.latest, allow_gaps=args.allow_gaps
+        )
         build_site(
             run_id,
             pages,

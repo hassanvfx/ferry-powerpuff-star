@@ -41,6 +41,22 @@ faltante, corrupta, duplicada o con nombre inválido detiene la publicación y
 preserva el `docs/` anterior. El manifest deja registrada la corrida, sus assets
 finales, guías y avatar optimizados como WebP.
 
+### Edición parcial explícita
+
+Sólo si el autor decide publicar una corrida incompleta, se puede conservar la
+numeración disponible sin inventar ni renumerar páginas:
+
+```bash
+python3 libro/produccion/scripts/publicar_comic.py \
+  --run corrida-90-2k-2-3-v9-referencias-guia \
+  --allow-gaps
+```
+
+Este override sigue exigiendo que cada final tenga una guía del mismo nombre y
+que el total publicado sea par. Las páginas ausentes quedan fuera del manifest;
+por eso el lector puede mostrar rangos no consecutivos, como `27–29`. Nunca se
+usa con `--latest`, que continúa seleccionando sólo corridas completas.
+
 ## Revisar antes de publicar
 
 El directorio `docs/` contiene el sitio final y se debe versionar. Para una

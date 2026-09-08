@@ -4,6 +4,8 @@ import PhotoSwipe from "./vendor/photoswipe/photoswipe.esm.js";
 const root = document.querySelector("#comic-player");
 const desktopQuery = window.matchMedia("(min-width: 768px)");
 const POSITION_STORAGE_PREFIX = "ferry-powerpuff-star:position:";
+const REVIEW_STORAGE_PREFIX = "ferry-powerpuff-star:review-notes:";
+const reviewEnabled = new URLSearchParams(window.location.search).get("review") === "true";
 
 let comic;
 let desktopIndex = 0;
@@ -14,9 +16,19 @@ let photoSwipeLightbox;
 const preloadedAssets = new Set();
 const pendingPreloads = new Set();
 const preloadingImages = new Set();
+let reviewNotes = [];
+let reviewModalOpen = false;
+let reviewEditingId = null;
+let reviewStatus = "";
 
 function materialIcon(name) {
   return `<span class="material-symbols-rounded" aria-hidden="true">${name}</span>`;
+}
+
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, (character) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+  })[character]);
 }
 
 function readerPages() {
@@ -62,6 +74,199 @@ function savePosition(page) {
   } catch {
     // Reading remains usable when localStorage is unavailable.
   }
+}
+
+function reviewStorageKey() {
+  return `${REVIEW_STORAGE_PREFIX}${comic.edition}`;
+}
+
+function reviewPageValue(position) {
+  return position.kind === "page" ? position.number : position.kind;
+}
+
+function reviewPageLabel(page) {
+  if (page === "cover") return "Portada";
+  if (page === "back-cover") return "Contraportada";
+  return `Página ${page}`;
+}
+
+function parseReviewPage(value) {
+  return /^\d+$/.test(value) ? Number(value) : value;
+}
+
+function isReviewPage(page) {
+  return page === "cover" || page === "back-cover" || comic.pages.some((item) => item.number === page);
+}
+
+function loadReviewNotes() {
+  if (!reviewEnabled) return [];
+  try {
+    const stored = JSON.parse(window.localStorage.getItem(reviewStorageKey()));
+    if (!Array.isArray(stored)) return [];
+    return stored.filter((note) => (
+      note && typeof note.id === "string" && typeof note.note === "string" && isReviewPage(note.page)
+    ));
+  } catch {
+    return [];
+  }
+}
+
+function saveReviewNotes() {
+  try {
+    window.localStorage.setItem(reviewStorageKey(), JSON.stringify(reviewNotes));
+  } catch {
+    reviewStatus = "No se pudo guardar localmente en este navegador.";
+  }
+}
+
+function reviewPageOptions(selectedPage) {
+  return readerPages().map((page) => {
+    const value = reviewPageValue(positionFor(page));
+    return `<option value="${value}" ${value === selectedPage ? "selected" : ""}>${reviewPageLabel(value)}</option>`;
+  }).join("");
+}
+
+function reviewNoteId() {
+  return window.crypto?.randomUUID?.() || `note-${Date.now()}-${Math.random().toString(36).slice(2)}`;
+}
+
+function reviewModalMarkup() {
+  const editingNote = reviewNotes.find((note) => note.id === reviewEditingId);
+  const selectedPage = editingNote?.page ?? reviewPageValue(currentPosition);
+  const noteList = reviewNotes.length
+    ? `<ul class="review-note-list">${reviewNotes.map((note) => `<li>
+      <button class="review-note" type="button" data-review-edit="${note.id}">
+        <span class="review-note__page">${reviewPageLabel(note.page)}</span>
+        <span class="review-note__text">${escapeHtml(note.note)}</span>
+      </button>
+      <button class="review-note-delete" type="button" data-review-delete="${note.id}" aria-label="Borrar nota de ${reviewPageLabel(note.page)}">${materialIcon("delete")}</button>
+    </li>`).join("")}</ul>`
+    : '<p class="review-empty">Aún no hay anotaciones para esta edición.</p>';
+  const content = reviewEditingId !== null
+    ? `<form class="review-editor" data-review-form>
+        <h3 id="review-editor-title">${editingNote ? "Editar anotación" : "Nueva anotación"}</h3>
+        <label>Imagen
+          <select name="page">${reviewPageOptions(selectedPage)}</select>
+        </label>
+        <label>Nota
+          <textarea name="note" rows="7" required placeholder="Escribe la observación para esta imagen…">${escapeHtml(editingNote?.note || "")}</textarea>
+        </label>
+        <div class="review-editor__actions">
+          <button class="reader-button" type="button" data-action="review-cancel">Cancelar</button>
+          <button class="reader-button review-primary" type="submit">${materialIcon("save")} Guardar</button>
+        </div>
+      </form>`
+    : `<div class="review-list-view">
+        <div class="review-modal__actions">
+          <button class="reader-button review-primary" type="button" data-action="review-add">${materialIcon("add")} Agregar</button>
+          <button class="reader-button" type="button" data-action="review-export" ${reviewNotes.length ? "" : "disabled"}>${materialIcon("content_copy")} Exportar</button>
+          <button class="reader-button review-danger" type="button" data-action="review-clear" ${reviewNotes.length ? "" : "disabled"}>${materialIcon("delete_sweep")} Borrar todo</button>
+        </div>
+        ${noteList}
+      </div>`;
+  return `<section class="review-modal" role="dialog" aria-modal="true" aria-labelledby="review-modal-title">
+    <div class="review-modal__backdrop"></div>
+    <div class="review-modal__panel">
+      <header class="review-modal__header">
+        <div><p class="review-eyebrow">Modo de revisión</p><h2 id="review-modal-title">Anotaciones</h2></div>
+        <button class="review-close" type="button" data-action="review-close" aria-label="Cerrar anotaciones">${materialIcon("close")}</button>
+      </header>
+      ${reviewStatus ? `<p class="review-status" role="status">${escapeHtml(reviewStatus)}</p>` : ""}
+      ${content}
+    </div>
+  </section>`;
+}
+
+function renderReviewModal() {
+  root.querySelector(".review-modal")?.remove();
+  if (!reviewEnabled || !reviewModalOpen) return;
+  root.insertAdjacentHTML("beforeend", reviewModalMarkup());
+  const modal = root.querySelector(".review-modal");
+  modal.querySelector("[data-action='review-close']").addEventListener("click", closeReviewModal);
+  modal.querySelector("[data-action='review-add']")?.addEventListener("click", () => openReviewEditor());
+  modal.querySelector("[data-action='review-cancel']")?.addEventListener("click", () => {
+    reviewEditingId = null;
+    reviewStatus = "";
+    renderReviewModal();
+  });
+  modal.querySelector("[data-action='review-export']")?.addEventListener("click", exportReviewNotes);
+  modal.querySelector("[data-action='review-clear']")?.addEventListener("click", clearReviewNotes);
+  modal.querySelectorAll("[data-review-edit]").forEach((button) => {
+    button.addEventListener("click", () => openReviewEditor(button.dataset.reviewEdit));
+  });
+  modal.querySelectorAll("[data-review-delete]").forEach((button) => {
+    button.addEventListener("click", () => deleteReviewNote(button.dataset.reviewDelete));
+  });
+  modal.querySelector("[data-review-form]")?.addEventListener("submit", saveReviewNote);
+  window.requestAnimationFrame(() => modal.querySelector("textarea, [data-action='review-add']")?.focus());
+}
+
+function openReviewModal() {
+  reviewModalOpen = true;
+  reviewEditingId = null;
+  reviewStatus = "";
+  renderReviewModal();
+}
+
+function closeReviewModal() {
+  reviewModalOpen = false;
+  reviewEditingId = null;
+  reviewStatus = "";
+  renderReviewModal();
+  root.querySelector("[data-action='review']")?.focus();
+}
+
+function openReviewEditor(noteId = "") {
+  reviewEditingId = noteId;
+  reviewStatus = "";
+  renderReviewModal();
+}
+
+function saveReviewNote(event) {
+  event.preventDefault();
+  const formData = new FormData(event.currentTarget);
+  const note = String(formData.get("note") || "").trim();
+  if (!note) return;
+  const page = parseReviewPage(String(formData.get("page")));
+  const existingIndex = reviewNotes.findIndex((item) => item.id === reviewEditingId);
+  const record = { id: existingIndex >= 0 ? reviewEditingId : reviewNoteId(), page, note };
+  reviewNotes = existingIndex >= 0
+    ? reviewNotes.map((item, index) => index === existingIndex ? record : item)
+    : [record, ...reviewNotes];
+  saveReviewNotes();
+  reviewEditingId = null;
+  reviewStatus = "Nota guardada.";
+  renderReviewModal();
+}
+
+function deleteReviewNote(noteId) {
+  reviewNotes = reviewNotes.filter((note) => note.id !== noteId);
+  saveReviewNotes();
+  reviewStatus = "Nota eliminada.";
+  renderReviewModal();
+}
+
+function clearReviewNotes() {
+  if (!window.confirm("¿Borrar todas las anotaciones locales de esta edición?")) return;
+  reviewNotes = [];
+  saveReviewNotes();
+  reviewStatus = "Todas las notas fueron eliminadas.";
+  renderReviewModal();
+}
+
+async function exportReviewNotes() {
+  const payload = JSON.stringify({
+    edition: comic.edition,
+    notes: reviewNotes.map(({ page, note }) => ({ page, note })),
+  }, null, 2);
+  try {
+    if (!navigator.clipboard?.writeText) throw new Error("Clipboard API unavailable");
+    await navigator.clipboard.writeText(payload);
+    reviewStatus = `${reviewNotes.length} nota${reviewNotes.length === 1 ? "" : "s"} copiada${reviewNotes.length === 1 ? "" : "s"} al portapapeles.`;
+  } catch {
+    reviewStatus = "No se pudo copiar al portapapeles. Revisa los permisos del navegador.";
+  }
+  renderReviewModal();
 }
 
 function activeAsset(page) {
@@ -181,6 +386,13 @@ function guideToggleMarkup(hidden = false) {
   </button>`;
 }
 
+function reviewButtonMarkup(hidden = false) {
+  if (!reviewEnabled) return "";
+  return `<button class="review-button" type="button" data-action="review" aria-label="Abrir anotaciones de revisión" ${hidden ? "hidden" : ""}>
+    ${materialIcon("settings")}<span class="sr-only">Abrir anotaciones de revisión</span>
+  </button>`;
+}
+
 function homeButtonMarkup(hidden = false) {
   return `<button class="reader-button" type="button" data-action="home" aria-label="Volver a la portada" ${hidden ? "hidden" : ""}>
     ${materialIcon("home")}<span class="reader-button__label">Inicio</span>
@@ -218,6 +430,7 @@ function renderDesktop() {
           <span class="reader-button__label">Siguiente</span>${materialIcon("arrow_forward")}
         </button>
         ${guideToggleMarkup(desktopIndex === 0 || desktopIndex === views.length - 1)}
+        ${reviewButtonMarkup()}
       </nav>
     </section>`;
 
@@ -234,6 +447,8 @@ function renderDesktop() {
   const homeButton = root.querySelector("[data-action='home']");
   if (homeButton) homeButton.addEventListener("click", goHome);
   root.querySelector("[data-action='toggle-guide']").addEventListener("click", toggleGuide);
+  root.querySelector("[data-action='review']")?.addEventListener("click", openReviewModal);
+  renderReviewModal();
 }
 
 function changeDesktopIndex(nextIndex) {
@@ -248,7 +463,10 @@ function mobileControlsMarkup() {
   const onInterior = currentPosition.kind === "page";
   return `<nav class="mobile-controls" aria-label="Controles del cómic">
     ${homeButtonMarkup(onCover)}
-    ${guideToggleMarkup(!onInterior)}
+    <div class="mobile-controls__right">
+      ${guideToggleMarkup(!onInterior)}
+      ${reviewButtonMarkup()}
+    </div>
   </nav>`;
 }
 
@@ -337,6 +555,8 @@ function renderMobile() {
   enableMouseDragScroll(reader);
   root.querySelector("[data-action='home']").addEventListener("click", goHome);
   root.querySelector("[data-action='toggle-guide']").addEventListener("click", toggleGuide);
+  root.querySelector("[data-action='review']")?.addEventListener("click", openReviewModal);
+  renderReviewModal();
   window.requestAnimationFrame(() => {
     const target = reader.querySelector(`[data-position="${positionId(currentPosition)}"]`) || reader.querySelector(".mobile-sheet");
     reader.scrollTop = target.offsetTop;
@@ -372,6 +592,11 @@ function render() {
 }
 
 window.addEventListener("keydown", (event) => {
+  if (reviewModalOpen && event.key === "Escape") {
+    event.preventDefault();
+    closeReviewModal();
+    return;
+  }
   if (!comic || !desktopQuery.matches) return;
   if (event.key === "Home") {
     event.preventDefault();
@@ -398,6 +623,7 @@ fetch("./manifest.json")
     comic = manifest;
     document.title = manifest.title;
     currentPosition = loadPosition();
+    reviewNotes = loadReviewNotes();
     render();
   })
   .catch((error) => {
