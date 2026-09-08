@@ -1,0 +1,53 @@
+{
+  "schema": 3,
+  "id": "cb510c15-5114-4f3f-aefb-5e0e1a1f18b5",
+  "at": "2026-09-08T19:29:53Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "52259182-31e9-43fc-b9ea-caee7de39f3a",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/52259182-31e9-43fc-b9ea-caee7de39f3a--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "7203352e66c63a52691787227bdab8c3583e37ddad832d484e34a1bbe2fa1499",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/cb510c15-5114-4f3f-aefb-5e0e1a1f18b5.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "adaptive-next-view-preload",
+      "statement": "El player precarga durante inactividad sólo la siguiente vista, usando el tamaño y variante activa del viewport."
+    },
+    {
+      "ledger": "verification",
+      "id": "adaptive-next-view-preload-proof",
+      "statement": "Se verificaron sintaxis, regeneración de V7, cinco pruebas del publicador y validación del árbol de trabajo."
+    },
+    {
+      "ledger": "last_session",
+      "id": "adaptive-next-view-preload-ready",
+      "statement": "La precarga de siguiente vista está lista en fuente y artifact `docs/`, pendiente de revisión y push manual."
+    },
+    {
+      "ledger": "timeline",
+      "id": "adaptive-next-view-preload-applied",
+      "statement": "Se agregó precarga bajo demanda con respeto a ahorro de datos y 2G."
+    }
+  ],
+  "timeline": {
+    "summary": "2026-09-08: el lector pasó a anticipar el siguiente spread u hoja sin descargar toda la edición."
+  },
+  "log": {
+    "summary": "La siguiente vista se precarga de forma adaptativa, ociosa y de baja prioridad."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

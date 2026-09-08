@@ -11,6 +11,9 @@ let guideMode = false;
 let currentPosition = { kind: "cover" };
 let mobileObserver;
 let photoSwipeLightbox;
+const preloadedAssets = new Set();
+const pendingPreloads = new Set();
+const preloadingImages = new Set();
 
 function materialIcon(name) {
   return `<span class="material-symbols-rounded" aria-hidden="true">${name}</span>`;
@@ -65,6 +68,42 @@ function activeAsset(page) {
   return guideMode && page.kind === "page" ? page.guide : page;
 }
 
+function shouldPreload() {
+  const connection = navigator.connection;
+  return !connection?.saveData && !["slow-2g", "2g"].includes(connection?.effectiveType);
+}
+
+function preloadAsset(page) {
+  const asset = activeAsset(page);
+  return desktopQuery.matches ? asset.large : asset.small || asset.large;
+}
+
+function schedulePreload(pages) {
+  if (!shouldPreload()) return;
+  const urls = pages
+    .filter(Boolean)
+    .map(preloadAsset)
+    .filter((url) => url && !preloadedAssets.has(url) && !pendingPreloads.has(url));
+  if (!urls.length) return;
+  urls.forEach((url) => pendingPreloads.add(url));
+
+  const preload = () => {
+    urls.forEach((url) => {
+      pendingPreloads.delete(url);
+      preloadedAssets.add(url);
+      const image = new Image();
+      image.decoding = "async";
+      image.fetchPriority = "low";
+      image.addEventListener("load", () => preloadingImages.delete(image), { once: true });
+      image.addEventListener("error", () => preloadingImages.delete(image), { once: true });
+      preloadingImages.add(image);
+      image.src = url;
+    });
+  };
+  if ("requestIdleCallback" in window) window.requestIdleCallback(preload, { timeout: 1200 });
+  else window.setTimeout(preload, 0);
+}
+
 function imageAlt(page, isGuide = activeAsset(page) === page.guide) {
   if (page.kind === "cover") return "Portada de Ferry PowerPuff Star";
   if (page.kind === "back-cover") return "Contracubierta de Ferry PowerPuff Star";
@@ -117,6 +156,14 @@ function desktopViews() {
     ...pairs,
     [{ ...comic.backCover, kind: "back-cover" }],
   ];
+}
+
+function nextReaderPage(position) {
+  const pages = readerPages();
+  const currentIndex = pages.findIndex((page) => (
+    page.kind === position.kind && (page.kind !== "page" || page.number === position.number)
+  ));
+  return pages[currentIndex + 1];
 }
 
 function desktopIndexFor(position) {
@@ -176,6 +223,7 @@ function renderDesktop() {
 
   const reader = root.querySelector(".desktop-reader");
   initializeLightbox(reader);
+  schedulePreload(views[desktopIndex + 1] || []);
   reader.addEventListener("click", (event) => {
     if (event.target.closest("button, a")) return;
     const rect = event.currentTarget.getBoundingClientRect();
@@ -222,10 +270,12 @@ function startMobilePositionTracking(reader) {
       .sort((first, second) => second.intersectionRatio - first.intersectionRatio)[0];
     if (!visible) return;
     const sheet = visible.target;
-    savePosition(sheet.dataset.kind === "page"
+    const position = sheet.dataset.kind === "page"
       ? { kind: "page", number: Number(sheet.dataset.number) }
-      : { kind: sheet.dataset.kind });
+      : { kind: sheet.dataset.kind };
+    savePosition(position);
     updateMobileControls(currentPosition);
+    schedulePreload([nextReaderPage(position)]);
   }, { root: reader, threshold: [0.6, 0.8] });
   sheets.forEach((sheet) => mobileObserver.observe(sheet));
 }
@@ -291,6 +341,7 @@ function renderMobile() {
     const target = reader.querySelector(`[data-position="${positionId(currentPosition)}"]`) || reader.querySelector(".mobile-sheet");
     reader.scrollTop = target.offsetTop;
     startMobilePositionTracking(reader);
+    schedulePreload([nextReaderPage(currentPosition)]);
   });
 }
 
