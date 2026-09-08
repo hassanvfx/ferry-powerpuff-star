@@ -1,7 +1,7 @@
 Create one original vertical 6x9 comic-book page in a 2:3 aspect ratio.
 Use exactly 2 distinct comic panels separated by clean, consistent gutters; do not make a collage or a poster.
 Exact page reticle: dos celdas verticales: izquierda 42%, derecha 58%. Read from upper left to lower right.
-The only letters permitted in the art are the phrases after “Texto impreso exacto:” plus, only where declared, the exact cover text after “Texto diegético permitido:”. Render each permitted phrase character for character, including accents and punctuation, using the double quotes shown. “CELDA”, “Tipo de lettering”, “Posición de lettering”, “Texto diegético permitido” and every other label are production instructions only: never render those labels in the image. Place the lettering exactly as specified per cell. If “Texto impreso exacto” says SILENCIO, draw no bubble and no letters in that cell, except a cover text explicitly declared for that cell. Do not add, alter, translate or invent any other text, number, logo or watermark. The recipe note, when present, must show only deliberately illegible numbered-looking strokes.
+The only letters permitted in the art are the phrases after “Texto impreso exacto:” plus, only where declared, the exact cover text after “Texto diegético permitido:”. Render each permitted phrase character for character, including accents and punctuation, using the double quotes shown. “CELDA”, “Tipo de lettering”, “Posición de lettering”, “Texto diegético permitido” and every other label are production instructions only: never render those labels in the image. Place the lettering exactly as specified per cell. If “Texto impreso exacto” says SILENCIO, draw no bubble and no letters in that cell, except a cover text explicitly declared for that cell. Do not add, alter, translate or invent any other text, number, logo or watermark. The recipe note, when present, may show only its explicitly declared heading plus deliberately illegible numbered-looking strokes; never invent readable ingredient names on the note.
 Original 2:3 portrait comic-book page, adult semi-chibi-superhero characters with large expressive dark-eyed faces, mature athletic silhouettes and long readable legs; never use an extreme baby-head proportion. Preserve the approved v2 character-sheet silhouette first. Clean bold black outer contours, flat saturated candy colors, restrained animation-cel shading, graphic silhouettes, simple geometric backgrounds, exaggerated readable action, crisp vector-like finish. Eyes first, face second, action third; backgrounds never compete with the face. Original designs only: no franchise likenesses, logos, photorealism, anime proportions, painterly texture, 3D rendering or realistic anatomy.
 REFERENCIAS DECLARADAS PARA ESTA PÁGINA — ARCHIVOS DE EJECUCIÓN:
 El ejecutor debe adjuntar las fichas aprobadas listadas abajo. Las fichas con estado `candidate` son referencias previstas y sólo se adjuntan con --include-candidate-continuity-assets hasta que una revisión humana las promueva. Úsalas para identidad o lugar, nunca para copiar su composición, poses ni paneles.
@@ -19,18 +19,19 @@ Cool white, steel and blue-gray laboratory reality; dream and magic in warm pink
 
 
 
-BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes.
+BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes. Desde la 50, sólo el mismo matraz Erlenmeyer del inicio recibe rastros o ingredientes como luz; no crear un recipiente adicional.
+MATRAZ CANÓNICO ÚNICO: siempre es el mismo matraz Erlenmeyer de vidrio transparente que aparece vacío en las páginas 01–03. No dibujes un segundo frasco, vaso, poción ni recipiente mágico. Su evolución es continua: vacío con reflexión mínima al inicio; herramienta vacía de Hassan durante la investigación; desde la página 50 acepta rastros de luz; desde 51 absorbe cada ingrediente como luz, partículas y un icono visual de ese ingrediente; desde 62 conserva dentro las luces numeradas sin perderlas; la transformación final ocurre en ese mismo vidrio.
 
 Page 55 — Engranes
 CELDA 1 — posición: celda izquierda alta; cámara: plano de establecimiento, composición clara y aire alrededor del sujeto.
-Acción y arte: Hassan sigue la proyección hasta un cajón de herramientas.
+Acción y arte: Hassan sigue la proyección hasta un cajón de herramientas y encuentra engranes pequeños: ingrediente 5.
 Especie/raza bloqueada: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
 Tipo de lettering: pensamiento interior de Hassan. Posición de lettering: superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-Texto impreso exacto: "Trabajo y paciencia. Así se hacen las cosas, supongo."
+Texto impreso exacto: "5. Engranes pequeños."
 Texto diegético permitido: NINGUNO
 CELDA 2 — posición: celda derecha dominante; cámara: plano detalle, foco nítido en el objeto y profundidad de campo suave.
-Acción y arte: Pequeños engranes encajan solos alrededor de la moneda.
+Acción y arte: El matraz los absorbe como ruedas luminosas ordenadas; Hassan anota el recuerdo de Ferry que convierte esfuerzo en avance.
 Especie/raza bloqueada: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
-Tipo de lettering: efecto sonoro integrado. Posición de lettering: junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-Texto impreso exacto: "clic clic"
+Tipo de lettering: pensamiento interior de Hassan. Posición de lettering: superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+Texto impreso exacto: "Ferry, sabes avanzar sin querer controlarlo todo."
 Texto diegético permitido: NINGUNO

@@ -21,44 +21,44 @@ NO dibujes arte final, pintura digital pulida, cel shading terminado, superficie
 - Lugar: cocina, sala, patio y regreso gradual al laboratorio de Hassan.
 - Personajes: Hassan adulto; Ferry sólo puede aparecer en una evocación declarada por el beat, nunca físicamente.
 - Vestuario/accesorios: Hassan: camiseta azul marino, sobrecamisa índigo o bata sólo cuando regresa al laboratorio; conservar el look que la celda declare.
-- Bloqueo de cronología: BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes.
+- Bloqueo de cronología: BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes. Desde la 50, sólo el mismo matraz Erlenmeyer del inicio recibe rastros o ingredientes como luz; no crear un recipiente adicional.
 
 ## Continuidad de borde a borde
 
-- ENTRADA — última acción/estado de la página previa: La moneda gira y proyecta engranes de luz sobre su cara.
-- SALIDA — primera acción/estado que debe poder sostener la página siguiente: El hilo de la nota se desenrolla por el pasillo.
+- ENTRADA — última acción/estado de la página previa: La moneda se absorbe en el matraz como destello dorado; de ahí salen engranes de luz que señalan la siguiente tarjeta.
+- SALIDA — primera acción/estado que debe poder sostener la página siguiente: El hilo de la nota se desenrolla por el pasillo y se detiene sólo cuando Hassan acerca la siguiente tarjeta.
 - La primera celda debe continuar esa entrada o mostrar visualmente la transición. La última celda debe dejar la salida preparada; no copies composición de otra página.
 
 ## Desglose por celda
 
 ### Celda 1 — celda izquierda alta
 - Función en lectura: ancla de entrada: establece el lugar, tiempo y eje espacial.
-- Entorno y hora: cocina, sala, patio y regreso gradual al laboratorio de Hassan; mañana y mediodía del 10 de septiembre; cambios de estancia mostrados por el beat.
-- Personajes y vestuario: Hassan adulto; Ferry sólo puede aparecer en una evocación declarada por el beat, nunca físicamente. Hassan: camiseta azul marino, sobrecamisa índigo o bata sólo cuando regresa al laboratorio; conservar el look que la celda declare.
+- Entorno y hora: continuidad del estado global de página; sólo cambia lo declarado en acción.
+- Personajes y vestuario: usar clave ID/VEST global; no introducir personajes ni accesorios extra.
 - Cámara/composición: plano de establecimiento, composición clara y aire alrededor del sujeto; posición en retícula: celda izquierda alta.
-- Anotaciones gráficas obligatorias: esquina con código C1; rectángulo de encuadre, línea de horizonte, flecha de cámara, flecha de mirada, flecha de luz, línea de acción y círculo rojo alrededor de la utilería crítica.
+- Marcas: C1, cámara, mirada, luz, línea de acción, horizonte, prop rojo y silueta vacía de lettering.
 - Especie/raza bloqueada: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
-- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: Hassan adulto; Ferry sólo puede aparecer en una evocación declarada por el beat, nunca físicamente; VEST: Hassan: camiseta azul marino, sobrecamisa índigo o bata sólo cuando regresa al laboratorio; conservar el look que la celda declare; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/TIEMPO: cocina, sala, patio y regreso gradual al laboratorio de Hassan, mañana y mediodía del 10 de septiembre; cambios de estancia mostrados por el beat; CÁMARA/ESPACIO: plano de establecimiento, composición clara y aire alrededor del sujeto, celda izquierda alta; CUERPO/MIRADA: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales; mirada dirigida al foco de la acción de esta celda; no usar mirada perdida ni contacto a cámara gratuito; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: conserva el estado visible para la siguiente celda de esta página.
-- Acción y utilería exacta: Hassan sigue la proyección hasta un cajón de herramientas.
-- Pose y apoyo corporal: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales.
+- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: H (según leyenda de página); VEST: base de página, sólo cambios declarados; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/T: continuo; CAM: plano de establecimiento, composición clara y aire alrededor del sujeto; CUERPO/MIRADA: desplazamiento claro: un pie recibe el peso, el otro inicia el paso; torso y mirada orientados hacia el destino; mirada dirigida al foco de la acción de esta celda; no usar mirada perdida ni contacto a cámara gratuito; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: continúa a C2.
+- Acción y utilería exacta: Hassan sigue la proyección hasta un cajón de herramientas y encuentra engranes pequeños: ingrediente 5.
+- Pose y apoyo corporal: desplazamiento claro: un pie recibe el peso, el otro inicia el paso; torso y mirada orientados hacia el destino.
 - Mirada/eje de atención: mirada dirigida al foco de la acción de esta celda; no usar mirada perdida ni contacto a cámara gratuito.
-- Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): Hassan — pensamiento interior: "Trabajo y paciencia. Así se hacen las cosas, supongo."
-- Marcador visual de lettering: dibuja sólo la silueta vacía y ubicación de superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo; usa un código corto de celda, nunca el diálogo literal.
+- Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): Hassan — pensamiento interior: "5. Engranes pequeños."
+- Lettering: silueta vacía en superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo; sólo código corto, nunca diálogo literal.
 - Estado que debe respetarse: Mantener el estado canónico de página; no introducir utilería nueva.
 
 ### Celda 2 — celda derecha dominante
 - Función en lectura: cierre: deja una dirección, objeto o emoción que sostenga el siguiente corte.
-- Entorno y hora: cocina, sala, patio y regreso gradual al laboratorio de Hassan; mañana y mediodía del 10 de septiembre; cambios de estancia mostrados por el beat.
-- Personajes y vestuario: Hassan adulto; Ferry sólo puede aparecer en una evocación declarada por el beat, nunca físicamente. Hassan: camiseta azul marino, sobrecamisa índigo o bata sólo cuando regresa al laboratorio; conservar el look que la celda declare.
+- Entorno y hora: continuidad del estado global de página; sólo cambia lo declarado en acción.
+- Personajes y vestuario: usar clave ID/VEST global; no introducir personajes ni accesorios extra.
 - Cámara/composición: plano detalle, foco nítido en el objeto y profundidad de campo suave; posición en retícula: celda derecha dominante.
-- Anotaciones gráficas obligatorias: esquina con código C2; rectángulo de encuadre, línea de horizonte, flecha de cámara, flecha de mirada, flecha de luz, línea de acción y círculo rojo alrededor de la utilería crítica.
+- Marcas: C2, cámara, mirada, luz, línea de acción, horizonte, prop rojo y silueta vacía de lettering.
 - Especie/raza bloqueada: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
-- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: Hassan adulto; Ferry sólo puede aparecer en una evocación declarada por el beat, nunca físicamente; VEST: Hassan: camiseta azul marino, sobrecamisa índigo o bata sólo cuando regresa al laboratorio; conservar el look que la celda declare; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/TIEMPO: cocina, sala, patio y regreso gradual al laboratorio de Hassan, mañana y mediodía del 10 de septiembre; cambios de estancia mostrados por el beat; CÁMARA/ESPACIO: plano detalle, foco nítido en el objeto y profundidad de campo suave, celda derecha dominante; CUERPO/MIRADA: plano de objeto: no inventar extremidades; si entra una mano, mostrar una sola mano de cinco dedos con agarre posible; mirada y líneas de acción orientadas hacia la salida narrativa de la página siguiente; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: prepara el estado que recoge la siguiente página.
-- Acción y utilería exacta: Pequeños engranes encajan solos alrededor de la moneda.
+- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: H/F (según leyenda de página); VEST: base de página, sólo cambios declarados; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/T: continuo; CAM: plano detalle, foco nítido en el objeto y profundidad de campo suave; CUERPO/MIRADA: plano de objeto: no inventar extremidades; si entra una mano, mostrar una sola mano de cinco dedos con agarre posible; mirada dirigida a la nota; no mirar a cámara salvo que la acción lo exija; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: salida a página siguiente.
+- Acción y utilería exacta: El matraz los absorbe como ruedas luminosas ordenadas; Hassan anota el recuerdo de Ferry que convierte esfuerzo en avance.
 - Pose y apoyo corporal: plano de objeto: no inventar extremidades; si entra una mano, mostrar una sola mano de cinco dedos con agarre posible.
-- Mirada/eje de atención: mirada y líneas de acción orientadas hacia la salida narrativa de la página siguiente.
-- Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): SFX / efecto visual: "clic clic"
-- Marcador visual de lettering: dibuja sólo la silueta vacía y ubicación de junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave; usa un código corto de celda, nunca el diálogo literal.
+- Mirada/eje de atención: mirada dirigida a la nota; no mirar a cámara salvo que la acción lo exija.
+- Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): Hassan — pensamiento interior: "Ferry, sabes avanzar sin querer controlarlo todo."
+- Lettering: silueta vacía en superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo; sólo código corto, nunca diálogo literal.
 - Estado que debe respetarse: Mantener el estado canónico de página; no introducir utilería nueva.
 
 ## Chequeo de aprobación

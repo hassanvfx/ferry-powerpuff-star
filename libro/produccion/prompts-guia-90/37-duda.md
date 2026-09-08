@@ -33,32 +33,32 @@ NO dibujes arte final, pintura digital pulida, cel shading terminado, superficie
 
 ### Celda 1 — celda izquierda alta
 - Función en lectura: ancla de entrada: establece el lugar, tiempo y eje espacial.
-- Entorno y hora: habitación minimalista de Hassan, ahora azul gris de mañana; amanecer del 10 de septiembre de 2026.
-- Personajes y vestuario: Hassan adulto; Ferry no aparece físicamente. Hassan: el mismo atuendo cómodo azul marino y carbón; sin bata.
+- Entorno y hora: continuidad del estado global de página; sólo cambia lo declarado en acción.
+- Personajes y vestuario: usar clave ID/VEST global; no introducir personajes ni accesorios extra.
 - Cámara/composición: plano de establecimiento, composición clara y aire alrededor del sujeto; posición en retícula: celda izquierda alta.
-- Anotaciones gráficas obligatorias: esquina con código C1; rectángulo de encuadre, línea de horizonte, flecha de cámara, flecha de mirada, flecha de luz, línea de acción y círculo rojo alrededor de la utilería crítica.
+- Marcas: C1, cámara, mirada, luz, línea de acción, horizonte, prop rojo y silueta vacía de lettering.
 - Especie/raza bloqueada: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
-- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: Hassan adulto; Ferry no aparece físicamente; VEST: Hassan: el mismo atuendo cómodo azul marino y carbón; sin bata; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/TIEMPO: habitación minimalista de Hassan, ahora azul gris de mañana, amanecer del 10 de septiembre de 2026; CÁMARA/ESPACIO: plano de establecimiento, composición clara y aire alrededor del sujeto, celda izquierda alta; CUERPO/MIRADA: reacción legible: hombros orientados al foco, cabeza girada sólo lo necesario y ambos brazos en reposo natural; sin mirada de personaje obligatoria; el eje visual conduce al objeto o fenómeno descrito; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: conserva el estado visible para la siguiente celda de esta página.
+- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: H (según leyenda de página); VEST: base de página, sólo cambios declarados; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/T: continuo; CAM: plano de establecimiento, composición clara y aire alrededor del sujeto; CUERPO/MIRADA: reacción legible: hombros orientados al foco, cabeza girada sólo lo necesario y ambos brazos en reposo natural; sin mirada de personaje obligatoria; el eje visual conduce al objeto o fenómeno descrito; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: continúa a C2.
 - Acción y utilería exacta: Hassan se quita los audífonos y mira la chispa.
 - Pose y apoyo corporal: reacción legible: hombros orientados al foco, cabeza girada sólo lo necesario y ambos brazos en reposo natural.
 - Mirada/eje de atención: sin mirada de personaje obligatoria; el eje visual conduce al objeto o fenómeno descrito.
 - Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): SFX / efecto visual: "clic"
-- Marcador visual de lettering: dibuja sólo la silueta vacía y ubicación de junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave; usa un código corto de celda, nunca el diálogo literal.
+- Lettering: silueta vacía en junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave; sólo código corto, nunca diálogo literal.
 - Estado que debe respetarse: Mantener el estado canónico de página; no introducir utilería nueva.
 
 ### Celda 2 — celda derecha dominante
 - Función en lectura: cierre: deja una dirección, objeto o emoción que sostenga el siguiente corte.
-- Entorno y hora: habitación minimalista de Hassan, ahora azul gris de mañana; amanecer del 10 de septiembre de 2026.
-- Personajes y vestuario: Hassan adulto; Ferry no aparece físicamente. Hassan: el mismo atuendo cómodo azul marino y carbón; sin bata.
+- Entorno y hora: continuidad del estado global de página; sólo cambia lo declarado en acción.
+- Personajes y vestuario: usar clave ID/VEST global; no introducir personajes ni accesorios extra.
 - Cámara/composición: primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página; posición en retícula: celda derecha dominante.
-- Anotaciones gráficas obligatorias: esquina con código C2; rectángulo de encuadre, línea de horizonte, flecha de cámara, flecha de mirada, flecha de luz, línea de acción y círculo rojo alrededor de la utilería crítica.
+- Marcas: C2, cámara, mirada, luz, línea de acción, horizonte, prop rojo y silueta vacía de lettering.
 - Especie/raza bloqueada: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
-- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: Hassan adulto; Ferry no aparece físicamente; VEST: Hassan: el mismo atuendo cómodo azul marino y carbón; sin bata; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/TIEMPO: habitación minimalista de Hassan, ahora azul gris de mañana, amanecer del 10 de septiembre de 2026; CÁMARA/ESPACIO: primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página, celda derecha dominante; CUERPO/MIRADA: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales; mirada dirigida al monitor; no mirar a cámara salvo que la acción lo exija; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: prepara el estado que recoge la siguiente página.
+- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: ELENCO (según leyenda de página); VEST: base de página, sólo cambios declarados; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/T: continuo; CAM: primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página; CUERPO/MIRADA: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales; mirada dirigida al monitor; no mirar a cámara salvo que la acción lo exija; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: salida a página siguiente.
 - Acción y utilería exacta: La chispa se esconde detrás del monitor, como invitándolo a levantarse.
 - Pose y apoyo corporal: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales.
 - Mirada/eje de atención: mirada dirigida al monitor; no mirar a cámara salvo que la acción lo exija.
-- Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): Hassan — pensamiento interior: "¿Qué es esto? ¿Por qué me da tanta mala espina?"
-- Marcador visual de lettering: dibuja sólo la silueta vacía y ubicación de superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo; usa un código corto de celda, nunca el diálogo literal.
+- Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): Hassan — pensamiento interior: "¡Vamos, sin miedo a nada!"
+- Lettering: silueta vacía en superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo; sólo código corto, nunca diálogo literal.
 - Estado que debe respetarse: Mantener el estado canónico de página; no introducir utilería nueva.
 
 ## Chequeo de aprobación

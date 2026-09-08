@@ -95,259 +95,259 @@ Este reporte se lee de la última página a la primera. Para cada página, el re
 
 ## 77. Curiosidad y creación
 
-- **Estado narrativo que se reconcilia:** Luciérnagas de madrugada: pequeñas luces recorren rutas impredecibles. / Hassan intenta seguirlas con la lupa y se ríe de su propio esfuerzo. / Las luciérnagas entran al matraz como puntos de cielo. / Pincel de creatividad infinita: un pincel luminoso aparece como el último ingrediente. / El pincel traza dentro del líquido una espiral rosa-dorada: la primera forma de la estrella.
+- **Estado narrativo que se reconcilia:** Las luciérnagas de la memoria recorren el taller y se reúnen sobre la punta del pincel, como puntos de cielo. / Hassan las sigue con la lupa y entiende que no lo llevan a una respuesta fija, sino a la posibilidad de crear algo nuevo. / Las luciérnagas entran al mismo matraz como puntos de cielo y el espacio coral queda abierto. / 29. Pincel de creatividad infinita: Hassan nombra el pincel y lo acerca al matraz. / El pincel se absorbe como espiral rosa-dorada y partículas de trazo; las veintinueve luces quedan completas y dibujan la primera forma de la estrella.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. CONJURO: la transformación ocurre en el matraz paso a paso. No dibujes una estrella física completa ni Ferry materializada: la estrella nace en la página 84 y Ferry llega en la 87.
 - **Verificación hacia atrás:** La página 76 (Lealtad, conexión y dulzura con fuego) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 76. Lealtad, conexión y dulzura con fuego
 
-- **Estado narrativo que se reconcilia:** Anillo de fidelidad: un anillo gira y se posa junto al borde, sin encadenar nada. / Hassan contempla su órbita tranquila. / Hilo rojo del destino: el hilo cruza la página y entra al líquido. / Dentro del matraz, conecta todos los colores ya reunidos. / Moño rosa con fuego: un moño satinado tiene un borde coral cálido. / El moño se disuelve y enciende la paleta de Ferry en el vidrio.
+- **Estado narrativo que se reconcilia:** El hilo rojo ya absorbido aparece dentro del matraz y conecta las veintiocho luces con holgura, sin hacer nudos. / Hassan ve que ninguna luz pierde su color ni su lugar al acercarse a las demás. / El pincel deja una segunda línea coral; ambas líneas forman la base de una estrella todavía incompleta. / Hassan respira y espera: el último ingrediente no es una orden, es una elección que debe entender. / La nota ilumina el título "29 razones" y el círculo vacío se vuelve del tamaño exacto de la punta del pincel. / Hassan sonríe: por fin sabe qué está a punto de encontrar.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. CONJURO: la transformación ocurre en el matraz paso a paso. No dibujes una estrella física completa ni Ferry materializada: la estrella nace en la página 84 y Ferry llega en la 87.
 - **Verificación hacia atrás:** La página 75 (Fortaleza, nutrición y confianza) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 75. Fortaleza, nutrición y confianza
 
-- **Estado narrativo que se reconcilia:** Trofeo en movimiento: un trofeo abstracto adopta una pose de salto. / Su estela recuerda el aterrizaje de Ferry en el concurso. / Cáliz de nutrición: un cáliz vierte luz verde-dorada. / Esa luz nutre las demás sin taparlas. / Llave de confianza: la llave abre una cerradura dibujada en luz. / La cerradura se convierte en puerta de luz hacia el centro del matraz.
+- **Estado narrativo que se reconcilia:** Hassan gira el pincel entre los dedos y ve cómo su punta copia la espiral del sueño. / En el reflejo, Ferry aterriza en el concurso y después se agacha a cuidar a Zeus: crear y cuidar caben en el mismo gesto. / El matraz abre el espacio coral sin jalar el pincel; Hassan decide acercarlo por voluntad propia. / Las veintiocho luces se acomodan alrededor, más vivas que antes pero todavía separadas. / Hassan mira la nota, el pincel y el matraz: ya no está resolviendo un acertijo, está entendiendo una forma de mirar a Ferry. / La punta del pincel toca el vidrio y dibuja una línea rosa-dorada que espera su nombre.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. CONJURO: la transformación ocurre en el matraz paso a paso. No dibujes una estrella física completa ni Ferry materializada: la estrella nace en la página 84 y Ferry llega en la 87.
 - **Verificación hacia atrás:** La página 74 (Mensajes, consideración y atrevimiento) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 74. Mensajes, consideración y atrevimiento
 
-- **Estado narrativo que se reconcilia:** Sobres perfumados: tres sobres sin palabras liberan pétalos. / Los pétalos se ordenan en espiral alrededor del vidrio. / Puente de pétalos: los pétalos forman un puente sobre el borde. / Hassan coloca un objeto al otro lado sin perderlo. / Chispa salvaje: una chispa naranja salta fuera de su contenedor. / Vuelve al matraz por voluntad propia, dejando una risa visual de zigzags.
+- **Estado narrativo que se reconcilia:** El espacio del ingrediente 29 late dentro del matraz y proyecta una línea coral hacia la repisa de Hassan. / Hassan compara esa línea con el último círculo de la nota: ya sabe dónde buscar, pero aún no sabe qué forma tomará. / Las veintiocho luces se separan sin escapar, haciendo sitio para que el último hallazgo no las opaque. / Hassan revisa la repisa con calma, dejando que la nota y el matraz coincidan antes de tocar nada. / Entre libros y herramientas aparece un pincel sencillo, de mango claro, que responde con una chispa coral. / Hassan lo toma sin agregarlo todavía: el número 29 debe entrar sólo cuando pueda nombrar lo que significa.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. CONJURO: la transformación ocurre en el matraz paso a paso. No dibujes una estrella física completa ni Ferry materializada: la estrella nace en la página 84 y Ferry llega en la 87.
 - **Verificación hacia atrás:** La página 73 (Alegría, paciencia y cariño) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 73. Alegría, paciencia y cariño
 
-- **Estado narrativo que se reconcilia:** Campanillas de sol: tres campanillas sueltan chispas amarillas. / El líquido responde con ondas alegres. / Reloj de arena sereno: los granos caen despacio, suspendiendo el caos. / Hassan espera antes de agregar el siguiente elemento. / Manta de algodón: la manta envuelve un instante el matraz como una nube. / Al retirarse, deja una luz blanca y suave en la mezcla.
+- **Estado narrativo que se reconcilia:** 27. Trofeo de cuerpo en movimiento: un trofeo abstracto deja una estela de salto dentro del matraz. / La estela se absorbe como líneas de fuerza y Hassan recuerda la fuerza de Ferry sin necesidad de presumirla. / 28. Anillo de fidelidad: un anillo sobrio gira alrededor de las luces sin encadenarlas. / El anillo se integra con holgura y Hassan recuerda que Ferry siempre puede elegir quedarse o partir. / Las veintiocho luces se ordenan y dejan un espacio vacío, coral y dorado, para el último ingrediente. / Hassan busca en la nota el círculo 29; el matraz responde con un latido que apunta al pincel que aún falta.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. CONJURO: la transformación ocurre en el matraz paso a paso. No dibujes una estrella física completa ni Ferry materializada: la estrella nace en la página 84 y Ferry llega en la 87.
 - **Verificación hacia atrás:** La página 72 (Persistencia, talento y orden) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 72. Persistencia, talento y orden
 
-- **Estado narrativo que se reconcilia:** Raíz de perseverancia: una raíz luminosa rompe una piedra mínima. / La raíz florece dentro del vidrio. / Cuchara de canela y vainilla: las especias giran en la cuchara ámbar. / El remolino entra al matraz y perfuma la luz. / Cristal de orden: un prisma simétrico alinea destellos caóticos. / El laboratorio se vuelve exacto y acogedor a la vez.
+- **Estado narrativo que se reconcilia:** 24. Sobres perfumados de amor: tres sobres sin palabras liberan pétalos dentro del vidrio. / Los pétalos se absorben como partículas de mensaje; Hassan recuerda cómo Ferry lo hace sentir cerca. / 25. Puente de pétalos: los pétalos forman un puente sobre el borde interior del matraz. / El puente se vuelve arco de luz y Hassan recuerda que con Ferry se puede hablar sin esconder nada. / 26. Chispa salvaje: una chispa naranja salta fuera de un frasco de luz, pero no se pierde. / Regresa al matraz como zigzag coral; Hassan recuerda las ideas inesperadas de Ferry.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. CONJURO: la transformación ocurre en el matraz paso a paso. No dibujes una estrella física completa ni Ferry materializada: la estrella nace en la página 84 y Ferry llega en la 87.
 - **Verificación hacia atrás:** La página 71 (Dulzura y mar) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 71. Dulzura y mar
 
-- **Estado narrativo que se reconcilia:** Flor de inocencia: una flor pálida se abre despacio. / Una sola chispa cae de su centro al líquido. / Concha dorada del mar: la concha libera una gota turquesa. / La gota crea una ola minúscula dentro del matraz.
+- **Estado narrativo que se reconcilia:** 22. Campanillas de sol: tres campanillas sueltan chispas amarillas dentro del matraz. / Las chispas se absorben como ritmo alegre; Hassan recuerda la alegría de Ferry cuando llega contenta. / 23. Reloj de arena sereno: los granos caen despacio dentro de una burbuja de luz. / El reloj se vuelve polvo dorado y Hassan recuerda que Ferry sabe esperar sin presionar.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. CONJURO: la transformación ocurre en el matraz paso a paso. No dibujes una estrella física completa ni Ferry materializada: la estrella nace en la página 84 y Ferry llega en la 87.
 - **Verificación hacia atrás:** La página 70 (Trabajo y esperanza) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 70. Trabajo y esperanza
 
-- **Estado narrativo que se reconcilia:** Monedas de miel y engranes: la moneda gira entre engranes de luz. / Hassan regula su giro con precisión, sin dominarla. / Estrella de esperanza infinita: una estrella pequeña flota sobre el frasco. / La estrella se sumerge y deja un pulso rosa-dorado.
+- **Estado narrativo que se reconcilia:** 20. Flor de inocencia: una flor pálida se abre despacio dentro de la luz reunida. / Una chispa de la flor entra al núcleo; Hassan recuerda la forma de Ferry de hacer importante lo pequeño. / 21. Prisma de orden: un prisma simétrico alinea destellos caóticos sin borrar sus colores. / El prisma se absorbe como geometría luminosa y Hassan recuerda que Ferry ordena sin apagar lo vivo.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. CONJURO: la transformación ocurre en el matraz paso a paso. No dibujes una estrella física completa ni Ferry materializada: la estrella nace en la página 84 y Ferry llega en la 87.
 - **Verificación hacia atrás:** La página 69 (Cuidado y valor) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 69. Cuidado y valor
 
-- **Estado narrativo que se reconcilia:** Nido de ternura: un nido con pequeñas huellas deja luz tibia en el vidrio. / Hassan ve por un instante el recuerdo de Zeus, Yohi, caracoles y araña. / Escudo de oro valiente: un escudo se abre como un aro fino. / El aro protege la mezcla sin encerrarla.
+- **Estado narrativo que se reconcilia:** 18. Escudo de oro valiente: un escudo se abre como aro fino alrededor de las luces. / El aro protege la mezcla sin encerrarla; Hassan ve el recuerdo de Ferry cuidando a Zeus, Yohi, caracoles y araña. / 19. Estrella de esperanza infinita: una estrella pequeña se revela, todavía contenida dentro del vidrio. / La estrella se absorbe como pulso rosa-dorado y Hassan dice por qué Ferry le ayuda a seguir cuando algo se complica.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. CONJURO: la transformación ocurre en el matraz paso a paso. No dibujes una estrella física completa ni Ferry materializada: la estrella nace en la página 84 y Ferry llega en la 87.
 - **Verificación hacia atrás:** La página 68 (Sonrisa y fuego) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 68. Sonrisa y fuego
 
-- **Estado narrativo que se reconcilia:** Polvo de sonrisa encantada: partículas doradas nacen de una curva de luz alegre. / El polvo se mezcla y vuelve el celeste más cálido. / Llama de leona roja: una llama carmesí gira sin quemar. / La llama toma forma de espiral protectora alrededor del matraz.
+- **Estado narrativo que se reconcilia:** 16. Llama de leona roja: una llama carmesí gira dentro del vidrio sin quemarlo. / La llama se absorbe como espiral protectora y partículas de brasa; Hassan recuerda la fuerza discreta de Ferry. / 17. Nido de ternura: un nido pequeño de luz aparece entre las capas de color. / El nido se vuelve un halo cálido dentro del matraz; Hassan nombra el cuidado que reconoce en Ferry.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. CONJURO: la transformación ocurre en el matraz paso a paso. No dibujes una estrella física completa ni Ferry materializada: la estrella nace en la página 84 y Ferry llega en la 87.
 - **Verificación hacia atrás:** La página 67 (Ciencia y curiosidad) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 67. Ciencia y curiosidad
 
-- **Estado narrativo que se reconcilia:** Frasco de luz científica: un vial azul vierte luz ordenada, no líquido. / El laboratorio responde con líneas de constelación. / Lupa de luna curiosa: la lente refleja una luna con pequeños puntos de estrella. / Esa constelación cae al matraz y gira con el líquido.
+- **Estado narrativo que se reconcilia:** 14. Lupa de luna curiosa: la lente se revela entre las luces y refleja una luna con pequeños puntos de estrella. / La lupa se absorbe como un aro plateado y partículas de pregunta; Hassan enlaza la curiosidad con Ferry. / 15. Polvo de sonrisa encantada: partículas doradas nacen de una curva alegre dentro del vidrio. / El polvo se integra como chispas de sonrisa; Hassan deja la memoria correspondiente antes de pasar al siguiente número.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. CONJURO: la transformación ocurre en el matraz paso a paso. No dibujes una estrella física completa ni Ferry materializada: la estrella nace en la página 84 y Ferry llega en la 87.
 - **Verificación hacia atrás:** La página 66 (Claridad y empatía) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 66. Claridad y empatía
 
-- **Estado narrativo que se reconcilia:** Cristales de sinceridad: cuatro cristales transparentes tintinean y liberan luz limpia. / Hassan deja los cristales caer al matraz; el líquido nace celeste. / Nube tibia de empatía: la nube abraza el cuello del vidrio. / La nube entra sin deshacerse y deja vapor rosa sobre la mezcla.
+- **Estado narrativo que se reconcilia:** 12. Cristales de sinceridad: cuatro cristales transparentes aparecen entre las once luces y liberan luz limpia. / Hassan los recibe en el mismo matraz; se absorben como partículas celestes con icono de cristal y dejan un recuerdo visible de Ferry. / 13. Frasco de luz científica: un vial azul se forma dentro del vidrio, sin salir del matraz. / El vial se disuelve en líneas ordenadas y un icono de átomo; Hassan nombra qué le recuerda de Ferry.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. CONJURO: la transformación ocurre en el matraz paso a paso. No dibujes una estrella física completa ni Ferry materializada: la estrella nace en la página 84 y Ferry llega en la 87.
 - **Verificación hacia atrás:** La página 65 (Antes de mezclar) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 65. Antes de mezclar
 
-- **Estado narrativo que se reconcilia:** Hassan compara la nota con los objetos reunidos. / Los iconos restantes giran sobre la mesa, anunciando la receta completa.
-- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. EL MATRAZ SIGUE VACÍO. Sólo la chispa de fondo declarada en la página 64 puede aparecer; el primer líquido nace en la página 66.
+- **Estado narrativo que se reconcilia:** Hassan compara la nota con el matraz: los ingredientes 1 al 11 ya flotan adentro; del 12 al 29 esperan ser revelados por la mezcla. / Los iconos giran del 12 al 29 sobre la mesa; Hassan decide decirlos en voz alta para no perder ni el orden ni lo que cada uno le recuerda de Ferry.
+- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. EL MISMO MATRAZ contiene las once luces ya absorbidas, separadas y numeradas. Sólo la chispa de fondo declarada en la página 64 puede conectarlas; el ingrediente 12 se revela después, no existe una estrella física completa.
 - **Verificación hacia atrás:** La página 64 (El matraz recibe luz) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 64. El matraz recibe luz
 
-- **Estado narrativo que se reconcilia:** Hassan coloca el matraz en el centro de un aro de herramientas. / Las lámparas del laboratorio apuntan al vidrio vacío. / Una primera chispa rosa-dorada cruza el fondo del matraz.
-- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. EL MATRAZ SIGUE VACÍO. Sólo la chispa de fondo declarada en la página 64 puede aparecer; el primer líquido nace en la página 66.
+- **Estado narrativo que se reconcilia:** Hassan coloca el matraz en el centro de un aro de herramientas. / Las lámparas del laboratorio apuntan al vidrio vacío. / Una primera chispa rosa-dorada cruza el fondo del matraz, conecta las once luces y enciende el círculo "12" de la nota.
+- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. EL MISMO MATRAZ contiene las once luces ya absorbidas, separadas y numeradas. Sólo la chispa de fondo declarada en la página 64 puede conectarlas; el ingrediente 12 se revela después, no existe una estrella física completa.
 - **Verificación hacia atrás:** La página 63 (La mesa preparada) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 63. La mesa preparada
 
-- **Estado narrativo que se reconcilia:** Ordena los hallazgos sobre la mesa en familias de color. / La nota proyecta nuevos iconos que aún faltan. / Hassan ajusta su bata y se prepara para transformar los objetos.
-- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. EL CARRETE Y LA CONCHA existen sólo después de sus beats de hallazgo. El matraz sigue vacío: no añadas líquido, vapor mágico ni una estrella física.
+- **Estado narrativo que se reconcilia:** Coloca el matraz sobre la mesa y ordena las once tarjetas alrededor: adentro siguen separadas las once luces que encontró. / La nota proyecta los círculos 12 al 29 alrededor del vidrio: no son objetos de casa, son cualidades que las primeras luces pueden revelar. / Hassan ajusta su bata, entiende que cada siguiente hallazgo nacerá en el matraz y se prepara para nombrarlos uno por uno.
+- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. EL CARRETE Y LA CONCHA existen sólo después de sus beats de hallazgo. El mismo matraz del inicio absorbe los ingredientes 1–11 como luz, partículas e iconos separados; no añadas un segundo recipiente, líquido ordinario ni una estrella física.
 - **Verificación hacia atrás:** La página 62 (Regreso cargado) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 62. Regreso cargado
 
-- **Estado narrativo que se reconcilia:** Hassan camina hacia el laboratorio con caja, frascos y manta. / Algunos objetos flotan detrás de él, unidos por el hilo rojo. / Tropieza levemente, pero la concha y la lupa aterrizan a salvo.
-- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. EL CARRETE Y LA CONCHA existen sólo después de sus beats de hallazgo. El matraz sigue vacío: no añadas líquido, vapor mágico ni una estrella física.
+- **Estado narrativo que se reconcilia:** Hassan camina hacia el laboratorio con el matraz ahora lleno de once iconos luminosos y el mapa doblado. / Los iconos giran dentro del vidrio, unidos por el hilo rojo; ya no carga los objetos físicos porque el matraz los recibió. / Tropieza levemente, pero sostiene el matraz a salvo: las once luces no se mezclan ni se pierden.
+- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. EL CARRETE Y LA CONCHA existen sólo después de sus beats de hallazgo. El mismo matraz del inicio absorbe los ingredientes 1–11 como luz, partículas e iconos separados; no añadas un segundo recipiente, líquido ordinario ni una estrella física.
 - **Verificación hacia atrás:** La página 61 (Nube de empatía) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 61. Nube de empatía
 
-- **Estado narrativo que se reconcilia:** La nube tibia se escapa de la manta por el pasillo. / Hassan corre de forma cómica con un frasco vacío. / La atrapa sin aplastarla; la nube se acomoda contenta dentro.
-- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. EL CARRETE Y LA CONCHA existen sólo después de sus beats de hallazgo. El matraz sigue vacío: no añadas líquido, vapor mágico ni una estrella física.
+- **Estado narrativo que se reconcilia:** La nube tibia se escapa de la manta por el pasillo. / Hassan corre de forma cómica con un frasco vacío. / La atrapa sin aplastarla y la nombra ingrediente 11; el matraz la absorbe como vapor rosa y queda con once iconos flotando dentro.
+- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. EL CARRETE Y LA CONCHA existen sólo después de sus beats de hallazgo. El mismo matraz del inicio absorbe los ingredientes 1–11 como luz, partículas e iconos separados; no añadas un segundo recipiente, líquido ordinario ni una estrella física.
 - **Verificación hacia atrás:** La página 60 (Llave) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 60. Llave
 
-- **Estado narrativo que se reconcilia:** Busca en una bandeja de objetos perdidos. / Una llave sencilla responde con un destello cuando el hilo rojo la roza. / La llave abre un pequeño compartimento de luz en la caja de hallazgos.
-- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. EL CARRETE Y LA CONCHA existen sólo después de sus beats de hallazgo. El matraz sigue vacío: no añadas líquido, vapor mágico ni una estrella física.
+- **Estado narrativo que se reconcilia:** Busca en una bandeja de objetos perdidos. / Una llave sencilla responde con un destello cuando el hilo rojo la roza. / Hassan nombra la llave ingrediente 10 y el matraz la absorbe como llave de luz; el último símbolo del mapa se enciende.
+- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. EL CARRETE Y LA CONCHA existen sólo después de sus beats de hallazgo. El mismo matraz del inicio absorbe los ingredientes 1–11 como luz, partículas e iconos separados; no añadas un segundo recipiente, líquido ordinario ni una estrella física.
 - **Verificación hacia atrás:** La página 59 (Manta de algodón) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 59. Manta de algodón
 
-- **Estado narrativo que se reconcilia:** En la recámara, encuentra una manta blanca y suave. / Al doblarla, una nube tibia queda atrapada dentro del pliegue.
-- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. EL CARRETE Y LA CONCHA existen sólo después de sus beats de hallazgo. El matraz sigue vacío: no añadas líquido, vapor mágico ni una estrella física.
+- **Estado narrativo que se reconcilia:** En la recámara, encuentra una manta blanca y suave. / Hassan cuenta la manta como ingrediente 9 y el matraz la absorbe como nube blanca; una segunda nube tibia señala que aún falta algo.
+- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. EL CARRETE Y LA CONCHA existen sólo después de sus beats de hallazgo. El mismo matraz del inicio absorbe los ingredientes 1–11 como luz, partículas e iconos separados; no añadas un segundo recipiente, líquido ordinario ni una estrella física.
 - **Verificación hacia atrás:** La página 58 (Raíz) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 58. Raíz
 
-- **Estado narrativo que se reconcilia:** En el patio, una maceta se ha inclinado. / Hassan endereza la planta y descubre una raíz firme. / Una raíz luminosa atraviesa una pequeña piedra sin romper la maceta.
-- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. EL CARRETE Y LA CONCHA existen sólo después de sus beats de hallazgo. El matraz sigue vacío: no añadas líquido, vapor mágico ni una estrella física.
+- **Estado narrativo que se reconcilia:** En el patio, una maceta se ha inclinado. / Hassan endereza la planta y descubre una raíz firme. / Hassan nombra la raíz ingrediente 8; el matraz la absorbe como línea verde de raíz y él la registra como fuerza paciente, no como truco.
+- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. EL CARRETE Y LA CONCHA existen sólo después de sus beats de hallazgo. El mismo matraz del inicio absorbe los ingredientes 1–11 como luz, partículas e iconos separados; no añadas un segundo recipiente, líquido ordinario ni una estrella física.
 - **Verificación hacia atrás:** La página 57 (Concha dorada) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 57. Concha dorada
 
-- **Estado narrativo que se reconcilia:** En una repisa, Hassan encuentra una concha olvidada. / La limpia con cuidado. / La concha revela una gota de luz turquesa que flota sobre su palma.
-- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. EL CARRETE Y LA CONCHA existen sólo después de sus beats de hallazgo. El matraz sigue vacío: no añadas líquido, vapor mágico ni una estrella física.
+- **Estado narrativo que se reconcilia:** En una repisa, Hassan encuentra una concha olvidada. / La limpia con cuidado. / Hassan la nombra ingrediente 7; el matraz la absorbe como gota turquesa y abre una ruta hacia el patio.
+- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. EL CARRETE Y LA CONCHA existen sólo después de sus beats de hallazgo. El mismo matraz del inicio absorbe los ingredientes 1–11 como luz, partículas e iconos separados; no añadas un segundo recipiente, líquido ordinario ni una estrella física.
 - **Verificación hacia atrás:** La página 56 (Hilo rojo) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 56. Hilo rojo
 
-- **Estado narrativo que se reconcilia:** El hilo de la nota se desenrolla por el pasillo. / Hassan lo sigue hasta un carrete rojo escondido en un cajón. / El carrete se enlaza por sí mismo a la caja de hallazgos.
-- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. EL CARRETE Y LA CONCHA existen sólo después de sus beats de hallazgo. El matraz sigue vacío: no añadas líquido, vapor mágico ni una estrella física.
+- **Estado narrativo que se reconcilia:** El hilo de la nota se desenrolla por el pasillo y se detiene sólo cuando Hassan acerca la siguiente tarjeta. / Él lo sigue hasta un carrete rojo escondido en un cajón: ingrediente 6. / El carrete se absorbe como una hebra roja que orbita dentro del matraz; Hassan decide seguir la pista, no obedecerla.
+- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. EL CARRETE Y LA CONCHA existen sólo después de sus beats de hallazgo. El mismo matraz del inicio absorbe los ingredientes 1–11 como luz, partículas e iconos separados; no añadas un segundo recipiente, líquido ordinario ni una estrella física.
 - **Verificación hacia atrás:** La página 55 (Engranes) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 55. Engranes
 
-- **Estado narrativo que se reconcilia:** Hassan sigue la proyección hasta un cajón de herramientas. / Pequeños engranes encajan solos alrededor de la moneda.
-- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes.
+- **Estado narrativo que se reconcilia:** Hassan sigue la proyección hasta un cajón de herramientas y encuentra engranes pequeños: ingrediente 5. / El matraz los absorbe como ruedas luminosas ordenadas; Hassan anota el recuerdo de Ferry que convierte esfuerzo en avance.
+- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes. Desde la 50, sólo el mismo matraz Erlenmeyer del inicio recibe rastros o ingredientes como luz; no crear un recipiente adicional.
 - **Verificación hacia atrás:** La página 54 (Moneda de miel) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 54. Moneda de miel
 
-- **Estado narrativo que se reconcilia:** Abre una alacena alta con un banco pequeño. / Encuentra una moneda color miel entre objetos cotidianos. / La moneda gira y proyecta engranes de luz sobre su cara.
-- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes.
+- **Estado narrativo que se reconcilia:** Abre una alacena alta con un banco pequeño. / Encuentra una moneda color miel: ingrediente 4, con icono de moneda hexagonal. / La moneda se absorbe en el matraz como destello dorado; de ahí salen engranes de luz que señalan la siguiente tarjeta.
+- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes. Desde la 50, sólo el mismo matraz Erlenmeyer del inicio recibe rastros o ingredientes como luz; no crear un recipiente adicional.
 - **Verificación hacia atrás:** La página 53 (La cuchara) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 53. La cuchara
 
-- **Estado narrativo que se reconcilia:** Una cuchara vieja se ilumina al tocar las especias. / Hassan la levanta como si hubiera encontrado una reliquia científica.
-- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes.
+- **Estado narrativo que se reconcilia:** Una cuchara vieja se ilumina al tocar las especias: Hassan la registra como ingrediente 3, con icono de cucharita de luz. / La cuchara se vuelve una chispa ámbar dentro del matraz; Hassan dice qué gesto cotidiano de Ferry le recuerda antes de marcar la siguiente ruta.
+- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes. Desde la 50, sólo el mismo matraz Erlenmeyer del inicio recibe rastros o ingredientes como luz; no crear un recipiente adicional.
 - **Verificación hacia atrás:** La página 52 (Vainilla) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 52. Vainilla
 
-- **Estado narrativo que se reconcilia:** Busca entre frascos de cocina. / Una vaina de vainilla cae sobre su mano. / Canela y vainilla juntas emiten un brillo ámbar suave.
-- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes.
+- **Estado narrativo que se reconcilia:** Sigue la ruta ámbar entre frascos de cocina, sin saltarse el mapa. / Una vaina de vainilla cae sobre su mano: ingrediente 2, marcado con un icono crema. / El matraz absorbe la vainilla como cinta dorada y partículas de flor; Hassan anota el recuerdo que le despierta.
+- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes. Desde la 50, sólo el mismo matraz Erlenmeyer del inicio recibe rastros o ingredientes como luz; no crear un recipiente adicional.
 - **Verificación hacia atrás:** La página 51 (Canela) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 51. Canela
 
-- **Estado narrativo que se reconcilia:** Hassan encuentra un frasco de canela. / El polvo dibuja un remolino cálido al abrirlo. / Guarda una pizca en su caja con una sonrisa de sorpresa.
-- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes.
+- **Estado narrativo que se reconcilia:** Hassan confirma la canela como ingrediente 1 y la nombra mientras el icono ámbar coincide con la nota. / Deposita una pizca en el matraz mágico; el polvo se absorbe como remolino cálido y partículas de espiral. / Escribe lo que le recuerda de Ferry antes de seguir la ruta hacia la vainilla.
+- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes. Desde la 50, sólo el mismo matraz Erlenmeyer del inicio recibe rastros o ingredientes como luz; no crear un recipiente adicional.
 - **Verificación hacia atrás:** La página 50 (Comienza la búsqueda) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 50. Comienza la búsqueda
 
-- **Estado narrativo que se reconcilia:** Hassan abre una alacena iluminada con tono de aventura. / El matraz vacío espera en el laboratorio, visible en un pequeño reflejo de la puerta.
-- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes.
+- **Estado narrativo que se reconcilia:** Hassan acerca sólo el rastro de canela al tapón del matraz para probar si la nota también responde fuera del laboratorio. / El rastro entra como una chispa ámbar y el matraz vuelve a quedar vacío; Hassan confirma que puede recibir cada ingrediente completo cuando lo encuentre.
+- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes. Desde la 50, sólo el mismo matraz Erlenmeyer del inicio recibe rastros o ingredientes como luz; no crear un recipiente adicional.
 - **Verificación hacia atrás:** La página 49 (El primer tropiezo) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 49. El primer tropiezo
 
-- **Estado narrativo que se reconcilia:** Una caja de especias cae de una repisa. / Hassan intenta atraparla y derrama una nube de canela. / La canela flota como un remolino ámbar, señalando que va por buen camino.
-- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes.
+- **Estado narrativo que se reconcilia:** Una caja de especias cae de una repisa cuando Hassan busca el símbolo ámbar. / Hassan intenta atraparla y derrama una nube de canela sobre la tarjeta correcta. / La canela forma el mismo remolino ámbar del mapa y el matraz responde con un destello: primera coincidencia comprobable, no una casualidad.
+- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes. Desde la 50, sólo el mismo matraz Erlenmeyer del inicio recibe rastros o ingredientes como luz; no crear un recipiente adicional.
 - **Verificación hacia atrás:** La página 48 (La casa como misión) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 48. La casa como misión
 
-- **Estado narrativo que se reconcilia:** Abre la puerta de la despensa con una lupa en una mano. / Lleva una pequeña caja para guardar hallazgos en la otra. / El hilo rojo se asoma del bolsillo y apunta hacia el interior.
-- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes.
+- **Estado narrativo que se reconcilia:** Abre la puerta de la despensa con la lupa en una mano y consulta el mapa sujeto al marco. / Lleva el matraz vacío en un soporte de viaje y una caja de evidencias; el vidrio aún no tiene magia ni contenido. / El hilo rojo asoma del sobre transparente y se orienta hacia la primera marca del mapa, junto al matraz.
+- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes. Desde la 50, sólo el mismo matraz Erlenmeyer del inicio recibe rastros o ingredientes como luz; no crear un recipiente adicional.
 - **Verificación hacia atrás:** La página 47 (Primer mapa de búsqueda) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 47. Primer mapa de búsqueda
 
-- **Estado narrativo que se reconcilia:** Hassan dibuja planos simples de cocina, sala, patio y recámara. / Un icono de estrella se posa en el centro del mapa.
-- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes.
+- **Estado narrativo que se reconcilia:** Hassan dibuja planos simples de cocina, sala, patio y recámara y conecta cada tarjeta con una ruta corta. / La estrella se posa en el centro, mientras once marcas de color señalan dónde empezar; el resto queda en blanco hasta volver al laboratorio.
+- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes. Desde la 50, sólo el mismo matraz Erlenmeyer del inicio recibe rastros o ingredientes como luz; no crear un recipiente adicional.
 - **Verificación hacia atrás:** La página 46 (La receta visual) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 46. La receta visual
 
-- **Estado narrativo que se reconcilia:** La hoja flota sobre la mesa y deja escapar iconos sin palabras. / Los iconos forman una órbita alrededor del matraz vacío. / Hassan asiente: sabe que deberá buscarlos en equivalentes reales y mágicos.
-- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes.
+- **Estado narrativo que se reconcilia:** Hassan coloca las tarjetas alrededor del matraz vacío; al acercar cada una, la nota deja escapar el icono correspondiente, sin letras. / Los iconos forman una órbita incompleta y señalan once anclas físicas que puede encontrar en casa. / Hassan entiende la regla: reunirá esas anclas primero; el orden del uno al veintinueve sólo aparecerá cuando la fórmula pueda sostenerlo.
+- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes. Desde la 50, sólo el mismo matraz Erlenmeyer del inicio recibe rastros o ingredientes como luz; no crear un recipiente adicional.
 - **Verificación hacia atrás:** La página 45 (Los primeros símbolos) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 45. Los primeros símbolos
 
-- **Estado narrativo que se reconcilia:** Otro renglón revela una nube tibia. / Otro se vuelve un frasco de luz azul. / Otro es una lupa bajo una luna. / Hassan ordena sus dibujos como si armara una fórmula.
-- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes.
+- **Estado narrativo que se reconcilia:** Otro renglón revela una nube tibia y una línea que se dirige al pasillo. / Otro se vuelve un frasco de luz azul y marca el cajón de herramientas. / Otro es una lupa bajo una luna y deja una pequeña marca en la cocina. / Hassan ordena sus tarjetas por símbolo, color y habitación: la nota ya no es un misterio plano, es una ruta.
+- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes. Desde la 50, sólo el mismo matraz Erlenmeyer del inicio recibe rastros o ingredientes como luz; no crear un recipiente adicional.
 - **Verificación hacia atrás:** La página 44 (La lupa) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 44. La lupa
 
-- **Estado narrativo que se reconcilia:** La lente amplía un renglón borroso sin volverlo texto legible. / Dentro del círculo aparece un cristal transparente. / Hassan anota un dibujo de cristal en su libreta.
-- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes.
+- **Estado narrativo que se reconcilia:** La lente amplía el primer renglón sin volverlo texto legible, pero deja ver un círculo de orden y un cristal transparente. / Hassan calca el icono, su color y una flecha que apunta hacia fuera de la hoja. / En una tarjeta escribe "pista, no respuesta" y la fija al primer espacio de su tablero.
+- **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes. Desde la 50, sólo el mismo matraz Erlenmeyer del inicio recibe rastros o ingredientes como luz; no crear un recipiente adicional.
 - **Verificación hacia atrás:** La página 43 (Regreso al laboratorio) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 43. Regreso al laboratorio
 
-- **Estado narrativo que se reconcilia:** Hassan enciende una fila de lámparas blancas. / Limpia una mesa de trabajo ya impecable, por puro ritual. / Coloca la nota, el matraz y una lupa bajo la lámpara.
+- **Estado narrativo que se reconcilia:** Hassan enciende una fila de lámparas blancas y deja una sola mesa libre. / Extiende la nota, el sobre transparente, una libreta y tarjetas vacías en orden de lectura. / Coloca el matraz, la lupa y una caja de hallazgos bajo la lámpara: cada pista tendrá lugar, prueba y destino.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA NOTA FÍSICA YA EXISTE, pero el carrete, la lupa, la llave y la concha aún no. El hilo rojo sólo puede estar unido a la nota cuando el beat lo diga.
 - **Verificación hacia atrás:** La página 42 (Decisión) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 42. Decisión
 
-- **Estado narrativo que se reconcilia:** Hassan observa el laboratorio desde la puerta de la cocina. / Guarda la nota en un bolsillo interior. / Toma el matraz vacío con determinación tranquila.
+- **Estado narrativo que se reconcilia:** Hassan observa el laboratorio desde la puerta de la cocina y decide no interpretar la nota por impulso. / Guarda la nota en un sobre transparente, con el hilo rojo visible y protegido. / Toma el matraz vacío y una caja de evidencias: primero hará un mapa, luego buscará equivalentes reales.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA NOTA FÍSICA YA EXISTE, pero el carrete, la lupa, la llave y la concha aún no. El hilo rojo sólo puede estar unido a la nota cuando el beat lo diga.
 - **Verificación hacia atrás:** La página 41 (Prueba física) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 41. Prueba física
 
-- **Estado narrativo que se reconcilia:** Hassan despega con cuidado la nota del monitor. / La vuelve a mirar junto al vapor de café; los números siguen indescifrables.
+- **Estado narrativo que se reconcilia:** Hassan despega con cuidado la nota del monitor y fotografía ambos lados antes de tocar el hilo rojo. / Junto al vapor de café conserva visible el título "29 razones" y descubre que los veintinueve renglones son una sola lista continua: cada uno tiene un icono, un color y una marca de orden todavía borrosa.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. LA NOTA FÍSICA YA EXISTE, pero el carrete, la lupa, la llave y la concha aún no. El hilo rojo sólo puede estar unido a la nota cuando el beat lo diga.
 - **Verificación hacia atrás:** La página 40 (La nota junto al monitor) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
@@ -410,7 +410,7 @@ Este reporte se lee de la última página a la primera. Para cada página, el re
 
 ## 32. La nota se suelta
 
-- **Estado narrativo que se reconcilia:** Una hoja doblada se asoma de la mano de Ferry mientras corre. / El viento abre la hoja: se ven líneas numeradas, todas borrosas. / La nota cae girando hacia Hassan.
+- **Estado narrativo que se reconcilia:** Una hoja doblada con el título legible "29 razones" se asoma de la mano de Ferry mientras corre. / El viento abre la hoja: se ve el título "29 razones" y líneas numeradas continuas, pero el contenido de cada renglón sigue borroso. / La nota cae girando hacia Hassan.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura.
 - **Verificación hacia atrás:** La página 31 (Carrera de luz) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
@@ -459,14 +459,14 @@ Este reporte se lee de la última página a la primera. Para cada página, el re
 
 ## 25. Camino brillante
 
-- **Estado narrativo que se reconcilia:** Los caracoles cruzan la ramita hacia una zona segura. / Su rastro forma por un instante una curva rosa que recuerda al hilo rojo.
+- **Estado narrativo que se reconcilia:** Los dos caracoles ya están en el musgo seguro y continúan juntos, lejos del hilo de agua y del hueco del sendero. / Su rastro forma por un instante una curva rosa que recuerda al hilo rojo.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura.
 - **Verificación hacia atrás:** La página 24 (Los caracoles) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 24. Los caracoles
 
-- **Estado narrativo que se reconcilia:** Dos caracoles avanzan sobre una hoja húmeda. / Una gota de agua gigantesca amenaza con golpearlos. / Ferry coloca una ramita como techo protector.
+- **Estado narrativo que se reconcilia:** Exactamente dos caracoles avanzan sobre una hoja húmeda hacia un hueco entre dos piedras del sendero. / Ferry coloca una ramita firme como puente bajo y una hoja ancha encima para que la corriente de riego no moje ni desvíe el cruce. / Los dos caracoles cruzan la ramita uno detrás del otro; Ferry espera a un lado hasta que ambos llegan al musgo seguro.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura.
 - **Verificación hacia atrás:** La página 23 (Un hogar a escala pequeña) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
@@ -480,49 +480,49 @@ Este reporte se lee de la última página a la primera. Para cada página, el re
 
 ## 22. Paciencia
 
-- **Estado narrativo que se reconcilia:** Yohi prueba un borde de la hoja. / Ferry espera sentada, con las manos sobre las rodillas. / Hassan observa que la calma de ella colorea el sueño de oro.
+- **Estado narrativo que se reconcilia:** Yohi prueba un borde de la hoja. / Ferry espera sentada, con las manos sobre las rodillas. / Hassan observa que la calma de ella colorea el sueño de oro; Yohi sigue comiendo a su ritmo.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura.
 - **Verificación hacia atrás:** La página 21 (Paso pequeño) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 21. Paso pequeño
 
-- **Estado narrativo que se reconcilia:** Yohi avanza despacio hacia la hoja; el encuadre bajo vuelve épico su paso. / Ferry sonríe desde el fondo, sin invadir su espacio.
+- **Estado narrativo que se reconcilia:** Yohi avanza despacio hacia la hoja; el encuadre bajo vuelve épico su paso. / Ferry sonríe desde el fondo, sin invadir su espacio ni apurarla.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura.
 - **Verificación hacia atrás:** La página 20 (Yohi y la hoja fresca) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 20. Yohi y la hoja fresca
 
-- **Estado narrativo que se reconcilia:** Ferry corta una hoja verde fresca con cuidado. / Una tortuga sulcata bebé, Yohi, asoma desde un rincón cálido. / Ferry baja la hoja hasta quedar a su altura.
+- **Estado narrativo que se reconcilia:** Ferry corta una hoja verde fresca con cuidado. / Una tortuga sulcata bebé hembra, Yohi, asoma desde un rincón cálido. / Ferry baja la hoja hasta quedar a su altura.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura.
 - **Verificación hacia atrás:** La página 19 (La mano protectora) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 19. La mano protectora
 
-- **Estado narrativo que se reconcilia:** Una gota enorme cae sobre el jardín. / Ferry abre la palma y desvía la gota como una burbuja luminosa. / Zeus mira la escena seguro, sin sobresalto.
+- **Estado narrativo que se reconcilia:** Zeus frena frente a Ferry y ella abre los brazos; Hassan queda detrás, viendo que el cuidado tuvo una consecuencia clara. / Zeus llega a ella, recibe una caricia en la cabeza y se recuesta junto a sus piernas, ya tranquilo. / Ferry deja una mano protectora sobre el lomo de Zeus; él mira a Hassan seguro, sin sobresalto. No hay gota, burbuja ni otro animal.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura.
 - **Verificación hacia atrás:** La página 18 (Cuidado fuerte) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 18. Cuidado fuerte
 
-- **Estado narrativo que se reconcilia:** Ferry revisa con atención una pequeña espina vegetal junto a la pata de Zeus. / Zeus corre sano hacia ella por un campo de luz.
+- **Estado narrativo que se reconcilia:** Ferry ve que Zeus levanta una pata: una pequeña espina vegetal quedó entre sus almohadillas. Hassan se agacha a su lado mientras ella la retira con cuidado. / Zeus apoya las cuatro patas, prueba el peso sin dolor y corre sano hacia Ferry por el sendero seco; no hay agua, gota ni magia nueva.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura.
 - **Verificación hacia atrás:** La página 17 (La confianza de Zeus) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 17. La confianza de Zeus
 
-- **Estado narrativo que se reconcilia:** Zeus apoya la cabeza en el hombro de Ferry. / Ella le acaricia el lomo con ambas manos. / Un halo de escudo dorado los protege, suave y no agresivo.
+- **Estado narrativo que se reconcilia:** Zeus se acerca despacio y apoya la cabeza en el hombro de Ferry. / Ferry le rasca detrás de la oreja; Zeus relaja el peso del cuerpo y acepta el abrazo. / Hassan observa cómo Ferry revisa con la mirada el cuerpo de Zeus antes de dejarlo jugar.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura.
 - **Verificación hacia atrás:** La página 16 (Zeus aparece) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.
 
 ## 16. Zeus aparece
 
-- **Estado narrativo que se reconcilia:** Un Rottweiler grande y tranquilo sale de una sombra dorada. / Ferry se agacha a su altura sin perder elegancia. / Zeus mueve la cola al verla.
+- **Estado narrativo que se reconcilia:** Un Rottweiler adulto macho negro y fuego sale de una sombra dorada y reconoce a Ferry. / Ferry se agacha a su altura, mira el sendero y lo llama con voz suave. / Zeus mueve la cola y avanza hacia ella, seguro de que la conoce.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura.
 - **Verificación hacia atrás:** La página 15 (Un gesto de bienvenida) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.

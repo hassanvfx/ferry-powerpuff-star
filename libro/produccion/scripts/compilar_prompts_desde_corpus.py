@@ -51,8 +51,8 @@ CHARACTER_SHEET_AUTHORITY = """HOJAS DE PERSONAJE V2 — AUTORIDAD VISUAL PRIMAR
 CREATURE_IDENTITY_HEADING = "BIBLIA DE IDENTIDAD DE CRIATURAS — AUTORIDAD OBLIGATORIA"
 
 CREATURE_SPECS = {
-    "zeus": "Zeus — ROTTWEILER adulto negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico",
-    "yohi": "Yohi — TORTUGA SULCATA BEBÉ (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico",
+    "zeus": "Zeus — niño, ROTTWEILER adulto macho negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico",
+    "yohi": "Yohi — niña, TORTUGA SULCATA BEBÉ hembra (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico",
     "caracoles": "exactamente DOS CARACOLES TERRESTRES pequeños: cada uno con cuerpo húmedo gris, UNA concha espiral marrón/ámbar y cuatro tentáculos finos; nunca tortugas, babosas sin concha, insectos ni un número distinto de dos",
     "arana": "UNA ARAÑA TEJEDORA pequeña: abdomen ovalado y exactamente OCHO patas articuladas; nunca mariposa, escarabajo, insecto de seis patas ni criatura con más/menos de ocho patas",
 }
@@ -65,8 +65,8 @@ CREATURE_NEGATIVES = {
 }
 
 CREATURE_GUIDE_LABELS = {
-    "zeus": "ZEUS — ROTTWEILER negro y fuego",
-    "yohi": "YOHI — TORTUGA SULCATA bebé",
+    "zeus": "ZEUS — niño ROTTWEILER negro y fuego",
+    "yohi": "YOHI — niña TORTUGA SULCATA bebé",
     "caracoles": "DOS CARACOLES TERRESTRES",
     "arana": "UNA ARAÑA TEJEDORA — 8 PATAS",
 }
@@ -93,6 +93,8 @@ CREATURE_CELL_OVERRIDES = {
 
 TIMELINE_RULE = """BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura."""
 
+FLASK_CONTINUITY_RULE = """MATRAZ CANÓNICO ÚNICO: siempre es el mismo matraz Erlenmeyer de vidrio transparente que aparece vacío en las páginas 01–03. No dibujes un segundo frasco, vaso, poción ni recipiente mágico. Su evolución es continua: vacío con reflexión mínima al inicio; herramienta vacía de Hassan durante la investigación; desde la página 50 acepta rastros de luz; desde 51 absorbe cada ingrediente como luz, partículas y un icono visual de ese ingrediente; desde 62 conserva dentro las luces numeradas sin perderlas; la transformación final ocurre en ese mismo vidrio."""
+
 # Estados con transición dentro de una misma celda. Se añaden al arte y al plan;
 # no se dejan a la interpretación del modelo a partir de la página previa.
 CELL_STATE_LOCKS = {
@@ -110,6 +112,12 @@ CELL_STATE_LOCKS = {
 # cartelas y SFX: la portada recurrente del libro personal de Hassan.
 BOOK_COVER_CELLS = {(3, 1), (4, 1), (5, 2), (6, 4), (7, 1), (8, 1), (82, 3)}
 BOOK_COVER_TEXT = '"Volver a mí" — "Ferry Beltran"'
+RECIPE_TITLE_CELLS = {(32, 1), (32, 2), (41, 1), (41, 2), (63, 2), (64, 3), (65, 1), (65, 2)}
+RECIPE_TITLE_TEXT = '"29 razones"'
+
+# El orquestador rechaza prompts que excedan este presupuesto. La validación se
+# ejecuta antes de publicar los derivados: nunca se truncan archivos ya creados.
+MAX_PROMPT_CHARACTERS = 19_000
 
 GUIDE_README = """# Prompts de storyboard anotado — 90 páginas
 
@@ -119,8 +127,10 @@ Cada archivo es un **prompt de imagen auxiliar** para generar una lámina de sto
 
 1. Generar primero la lámina guía con la retícula y las celdas exactas que declara su archivo.
 2. Pasar la lámina guía al orquestador junto con el prompt final correspondiente; no sustituye las hojas de personaje v2.
-3. Comprobar identidad, vestuario, accesorios, lugar, hora, objeto en mano, postura, mirada, fuente de luz y eje de cámara antes de generar arte final. Si aparece un animal, comprobar además su placa `ESPECIE/RAZA`: Zeus = Rottweiler negro y fuego; Yohi = tortuga sulcata bebé; dos caracoles terrestres; una araña tejedora de ocho patas.
+3. Comprobar identidad, vestuario, accesorios, lugar, hora, objeto en mano, postura, mirada, fuente de luz y eje de cámara antes de generar arte final. Si aparece un animal, comprobar además su placa `ESPECIE/RAZA`: Zeus = niño, Rottweiler macho negro y fuego; Yohi = niña, tortuga sulcata bebé hembra; dos caracoles terrestres; una araña tejedora de ocho patas.
 4. Revisar el bloque `SALIDA` antes de aprobar: debe dejar el estado que iniciará la página siguiente.
+
+Cada prompt final y cada guía debe quedar en 19,000 caracteres o menos. Si el compilador no puede respetar ese límite, falla: nunca recortes ni pegues una versión incompleta a mano.
 
 Las hojas de personaje v2 son la autoridad visual primaria. El texto literal entre comillas dobles debe aparecer únicamente donde la guía lo declara.
 """
@@ -132,33 +142,23 @@ CELL_CAMERA_OVERRIDES = {
 # Energías de arquetipo: siempre originales. Se describen como vestuario/actitud
 # de Ferry, nunca como retrato, nombre o copia de la figura evocada.
 INGREDIENT_CAMEOS = {
-    (66, 1): "Ferry aparece al fondo como una heroína lectora original, con capa dorada-rosa y una rosa cristalina; energía de honestidad, sin parecerse a personaje existente.",
-    (66, 3): "Ferry aparece como una heroína humanitaria original de blanco y azul suave, gesto compasivo y manos abiertas; energía de empatía, no retrato de persona real.",
-    (67, 1): "Ferry aparece como investigadora pionera original, bata azul, vial luminoso y mirada curiosa; energía científica sin copiar a ninguna figura histórica.",
-    (67, 3): "Ferry aparece como detective juvenil original, falda coral, abrigo corto y lupa plateada; energía investigadora sin vestuario reconocible.",
-    (68, 1): "Ferry aparece como vigilante felina original de negro, rosa y oro, sonrisa segura y máscara abstracta no reconocible; energía de sensualidad natural.",
-    (68, 3): "Ferry aparece como estrella pop original de escenario, capa carmesí geométrica y micrófono-linterna; energía de pasión sin imitar a una cantante real.",
-    (69, 1): "Ferry aparece como guardiana de hogar original, chal rojo cálido, nido y huellas protegidas; energía maternal sin copiar personajes.",
-    (69, 3): "Ferry aparece como guerrera de verdad original, armadura blanca y oro con escudo circular abstracto; energía valiente sin iconografía de franquicia.",
-    (70, 1): "Ferry aparece como empresaria pop original, chaqueta miel, libreta de planes y engranes luminosos; energía de trabajo y emprendimiento.",
-    (70, 3): "Ferry aparece como maga de esperanza original, vestido rosa de líneas simples y estrella flotante propia; energía luminosa sin copiar una bruja conocida.",
-    (71, 1): "Ferry aparece como soñadora romántica original, vestido verde-rosa y flor en la mano; energía de inocencia curiosa, sin retrato cinematográfico.",
-    (71, 3): "Ferry aparece como princesa marina original, capa turquesa, concha dorada y cabello movido por agua gráfica; energía oceánica sin cola ni diseño reconocible.",
-    (72, 1): "Ferry aparece como guerrera resiliente original en rojo coral, raíz luminosa y postura firme; energía de perseverancia sin copiar heroínas existentes.",
-    (72, 3): "Ferry aparece como chef heroína original, delantal coral, cuchara brillante y remolino de especias; energía culinaria sin uniforme reconocible.",
-    (72, 5): "Ferry aparece como arquitecta del orden original, uniforme blanco-cian, prisma y gestos precisos; energía de armonía sin retrato de figura pública.",
-    (73, 1): "Ferry aparece como aventurera solar original, vestido lavanda-oro, campanillas y sonrisa radiante; energía de alegría sin copiar princesas.",
-    (73, 3): "Ferry aparece como escuchadora serena original, atuendo arena-azul y reloj de arena; energía paciente, paisaje minimalista de viento y agua.",
-    (73, 5): "Ferry aparece como icono de cariño original, moño coral propio y manta blanca envolvente; energía de refugio, sin rasgos de personaje conocido.",
-    (74, 1): "Ferry aparece como mensajera romántica original, capa vino-rosa y sobres perfumados; energía de amor escrito sin aludir a personajes literarios.",
-    (74, 3): "Ferry aparece como constructora de puentes familiar original, vestido bordado coral y pétalos; energía de comprensión sin copiar personajes de cine.",
-    (74, 5): "Ferry aparece como aventurera caótica original, mechón coral, chaqueta negra-rosa y chispa naranja; energía atrevida sin iconografía de antihéroes conocidos.",
-    (75, 1): "Ferry aparece como atleta campeona original, uniforme coral-oro sin logos, pose de salto y trofeo abstracto; energía de fortaleza.",
-    (75, 3): "Ferry aparece como guía de nutrición original, túnica verde-dorada, cáliz y gesto protector; energía que nutre cuerpo y esperanza.",
-    (75, 5): "Ferry aparece como estudiosa confiable original, abrigo índigo, llave dorada y libro cerrado sin símbolos reconocibles; energía de confianza.",
-    (76, 1): "Ferry aparece como viajera fiel original, anillo sobrio, abrigo marfil y mirada tranquila; energía de lealtad libre.",
-    (76, 3): "Ferry aparece como heroína cósmica original, uniforme blanco-coral, hilo rojo orbital y estrella propia; energía de conexión eterna sin copiar diseños existentes.",
-    (76, 5): "Ferry aparece como estrella pop coqueta original, moño rosa satinado, borde coral luminoso y pose segura; energía dulce y ardiente.",
+    (66, 1): "Ferry aparece como lectora de verdad original, capa coral-dorada y cristales traslúcidos; energía clara y propia, sin parecerse a personaje existente.",
+    (66, 3): "Ferry aparece como investigadora pionera original, bata azul suave y vial luminoso; energía científica, sin copiar una figura histórica.",
+    (67, 1): "Ferry aparece como detective curiosa original, falda coral, abrigo corto y lupa plateada; energía investigadora, sin vestuario reconocible.",
+    (67, 3): "Ferry aparece como figura de alegría original, detalles amarillo-coral y polvo de sonrisa flotante; energía ligera, sin imitar a una cantante real.",
+    (68, 1): "Ferry aparece como leona protectora original en coral, rojo y oro, con melena simbólica de luz; energía valiente, sin iconografía de franquicia.",
+    (68, 3): "Ferry aparece como guardiana de refugio original, chaqueta blanca, nido tibio y gesto de cuidado; energía de ternura, sin copiar personajes.",
+    (69, 1): "Ferry aparece como guerrera de coraje original, armadura blanca y oro con escudo circular abstracto; energía firme y propia.",
+    (69, 3): "Ferry aparece como maga de esperanza original, vestido rosa de líneas simples y estrella propia; energía luminosa, sin copiar una bruja conocida.",
+    (70, 1): "Ferry aparece como soñadora original, vestido verde-rosa y flor inocente en la mano; energía curiosa, sin retrato cinematográfico.",
+    (70, 3): "Ferry aparece como arquitecta del orden original, uniforme blanco-cian, prisma y gestos precisos; energía de armonía, sin retrato de figura pública.",
+    (71, 1): "Ferry aparece como aventurera solar original, vestido lavanda-oro, campanillas y sonrisa radiante; energía de alegría, sin copiar princesas.",
+    (71, 3): "Ferry aparece como escuchadora serena original, atuendo arena-azul y reloj de arena; energía paciente, paisaje minimalista de viento y agua.",
+    (72, 1): "Ferry aparece como mensajera romántica original, capa vino-rosa y sobres de luz; energía de amor escrito, sin alusiones literarias.",
+    (72, 3): "Ferry aparece como constructora de puentes original, vestido coral bordado, arco de pétalos y gesto de comprensión; energía conciliadora.",
+    (72, 5): "Ferry aparece como chispa libre original, mechón coral, chaqueta negra-rosa y destello naranja; energía atrevida, sin iconografía de antihéroes.",
+    (73, 1): "Ferry aparece como atleta campeona original, uniforme coral-oro sin logos, pose de salto y trofeo abstracto; energía de movimiento y fortaleza.",
+    (73, 3): "Ferry aparece como viajera fiel original, anillo sobrio, abrigo marfil y mirada tranquila; energía de lealtad libre.",
     (77, 1): "Ferry aparece como exploradora lunar original, vestido violeta suave, luciérnagas y mirada curiosa; energía de preguntas inesperadas.",
     (77, 4): "Ferry aparece como creadora original, overol coral con manchas abstractas de pintura y pincel rosa-dorado; no evoca a una figura externa.",
 }
@@ -178,18 +178,18 @@ TEXT_TRACKS = [
     ["SFX: «whooosh»", "GLOBO DE HASSAN: «Si estoy soñando, prefiero no despertar todavía.»"],
     ["SFX: «ta-dá»", "SFX: «aplausos lejanos»", "GLOBO DE HASSAN: «¿Qué lugar es este? Siento que ya lo conozco.»"],
     ["SFX: «tap»", "SFX: «fwoosh»", "CARTELA: «Una luz toma forma.»"],
-    ["SFX: «FWOOSH»", "SFX: «vrrr»", "GLOBO DE HASSAN: «Ferry… hasta dormido sigo pensando en ti.»", "SFX: «TÁ!»"],
-    ["CARTELA: «La chica de sus sueños.»", "GLOBO DE FERRY: «Holi, Hassan. Llegaste justo a tiempo.»", "SFX: «tinnn»"],
+    ["SFX: «FWOOSH»", "SFX: «vrrr»", "GLOBO DE HASSAN: «Amorcito… ¿eres tú?»", "SFX: «TÁ!»"],
+    ["CARTELA: «La chica de sus sueños.»", "GLOBO DE FERRY: «Holi, Amorcito. Llegaste justo a tiempo.»", "SFX: «tinnn»"],
     ["GLOBO DE FERRY: «Ven, te enseño el lugar donde cuido lo que amo.»", "GLOBO DE HASSAN: «Voy contigo. No sé a dónde, pero voy.»"],
-    ["GLOBO DE FERRY: «Zeus.»", "GLOBO DE FERRY: «Todo bien, mi Pakito. Estoy aquí contigo.»", "SFX: «wuf»"],
-    ["SFX: «thump»", "GLOBO DE FERRY: «Buen chico. Ya sabía que podías confiar en mí.»", "SFX: «tinnn»"],
-    ["GLOBO DE FERRY: «Déjame ver. No quiero que te duela ni un poquito.»", "SFX: «zap»"],
-    ["SFX: «plop»", "GLOBO DE FERRY: «Aquí estás. No te me escondas solito.»", "SFX: «fiuu»"],
-    ["GLOBO DE FERRY: «Buenos días, Yohi. ¿Listo para tu hoja favorita?»", "SFX: «crisp»", "SILENCIO"],
-    ["SFX: «toc… toc…»", "GLOBO DE FERRY: «Sin prisa. Tú marcas el paso.»"],
-    ["SFX: «ñam»", "GLOBO DE FERRY: «Todo a tu tiempo. Aquí nadie tiene que correr.»", "GLOBO DE HASSAN: «Tienes una paciencia que yo todavía estoy aprendiendo a tener.»"],
+    ["GLOBO DE FERRY: «Zeus.»", "GLOBO DE FERRY: «Ven, mi Pakito. Estoy aquí.»", "SFX: «wuf»"],
+    ["SFX: «thump»", "GLOBO DE FERRY: «Ven, mi bebé. Quédate cerquita.»", "GLOBO DE HASSAN: «Primero lo calma; luego se fija si algo le duele.»"],
+    ["GLOBO DE FERRY: «A ver, mi bebé precioso, ¿qué te pasó? Yo te curo.»", "GLOBO DE FERRY: «Listo, Pakito. Prueba tu patita conmigo.»"],
+    ["GLOBO DE HASSAN: «No fue suerte. Ella vio el problema antes de que él pudiera explicarlo.»", "GLOBO DE FERRY: «Ya estás bien, mi Pakito. Ven a descansar.»", "GLOBO DE HASSAN: «Por eso Zeus confía: contigo el cuidado sí llega a algún lado.»"],
+    ["GLOBO DE FERRY: «Buenos días, Yohi. ¿Lista para tu hoja favorita?»", "SFX: «crisp»", "SILENCIO"],
+    ["SFX: «toc… toc…»", "GLOBO DE FERRY: «Sin prisa, amorcita. A tu ritmo.»"],
+    ["SFX: «ñam»", "GLOBO DE FERRY: «No te presiones, bebita. Aquí nadie te anda correteando.»", "GLOBO DE HASSAN: «Tienes una paciencia que yo todavía estoy aprendiendo a tener.»"],
     ["GLOBO DE FERRY: «Tu casa está lista. Ven, mira lo que hice.»", "SFX: «tinnn»"],
-    ["SFX: «slip»", "GLOBO DE FERRY: «Cuidado. Vamos a cruzar sin lastimarnos.»", "SFX: «tap»"],
+    ["GLOBO DE FERRY: «Por aquí no se mojan y por aquí no se lastiman.»", "SFX: «tap»", "SFX: «tap»"],
     ["SFX: «slip… slip…»", "CARTELA: «Un camino seguro.»"],
     ["SFX: «frrr»", "GLOBO DE FERRY: «Ey, tranqui. Ya pasó. Estoy contigo.»", "SFX: «tinnn»"],
     ["SFX: «tac tac»", "GLOBO DE HASSAN: «Tú sí te fijas en todo, hasta en lo que nadie ve.»"],
@@ -197,53 +197,53 @@ TEXT_TRACKS = [
     ["GLOBO DE FERRY: «Hassan.»", "GLOBO DE FERRY: «Qué bueno que llegaste hasta aquí.»", "GLOBO DE HASSAN: «No quiero despertar. Aquí todo se siente demasiado real.»"],
     ["SFX: «tinnn»", "GLOBO DE FERRY: «Ven, sígueme. Te falta ver una cosa.»"],
     ["SFX: «fwoosh»", "GLOBO DE HASSAN: «¡Ferry, espera! Quiero preguntarte algo.»", "SFX: «tinnn»"],
-    ["SFX: «flap»", "CARTELA: «Una lista imposible.»", "SFX: «fiuu»"],
+    ["SFX: «flap»", "CARTELA: «29 razones.»", "SFX: «fiuu»"],
     ["SFX: «whoop»", "SFX: «tap»"],
-    ["GLOBO DE HASSAN: «No entiendo la lista, pero siento que importa.»", "CARTELA: «Cristal. Nube. Estrella.»", "GLOBO DE HASSAN: «No sé qué es esto, pero voy a buscarlo.»"],
+    ["GLOBO DE HASSAN: «No entiendo la lista, pero creo que hay algo mágico…»", "CARTELA: «Cristal. Nube. Estrella.»", "SILENCIO"],
     ["CARTELA: «Y el sueño se cerró.»", "SFX: «shhh…»"],
     ["SFX: «gasp»", "GLOBO DE HASSAN: «Fue un sueño, pero no se me va de la cabeza.»", "SFX: «tinnn»"],
-    ["SFX: «clic»", "GLOBO DE HASSAN: «¿Qué es esto? ¿Por qué me da tanta mala espina?»"],
+    ["SFX: «clic»", "GLOBO DE HASSAN: «¡Vamos, sin miedo a nada!»"],
     ["SFX: «tap»", "SFX: «tac»", "CARTELA: «La mañana ya no es igual.»"],
     ["SFX: «grrr»", "SFX: «blup»", "SFX: «pssshh»"],
     ["GLOBO DE HASSAN: «Eso rojo no estaba aquí ayer.»", "SFX: «tinnn»", "GLOBO DE HASSAN: «La nota… entonces no lo imaginé.»"],
-    ["SFX: «peel»", "GLOBO DE HASSAN: «Es real. Todavía no sé cómo explicarlo.»"],
-    ["GLOBO DE HASSAN: «Antes de hacerme historias, voy a revisarlo bien.»", "SFX: «tap»", "GLOBO DE HASSAN: «Voy al laboratorio. Ahí por lo menos puedo empezar.»"],
-    ["GLOBO DE HASSAN: «Necesito ver esto con calma y sin inventar nada.»", "SFX: «swish»", "CARTELA: «Una pregunta merece método.»"],
-    ["SFX: «zoom»", "CARTELA: «Sinceridad.»", "GLOBO DE HASSAN: «Primero: sinceridad. A ver qué me pide esta nota.»"],
-    ["CARTELA: «Empatía.»", "CARTELA: «Inteligencia.»", "CARTELA: «Curiosidad.»", "GLOBO DE HASSAN: «¿Una receta de Ferry? Esto tiene que querer decir algo.»"],
-    ["SFX: «fwoom»", "CARTELA: «No son palabras. Son pistas.»", "GLOBO DE HASSAN: «No son palabras al azar. Me están dejando pistas.»"],
-    ["GLOBO DE HASSAN: «Cocina, sala, patio. Voy a revisar todo.»", "SFX: «tinnn»"],
-    ["SFX: «clac»", "GLOBO DE HASSAN: «Empiezo por aquí. Algo de esto tiene que tener sentido.»", "SFX: «fiuu»"],
-    ["SFX: «crash»", "GLOBO DE HASSAN: «No, no, no… bueno. Tal vez sí sirve.»", "SFX: «fwoom»"],
-    ["GLOBO DE HASSAN: «Ya empecé. Ahora quiero saber a dónde lleva esto.»", "SFX: «tinnn»"],
-    ["CARTELA: «Talento que da calor.»", "SFX: «fwoom»", "GLOBO DE HASSAN: «Canela. Contigo hasta lo simple se siente especial.»"],
-    ["SFX: «rustle»", "GLOBO DE HASSAN: «Vainilla. Suave, pero de las que se quedan.»", "SFX: «tinnn»"],
-    ["SFX: «tinnn»", "GLOBO DE HASSAN: «Una cuchara. No parece importante, pero aquí está.»"],
-    ["SFX: «scrape»", "GLOBO DE HASSAN: «¿Una moneda? Todo esto está más raro de lo que pensé.»", "SFX: «vrrr»"],
-    ["GLOBO DE HASSAN: «Trabajo y paciencia. Así se hacen las cosas, supongo.»", "SFX: «clic clic»"],
-    ["SFX: «fiuu»", "GLOBO DE HASSAN: «El hilo otra vez. Esto ya no puede ser coincidencia.»", "SFX: «tinnn»"],
-    ["GLOBO DE HASSAN: «Una concha. ¿Por qué siento que ya la conozco?»", "SFX: «swish»", "CARTELA: «Una gota de horizonte.»"],
-    ["SFX: «scrape»", "GLOBO DE HASSAN: «Resistir y volver a crecer. Eso sí te lo admiro.»", "SFX: «crack»"],
-    ["GLOBO DE HASSAN: «Cariño que abriga. Sí, esa parte es muy tuya.»", "SFX: «poof»"],
-    ["SFX: «clink»", "GLOBO DE HASSAN: «Confianza. Esa sí cuesta ganársela.»", "SFX: «tinnn»"],
-    ["SFX: «poof»", "GLOBO DE HASSAN: «Tranquila, nube. No tengo que entenderte hoy.»", "SFX: «pop»"],
-    ["SFX: «clink»", "SFX: «fiuu»", "GLOBO DE HASSAN: «Casi está todo. Sólo falta saber qué significa.»"],
-    ["GLOBO DE HASSAN: «Todo tiene un lugar. Esta nota también.»", "SFX: «tinnn»", "CARTELA: «La fórmula empieza a mirar de vuelta.»"],
-    ["GLOBO DE HASSAN: «No es una mezcla cualquiera. Algo está por pasar.»", "SFX: «beeeep»", "SFX: «tinnn»"],
-    ["GLOBO DE HASSAN: «Faltan cosas. Seguro las últimas son las importantes.»", "SFX: «fwoom»"],
-    ["GLOBO DE HASSAN: «1. Cristales de sinceridad.»", "GLOBO DE HASSAN: «No esconder lo que siento. Esa parte me cuesta.»", "GLOBO DE HASSAN: «2. Nube tibia de empatía.»", "SFX: «fwoom»"],
-    ["GLOBO DE HASSAN: «3. Frasco de luz científica.»", "GLOBO DE HASSAN: «Entender para cuidar. Contigo todo se ve más claro.»", "GLOBO DE HASSAN: «4. Lupa de luna curiosa.»", "SFX: «fwoom»"],
-    ["GLOBO DE HASSAN: «5. Polvo de sonrisa encantada.»", "GLOBO DE HASSAN: «Cuando sonríes, se me cambia el día.»", "GLOBO DE HASSAN: «6. Llama de leona roja.»", "SFX: «fwoosh»"],
-    ["GLOBO DE HASSAN: «7. Nido de ternura.»", "GLOBO DE HASSAN: «Siempre estás pendiente de todos. Eso no se te quita.»", "GLOBO DE HASSAN: «8. Escudo de oro valiente.»", "SFX: «clang»"],
-    ["GLOBO DE HASSAN: «9. Monedas de miel y engranes.»", "GLOBO DE HASSAN: «Con cuidado. No quiero echar a perder nada.»", "GLOBO DE HASSAN: «10. Estrella de esperanza infinita.»", "SFX: «tinnn»"],
-    ["GLOBO DE HASSAN: «11. Flor de inocencia.»", "GLOBO DE HASSAN: «A veces una cosa pequeña cambia todo.»", "GLOBO DE HASSAN: «12. Concha dorada del mar.»", "SFX: «swish»"],
-    ["GLOBO DE HASSAN: «13. Raíz de perseverancia.»", "GLOBO DE HASSAN: «Sigues aunque estés cansada. Eso admiro de ti.»", "GLOBO DE HASSAN: «14. Cuchara de canela y vainilla.»", "GLOBO DE HASSAN: «Tu talento hace que hasta lo diario se sienta bonito.»", "GLOBO DE HASSAN: «15. Cristal de orden.»", "SFX: «tinnn»"],
-    ["GLOBO DE HASSAN: «16. Campanillas de sol.»", "GLOBO DE HASSAN: «Cuando llegas contenta, se me contagia la alegría.»", "GLOBO DE HASSAN: «17. Reloj de arena sereno.»", "GLOBO DE HASSAN: «Esperar sin presionar también es querer.»", "GLOBO DE HASSAN: «18. Manta de algodón de cariño.»", "SFX: «poof»"],
-    ["GLOBO DE HASSAN: «19. Sobres perfumados de amor.»", "GLOBO DE HASSAN: «Tus mensajes hacen que te sienta más cerca.»", "GLOBO DE HASSAN: «20. Puente de pétalos.»", "GLOBO DE HASSAN: «Hablar contigo aclara muchas cosas.»", "GLOBO DE HASSAN: «21. Chispa salvaje.»", "SFX: «zap»"],
-    ["GLOBO DE HASSAN: «22. Trofeo de cuerpo en movimiento.»", "GLOBO DE HASSAN: «Tu fuerza se nota, aunque no hagas ruido.»", "GLOBO DE HASSAN: «23. Cáliz de nutrición sagrada.»", "GLOBO DE HASSAN: «Cuidar a alguien todos los días también es amor.»", "GLOBO DE HASSAN: «24. Llave de confianza.»", "SFX: «clic»"],
-    ["GLOBO DE HASSAN: «25. Anillo de fidelidad.»", "GLOBO DE HASSAN: «Quedarse porque quieres, no porque tienes que hacerlo.»", "GLOBO DE HASSAN: «26. Hilo rojo del destino.»", "GLOBO DE HASSAN: «Este hilo siempre termina llevándome a ti.»", "GLOBO DE HASSAN: «27. Moño rosa con fuego.»", "SFX: «fwoom»"],
-    ["GLOBO DE HASSAN: «28. Luciérnagas de madrugada.»", "GLOBO DE HASSAN: «Siempre estás preguntando cosas. Por eso contigo nunca me aburro.»", "SFX: «tinnn»", "GLOBO DE HASSAN: «29. Pincel de creatividad infinita.»", "SFX: «shraaa»"],
-    ["CARTELA: «Veintinueve razones.»", "GLOBO DE HASSAN: «Todas hablan de ti. Ninguna te pide que seas otra persona.»", "GLOBO DE HASSAN: «Quiero que estés porque quieres estar, no por esta fórmula.»", "SFX: «fwoom»"],
+    ["SFX: «peel»", "GLOBO DE HASSAN: «Es real. Veintinueve renglones continuos y cada uno apunta a algo.»"],
+    ["GLOBO DE HASSAN: «No voy a inventarle un significado. Primero la ordeno.»", "SFX: «tap»", "GLOBO DE HASSAN: «Mapa, evidencia y matraz. Luego veo qué me está pidiendo.»"],
+    ["GLOBO DE HASSAN: «Una pista por tarjeta. Si se repite, la sigo; si no, se queda fuera.»", "SFX: «swish»", "CARTELA: «Una pregunta merece método.»"],
+    ["SFX: «zoom»", "GLOBO DE HASSAN: «No puedo leerlo, pero sí puedo registrar forma, color y dirección.»", "GLOBO DE HASSAN: «Esto no me da una respuesta. Me da el primer punto de partida.»"],
+    ["GLOBO DE HASSAN: «Nube, frasco, luna… y cada uno marca un lugar distinto.»", "SFX: «tap»", "GLOBO DE HASSAN: «Si los separo por habitación, la nota deja de ser puro ruido.»", "GLOBO DE HASSAN: «Va. Ya tengo una ruta.»"],
+    ["SFX: «fwoom»", "CARTELA: «No son palabras. Son pistas.»", "GLOBO DE HASSAN: «Primero anclas reales; el orden completo tendrá que aparecer después.»"],
+    ["GLOBO DE HASSAN: «Cocina, sala, patio, recámara. Once marcas para empezar.»", "SFX: «tinnn»"],
+    ["SFX: «clac»", "GLOBO DE HASSAN: «Caja con compartimentos, mapa a la vista. Ahora sí sé qué estoy buscando.»", "SFX: «fiuu»"],
+    ["SFX: «crash»", "GLOBO DE HASSAN: «Canela sobre el símbolo ámbar… ok, eso sí es una coincidencia demasiado exacta.»", "SFX: «fwoom»"],
+    ["GLOBO DE HASSAN: «Usaré mi matraz de fusión emocional… wow, lo aceptó.»", "SFX: «tinnn»"],
+    ["GLOBO DE HASSAN: «1. Canela.»", "SFX: «fwoom»", "GLOBO DE HASSAN: «Ferry, contigo hasta lo simple se hace con intención.»"],
+    ["GLOBO DE HASSAN: «2. Vainilla.»", "SFX: «rustle»", "GLOBO DE HASSAN: «Ferry, suave, pero de las cosas que se quedan.»"],
+    ["GLOBO DE HASSAN: «3. Cuchara de cocina.»", "GLOBO DE HASSAN: «Ferry, hasta un gesto diario puede sentirse especial cuando le pones cuidado.»"],
+    ["GLOBO DE HASSAN: «4. Moneda de miel.»", "SFX: «scrape»", "GLOBO DE HASSAN: «Ferry, haces que el trabajo tenga sentido y no sólo prisa.»"],
+    ["GLOBO DE HASSAN: «5. Engranes pequeños.»", "GLOBO DE HASSAN: «Ferry, sabes avanzar sin querer controlarlo todo.»"],
+    ["GLOBO DE HASSAN: «6. Carrete de hilo rojo.»", "GLOBO DE HASSAN: «Ferry, este hilo me lleva a ti, pero nunca te amarra. Así debe ser.»", "SFX: «tinnn»"],
+    ["GLOBO DE HASSAN: «7. Concha dorada.»", "GLOBO DE HASSAN: «Ferry, el mar contigo no es escape; es una manera de volver a respirar.»", "CARTELA: «Una gota de horizonte.»"],
+    ["GLOBO DE HASSAN: «8. Raíz firme.»", "GLOBO DE HASSAN: «Ferry, mover la piedra sin romper la maceta: esa fuerza paciente sí me recuerda a ti.»", "SFX: «crack»"],
+    ["GLOBO DE HASSAN: «9. Manta de algodón.»", "GLOBO DE HASSAN: «Ferry, contigo el cariño no ahoga; nomás abriga.»"],
+    ["GLOBO DE HASSAN: «10. Llave sencilla.»", "GLOBO DE HASSAN: «Ferry, la confianza se construye y se cuida, como esta llave.»", "SFX: «tinnn»"],
+    ["GLOBO DE HASSAN: «11. Nube tibia.»", "GLOBO DE HASSAN: «Ferry, sabes quedarte cerca sin preguntar de más.»", "SFX: «pop»"],
+    ["SFX: «clink»", "SFX: «fiuu»", "GLOBO DE HASSAN: «Once luces, once recuerdos. El mismo matraz las está guardando.»"],
+    ["GLOBO DE HASSAN: «La nota no escondía más objetos: abre del doce al veintinueve dentro del matraz.»", "SFX: «tinnn»", "CARTELA: «La fórmula empieza a mirar de vuelta.»"],
+    ["GLOBO DE HASSAN: «El doce se encendió. No voy a adelantarlo.»", "SFX: «beeeep»", "SFX: «tinnn»"],
+    ["GLOBO DE HASSAN: «Ahora sigo del doce al veintinueve, sin saltarme lo que cada uno significa.»", "SFX: «fwoom»"],
+    ["GLOBO DE HASSAN: «12. Cristales de sinceridad.»", "GLOBO DE HASSAN: «Ferry, contigo aprendí que la verdad también se dice con cuidado.»", "GLOBO DE HASSAN: «13. Frasco de luz científica.»", "GLOBO DE HASSAN: «Ferry, quieres entender primero para poder cuidar mejor.»"],
+    ["GLOBO DE HASSAN: «14. Lupa de luna curiosa.»", "GLOBO DE HASSAN: «Ferry, siempre encuentras una pregunta que a mí no se me había ocurrido.»", "GLOBO DE HASSAN: «15. Polvo de sonrisa encantada.»", "GLOBO DE HASSAN: «Cuando sonríes, Ferry, hasta el día pesado se afloja poquito.»"],
+    ["GLOBO DE HASSAN: «16. Llama de leona roja.»", "GLOBO DE HASSAN: «Ferry, tu fuerza no hace ruido; aparece cuando alguien necesita respaldo.»", "GLOBO DE HASSAN: «17. Nido de ternura.»", "GLOBO DE HASSAN: «Ferry, siempre haces lugar para que alguien se sienta a salvo.»"],
+    ["GLOBO DE HASSAN: «18. Escudo de oro valiente.»", "GLOBO DE HASSAN: «Ferry, proteges sin encerrar. Eso es lo que más admiro de ti.»", "GLOBO DE HASSAN: «19. Estrella de esperanza infinita.»", "GLOBO DE HASSAN: «Ferry, cuando algo se complica todavía encuentras por dónde seguir.»"],
+    ["GLOBO DE HASSAN: «20. Flor de inocencia.»", "GLOBO DE HASSAN: «Ferry, me recuerdas que una cosa pequeña puede cambiar todo el día.»", "GLOBO DE HASSAN: «21. Prisma de orden.»", "GLOBO DE HASSAN: «Ferry, ordenas sin apagar el desorden bonito que te hace tú.»"],
+    ["GLOBO DE HASSAN: «22. Campanillas de sol.»", "GLOBO DE HASSAN: «Cuando llegas contenta, Ferry, se me contagia la alegría.»", "GLOBO DE HASSAN: «23. Reloj de arena sereno.»", "GLOBO DE HASSAN: «Ferry, esperar sin presionar también es querer. Tú me lo enseñaste.»"],
+    ["GLOBO DE HASSAN: «24. Sobres perfumados de amor.»", "GLOBO DE HASSAN: «Tus mensajes hacen que te sienta cerca, Ferry, aunque no estés aquí.»", "GLOBO DE HASSAN: «25. Puente de pétalos.»", "GLOBO DE HASSAN: «Ferry, hablar contigo aclara cosas; no las barre debajo del tapete.»", "GLOBO DE HASSAN: «26. Chispa salvaje.»", "GLOBO DE HASSAN: «Ferry, luego sales con una idea que me cambia todo el plan.»"],
+    ["GLOBO DE HASSAN: «27. Trofeo de cuerpo en movimiento.»", "GLOBO DE HASSAN: «Tu fuerza se nota aunque no la presumas, Ferry.»", "GLOBO DE HASSAN: «28. Anillo de fidelidad.»", "GLOBO DE HASSAN: «Quedarse porque quieres, Ferry; no porque tienes que hacerlo.»", "GLOBO DE HASSAN: «Falta una razón. Y el matraz ya me dijo dónde está.»", "GLOBO DE HASSAN: «El último círculo apunta al pincel.»"],
+    ["GLOBO DE HASSAN: «Las veintiocho luces no se mezclan: se hacen espacio para la que falta.»", "GLOBO DE HASSAN: «La última pista está en mi repisa. Voy a verla antes de tocarla.»", "SFX: «tinnn»", "GLOBO DE HASSAN: «Un pincel. No es para copiarte, Ferry; es para crear algo que hable de ti.»", "GLOBO DE HASSAN: «Todavía no lo agrego. Primero quiero entender lo que significa.»", "SFX: «fiuu»"],
+    ["GLOBO DE HASSAN: «El pincel dibuja la misma espiral del sueño.»", "GLOBO DE HASSAN: «Ferry, crear y cuidar te salen del mismo lugar.»", "GLOBO DE HASSAN: «No tengo que forzarlo. Sólo acercarlo cuando esté listo.»", "SFX: «tinnn»", "GLOBO DE HASSAN: «El círculo veintinueve tiene el tamaño exacto de su punta.»", "GLOBO DE HASSAN: «Ya entendí qué falta.»"],
+    ["GLOBO DE HASSAN: «El hilo une las veintiocho luces sin borrar ninguna.»", "GLOBO DE HASSAN: «Así se siente conocerte, Ferry: cerca, pero siempre libre.»", "GLOBO DE HASSAN: «La espiral ya parece estrella. Sólo falta nombrarla.»", "GLOBO DE HASSAN: «No es una orden. Es mi elección completar esto con cuidado.»", "GLOBO DE HASSAN: «29 razones.»", "GLOBO DE HASSAN: «Y la última es que conviertes cualquier cosa en una idea nueva.»"],
+    ["GLOBO DE HASSAN: «Las luciérnagas llegaron al pincel. Ya sé por qué era el último.»", "GLOBO DE HASSAN: «Ferry, tu curiosidad siempre abre una puerta que no estaba antes.»", "SFX: «tinnn»", "GLOBO DE HASSAN: «29. Pincel de creatividad infinita.»", "GLOBO DE HASSAN: «Ferry, conviertes cualquier cosa en una idea nueva. Por eso esta estrella se parece a ti.»"],
+    ["CARTELA: «Veintinueve razones.»", "GLOBO DE HASSAN: «Todas hablan de ti. Ninguna te pide que seas otra persona.»", "GLOBO DE HASSAN: «Quiero que estés porque me amas, no por este hechizo.»", "SFX: «fwoom»"],
     ["SFX: «clic»", "CARTELA: «La receta ya no necesita palabras.»", "SFX: «fiuu»", "GLOBO DE HASSAN: «Ahora sí. Voy a hacerlo bien y con cuidado.»"],
     ["SFX: «KRAK»", "GLOBO DE HASSAN: «Si algo va a pasar, ya están listas las piezas.»", "SFX: «FWOOM»"],
     ["SFX: «vrrr»", "SFX: «tinnn»", "GLOBO DE HASSAN: «Está funcionando… y no sé si eso me da gusto o miedo.»", "SFX: «shraaa»"],
@@ -252,8 +252,8 @@ TEXT_TRACKS = [
     ["SFX: «tinnn»", "SFX: «FWOOM»", "CARTELA: «Una estrella aprende a nacer.»"],
     ["GLOBO DE HASSAN: «Ferry… te vi en sueños. Y ahora estás aquí.»", "CARTELA: «Todas sus luces estaban ahí.»"],
     ["SFX: «shraaa»", "SFX: «tinnn»", "GLOBO DE HASSAN: «No te inventé. Sólo te estaba buscando.»"],
-    ["SFX: «tap»", "GLOBO DE FERRY: «Llegué. ¿Ves? Nunca estuve tan lejos.»", "SILENCIO"],
-    ["GLOBO DE FERRY: «¿Nos vamos?»", "GLOBO DE FERRY: «Al mar, obvio. Quiero enseñarte algo.»", "GLOBO DE HASSAN: «Juntos. Sin prisa y sin complicarnos la vida.»"],
+    ["SFX: «tap»", "GLOBO DE FERRY: «Siempre estuve aquí. ¿Ves? Nunca estuve tan lejos.»", "SILENCIO"],
+    ["GLOBO DE FERRY: «Sólo tenías que volver a mí.»", "GLOBO DE FERRY: «Al mar, obvio. Quiero enseñarte algo.»", "GLOBO DE HASSAN: «Juntos. Sin prisa y sin complicarnos la vida.»"],
     ["SFX: «swish»", "SFX: «clic»", "SFX: «clac»", "SFX: «vrrum»", "CARTELA: «Hacia la costa.»"],
     ["SFX: «shhh»", "GLOBO DE HASSAN: «La concha… entonces el mar también era parte de esto.»", "CARTELA: «10 de septiembre 2026 -Happy Bday my Love.»"],
 ]
@@ -333,15 +333,15 @@ def page_state_lock(page: int) -> str:
         )
     elif 44 <= page <= 55:
         rules.append(
-            "LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes."
+            "LA LUPA YA ES HERRAMIENTA DE HASSAN. El carrete rojo no existe hasta la página 56 y la concha no existe hasta la página 57; no los adelantes. Desde la 50, sólo el mismo matraz Erlenmeyer del inicio recibe rastros o ingredientes como luz; no crear un recipiente adicional."
         )
     elif 56 <= page <= 63:
         rules.append(
-            "EL CARRETE Y LA CONCHA existen sólo después de sus beats de hallazgo. El matraz sigue vacío: no añadas líquido, vapor mágico ni una estrella física."
+            "EL CARRETE Y LA CONCHA existen sólo después de sus beats de hallazgo. El mismo matraz del inicio absorbe los ingredientes 1–11 como luz, partículas e iconos separados; no añadas un segundo recipiente, líquido ordinario ni una estrella física."
         )
     elif 64 <= page <= 65:
         rules.append(
-            "EL MATRAZ SIGUE VACÍO. Sólo la chispa de fondo declarada en la página 64 puede aparecer; el primer líquido nace en la página 66."
+            "EL MISMO MATRAZ contiene las once luces ya absorbidas, separadas y numeradas. Sólo la chispa de fondo declarada en la página 64 puede conectarlas; el ingrediente 12 se revela después, no existe una estrella física completa."
         )
     elif 66 <= page <= 83:
         rules.append(
@@ -625,19 +625,23 @@ def gaze_blueprint(action: str, index: int, panels: int) -> str:
 
 
 def continuity_dimensions(cell: dict[str, str], context: dict[str, str], panels: int) -> str:
-    """State every continuity dimension that a storyboard cell must carry forward."""
+    """State every continuity dimension without repeating the page bible per cell."""
     index = int(cell["cell"])
+    action = cell["action"].lower()
+    ids = "/".join(
+        code for name, code in (("hassan", "H"), ("ferry", "F"), ("zeus", "Z"), ("yohi", "Y"))
+        if name in action
+    ) or "ELENCO"
     handoff = (
-        "prepara el estado que recoge la siguiente página"
+        "salida a página siguiente"
         if index == panels
-        else "conserva el estado visible para la siguiente celda de esta página"
+        else f"continúa a C{index + 1}"
     )
     return (
-        f"ID: {context['cast']}; "
-        f"VEST: {context['wardrobe']}; "
+        f"ID: {ids} (según leyenda de página); "
+        "VEST: base de página, sólo cambios declarados; "
         f"ESPECIE/RAZA: {cell['creature_lock']}; "
-        f"ESP/TIEMPO: {context['location']}, {context['time']}; "
-        f"CÁMARA/ESPACIO: {cell['camera']}, {cell['placement']}; "
+        f"ESP/T: continuo; CAM: {cell['camera']}; "
         f"CUERPO/MIRADA: {pose_blueprint(cell['action'])}; {gaze_blueprint(cell['action'], index, panels)}; "
         f"PROP/ESTADO: {cell['state_lock'] or 'sin prop nuevo fuera de la acción declarada'}; "
         f"RELEVO: {handoff}."
@@ -654,17 +658,17 @@ def guide_for(page: dict[str, object], layout: str, cells: list[dict[str, str]],
         cell_sections.append(
             f"### Celda {cell['cell']} — {cell['placement']}\n"
             f"- Función en lectura: {composition_role(int(cell['cell']), page['panels'])}.\n"
-            f"- Entorno y hora: {context['location']}; {context['time']}.\n"
-            f"- Personajes y vestuario: {context['cast']}. {context['wardrobe']}.\n"
+            "- Entorno y hora: continuidad del estado global de página; sólo cambia lo declarado en acción.\n"
+            "- Personajes y vestuario: usar clave ID/VEST global; no introducir personajes ni accesorios extra.\n"
             f"- Cámara/composición: {cell['camera']}; posición en retícula: {cell['placement']}.\n"
-            f"- Anotaciones gráficas obligatorias: esquina con código C{cell['cell']}; rectángulo de encuadre, línea de horizonte, flecha de cámara, flecha de mirada, flecha de luz, línea de acción y círculo rojo alrededor de la utilería crítica.\n"
+            f"- Marcas: C{cell['cell']}, cámara, mirada, luz, línea de acción, horizonte, prop rojo y silueta vacía de lettering.\n"
             f"- Especie/raza bloqueada: {cell['creature_lock']}\n"
             f"- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): {continuity_dimensions(cell, context, page['panels'])}\n"
             f"- Acción y utilería exacta: {cell['action']}\n"
             f"- Pose y apoyo corporal: {pose_blueprint(cell['action'])}.\n"
             f"- Mirada/eje de atención: {gaze_blueprint(cell['action'], int(cell['cell']), page['panels'])}.\n"
             f"- Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): {guide_text(cell)}\n"
-            f"- Marcador visual de lettering: dibuja sólo la silueta vacía y ubicación de {cell['lettering_placement']}; usa un código corto de celda, nunca el diálogo literal.\n"
+            f"- Lettering: silueta vacía en {cell['lettering_placement']}; sólo código corto, nunca diálogo literal.\n"
             f"- Estado que debe respetarse: {cell['state_lock'] or 'Mantener el estado canónico de página; no introducir utilería nueva.'}\n"
         )
     return (
@@ -795,7 +799,11 @@ def cells_for(page: dict[str, object]) -> tuple[str, list[dict[str, str]]]:
                 "lettering_type": lettering_type,
                 "lettering_placement": lettering_placement,
                 "printed_text": printed_text,
-                "permitted_diegetic_text": BOOK_COVER_TEXT if (number, index) in BOOK_COVER_CELLS else "",
+                "permitted_diegetic_text": (
+                    BOOK_COVER_TEXT if (number, index) in BOOK_COVER_CELLS
+                    else RECIPE_TITLE_TEXT if (number, index) in RECIPE_TITLE_CELLS
+                    else ""
+                ),
             }
         )
     return layout, cells
@@ -817,7 +825,7 @@ def prompt_for(page: dict[str, object], layout: str, cells: list[dict[str, str]]
     return f"""Create one original vertical 6x9 comic-book page in a 2:3 aspect ratio.
 Use exactly {panels} distinct comic panels separated by clean, consistent gutters; do not make a collage or a poster.
 Exact page reticle: {layout}. Read from upper left to lower right.
-The only letters permitted in the art are the phrases after “Texto impreso exacto:” plus, only where declared, the exact cover text after “Texto diegético permitido:”. Render each permitted phrase character for character, including accents and punctuation, using the double quotes shown. “CELDA”, “Tipo de lettering”, “Posición de lettering”, “Texto diegético permitido” and every other label are production instructions only: never render those labels in the image. Place the lettering exactly as specified per cell. If “Texto impreso exacto” says SILENCIO, draw no bubble and no letters in that cell, except a cover text explicitly declared for that cell. Do not add, alter, translate or invent any other text, number, logo or watermark. The recipe note, when present, must show only deliberately illegible numbered-looking strokes.
+The only letters permitted in the art are the phrases after “Texto impreso exacto:” plus, only where declared, the exact cover text after “Texto diegético permitido:”. Render each permitted phrase character for character, including accents and punctuation, using the double quotes shown. “CELDA”, “Tipo de lettering”, “Posición de lettering”, “Texto diegético permitido” and every other label are production instructions only: never render those labels in the image. Place the lettering exactly as specified per cell. If “Texto impreso exacto” says SILENCIO, draw no bubble and no letters in that cell, except a cover text explicitly declared for that cell. Do not add, alter, translate or invent any other text, number, logo or watermark. The recipe note, when present, may show only its explicitly declared heading plus deliberately illegible numbered-looking strokes; never invent readable ingredient names on the note.
 {TREATMENT_BASE}
 {continuity_reference_manifest(number)}
 Hassan is a gentle, meticulous adult scientist; Ferry is an original adult pop heroine, warm, athletic and protective. Ferry is never created, owned or controlled by Hassan. Follow their attached approved v2 character sheets as the primary visual authority; use this page only for story-specific action, temporal props and scene wardrobe.
@@ -832,6 +840,7 @@ Cool white, steel and blue-gray laboratory reality; dream and magic in warm pink
 {continuity['instruction']}
 
 {page_state_lock(number)}
+{FLASK_CONTINUITY_RULE}
 
 Page {number:02d} — {title}
 {scene}
@@ -970,10 +979,15 @@ def main() -> None:
             continuity["approved_page_id"] = preceding
             continuity["approved_art"] = f"arte-aprobado/{preceding}.png"
         prompt = prompt_for(page, layout, cells, continuity)
+        guide = guide_for(page, layout, cells, pages)
+        for kind, content in (("prompt final", prompt), ("guía", guide)):
+            if len(content) > MAX_PROMPT_CHARACTERS:
+                raise ValueError(
+                    f"Página {number:02d}: {kind} excede {MAX_PROMPT_CHARACTERS} "
+                    f"caracteres ({len(content)}). Comprime la plantilla, no recortes el archivo."
+                )
         (PROMPTS / f"{identifier}.txt").write_text(prompt, encoding="utf-8")
-        (GUIDES / f"{identifier}.md").write_text(
-            guide_for(page, layout, cells, pages), encoding="utf-8"
-        )
+        (GUIDES / f"{identifier}.md").write_text(guide, encoding="utf-8")
         plan_pages.append(
             {
                 "id": identifier,
@@ -1003,6 +1017,7 @@ def main() -> None:
                 "trim_size": "6x9 in",
                 "model": "gpt-image-2",
                 "resolution": "2K",
+                "max_prompt_characters": MAX_PROMPT_CHARACTERS,
                 "print_page_count": 90,
                 "visual_storytelling_only": False,
                 "text_policy": "Sólo el diálogo, cartelas y efectos declarados por celda; el texto literal usa comillas dobles.",
@@ -1012,7 +1027,7 @@ def main() -> None:
                 "previous_page_reference_policy": "Opcional y desactivada por defecto. Al compilar con --attach-previous-page-reference, sólo la última celda aprobada de la página previa fija el estado inicial; nunca autoriza copiar composición ni introducir objetos.",
                 "state_continuity_policy": "Cada prop, ausencia y transición canónica se bloquea por página y, cuando corresponde, por celda; la continuidad no depende de adjuntar una página anterior.",
                 "production_guide_policy": "Cada página tiene una guía esquemática de composición que explicita retícula, tiempo, lugar, personajes, vestuario, accesorios, poses, texto, efectos y continuidad de entrada/salida.",
-                "creature_identity_policy": "La raza o especie se bloquea por celda con rasgos positivos y negativos. Cada prompt y guía sólo enumera las criaturas activas de su página; las demás se prohíben incluso como fondo, icono o decoración.",
+                "creature_identity_policy": "La raza, especie y género se bloquean por celda con rasgos positivos y negativos: Zeus es niño/Rottweiler macho negro y fuego; Yohi es niña/tortuga sulcata bebé hembra. Cada prompt y guía sólo enumera las criaturas activas de su página; las demás se prohíben incluso como fondo, icono o decoración.",
                 "pages": plan_pages,
             },
             ensure_ascii=False,

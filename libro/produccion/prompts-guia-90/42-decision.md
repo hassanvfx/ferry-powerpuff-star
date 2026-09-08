@@ -25,55 +25,55 @@ NO dibujes arte final, pintura digital pulida, cel shading terminado, superficie
 
 ## Continuidad de borde a borde
 
-- ENTRADA — última acción/estado de la página previa: La vuelve a mirar junto al vapor de café; los números siguen indescifrables.
-- SALIDA — primera acción/estado que debe poder sostener la página siguiente: Hassan enciende una fila de lámparas blancas.
+- ENTRADA — última acción/estado de la página previa: Junto al vapor de café conserva visible el título "29 razones" y descubre que los veintinueve renglones son una sola lista continua: cada uno tiene un icono, un color y una marca de orden todavía borrosa.
+- SALIDA — primera acción/estado que debe poder sostener la página siguiente: Hassan enciende una fila de lámparas blancas y deja una sola mesa libre.
 - La primera celda debe continuar esa entrada o mostrar visualmente la transición. La última celda debe dejar la salida preparada; no copies composición de otra página.
 
 ## Desglose por celda
 
 ### Celda 1 — superior panorámica
 - Función en lectura: ancla de entrada: establece el lugar, tiempo y eje espacial.
-- Entorno y hora: pasillo, cocina minimalista y umbral hacia el laboratorio; mañana del 10 de septiembre de 2026.
-- Personajes y vestuario: Hassan adulto; Ferry no aparece físicamente. Hassan: bata ligera sobre camiseta azul marino y pantalón carbón; la nota sólo existe físicamente desde la página 40.
-- Cámara/composición: plano de establecimiento, composición clara y aire alrededor del sujeto; posición en retícula: superior panorámica.
-- Anotaciones gráficas obligatorias: esquina con código C1; rectángulo de encuadre, línea de horizonte, flecha de cámara, flecha de mirada, flecha de luz, línea de acción y círculo rojo alrededor de la utilería crítica.
+- Entorno y hora: continuidad del estado global de página; sólo cambia lo declarado en acción.
+- Personajes y vestuario: usar clave ID/VEST global; no introducir personajes ni accesorios extra.
+- Cámara/composición: plano detalle, foco nítido en el objeto y profundidad de campo suave; posición en retícula: superior panorámica.
+- Marcas: C1, cámara, mirada, luz, línea de acción, horizonte, prop rojo y silueta vacía de lettering.
 - Especie/raza bloqueada: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
-- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: Hassan adulto; Ferry no aparece físicamente; VEST: Hassan: bata ligera sobre camiseta azul marino y pantalón carbón; la nota sólo existe físicamente desde la página 40; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/TIEMPO: pasillo, cocina minimalista y umbral hacia el laboratorio, mañana del 10 de septiembre de 2026; CÁMARA/ESPACIO: plano de establecimiento, composición clara y aire alrededor del sujeto, superior panorámica; CUERPO/MIRADA: reacción legible: hombros orientados al foco, cabeza girada sólo lo necesario y ambos brazos en reposo natural; Hassan mira al objeto, persona o fenómeno que la acción declara; no usar contacto a cámara gratuito; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: conserva el estado visible para la siguiente celda de esta página.
-- Acción y utilería exacta: Hassan observa el laboratorio desde la puerta de la cocina.
+- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: H (según leyenda de página); VEST: base de página, sólo cambios declarados; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/T: continuo; CAM: plano detalle, foco nítido en el objeto y profundidad de campo suave; CUERPO/MIRADA: reacción legible: hombros orientados al foco, cabeza girada sólo lo necesario y ambos brazos en reposo natural; Hassan mira al objeto, persona o fenómeno que la acción declara; no usar contacto a cámara gratuito; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: continúa a C2.
+- Acción y utilería exacta: Hassan observa el laboratorio desde la puerta de la cocina y decide no interpretar la nota por impulso.
 - Pose y apoyo corporal: reacción legible: hombros orientados al foco, cabeza girada sólo lo necesario y ambos brazos en reposo natural.
 - Mirada/eje de atención: Hassan mira al objeto, persona o fenómeno que la acción declara; no usar contacto a cámara gratuito.
-- Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): Hassan — pensamiento interior: "Antes de hacerme historias, voy a revisarlo bien."
-- Marcador visual de lettering: dibuja sólo la silueta vacía y ubicación de superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo; usa un código corto de celda, nunca el diálogo literal.
+- Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): Hassan — pensamiento interior: "No voy a inventarle un significado. Primero la ordeno."
+- Lettering: silueta vacía en superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo; sólo código corto, nunca diálogo literal.
 - Estado que debe respetarse: Mantener el estado canónico de página; no introducir utilería nueva.
 
 ### Celda 2 — inferior izquierda
 - Función en lectura: desarrollo: avanza una única acción sin cambiar de lugar ni de estado sin mostrar la causa.
-- Entorno y hora: pasillo, cocina minimalista y umbral hacia el laboratorio; mañana del 10 de septiembre de 2026.
-- Personajes y vestuario: Hassan adulto; Ferry no aparece físicamente. Hassan: bata ligera sobre camiseta azul marino y pantalón carbón; la nota sólo existe físicamente desde la página 40.
+- Entorno y hora: continuidad del estado global de página; sólo cambia lo declarado en acción.
+- Personajes y vestuario: usar clave ID/VEST global; no introducir personajes ni accesorios extra.
 - Cámara/composición: plano detalle, foco nítido en el objeto y profundidad de campo suave; posición en retícula: inferior izquierda.
-- Anotaciones gráficas obligatorias: esquina con código C2; rectángulo de encuadre, línea de horizonte, flecha de cámara, flecha de mirada, flecha de luz, línea de acción y círculo rojo alrededor de la utilería crítica.
+- Marcas: C2, cámara, mirada, luz, línea de acción, horizonte, prop rojo y silueta vacía de lettering.
 - Especie/raza bloqueada: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
-- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: Hassan adulto; Ferry no aparece físicamente; VEST: Hassan: bata ligera sobre camiseta azul marino y pantalón carbón; la nota sólo existe físicamente desde la página 40; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/TIEMPO: pasillo, cocina minimalista y umbral hacia el laboratorio, mañana del 10 de septiembre de 2026; CÁMARA/ESPACIO: plano detalle, foco nítido en el objeto y profundidad de campo suave, inferior izquierda; CUERPO/MIRADA: plano de objeto: no inventar extremidades; si entra una mano, mostrar una sola mano de cinco dedos con agarre posible; mirada dirigida a la nota; no mirar a cámara salvo que la acción lo exija; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: conserva el estado visible para la siguiente celda de esta página.
-- Acción y utilería exacta: Guarda la nota en un bolsillo interior.
+- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: ELENCO (según leyenda de página); VEST: base de página, sólo cambios declarados; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/T: continuo; CAM: plano detalle, foco nítido en el objeto y profundidad de campo suave; CUERPO/MIRADA: plano de objeto: no inventar extremidades; si entra una mano, mostrar una sola mano de cinco dedos con agarre posible; mirada dirigida a la nota; no mirar a cámara salvo que la acción lo exija; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: continúa a C3.
+- Acción y utilería exacta: Guarda la nota en un sobre transparente, con el hilo rojo visible y protegido.
 - Pose y apoyo corporal: plano de objeto: no inventar extremidades; si entra una mano, mostrar una sola mano de cinco dedos con agarre posible.
 - Mirada/eje de atención: mirada dirigida a la nota; no mirar a cámara salvo que la acción lo exija.
 - Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): SFX / efecto visual: "tap"
-- Marcador visual de lettering: dibuja sólo la silueta vacía y ubicación de junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave; usa un código corto de celda, nunca el diálogo literal.
+- Lettering: silueta vacía en junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave; sólo código corto, nunca diálogo literal.
 - Estado que debe respetarse: Mantener el estado canónico de página; no introducir utilería nueva.
 
 ### Celda 3 — inferior derecha
 - Función en lectura: cierre: deja una dirección, objeto o emoción que sostenga el siguiente corte.
-- Entorno y hora: pasillo, cocina minimalista y umbral hacia el laboratorio; mañana del 10 de septiembre de 2026.
-- Personajes y vestuario: Hassan adulto; Ferry no aparece físicamente. Hassan: bata ligera sobre camiseta azul marino y pantalón carbón; la nota sólo existe físicamente desde la página 40.
+- Entorno y hora: continuidad del estado global de página; sólo cambia lo declarado en acción.
+- Personajes y vestuario: usar clave ID/VEST global; no introducir personajes ni accesorios extra.
 - Cámara/composición: primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página; posición en retícula: inferior derecha.
-- Anotaciones gráficas obligatorias: esquina con código C3; rectángulo de encuadre, línea de horizonte, flecha de cámara, flecha de mirada, flecha de luz, línea de acción y círculo rojo alrededor de la utilería crítica.
+- Marcas: C3, cámara, mirada, luz, línea de acción, horizonte, prop rojo y silueta vacía de lettering.
 - Especie/raza bloqueada: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
-- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: Hassan adulto; Ferry no aparece físicamente; VEST: Hassan: bata ligera sobre camiseta azul marino y pantalón carbón; la nota sólo existe físicamente desde la página 40; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/TIEMPO: pasillo, cocina minimalista y umbral hacia el laboratorio, mañana del 10 de septiembre de 2026; CÁMARA/ESPACIO: primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página, inferior derecha; CUERPO/MIRADA: interacción natural: brazo que trabaja con codo suavemente flexionado y muñeca posible; mano libre relajada y visible; mirada dirigida al matraz; no mirar a cámara salvo que la acción lo exija; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: prepara el estado que recoge la siguiente página.
-- Acción y utilería exacta: Toma el matraz vacío con determinación tranquila.
+- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: ELENCO (según leyenda de página); VEST: base de página, sólo cambios declarados; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/T: continuo; CAM: primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página; CUERPO/MIRADA: interacción natural: brazo que trabaja con codo suavemente flexionado y muñeca posible; mano libre relajada y visible; mirada dirigida al matraz; no mirar a cámara salvo que la acción lo exija; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: salida a página siguiente.
+- Acción y utilería exacta: Toma el matraz vacío y una caja de evidencias: primero hará un mapa, luego buscará equivalentes reales.
 - Pose y apoyo corporal: interacción natural: brazo que trabaja con codo suavemente flexionado y muñeca posible; mano libre relajada y visible.
 - Mirada/eje de atención: mirada dirigida al matraz; no mirar a cámara salvo que la acción lo exija.
-- Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): Hassan — pensamiento interior: "Voy al laboratorio. Ahí por lo menos puedo empezar."
-- Marcador visual de lettering: dibuja sólo la silueta vacía y ubicación de superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo; usa un código corto de celda, nunca el diálogo literal.
+- Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): Hassan — pensamiento interior: "Mapa, evidencia y matraz. Luego veo qué me está pidiendo."
+- Lettering: silueta vacía en superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo; sólo código corto, nunca diálogo literal.
 - Estado que debe respetarse: Mantener el estado canónico de página; no introducir utilería nueva.
 
 ## Chequeo de aprobación

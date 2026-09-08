@@ -1,0 +1,2719 @@
+{
+  "schema_version": 1,
+  "limit_characters": 20000,
+  "prompts": {
+    "guide:01-el-laboratorio-al-anochecer": {
+      "source": "prompts-guia-90/01-el-laboratorio-al-anochecer.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/01-el-laboratorio-al-anochecer.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/01-el-laboratorio-al-anochecer.txt",
+      "original_characters": 13552,
+      "final_characters": 13552,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:01-el-laboratorio-al-anochecer": {
+      "source": "prompts-90/01-el-laboratorio-al-anochecer.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/01-el-laboratorio-al-anochecer.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/01-el-laboratorio-al-anochecer.txt",
+      "original_characters": 11719,
+      "final_characters": 11719,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-01-el-laboratorio-al-anochecer"
+      ]
+    },
+    "guide:02-ultima-revision": {
+      "source": "prompts-guia-90/02-ultima-revision.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/02-ultima-revision.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/02-ultima-revision.txt",
+      "original_characters": 13374,
+      "final_characters": 13374,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:02-ultima-revision": {
+      "source": "prompts-90/02-ultima-revision.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/02-ultima-revision.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/02-ultima-revision.txt",
+      "original_characters": 11530,
+      "final_characters": 11530,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-02-ultima-revision"
+      ]
+    },
+    "guide:03-el-libro-rosa": {
+      "source": "prompts-guia-90/03-el-libro-rosa.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/03-el-libro-rosa.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/03-el-libro-rosa.txt",
+      "original_characters": 12033,
+      "final_characters": 12033,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:03-el-libro-rosa": {
+      "source": "prompts-90/03-el-libro-rosa.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/03-el-libro-rosa.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/03-el-libro-rosa.txt",
+      "original_characters": 11225,
+      "final_characters": 11225,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-03-el-libro-rosa"
+      ]
+    },
+    "guide:04-pasillo-silencioso": {
+      "source": "prompts-guia-90/04-pasillo-silencioso.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/04-pasillo-silencioso.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/04-pasillo-silencioso.txt",
+      "original_characters": 12440,
+      "final_characters": 12440,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:04-pasillo-silencioso": {
+      "source": "prompts-90/04-pasillo-silencioso.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/04-pasillo-silencioso.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/04-pasillo-silencioso.txt",
+      "original_characters": 11057,
+      "final_characters": 11057,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-04-pasillo-silencioso"
+      ]
+    },
+    "guide:05-pequeno-ritual": {
+      "source": "prompts-guia-90/05-pequeno-ritual.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/05-pequeno-ritual.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/05-pequeno-ritual.txt",
+      "original_characters": 12171,
+      "final_characters": 12171,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan"
+      ]
+    },
+    "final:05-pequeno-ritual": {
+      "source": "prompts-90/05-pequeno-ritual.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/05-pequeno-ritual.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/05-pequeno-ritual.txt",
+      "original_characters": 10946,
+      "final_characters": 10946,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan",
+        "guia-05-pequeno-ritual"
+      ]
+    },
+    "guide:06-musica-binaural": {
+      "source": "prompts-guia-90/06-musica-binaural.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/06-musica-binaural.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/06-musica-binaural.txt",
+      "original_characters": 14286,
+      "final_characters": 14286,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan"
+      ]
+    },
+    "final:06-musica-binaural": {
+      "source": "prompts-90/06-musica-binaural.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/06-musica-binaural.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/06-musica-binaural.txt",
+      "original_characters": 11383,
+      "final_characters": 11383,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan",
+        "guia-06-musica-binaural"
+      ]
+    },
+    "guide:07-mirar-el-techo": {
+      "source": "prompts-guia-90/07-mirar-el-techo.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/07-mirar-el-techo.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/07-mirar-el-techo.txt",
+      "original_characters": 12419,
+      "final_characters": 12419,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan"
+      ]
+    },
+    "final:07-mirar-el-techo": {
+      "source": "prompts-90/07-mirar-el-techo.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/07-mirar-el-techo.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/07-mirar-el-techo.txt",
+      "original_characters": 10965,
+      "final_characters": 10965,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan",
+        "guia-07-mirar-el-techo"
+      ]
+    },
+    "guide:08-el-sueno-toma-aire": {
+      "source": "prompts-guia-90/08-el-sueno-toma-aire.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/08-el-sueno-toma-aire.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/08-el-sueno-toma-aire.txt",
+      "original_characters": 9976,
+      "final_characters": 9976,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan"
+      ]
+    },
+    "final:08-el-sueno-toma-aire": {
+      "source": "prompts-90/08-el-sueno-toma-aire.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/08-el-sueno-toma-aire.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/08-el-sueno-toma-aire.txt",
+      "original_characters": 10309,
+      "final_characters": 10309,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan",
+        "guia-08-el-sueno-toma-aire"
+      ]
+    },
+    "guide:09-techo-de-agua": {
+      "source": "prompts-guia-90/09-techo-de-agua.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/09-techo-de-agua.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/09-techo-de-agua.txt",
+      "original_characters": 11958,
+      "final_characters": 11958,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "escenario-onirico"
+      ]
+    },
+    "final:09-techo-de-agua": {
+      "source": "prompts-90/09-techo-de-agua.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/09-techo-de-agua.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/09-techo-de-agua.txt",
+      "original_characters": 10597,
+      "final_characters": 10597,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "escenario-onirico",
+        "guia-09-techo-de-agua"
+      ]
+    },
+    "guide:10-el-umbral": {
+      "source": "prompts-guia-90/10-el-umbral.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/10-el-umbral.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/10-el-umbral.txt",
+      "original_characters": 9886,
+      "final_characters": 9886,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "escenario-onirico"
+      ]
+    },
+    "final:10-el-umbral": {
+      "source": "prompts-90/10-el-umbral.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/10-el-umbral.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/10-el-umbral.txt",
+      "original_characters": 10097,
+      "final_characters": 10097,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "escenario-onirico",
+        "guia-10-el-umbral"
+      ]
+    },
+    "guide:11-luces-de-concurso": {
+      "source": "prompts-guia-90/11-luces-de-concurso.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/11-luces-de-concurso.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/11-luces-de-concurso.txt",
+      "original_characters": 12117,
+      "final_characters": 12117,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "escenario-onirico"
+      ]
+    },
+    "final:11-luces-de-concurso": {
+      "source": "prompts-90/11-luces-de-concurso.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/11-luces-de-concurso.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/11-luces-de-concurso.txt",
+      "original_characters": 10966,
+      "final_characters": 10966,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "escenario-onirico",
+        "guia-11-luces-de-concurso"
+      ]
+    },
+    "guide:12-la-primera-entrada": {
+      "source": "prompts-guia-90/12-la-primera-entrada.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/12-la-primera-entrada.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/12-la-primera-entrada.txt",
+      "original_characters": 11999,
+      "final_characters": 11999,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "escenario-onirico"
+      ]
+    },
+    "final:12-la-primera-entrada": {
+      "source": "prompts-90/12-la-primera-entrada.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/12-la-primera-entrada.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/12-la-primera-entrada.txt",
+      "original_characters": 10892,
+      "final_characters": 10892,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "escenario-onirico",
+        "guia-12-la-primera-entrada"
+      ]
+    },
+    "guide:13-salto-de-ferry": {
+      "source": "prompts-guia-90/13-salto-de-ferry.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/13-salto-de-ferry.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/13-salto-de-ferry.txt",
+      "original_characters": 14337,
+      "final_characters": 14337,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "escenario-onirico"
+      ]
+    },
+    "final:13-salto-de-ferry": {
+      "source": "prompts-90/13-salto-de-ferry.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/13-salto-de-ferry.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/13-salto-de-ferry.txt",
+      "original_characters": 11449,
+      "final_characters": 11449,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "escenario-onirico",
+        "guia-13-salto-de-ferry"
+      ]
+    },
+    "guide:14-heroina-de-ensueno": {
+      "source": "prompts-guia-90/14-heroina-de-ensueno.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/14-heroina-de-ensueno.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/14-heroina-de-ensueno.txt",
+      "original_characters": 12318,
+      "final_characters": 12318,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "escenario-onirico"
+      ]
+    },
+    "final:14-heroina-de-ensueno": {
+      "source": "prompts-90/14-heroina-de-ensueno.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/14-heroina-de-ensueno.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/14-heroina-de-ensueno.txt",
+      "original_characters": 10963,
+      "final_characters": 10963,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "escenario-onirico",
+        "guia-14-heroina-de-ensueno"
+      ]
+    },
+    "guide:15-un-gesto-de-bienvenida": {
+      "source": "prompts-guia-90/15-un-gesto-de-bienvenida.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/15-un-gesto-de-bienvenida.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/15-un-gesto-de-bienvenida.txt",
+      "original_characters": 10212,
+      "final_characters": 10212,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "escenario-onirico"
+      ]
+    },
+    "final:15-un-gesto-de-bienvenida": {
+      "source": "prompts-90/15-un-gesto-de-bienvenida.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/15-un-gesto-de-bienvenida.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/15-un-gesto-de-bienvenida.txt",
+      "original_characters": 10468,
+      "final_characters": 10468,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "escenario-onirico",
+        "guia-15-un-gesto-de-bienvenida"
+      ]
+    },
+    "guide:16-zeus-aparece": {
+      "source": "prompts-guia-90/16-zeus-aparece.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/16-zeus-aparece.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/16-zeus-aparece.txt",
+      "original_characters": 13965,
+      "final_characters": 13965,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "zeus",
+        "jardin-protector-de-ferry"
+      ]
+    },
+    "final:16-zeus-aparece": {
+      "source": "prompts-90/16-zeus-aparece.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/16-zeus-aparece.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/16-zeus-aparece.txt",
+      "original_characters": 12505,
+      "final_characters": 12505,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "zeus",
+        "jardin-protector-de-ferry",
+        "guia-16-zeus-aparece"
+      ]
+    },
+    "guide:17-la-confianza-de-zeus": {
+      "source": "prompts-guia-90/17-la-confianza-de-zeus.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/17-la-confianza-de-zeus.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/17-la-confianza-de-zeus.txt",
+      "original_characters": 14258,
+      "final_characters": 14258,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "zeus",
+        "jardin-protector-de-ferry"
+      ]
+    },
+    "final:17-la-confianza-de-zeus": {
+      "source": "prompts-90/17-la-confianza-de-zeus.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/17-la-confianza-de-zeus.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/17-la-confianza-de-zeus.txt",
+      "original_characters": 12627,
+      "final_characters": 12627,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "zeus",
+        "jardin-protector-de-ferry",
+        "guia-17-la-confianza-de-zeus"
+      ]
+    },
+    "guide:18-cuidado-fuerte": {
+      "source": "prompts-guia-90/18-cuidado-fuerte.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/18-cuidado-fuerte.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/18-cuidado-fuerte.txt",
+      "original_characters": 11693,
+      "final_characters": 11693,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "zeus",
+        "jardin-protector-de-ferry"
+      ]
+    },
+    "final:18-cuidado-fuerte": {
+      "source": "prompts-90/18-cuidado-fuerte.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/18-cuidado-fuerte.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/18-cuidado-fuerte.txt",
+      "original_characters": 11911,
+      "final_characters": 11911,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "zeus",
+        "jardin-protector-de-ferry",
+        "guia-18-cuidado-fuerte"
+      ]
+    },
+    "guide:19-la-mano-protectora": {
+      "source": "prompts-guia-90/19-la-mano-protectora.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/19-la-mano-protectora.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/19-la-mano-protectora.txt",
+      "original_characters": 14299,
+      "final_characters": 14299,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "zeus",
+        "jardin-protector-de-ferry"
+      ]
+    },
+    "final:19-la-mano-protectora": {
+      "source": "prompts-90/19-la-mano-protectora.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/19-la-mano-protectora.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/19-la-mano-protectora.txt",
+      "original_characters": 12826,
+      "final_characters": 12826,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "zeus",
+        "jardin-protector-de-ferry",
+        "guia-19-la-mano-protectora"
+      ]
+    },
+    "guide:20-yohi-y-la-hoja-fresca": {
+      "source": "prompts-guia-90/20-yohi-y-la-hoja-fresca.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/20-yohi-y-la-hoja-fresca.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/20-yohi-y-la-hoja-fresca.txt",
+      "original_characters": 13197,
+      "final_characters": 13197,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "yohi",
+        "jardin-protector-de-ferry"
+      ]
+    },
+    "final:20-yohi-y-la-hoja-fresca": {
+      "source": "prompts-90/20-yohi-y-la-hoja-fresca.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/20-yohi-y-la-hoja-fresca.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/20-yohi-y-la-hoja-fresca.txt",
+      "original_characters": 11896,
+      "final_characters": 11896,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "yohi",
+        "jardin-protector-de-ferry",
+        "guia-20-yohi-y-la-hoja-fresca"
+      ]
+    },
+    "guide:21-paso-pequeno": {
+      "source": "prompts-guia-90/21-paso-pequeno.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/21-paso-pequeno.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/21-paso-pequeno.txt",
+      "original_characters": 11060,
+      "final_characters": 11060,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "yohi",
+        "jardin-protector-de-ferry"
+      ]
+    },
+    "final:21-paso-pequeno": {
+      "source": "prompts-90/21-paso-pequeno.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/21-paso-pequeno.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/21-paso-pequeno.txt",
+      "original_characters": 11439,
+      "final_characters": 11439,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "yohi",
+        "jardin-protector-de-ferry",
+        "guia-21-paso-pequeno"
+      ]
+    },
+    "guide:22-paciencia": {
+      "source": "prompts-guia-90/22-paciencia.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/22-paciencia.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/22-paciencia.txt",
+      "original_characters": 13662,
+      "final_characters": 13662,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "yohi",
+        "jardin-protector-de-ferry"
+      ]
+    },
+    "final:22-paciencia": {
+      "source": "prompts-90/22-paciencia.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/22-paciencia.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/22-paciencia.txt",
+      "original_characters": 12238,
+      "final_characters": 12238,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "yohi",
+        "jardin-protector-de-ferry",
+        "guia-22-paciencia"
+      ]
+    },
+    "guide:23-un-hogar-a-escala-pequena": {
+      "source": "prompts-guia-90/23-un-hogar-a-escala-pequena.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/23-un-hogar-a-escala-pequena.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/23-un-hogar-a-escala-pequena.txt",
+      "original_characters": 11233,
+      "final_characters": 11233,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "yohi",
+        "jardin-protector-de-ferry"
+      ]
+    },
+    "final:23-un-hogar-a-escala-pequena": {
+      "source": "prompts-90/23-un-hogar-a-escala-pequena.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/23-un-hogar-a-escala-pequena.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/23-un-hogar-a-escala-pequena.txt",
+      "original_characters": 11476,
+      "final_characters": 11476,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "yohi",
+        "jardin-protector-de-ferry",
+        "guia-23-un-hogar-a-escala-pequena"
+      ]
+    },
+    "guide:24-los-caracoles": {
+      "source": "prompts-guia-90/24-los-caracoles.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/24-los-caracoles.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/24-los-caracoles.txt",
+      "original_characters": 13681,
+      "final_characters": 13681,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "caracoles",
+        "jardin-protector-de-ferry"
+      ]
+    },
+    "final:24-los-caracoles": {
+      "source": "prompts-90/24-los-caracoles.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/24-los-caracoles.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/24-los-caracoles.txt",
+      "original_characters": 12315,
+      "final_characters": 12315,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "caracoles",
+        "jardin-protector-de-ferry",
+        "guia-24-los-caracoles"
+      ]
+    },
+    "guide:25-camino-brillante": {
+      "source": "prompts-guia-90/25-camino-brillante.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/25-camino-brillante.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/25-camino-brillante.txt",
+      "original_characters": 11240,
+      "final_characters": 11240,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "caracoles",
+        "jardin-protector-de-ferry"
+      ]
+    },
+    "final:25-camino-brillante": {
+      "source": "prompts-90/25-camino-brillante.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/25-camino-brillante.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/25-camino-brillante.txt",
+      "original_characters": 11488,
+      "final_characters": 11488,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "caracoles",
+        "jardin-protector-de-ferry",
+        "guia-25-camino-brillante"
+      ]
+    },
+    "guide:26-la-arana": {
+      "source": "prompts-guia-90/26-la-arana.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/26-la-arana.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/26-la-arana.txt",
+      "original_characters": 13161,
+      "final_characters": 13161,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "arana",
+        "jardin-protector-de-ferry"
+      ]
+    },
+    "final:26-la-arana": {
+      "source": "prompts-90/26-la-arana.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/26-la-arana.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/26-la-arana.txt",
+      "original_characters": 11845,
+      "final_characters": 11845,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "arana",
+        "jardin-protector-de-ferry",
+        "guia-26-la-arana"
+      ]
+    },
+    "guide:27-todo-ser-importa": {
+      "source": "prompts-guia-90/27-todo-ser-importa.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/27-todo-ser-importa.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/27-todo-ser-importa.txt",
+      "original_characters": 10644,
+      "final_characters": 10644,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "arana",
+        "jardin-protector-de-ferry"
+      ]
+    },
+    "final:27-todo-ser-importa": {
+      "source": "prompts-90/27-todo-ser-importa.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/27-todo-ser-importa.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/27-todo-ser-importa.txt",
+      "original_characters": 11169,
+      "final_characters": 11169,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "arana",
+        "jardin-protector-de-ferry",
+        "guia-27-todo-ser-importa"
+      ]
+    },
+    "guide:28-el-jardin-completo": {
+      "source": "prompts-guia-90/28-el-jardin-completo.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/28-el-jardin-completo.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/28-el-jardin-completo.txt",
+      "original_characters": 16280,
+      "final_characters": 16280,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "zeus",
+        "yohi",
+        "caracoles",
+        "arana",
+        "jardin-protector-de-ferry"
+      ]
+    },
+    "final:28-el-jardin-completo": {
+      "source": "prompts-90/28-el-jardin-completo.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/28-el-jardin-completo.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/28-el-jardin-completo.txt",
+      "original_characters": 14583,
+      "final_characters": 14583,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "zeus",
+        "yohi",
+        "caracoles",
+        "arana",
+        "jardin-protector-de-ferry",
+        "guia-28-el-jardin-completo"
+      ]
+    },
+    "guide:29-ferry-ve-a-hassan": {
+      "source": "prompts-guia-90/29-ferry-ve-a-hassan.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/29-ferry-ve-a-hassan.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/29-ferry-ve-a-hassan.txt",
+      "original_characters": 12303,
+      "final_characters": 12303,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "jardin-protector-de-ferry"
+      ]
+    },
+    "final:29-ferry-ve-a-hassan": {
+      "source": "prompts-90/29-ferry-ve-a-hassan.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/29-ferry-ve-a-hassan.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/29-ferry-ve-a-hassan.txt",
+      "original_characters": 11040,
+      "final_characters": 11040,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "jardin-protector-de-ferry",
+        "guia-29-ferry-ve-a-hassan"
+      ]
+    },
+    "guide:30-el-destello-lejano": {
+      "source": "prompts-guia-90/30-el-destello-lejano.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/30-el-destello-lejano.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/30-el-destello-lejano.txt",
+      "original_characters": 10137,
+      "final_characters": 10137,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "jardin-protector-de-ferry"
+      ]
+    },
+    "final:30-el-destello-lejano": {
+      "source": "prompts-90/30-el-destello-lejano.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/30-el-destello-lejano.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/30-el-destello-lejano.txt",
+      "original_characters": 10455,
+      "final_characters": 10455,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "jardin-protector-de-ferry",
+        "guia-30-el-destello-lejano"
+      ]
+    },
+    "guide:31-carrera-de-luz": {
+      "source": "prompts-guia-90/31-carrera-de-luz.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/31-carrera-de-luz.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/31-carrera-de-luz.txt",
+      "original_characters": 12339,
+      "final_characters": 12339,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "jardin-protector-de-ferry"
+      ]
+    },
+    "final:31-carrera-de-luz": {
+      "source": "prompts-90/31-carrera-de-luz.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/31-carrera-de-luz.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/31-carrera-de-luz.txt",
+      "original_characters": 11006,
+      "final_characters": 11006,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "jardin-protector-de-ferry",
+        "guia-31-carrera-de-luz"
+      ]
+    },
+    "guide:32-la-nota-se-suelta": {
+      "source": "prompts-guia-90/32-la-nota-se-suelta.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/32-la-nota-se-suelta.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/32-la-nota-se-suelta.txt",
+      "original_characters": 12041,
+      "final_characters": 12041,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry"
+      ]
+    },
+    "final:32-la-nota-se-suelta": {
+      "source": "prompts-90/32-la-nota-se-suelta.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/32-la-nota-se-suelta.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/32-la-nota-se-suelta.txt",
+      "original_characters": 10526,
+      "final_characters": 10526,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "guia-32-la-nota-se-suelta"
+      ]
+    },
+    "guide:33-antes-de-tocar-el-suelo": {
+      "source": "prompts-guia-90/33-antes-de-tocar-el-suelo.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/33-antes-de-tocar-el-suelo.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/33-antes-de-tocar-el-suelo.txt",
+      "original_characters": 9893,
+      "final_characters": 9893,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry"
+      ]
+    },
+    "final:33-antes-de-tocar-el-suelo": {
+      "source": "prompts-90/33-antes-de-tocar-el-suelo.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/33-antes-de-tocar-el-suelo.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/33-antes-de-tocar-el-suelo.txt",
+      "original_characters": 9909,
+      "final_characters": 9909,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "guia-33-antes-de-tocar-el-suelo"
+      ]
+    },
+    "guide:34-la-lista-imposible": {
+      "source": "prompts-guia-90/34-la-lista-imposible.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/34-la-lista-imposible.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/34-la-lista-imposible.txt",
+      "original_characters": 12105,
+      "final_characters": 12105,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry"
+      ]
+    },
+    "final:34-la-lista-imposible": {
+      "source": "prompts-90/34-la-lista-imposible.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/34-la-lista-imposible.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/34-la-lista-imposible.txt",
+      "original_characters": 10584,
+      "final_characters": 10584,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "guia-34-la-lista-imposible"
+      ]
+    },
+    "guide:35-el-sueno-se-apaga": {
+      "source": "prompts-guia-90/35-el-sueno-se-apaga.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/35-el-sueno-se-apaga.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/35-el-sueno-se-apaga.txt",
+      "original_characters": 9846,
+      "final_characters": 9846,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry"
+      ]
+    },
+    "final:35-el-sueno-se-apaga": {
+      "source": "prompts-90/35-el-sueno-se-apaga.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/35-el-sueno-se-apaga.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/35-el-sueno-se-apaga.txt",
+      "original_characters": 9930,
+      "final_characters": 9930,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "guia-35-el-sueno-se-apaga"
+      ]
+    },
+    "guide:36-despertar-espejo": {
+      "source": "prompts-guia-90/36-despertar-espejo.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/36-despertar-espejo.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/36-despertar-espejo.txt",
+      "original_characters": 12075,
+      "final_characters": 12075,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan"
+      ]
+    },
+    "final:36-despertar-espejo": {
+      "source": "prompts-90/36-despertar-espejo.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/36-despertar-espejo.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/36-despertar-espejo.txt",
+      "original_characters": 10757,
+      "final_characters": 10757,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan",
+        "guia-36-despertar-espejo"
+      ]
+    },
+    "guide:37-duda": {
+      "source": "prompts-guia-90/37-duda.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/37-duda.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/37-duda.txt",
+      "original_characters": 9861,
+      "final_characters": 9861,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan"
+      ]
+    },
+    "final:37-duda": {
+      "source": "prompts-90/37-duda.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/37-duda.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/37-duda.txt",
+      "original_characters": 10224,
+      "final_characters": 10224,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan",
+        "guia-37-duda"
+      ]
+    },
+    "guide:38-camino-a-la-cocina": {
+      "source": "prompts-guia-90/38-camino-a-la-cocina.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/38-camino-a-la-cocina.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/38-camino-a-la-cocina.txt",
+      "original_characters": 12023,
+      "final_characters": 12023,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan"
+      ]
+    },
+    "final:38-camino-a-la-cocina": {
+      "source": "prompts-90/38-camino-a-la-cocina.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/38-camino-a-la-cocina.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/38-camino-a-la-cocina.txt",
+      "original_characters": 10717,
+      "final_characters": 10717,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan",
+        "guia-38-camino-a-la-cocina"
+      ]
+    },
+    "guide:39-preparar-cafe": {
+      "source": "prompts-guia-90/39-preparar-cafe.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/39-preparar-cafe.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/39-preparar-cafe.txt",
+      "original_characters": 12011,
+      "final_characters": 12011,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan"
+      ]
+    },
+    "final:39-preparar-cafe": {
+      "source": "prompts-90/39-preparar-cafe.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/39-preparar-cafe.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/39-preparar-cafe.txt",
+      "original_characters": 10682,
+      "final_characters": 10682,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan",
+        "guia-39-preparar-cafe"
+      ]
+    },
+    "guide:40-la-nota-junto-al-monitor": {
+      "source": "prompts-guia-90/40-la-nota-junto-al-monitor.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/40-la-nota-junto-al-monitor.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/40-la-nota-junto-al-monitor.txt",
+      "original_characters": 12099,
+      "final_characters": 12099,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:40-la-nota-junto-al-monitor": {
+      "source": "prompts-90/40-la-nota-junto-al-monitor.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/40-la-nota-junto-al-monitor.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/40-la-nota-junto-al-monitor.txt",
+      "original_characters": 10834,
+      "final_characters": 10834,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-40-la-nota-junto-al-monitor"
+      ]
+    },
+    "guide:41-prueba-fisica": {
+      "source": "prompts-guia-90/41-prueba-fisica.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/41-prueba-fisica.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/41-prueba-fisica.txt",
+      "original_characters": 10224,
+      "final_characters": 10224,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:41-prueba-fisica": {
+      "source": "prompts-90/41-prueba-fisica.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/41-prueba-fisica.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/41-prueba-fisica.txt",
+      "original_characters": 10456,
+      "final_characters": 10456,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-41-prueba-fisica"
+      ]
+    },
+    "guide:42-decision": {
+      "source": "prompts-guia-90/42-decision.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/42-decision.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/42-decision.txt",
+      "original_characters": 12388,
+      "final_characters": 12388,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:42-decision": {
+      "source": "prompts-90/42-decision.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/42-decision.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/42-decision.txt",
+      "original_characters": 11005,
+      "final_characters": 11005,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-42-decision"
+      ]
+    },
+    "guide:43-regreso-al-laboratorio": {
+      "source": "prompts-guia-90/43-regreso-al-laboratorio.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/43-regreso-al-laboratorio.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/43-regreso-al-laboratorio.txt",
+      "original_characters": 12265,
+      "final_characters": 12265,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:43-regreso-al-laboratorio": {
+      "source": "prompts-90/43-regreso-al-laboratorio.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/43-regreso-al-laboratorio.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/43-regreso-al-laboratorio.txt",
+      "original_characters": 10973,
+      "final_characters": 10973,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-43-regreso-al-laboratorio"
+      ]
+    },
+    "guide:44-la-lupa": {
+      "source": "prompts-guia-90/44-la-lupa.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/44-la-lupa.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/44-la-lupa.txt",
+      "original_characters": 12404,
+      "final_characters": 12404,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:44-la-lupa": {
+      "source": "prompts-90/44-la-lupa.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/44-la-lupa.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/44-la-lupa.txt",
+      "original_characters": 11007,
+      "final_characters": 11007,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-44-la-lupa"
+      ]
+    },
+    "guide:45-los-primeros-simbolos": {
+      "source": "prompts-guia-90/45-los-primeros-simbolos.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/45-los-primeros-simbolos.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/45-los-primeros-simbolos.txt",
+      "original_characters": 14525,
+      "final_characters": 14525,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:45-los-primeros-simbolos": {
+      "source": "prompts-90/45-los-primeros-simbolos.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/45-los-primeros-simbolos.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/45-los-primeros-simbolos.txt",
+      "original_characters": 11643,
+      "final_characters": 11643,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-45-los-primeros-simbolos"
+      ]
+    },
+    "guide:46-la-receta-visual": {
+      "source": "prompts-guia-90/46-la-receta-visual.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/46-la-receta-visual.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/46-la-receta-visual.txt",
+      "original_characters": 12367,
+      "final_characters": 12367,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:46-la-receta-visual": {
+      "source": "prompts-90/46-la-receta-visual.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/46-la-receta-visual.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/46-la-receta-visual.txt",
+      "original_characters": 11039,
+      "final_characters": 11039,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-46-la-receta-visual"
+      ]
+    },
+    "guide:47-primer-mapa-de-busqueda": {
+      "source": "prompts-guia-90/47-primer-mapa-de-busqueda.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/47-primer-mapa-de-busqueda.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/47-primer-mapa-de-busqueda.txt",
+      "original_characters": 10304,
+      "final_characters": 10304,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan"
+      ]
+    },
+    "final:47-primer-mapa-de-busqueda": {
+      "source": "prompts-90/47-primer-mapa-de-busqueda.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/47-primer-mapa-de-busqueda.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/47-primer-mapa-de-busqueda.txt",
+      "original_characters": 10365,
+      "final_characters": 10365,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan",
+        "guia-47-primer-mapa-de-busqueda"
+      ]
+    },
+    "guide:48-la-casa-como-mision": {
+      "source": "prompts-guia-90/48-la-casa-como-mision.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/48-la-casa-como-mision.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/48-la-casa-como-mision.txt",
+      "original_characters": 12450,
+      "final_characters": 12450,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan"
+      ]
+    },
+    "final:48-la-casa-como-mision": {
+      "source": "prompts-90/48-la-casa-como-mision.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/48-la-casa-como-mision.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/48-la-casa-como-mision.txt",
+      "original_characters": 10931,
+      "final_characters": 10931,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan",
+        "guia-48-la-casa-como-mision"
+      ]
+    },
+    "guide:49-el-primer-tropiezo": {
+      "source": "prompts-guia-90/49-el-primer-tropiezo.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/49-el-primer-tropiezo.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/49-el-primer-tropiezo.txt",
+      "original_characters": 12458,
+      "final_characters": 12458,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan"
+      ]
+    },
+    "final:49-el-primer-tropiezo": {
+      "source": "prompts-90/49-el-primer-tropiezo.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/49-el-primer-tropiezo.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/49-el-primer-tropiezo.txt",
+      "original_characters": 10901,
+      "final_characters": 10901,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan",
+        "guia-49-el-primer-tropiezo"
+      ]
+    },
+    "guide:50-comienza-la-busqueda": {
+      "source": "prompts-guia-90/50-comienza-la-busqueda.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/50-comienza-la-busqueda.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/50-comienza-la-busqueda.txt",
+      "original_characters": 10281,
+      "final_characters": 10281,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan"
+      ]
+    },
+    "final:50-comienza-la-busqueda": {
+      "source": "prompts-90/50-comienza-la-busqueda.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/50-comienza-la-busqueda.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/50-comienza-la-busqueda.txt",
+      "original_characters": 10371,
+      "final_characters": 10371,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan",
+        "guia-50-comienza-la-busqueda"
+      ]
+    },
+    "guide:51-canela": {
+      "source": "prompts-guia-90/51-canela.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/51-canela.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/51-canela.txt",
+      "original_characters": 12386,
+      "final_characters": 12386,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan"
+      ]
+    },
+    "final:51-canela": {
+      "source": "prompts-90/51-canela.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/51-canela.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/51-canela.txt",
+      "original_characters": 10929,
+      "final_characters": 10929,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan",
+        "guia-51-canela"
+      ]
+    },
+    "guide:52-vainilla": {
+      "source": "prompts-guia-90/52-vainilla.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/52-vainilla.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/52-vainilla.txt",
+      "original_characters": 12508,
+      "final_characters": 12508,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan"
+      ]
+    },
+    "final:52-vainilla": {
+      "source": "prompts-90/52-vainilla.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/52-vainilla.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/52-vainilla.txt",
+      "original_characters": 10895,
+      "final_characters": 10895,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan",
+        "guia-52-vainilla"
+      ]
+    },
+    "guide:53-la-cuchara": {
+      "source": "prompts-guia-90/53-la-cuchara.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/53-la-cuchara.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/53-la-cuchara.txt",
+      "original_characters": 10219,
+      "final_characters": 10219,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan"
+      ]
+    },
+    "final:53-la-cuchara": {
+      "source": "prompts-90/53-la-cuchara.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/53-la-cuchara.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/53-la-cuchara.txt",
+      "original_characters": 10296,
+      "final_characters": 10296,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan",
+        "guia-53-la-cuchara"
+      ]
+    },
+    "guide:54-moneda-de-miel": {
+      "source": "prompts-guia-90/54-moneda-de-miel.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/54-moneda-de-miel.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/54-moneda-de-miel.txt",
+      "original_characters": 12297,
+      "final_characters": 12297,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan"
+      ]
+    },
+    "final:54-moneda-de-miel": {
+      "source": "prompts-90/54-moneda-de-miel.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/54-moneda-de-miel.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/54-moneda-de-miel.txt",
+      "original_characters": 10772,
+      "final_characters": 10772,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan",
+        "guia-54-moneda-de-miel"
+      ]
+    },
+    "guide:55-engranes": {
+      "source": "prompts-guia-90/55-engranes.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/55-engranes.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/55-engranes.txt",
+      "original_characters": 10195,
+      "final_characters": 10195,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan"
+      ]
+    },
+    "final:55-engranes": {
+      "source": "prompts-90/55-engranes.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/55-engranes.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/55-engranes.txt",
+      "original_characters": 10265,
+      "final_characters": 10265,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan",
+        "guia-55-engranes"
+      ]
+    },
+    "guide:56-hilo-rojo": {
+      "source": "prompts-guia-90/56-hilo-rojo.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/56-hilo-rojo.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/56-hilo-rojo.txt",
+      "original_characters": 12366,
+      "final_characters": 12366,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan"
+      ]
+    },
+    "final:56-hilo-rojo": {
+      "source": "prompts-90/56-hilo-rojo.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/56-hilo-rojo.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/56-hilo-rojo.txt",
+      "original_characters": 10919,
+      "final_characters": 10919,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan",
+        "guia-56-hilo-rojo"
+      ]
+    },
+    "guide:57-concha-dorada": {
+      "source": "prompts-guia-90/57-concha-dorada.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/57-concha-dorada.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/57-concha-dorada.txt",
+      "original_characters": 12245,
+      "final_characters": 12245,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan"
+      ]
+    },
+    "final:57-concha-dorada": {
+      "source": "prompts-90/57-concha-dorada.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/57-concha-dorada.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/57-concha-dorada.txt",
+      "original_characters": 10776,
+      "final_characters": 10776,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan",
+        "guia-57-concha-dorada"
+      ]
+    },
+    "guide:58-raiz": {
+      "source": "prompts-guia-90/58-raiz.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/58-raiz.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/58-raiz.txt",
+      "original_characters": 12296,
+      "final_characters": 12296,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan"
+      ]
+    },
+    "final:58-raiz": {
+      "source": "prompts-90/58-raiz.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/58-raiz.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/58-raiz.txt",
+      "original_characters": 10803,
+      "final_characters": 10803,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan",
+        "guia-58-raiz"
+      ]
+    },
+    "guide:59-manta-de-algodon": {
+      "source": "prompts-guia-90/59-manta-de-algodon.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/59-manta-de-algodon.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/59-manta-de-algodon.txt",
+      "original_characters": 10202,
+      "final_characters": 10202,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan"
+      ]
+    },
+    "final:59-manta-de-algodon": {
+      "source": "prompts-90/59-manta-de-algodon.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/59-manta-de-algodon.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/59-manta-de-algodon.txt",
+      "original_characters": 10286,
+      "final_characters": 10286,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan",
+        "guia-59-manta-de-algodon"
+      ]
+    },
+    "guide:60-llave": {
+      "source": "prompts-guia-90/60-llave.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/60-llave.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/60-llave.txt",
+      "original_characters": 12290,
+      "final_characters": 12290,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan"
+      ]
+    },
+    "final:60-llave": {
+      "source": "prompts-90/60-llave.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/60-llave.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/60-llave.txt",
+      "original_characters": 10785,
+      "final_characters": 10785,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan",
+        "guia-60-llave"
+      ]
+    },
+    "guide:61-nube-de-empatia": {
+      "source": "prompts-guia-90/61-nube-de-empatia.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/61-nube-de-empatia.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/61-nube-de-empatia.txt",
+      "original_characters": 12247,
+      "final_characters": 12247,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan"
+      ]
+    },
+    "final:61-nube-de-empatia": {
+      "source": "prompts-90/61-nube-de-empatia.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/61-nube-de-empatia.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/61-nube-de-empatia.txt",
+      "original_characters": 10799,
+      "final_characters": 10799,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "casa-de-hassan",
+        "guia-61-nube-de-empatia"
+      ]
+    },
+    "guide:62-regreso-cargado": {
+      "source": "prompts-guia-90/62-regreso-cargado.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/62-regreso-cargado.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/62-regreso-cargado.txt",
+      "original_characters": 12345,
+      "final_characters": 12345,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:62-regreso-cargado": {
+      "source": "prompts-90/62-regreso-cargado.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/62-regreso-cargado.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/62-regreso-cargado.txt",
+      "original_characters": 10865,
+      "final_characters": 10865,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-62-regreso-cargado"
+      ]
+    },
+    "guide:63-la-mesa-preparada": {
+      "source": "prompts-guia-90/63-la-mesa-preparada.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/63-la-mesa-preparada.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/63-la-mesa-preparada.txt",
+      "original_characters": 12482,
+      "final_characters": 12482,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:63-la-mesa-preparada": {
+      "source": "prompts-90/63-la-mesa-preparada.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/63-la-mesa-preparada.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/63-la-mesa-preparada.txt",
+      "original_characters": 11026,
+      "final_characters": 11026,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-63-la-mesa-preparada"
+      ]
+    },
+    "guide:64-el-matraz-recibe-luz": {
+      "source": "prompts-guia-90/64-el-matraz-recibe-luz.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/64-el-matraz-recibe-luz.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/64-el-matraz-recibe-luz.txt",
+      "original_characters": 12295,
+      "final_characters": 12295,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:64-el-matraz-recibe-luz": {
+      "source": "prompts-90/64-el-matraz-recibe-luz.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/64-el-matraz-recibe-luz.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/64-el-matraz-recibe-luz.txt",
+      "original_characters": 10862,
+      "final_characters": 10862,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-64-el-matraz-recibe-luz"
+      ]
+    },
+    "guide:65-antes-de-mezclar": {
+      "source": "prompts-guia-90/65-antes-de-mezclar.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/65-antes-de-mezclar.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/65-antes-de-mezclar.txt",
+      "original_characters": 10310,
+      "final_characters": 10310,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:65-antes-de-mezclar": {
+      "source": "prompts-90/65-antes-de-mezclar.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/65-antes-de-mezclar.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/65-antes-de-mezclar.txt",
+      "original_characters": 10417,
+      "final_characters": 10417,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-65-antes-de-mezclar"
+      ]
+    },
+    "guide:66-claridad-y-empatia": {
+      "source": "prompts-guia-90/66-claridad-y-empatia.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/66-claridad-y-empatia.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/66-claridad-y-empatia.txt",
+      "original_characters": 14822,
+      "final_characters": 14822,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:66-claridad-y-empatia": {
+      "source": "prompts-90/66-claridad-y-empatia.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/66-claridad-y-empatia.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/66-claridad-y-empatia.txt",
+      "original_characters": 11984,
+      "final_characters": 11984,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-66-claridad-y-empatia"
+      ]
+    },
+    "guide:67-ciencia-y-curiosidad": {
+      "source": "prompts-guia-90/67-ciencia-y-curiosidad.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/67-ciencia-y-curiosidad.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/67-ciencia-y-curiosidad.txt",
+      "original_characters": 14801,
+      "final_characters": 14801,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:67-ciencia-y-curiosidad": {
+      "source": "prompts-90/67-ciencia-y-curiosidad.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/67-ciencia-y-curiosidad.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/67-ciencia-y-curiosidad.txt",
+      "original_characters": 11980,
+      "final_characters": 11980,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-67-ciencia-y-curiosidad"
+      ]
+    },
+    "guide:68-sonrisa-y-fuego": {
+      "source": "prompts-guia-90/68-sonrisa-y-fuego.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/68-sonrisa-y-fuego.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/68-sonrisa-y-fuego.txt",
+      "original_characters": 14805,
+      "final_characters": 14805,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:68-sonrisa-y-fuego": {
+      "source": "prompts-90/68-sonrisa-y-fuego.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/68-sonrisa-y-fuego.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/68-sonrisa-y-fuego.txt",
+      "original_characters": 11949,
+      "final_characters": 11949,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-68-sonrisa-y-fuego"
+      ]
+    },
+    "guide:69-cuidado-y-valor": {
+      "source": "prompts-guia-90/69-cuidado-y-valor.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/69-cuidado-y-valor.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/69-cuidado-y-valor.txt",
+      "original_characters": 17450,
+      "final_characters": 17450,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "zeus",
+        "yohi",
+        "caracoles",
+        "arana",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:69-cuidado-y-valor": {
+      "source": "prompts-90/69-cuidado-y-valor.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/69-cuidado-y-valor.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/69-cuidado-y-valor.txt",
+      "original_characters": 15562,
+      "final_characters": 15562,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "zeus",
+        "yohi",
+        "caracoles",
+        "arana",
+        "laboratorio-oficina",
+        "guia-69-cuidado-y-valor"
+      ]
+    },
+    "guide:70-trabajo-y-esperanza": {
+      "source": "prompts-guia-90/70-trabajo-y-esperanza.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/70-trabajo-y-esperanza.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/70-trabajo-y-esperanza.txt",
+      "original_characters": 14723,
+      "final_characters": 14723,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:70-trabajo-y-esperanza": {
+      "source": "prompts-90/70-trabajo-y-esperanza.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/70-trabajo-y-esperanza.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/70-trabajo-y-esperanza.txt",
+      "original_characters": 11935,
+      "final_characters": 11935,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-70-trabajo-y-esperanza"
+      ]
+    },
+    "guide:71-dulzura-y-mar": {
+      "source": "prompts-guia-90/71-dulzura-y-mar.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/71-dulzura-y-mar.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/71-dulzura-y-mar.txt",
+      "original_characters": 14724,
+      "final_characters": 14724,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:71-dulzura-y-mar": {
+      "source": "prompts-90/71-dulzura-y-mar.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/71-dulzura-y-mar.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/71-dulzura-y-mar.txt",
+      "original_characters": 11922,
+      "final_characters": 11922,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-71-dulzura-y-mar"
+      ]
+    },
+    "guide:72-persistencia-talento-y-orden": {
+      "source": "prompts-guia-90/72-persistencia-talento-y-orden.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/72-persistencia-talento-y-orden.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/72-persistencia-talento-y-orden.txt",
+      "original_characters": 19156,
+      "final_characters": 19156,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:72-persistencia-talento-y-orden": {
+      "source": "prompts-90/72-persistencia-talento-y-orden.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/72-persistencia-talento-y-orden.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/72-persistencia-talento-y-orden.txt",
+      "original_characters": 13289,
+      "final_characters": 13289,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-72-persistencia-talento-y-orden"
+      ]
+    },
+    "guide:73-alegria-paciencia-y-carino": {
+      "source": "prompts-guia-90/73-alegria-paciencia-y-carino.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/73-alegria-paciencia-y-carino.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/73-alegria-paciencia-y-carino.txt",
+      "original_characters": 19181,
+      "final_characters": 19181,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:73-alegria-paciencia-y-carino": {
+      "source": "prompts-90/73-alegria-paciencia-y-carino.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/73-alegria-paciencia-y-carino.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/73-alegria-paciencia-y-carino.txt",
+      "original_characters": 13274,
+      "final_characters": 13274,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-73-alegria-paciencia-y-carino"
+      ]
+    },
+    "guide:74-mensajes-consideracion-y-atrevimiento": {
+      "source": "prompts-guia-90/74-mensajes-consideracion-y-atrevimiento.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/74-mensajes-consideracion-y-atrevimiento.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/74-mensajes-consideracion-y-atrevimiento.txt",
+      "original_characters": 19254,
+      "final_characters": 19254,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:74-mensajes-consideracion-y-atrevimiento": {
+      "source": "prompts-90/74-mensajes-consideracion-y-atrevimiento.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/74-mensajes-consideracion-y-atrevimiento.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/74-mensajes-consideracion-y-atrevimiento.txt",
+      "original_characters": 13362,
+      "final_characters": 13362,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-74-mensajes-consideracion-y-atrevimiento"
+      ]
+    },
+    "guide:75-fortaleza-nutricion-y-confianza": {
+      "source": "prompts-guia-90/75-fortaleza-nutricion-y-confianza.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/75-fortaleza-nutricion-y-confianza.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/75-fortaleza-nutricion-y-confianza.txt",
+      "original_characters": 19158,
+      "final_characters": 19158,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:75-fortaleza-nutricion-y-confianza": {
+      "source": "prompts-90/75-fortaleza-nutricion-y-confianza.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/75-fortaleza-nutricion-y-confianza.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/75-fortaleza-nutricion-y-confianza.txt",
+      "original_characters": 13309,
+      "final_characters": 13309,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-75-fortaleza-nutricion-y-confianza"
+      ]
+    },
+    "guide:76-lealtad-conexion-y-dulzura-con-fuego": {
+      "source": "prompts-guia-90/76-lealtad-conexion-y-dulzura-con-fuego.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/76-lealtad-conexion-y-dulzura-con-fuego.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/76-lealtad-conexion-y-dulzura-con-fuego.txt",
+      "original_characters": 19105,
+      "final_characters": 19105,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:76-lealtad-conexion-y-dulzura-con-fuego": {
+      "source": "prompts-90/76-lealtad-conexion-y-dulzura-con-fuego.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/76-lealtad-conexion-y-dulzura-con-fuego.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/76-lealtad-conexion-y-dulzura-con-fuego.txt",
+      "original_characters": 13328,
+      "final_characters": 13328,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-76-lealtad-conexion-y-dulzura-con-fuego"
+      ]
+    },
+    "guide:77-curiosidad-y-creacion": {
+      "source": "prompts-guia-90/77-curiosidad-y-creacion.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/77-curiosidad-y-creacion.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/77-curiosidad-y-creacion.txt",
+      "original_characters": 16844,
+      "final_characters": 16844,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:77-curiosidad-y-creacion": {
+      "source": "prompts-90/77-curiosidad-y-creacion.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/77-curiosidad-y-creacion.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/77-curiosidad-y-creacion.txt",
+      "original_characters": 12596,
+      "final_characters": 12596,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-77-curiosidad-y-creacion"
+      ]
+    },
+    "guide:78-formula-completa": {
+      "source": "prompts-guia-90/78-formula-completa.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/78-formula-completa.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/78-formula-completa.txt",
+      "original_characters": 14429,
+      "final_characters": 14429,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:78-formula-completa": {
+      "source": "prompts-90/78-formula-completa.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/78-formula-completa.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/78-formula-completa.txt",
+      "original_characters": 11517,
+      "final_characters": 11517,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-78-formula-completa"
+      ]
+    },
+    "guide:79-preparar-el-conjuro": {
+      "source": "prompts-guia-90/79-preparar-el-conjuro.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/79-preparar-el-conjuro.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/79-preparar-el-conjuro.txt",
+      "original_characters": 14245,
+      "final_characters": 14245,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:79-preparar-el-conjuro": {
+      "source": "prompts-90/79-preparar-el-conjuro.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/79-preparar-el-conjuro.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/79-preparar-el-conjuro.txt",
+      "original_characters": 11433,
+      "final_characters": 11433,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-79-preparar-el-conjuro"
+      ]
+    },
+    "guide:80-primera-descarga": {
+      "source": "prompts-guia-90/80-primera-descarga.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/80-primera-descarga.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/80-primera-descarga.txt",
+      "original_characters": 12085,
+      "final_characters": 12085,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:80-primera-descarga": {
+      "source": "prompts-90/80-primera-descarga.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/80-primera-descarga.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/80-primera-descarga.txt",
+      "original_characters": 10814,
+      "final_characters": 10814,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-80-primera-descarga"
+      ]
+    },
+    "guide:81-el-laboratorio-responde": {
+      "source": "prompts-guia-90/81-el-laboratorio-responde.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/81-el-laboratorio-responde.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/81-el-laboratorio-responde.txt",
+      "original_characters": 14316,
+      "final_characters": 14316,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:81-el-laboratorio-responde": {
+      "source": "prompts-90/81-el-laboratorio-responde.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/81-el-laboratorio-responde.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/81-el-laboratorio-responde.txt",
+      "original_characters": 11409,
+      "final_characters": 11409,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-81-el-laboratorio-responde"
+      ]
+    },
+    "guide:82-metodo-y-maravilla": {
+      "source": "prompts-guia-90/82-metodo-y-maravilla.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/82-metodo-y-maravilla.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/82-metodo-y-maravilla.txt",
+      "original_characters": 12484,
+      "final_characters": 12484,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:82-metodo-y-maravilla": {
+      "source": "prompts-90/82-metodo-y-maravilla.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/82-metodo-y-maravilla.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/82-metodo-y-maravilla.txt",
+      "original_characters": 11178,
+      "final_characters": 11178,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-82-metodo-y-maravilla"
+      ]
+    },
+    "guide:83-a-punto-de-romper-la-logica": {
+      "source": "prompts-guia-90/83-a-punto-de-romper-la-logica.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/83-a-punto-de-romper-la-logica.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/83-a-punto-de-romper-la-logica.txt",
+      "original_characters": 12354,
+      "final_characters": 12354,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:83-a-punto-de-romper-la-logica": {
+      "source": "prompts-90/83-a-punto-de-romper-la-logica.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/83-a-punto-de-romper-la-logica.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/83-a-punto-de-romper-la-logica.txt",
+      "original_characters": 10871,
+      "final_characters": 10871,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-83-a-punto-de-romper-la-logica"
+      ]
+    },
+    "guide:84-nace-la-estrella": {
+      "source": "prompts-guia-90/84-nace-la-estrella.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/84-nace-la-estrella.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/84-nace-la-estrella.txt",
+      "original_characters": 11927,
+      "final_characters": 11927,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:84-nace-la-estrella": {
+      "source": "prompts-90/84-nace-la-estrella.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/84-nace-la-estrella.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/84-nace-la-estrella.txt",
+      "original_characters": 10601,
+      "final_characters": 10601,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "laboratorio-oficina",
+        "guia-84-nace-la-estrella"
+      ]
+    },
+    "guide:85-estrella-gigantesca": {
+      "source": "prompts-guia-90/85-estrella-gigantesca.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/85-estrella-gigantesca.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/85-estrella-gigantesca.txt",
+      "original_characters": 12515,
+      "final_characters": 12515,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "zeus",
+        "yohi",
+        "caracoles",
+        "arana",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:85-estrella-gigantesca": {
+      "source": "prompts-90/85-estrella-gigantesca.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/85-estrella-gigantesca.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/85-estrella-gigantesca.txt",
+      "original_characters": 13062,
+      "final_characters": 13062,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "zeus",
+        "yohi",
+        "caracoles",
+        "arana",
+        "laboratorio-oficina",
+        "guia-85-estrella-gigantesca"
+      ]
+    },
+    "guide:86-flor-de-luz": {
+      "source": "prompts-guia-90/86-flor-de-luz.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/86-flor-de-luz.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/86-flor-de-luz.txt",
+      "original_characters": 12206,
+      "final_characters": 12206,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:86-flor-de-luz": {
+      "source": "prompts-90/86-flor-de-luz.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/86-flor-de-luz.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/86-flor-de-luz.txt",
+      "original_characters": 10982,
+      "final_characters": 10982,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "laboratorio-oficina",
+        "guia-86-flor-de-luz"
+      ]
+    },
+    "guide:87-ferry-llega": {
+      "source": "prompts-guia-90/87-ferry-llega.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/87-ferry-llega.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/87-ferry-llega.txt",
+      "original_characters": 12006,
+      "final_characters": 12006,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:87-ferry-llega": {
+      "source": "prompts-90/87-ferry-llega.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/87-ferry-llega.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/87-ferry-llega.txt",
+      "original_characters": 10857,
+      "final_characters": 10857,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "laboratorio-oficina",
+        "guia-87-ferry-llega"
+      ]
+    },
+    "guide:88-la-mano-elegida": {
+      "source": "prompts-guia-90/88-la-mano-elegida.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/88-la-mano-elegida.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/88-la-mano-elegida.txt",
+      "original_characters": 12145,
+      "final_characters": 12145,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "laboratorio-oficina"
+      ]
+    },
+    "final:88-la-mano-elegida": {
+      "source": "prompts-90/88-la-mano-elegida.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/88-la-mano-elegida.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/88-la-mano-elegida.txt",
+      "original_characters": 11043,
+      "final_characters": 11043,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "laboratorio-oficina",
+        "guia-88-la-mano-elegida"
+      ]
+    },
+    "guide:89-salir-y-conducir": {
+      "source": "prompts-guia-90/89-salir-y-conducir.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/89-salir-y-conducir.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/89-salir-y-conducir.txt",
+      "original_characters": 16459,
+      "final_characters": 16459,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "laboratorio-oficina",
+        "costa"
+      ]
+    },
+    "final:89-salir-y-conducir": {
+      "source": "prompts-90/89-salir-y-conducir.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/89-salir-y-conducir.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/89-salir-y-conducir.txt",
+      "original_characters": 12372,
+      "final_characters": 12372,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "laboratorio-oficina",
+        "costa",
+        "guia-89-salir-y-conducir"
+      ]
+    },
+    "guide:90-la-playa-abierta": {
+      "source": "prompts-guia-90/90-la-playa-abierta.md",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/guias/90-la-playa-abierta.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/guias/90-la-playa-abierta.txt",
+      "original_characters": 12073,
+      "final_characters": 12073,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "costa"
+      ]
+    },
+    "final:90-la-playa-abierta": {
+      "source": "prompts-90/90-la-playa-abierta.txt",
+      "original_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/originales/finales/90-la-playa-abierta.txt",
+      "prepared_path": "/Users/hassan/repos/29-razones/libro/produccion/prompts-corridas/corrida-90-2k-2-3-v9-referencias-guia/preparados/finales/90-la-playa-abierta.txt",
+      "original_characters": 10981,
+      "final_characters": 10981,
+      "rewritten_for_limit": false,
+      "limit_characters": 20000,
+      "attached_reference_ids": [
+        "style-reference",
+        "hassan",
+        "ferry",
+        "costa",
+        "guia-90-la-playa-abierta"
+      ]
+    }
+  },
+  "source_prompt_digest": "a239cef78c5d995fe2f0024ca0e9c0d6b78b86cb1f86209bd5189380117ac9b5"
+}

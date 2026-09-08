@@ -25,100 +25,100 @@ NO dibujes arte final, pintura digital pulida, cel shading terminado, superficie
 
 ## Continuidad de borde a borde
 
-- ENTRADA — última acción/estado de la página previa: El laboratorio se vuelve exacto y acogedor a la vez.
-- SALIDA — primera acción/estado que debe poder sostener la página siguiente: Sobres perfumados: tres sobres sin palabras liberan pétalos.
+- ENTRADA — última acción/estado de la página previa: Regresa al matraz como zigzag coral; Hassan recuerda las ideas inesperadas de Ferry.
+- SALIDA — primera acción/estado que debe poder sostener la página siguiente: El espacio del ingrediente 29 late dentro del matraz y proyecta una línea coral hacia la repisa de Hassan.
 - La primera celda debe continuar esa entrada o mostrar visualmente la transición. La última celda debe dejar la salida preparada; no copies composición de otra página.
 
 ## Desglose por celda
 
 ### Celda 1 — fila 1 izquierda
 - Función en lectura: ancla de entrada: establece el lugar, tiempo y eje espacial.
-- Entorno y hora: laboratorio minimalista que cambia gradualmente por el conjuro; tarde que avanza a noche del 10 de septiembre.
-- Personajes y vestuario: Hassan adulto; Ferry evocada sólo donde el beat lo indica. Hassan: bata blanca sobre azul marino y carbón. Ferry sólo existe como evocación arquetípica de ingrediente en 66–77, jamás como llegada física.
-- Cámara/composición: plano general cinematográfico, profundidad visible y lectura de ambiente; posición en retícula: fila 1 izquierda.
-- Anotaciones gráficas obligatorias: esquina con código C1; rectángulo de encuadre, línea de horizonte, flecha de cámara, flecha de mirada, flecha de luz, línea de acción y círculo rojo alrededor de la utilería crítica.
+- Entorno y hora: continuidad del estado global de página; sólo cambia lo declarado en acción.
+- Personajes y vestuario: usar clave ID/VEST global; no introducir personajes ni accesorios extra.
+- Cámara/composición: plano de establecimiento, composición clara y aire alrededor del sujeto; posición en retícula: fila 1 izquierda.
+- Marcas: C1, cámara, mirada, luz, línea de acción, horizonte, prop rojo y silueta vacía de lettering.
 - Especie/raza bloqueada: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
-- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: Hassan adulto; Ferry evocada sólo donde el beat lo indica; VEST: Hassan: bata blanca sobre azul marino y carbón. Ferry sólo existe como evocación arquetípica de ingrediente en 66–77, jamás como llegada física; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/TIEMPO: laboratorio minimalista que cambia gradualmente por el conjuro, tarde que avanza a noche del 10 de septiembre; CÁMARA/ESPACIO: plano general cinematográfico, profundidad visible y lectura de ambiente, fila 1 izquierda; CUERPO/MIRADA: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales; mirada dirigida a Ferry; no mirar a cámara salvo que la acción lo exija; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: conserva el estado visible para la siguiente celda de esta página.
-- Acción y utilería exacta: Campanillas de sol: tres campanillas sueltan chispas amarillas. Ferry aparece como aventurera solar original, vestido lavanda-oro, campanillas y sonrisa radiante; energía de alegría sin copiar princesas.
-- Pose y apoyo corporal: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales.
-- Mirada/eje de atención: mirada dirigida a Ferry; no mirar a cámara salvo que la acción lo exija.
-- Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): Hassan — pensamiento interior: "16. Campanillas de sol."
-- Marcador visual de lettering: dibuja sólo la silueta vacía y ubicación de superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo; usa un código corto de celda, nunca el diálogo literal.
+- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: F (según leyenda de página); VEST: base de página, sólo cambios declarados; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/T: continuo; CAM: plano de establecimiento, composición clara y aire alrededor del sujeto; CUERPO/MIRADA: interacción natural: brazo que trabaja con codo suavemente flexionado y muñeca posible; mano libre relajada y visible; mirada dirigida al matraz; no mirar a cámara salvo que la acción lo exija; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: continúa a C2.
+- Acción y utilería exacta: 27. Trofeo de cuerpo en movimiento: un trofeo abstracto deja una estela de salto dentro del matraz. Ferry aparece como atleta campeona original, uniforme coral-oro sin logos, pose de salto y trofeo abstracto; energía de movimiento y fortaleza.
+- Pose y apoyo corporal: interacción natural: brazo que trabaja con codo suavemente flexionado y muñeca posible; mano libre relajada y visible.
+- Mirada/eje de atención: mirada dirigida al matraz; no mirar a cámara salvo que la acción lo exija.
+- Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): Hassan — pensamiento interior: "27. Trofeo de cuerpo en movimiento."
+- Lettering: silueta vacía en superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo; sólo código corto, nunca diálogo literal.
 - Estado que debe respetarse: Mantener el estado canónico de página; no introducir utilería nueva.
 
 ### Celda 2 — fila 1 derecha
 - Función en lectura: desarrollo: avanza una única acción sin cambiar de lugar ni de estado sin mostrar la causa.
-- Entorno y hora: laboratorio minimalista que cambia gradualmente por el conjuro; tarde que avanza a noche del 10 de septiembre.
-- Personajes y vestuario: Hassan adulto; Ferry evocada sólo donde el beat lo indica. Hassan: bata blanca sobre azul marino y carbón. Ferry sólo existe como evocación arquetípica de ingrediente en 66–77, jamás como llegada física.
+- Entorno y hora: continuidad del estado global de página; sólo cambia lo declarado en acción.
+- Personajes y vestuario: usar clave ID/VEST global; no introducir personajes ni accesorios extra.
 - Cámara/composición: plano medio dinámico, gesto y acción perfectamente legibles; posición en retícula: fila 1 derecha.
-- Anotaciones gráficas obligatorias: esquina con código C2; rectángulo de encuadre, línea de horizonte, flecha de cámara, flecha de mirada, flecha de luz, línea de acción y círculo rojo alrededor de la utilería crítica.
+- Marcas: C2, cámara, mirada, luz, línea de acción, horizonte, prop rojo y silueta vacía de lettering.
 - Especie/raza bloqueada: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
-- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: Hassan adulto; Ferry evocada sólo donde el beat lo indica; VEST: Hassan: bata blanca sobre azul marino y carbón. Ferry sólo existe como evocación arquetípica de ingrediente en 66–77, jamás como llegada física; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/TIEMPO: laboratorio minimalista que cambia gradualmente por el conjuro, tarde que avanza a noche del 10 de septiembre; CÁMARA/ESPACIO: plano medio dinámico, gesto y acción perfectamente legibles, fila 1 derecha; CUERPO/MIRADA: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales; sin mirada de personaje obligatoria; el eje visual conduce al objeto o fenómeno descrito; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: conserva el estado visible para la siguiente celda de esta página.
-- Acción y utilería exacta: El líquido responde con ondas alegres.
+- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: H/F (según leyenda de página); VEST: base de página, sólo cambios declarados; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/T: continuo; CAM: plano medio dinámico, gesto y acción perfectamente legibles; CUERPO/MIRADA: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales; mirada dirigida a Ferry; no mirar a cámara salvo que la acción lo exija; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: continúa a C3.
+- Acción y utilería exacta: La estela se absorbe como líneas de fuerza y Hassan recuerda la fuerza de Ferry sin necesidad de presumirla.
 - Pose y apoyo corporal: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales.
-- Mirada/eje de atención: sin mirada de personaje obligatoria; el eje visual conduce al objeto o fenómeno descrito.
-- Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): Hassan — pensamiento interior: "Cuando llegas contenta, se me contagia la alegría."
-- Marcador visual de lettering: dibuja sólo la silueta vacía y ubicación de superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo; usa un código corto de celda, nunca el diálogo literal.
+- Mirada/eje de atención: mirada dirigida a Ferry; no mirar a cámara salvo que la acción lo exija.
+- Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): Hassan — pensamiento interior: "Tu fuerza se nota aunque no la presumas, Ferry."
+- Lettering: silueta vacía en superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo; sólo código corto, nunca diálogo literal.
 - Estado que debe respetarse: Mantener el estado canónico de página; no introducir utilería nueva.
 
 ### Celda 3 — fila 2 izquierda
 - Función en lectura: desarrollo: avanza una única acción sin cambiar de lugar ni de estado sin mostrar la causa.
-- Entorno y hora: laboratorio minimalista que cambia gradualmente por el conjuro; tarde que avanza a noche del 10 de septiembre.
-- Personajes y vestuario: Hassan adulto; Ferry evocada sólo donde el beat lo indica. Hassan: bata blanca sobre azul marino y carbón. Ferry sólo existe como evocación arquetípica de ingrediente en 66–77, jamás como llegada física.
+- Entorno y hora: continuidad del estado global de página; sólo cambia lo declarado en acción.
+- Personajes y vestuario: usar clave ID/VEST global; no introducir personajes ni accesorios extra.
 - Cámara/composición: plano medio dinámico, gesto y acción perfectamente legibles; posición en retícula: fila 2 izquierda.
-- Anotaciones gráficas obligatorias: esquina con código C3; rectángulo de encuadre, línea de horizonte, flecha de cámara, flecha de mirada, flecha de luz, línea de acción y círculo rojo alrededor de la utilería crítica.
+- Marcas: C3, cámara, mirada, luz, línea de acción, horizonte, prop rojo y silueta vacía de lettering.
 - Especie/raza bloqueada: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
-- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: Hassan adulto; Ferry evocada sólo donde el beat lo indica; VEST: Hassan: bata blanca sobre azul marino y carbón. Ferry sólo existe como evocación arquetípica de ingrediente en 66–77, jamás como llegada física; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/TIEMPO: laboratorio minimalista que cambia gradualmente por el conjuro, tarde que avanza a noche del 10 de septiembre; CÁMARA/ESPACIO: plano medio dinámico, gesto y acción perfectamente legibles, fila 2 izquierda; CUERPO/MIRADA: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales; mirada dirigida a Ferry; no mirar a cámara salvo que la acción lo exija; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: conserva el estado visible para la siguiente celda de esta página.
-- Acción y utilería exacta: Reloj de arena sereno: los granos caen despacio, suspendiendo el caos. Ferry aparece como escuchadora serena original, atuendo arena-azul y reloj de arena; energía paciente, paisaje minimalista de viento y agua.
-- Pose y apoyo corporal: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales.
+- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: F (según leyenda de página); VEST: base de página, sólo cambios declarados; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/T: continuo; CAM: plano medio dinámico, gesto y acción perfectamente legibles; CUERPO/MIRADA: reacción legible: hombros orientados al foco, cabeza girada sólo lo necesario y ambos brazos en reposo natural; mirada dirigida a Ferry; no mirar a cámara salvo que la acción lo exija; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: continúa a C4.
+- Acción y utilería exacta: 28. Anillo de fidelidad: un anillo sobrio gira alrededor de las luces sin encadenarlas. Ferry aparece como viajera fiel original, anillo sobrio, abrigo marfil y mirada tranquila; energía de lealtad libre.
+- Pose y apoyo corporal: reacción legible: hombros orientados al foco, cabeza girada sólo lo necesario y ambos brazos en reposo natural.
 - Mirada/eje de atención: mirada dirigida a Ferry; no mirar a cámara salvo que la acción lo exija.
-- Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): Hassan — pensamiento interior: "17. Reloj de arena sereno."
-- Marcador visual de lettering: dibuja sólo la silueta vacía y ubicación de superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo; usa un código corto de celda, nunca el diálogo literal.
+- Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): Hassan — pensamiento interior: "28. Anillo de fidelidad."
+- Lettering: silueta vacía en superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo; sólo código corto, nunca diálogo literal.
 - Estado que debe respetarse: Mantener el estado canónico de página; no introducir utilería nueva.
 
 ### Celda 4 — fila 2 derecha
 - Función en lectura: desarrollo: avanza una única acción sin cambiar de lugar ni de estado sin mostrar la causa.
-- Entorno y hora: laboratorio minimalista que cambia gradualmente por el conjuro; tarde que avanza a noche del 10 de septiembre.
-- Personajes y vestuario: Hassan adulto; Ferry evocada sólo donde el beat lo indica. Hassan: bata blanca sobre azul marino y carbón. Ferry sólo existe como evocación arquetípica de ingrediente en 66–77, jamás como llegada física.
+- Entorno y hora: continuidad del estado global de página; sólo cambia lo declarado en acción.
+- Personajes y vestuario: usar clave ID/VEST global; no introducir personajes ni accesorios extra.
 - Cámara/composición: plano medio dinámico, gesto y acción perfectamente legibles; posición en retícula: fila 2 derecha.
-- Anotaciones gráficas obligatorias: esquina con código C4; rectángulo de encuadre, línea de horizonte, flecha de cámara, flecha de mirada, flecha de luz, línea de acción y círculo rojo alrededor de la utilería crítica.
+- Marcas: C4, cámara, mirada, luz, línea de acción, horizonte, prop rojo y silueta vacía de lettering.
 - Especie/raza bloqueada: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
-- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: Hassan adulto; Ferry evocada sólo donde el beat lo indica; VEST: Hassan: bata blanca sobre azul marino y carbón. Ferry sólo existe como evocación arquetípica de ingrediente en 66–77, jamás como llegada física; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/TIEMPO: laboratorio minimalista que cambia gradualmente por el conjuro, tarde que avanza a noche del 10 de septiembre; CÁMARA/ESPACIO: plano medio dinámico, gesto y acción perfectamente legibles, fila 2 derecha; CUERPO/MIRADA: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales; mirada dirigida al foco de la acción de esta celda; no usar mirada perdida ni contacto a cámara gratuito; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: conserva el estado visible para la siguiente celda de esta página.
-- Acción y utilería exacta: Hassan espera antes de agregar el siguiente elemento.
+- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: H/F (según leyenda de página); VEST: base de página, sólo cambios declarados; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/T: continuo; CAM: plano medio dinámico, gesto y acción perfectamente legibles; CUERPO/MIRADA: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales; mirada dirigida a Ferry; no mirar a cámara salvo que la acción lo exija; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: continúa a C5.
+- Acción y utilería exacta: El anillo se integra con holgura y Hassan recuerda que Ferry siempre puede elegir quedarse o partir.
 - Pose y apoyo corporal: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales.
-- Mirada/eje de atención: mirada dirigida al foco de la acción de esta celda; no usar mirada perdida ni contacto a cámara gratuito.
-- Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): Hassan — pensamiento interior: "Esperar sin presionar también es querer."
-- Marcador visual de lettering: dibuja sólo la silueta vacía y ubicación de superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo; usa un código corto de celda, nunca el diálogo literal.
+- Mirada/eje de atención: mirada dirigida a Ferry; no mirar a cámara salvo que la acción lo exija.
+- Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): Hassan — pensamiento interior: "Quedarse porque quieres, Ferry; no porque tienes que hacerlo."
+- Lettering: silueta vacía en superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo; sólo código corto, nunca diálogo literal.
 - Estado que debe respetarse: Mantener el estado canónico de página; no introducir utilería nueva.
 
 ### Celda 5 — fila 3 izquierda
 - Función en lectura: desarrollo: avanza una única acción sin cambiar de lugar ni de estado sin mostrar la causa.
-- Entorno y hora: laboratorio minimalista que cambia gradualmente por el conjuro; tarde que avanza a noche del 10 de septiembre.
-- Personajes y vestuario: Hassan adulto; Ferry evocada sólo donde el beat lo indica. Hassan: bata blanca sobre azul marino y carbón. Ferry sólo existe como evocación arquetípica de ingrediente en 66–77, jamás como llegada física.
+- Entorno y hora: continuidad del estado global de página; sólo cambia lo declarado en acción.
+- Personajes y vestuario: usar clave ID/VEST global; no introducir personajes ni accesorios extra.
 - Cámara/composición: plano medio dinámico, gesto y acción perfectamente legibles; posición en retícula: fila 3 izquierda.
-- Anotaciones gráficas obligatorias: esquina con código C5; rectángulo de encuadre, línea de horizonte, flecha de cámara, flecha de mirada, flecha de luz, línea de acción y círculo rojo alrededor de la utilería crítica.
+- Marcas: C5, cámara, mirada, luz, línea de acción, horizonte, prop rojo y silueta vacía de lettering.
 - Especie/raza bloqueada: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
-- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: Hassan adulto; Ferry evocada sólo donde el beat lo indica; VEST: Hassan: bata blanca sobre azul marino y carbón. Ferry sólo existe como evocación arquetípica de ingrediente en 66–77, jamás como llegada física; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/TIEMPO: laboratorio minimalista que cambia gradualmente por el conjuro, tarde que avanza a noche del 10 de septiembre; CÁMARA/ESPACIO: plano medio dinámico, gesto y acción perfectamente legibles, fila 3 izquierda; CUERPO/MIRADA: plano de objeto: no inventar extremidades; si entra una mano, mostrar una sola mano de cinco dedos con agarre posible; mirada dirigida al matraz; no mirar a cámara salvo que la acción lo exija; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: conserva el estado visible para la siguiente celda de esta página.
-- Acción y utilería exacta: Manta de algodón: la manta envuelve un instante el matraz como una nube. Ferry aparece como icono de cariño original, moño coral propio y manta blanca envolvente; energía de refugio, sin rasgos de personaje conocido.
-- Pose y apoyo corporal: plano de objeto: no inventar extremidades; si entra una mano, mostrar una sola mano de cinco dedos con agarre posible.
-- Mirada/eje de atención: mirada dirigida al matraz; no mirar a cámara salvo que la acción lo exija.
-- Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): Hassan — pensamiento interior: "18. Manta de algodón de cariño."
-- Marcador visual de lettering: dibuja sólo la silueta vacía y ubicación de superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo; usa un código corto de celda, nunca el diálogo literal.
+- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: ELENCO (según leyenda de página); VEST: base de página, sólo cambios declarados; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/T: continuo; CAM: plano medio dinámico, gesto y acción perfectamente legibles; CUERPO/MIRADA: interacción natural: brazo que trabaja con codo suavemente flexionado y muñeca posible; mano libre relajada y visible; mirada dirigida al foco de la acción de esta celda; no usar mirada perdida ni contacto a cámara gratuito; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: continúa a C6.
+- Acción y utilería exacta: Las veintiocho luces se ordenan y dejan un espacio vacío, coral y dorado, para el último ingrediente.
+- Pose y apoyo corporal: interacción natural: brazo que trabaja con codo suavemente flexionado y muñeca posible; mano libre relajada y visible.
+- Mirada/eje de atención: mirada dirigida al foco de la acción de esta celda; no usar mirada perdida ni contacto a cámara gratuito.
+- Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): Hassan — pensamiento interior: "Falta una razón. Y el matraz ya me dijo dónde está."
+- Lettering: silueta vacía en superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo; sólo código corto, nunca diálogo literal.
 - Estado que debe respetarse: Mantener el estado canónico de página; no introducir utilería nueva.
 
 ### Celda 6 — fila 3 derecha
 - Función en lectura: cierre: deja una dirección, objeto o emoción que sostenga el siguiente corte.
-- Entorno y hora: laboratorio minimalista que cambia gradualmente por el conjuro; tarde que avanza a noche del 10 de septiembre.
-- Personajes y vestuario: Hassan adulto; Ferry evocada sólo donde el beat lo indica. Hassan: bata blanca sobre azul marino y carbón. Ferry sólo existe como evocación arquetípica de ingrediente en 66–77, jamás como llegada física.
-- Cámara/composición: primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página; posición en retícula: fila 3 derecha.
-- Anotaciones gráficas obligatorias: esquina con código C6; rectángulo de encuadre, línea de horizonte, flecha de cámara, flecha de mirada, flecha de luz, línea de acción y círculo rojo alrededor de la utilería crítica.
+- Entorno y hora: continuidad del estado global de página; sólo cambia lo declarado en acción.
+- Personajes y vestuario: usar clave ID/VEST global; no introducir personajes ni accesorios extra.
+- Cámara/composición: plano detalle, foco nítido en el objeto y profundidad de campo suave; posición en retícula: fila 3 derecha.
+- Marcas: C6, cámara, mirada, luz, línea de acción, horizonte, prop rojo y silueta vacía de lettering.
 - Especie/raza bloqueada: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
-- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: Hassan adulto; Ferry evocada sólo donde el beat lo indica; VEST: Hassan: bata blanca sobre azul marino y carbón. Ferry sólo existe como evocación arquetípica de ingrediente en 66–77, jamás como llegada física; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/TIEMPO: laboratorio minimalista que cambia gradualmente por el conjuro, tarde que avanza a noche del 10 de septiembre; CÁMARA/ESPACIO: primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página, fila 3 derecha; CUERPO/MIRADA: interacción natural: brazo que trabaja con codo suavemente flexionado y muñeca posible; mano libre relajada y visible; sin mirada de personaje obligatoria; el eje visual conduce al objeto o fenómeno descrito; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: prepara el estado que recoge la siguiente página.
-- Acción y utilería exacta: Al retirarse, deja una luz blanca y suave en la mezcla.
-- Pose y apoyo corporal: interacción natural: brazo que trabaja con codo suavemente flexionado y muñeca posible; mano libre relajada y visible.
-- Mirada/eje de atención: sin mirada de personaje obligatoria; el eje visual conduce al objeto o fenómeno descrito.
-- Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): SFX / efecto visual: "poof"
-- Marcador visual de lettering: dibuja sólo la silueta vacía y ubicación de junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave; usa un código corto de celda, nunca el diálogo literal.
+- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: H (según leyenda de página); VEST: base de página, sólo cambios declarados; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/T: continuo; CAM: plano detalle, foco nítido en el objeto y profundidad de campo suave; CUERPO/MIRADA: plano de objeto: no inventar extremidades; si entra una mano, mostrar una sola mano de cinco dedos con agarre posible; mirada dirigida a la nota; no mirar a cámara salvo que la acción lo exija; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: salida a página siguiente.
+- Acción y utilería exacta: Hassan busca en la nota el círculo 29; el matraz responde con un latido que apunta al pincel que aún falta.
+- Pose y apoyo corporal: plano de objeto: no inventar extremidades; si entra una mano, mostrar una sola mano de cinco dedos con agarre posible.
+- Mirada/eje de atención: mirada dirigida a la nota; no mirar a cámara salvo que la acción lo exija.
+- Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): Hassan — pensamiento interior: "El último círculo apunta al pincel."
+- Lettering: silueta vacía en superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo; sólo código corto, nunca diálogo literal.
 - Estado que debe respetarse: Mantener el estado canónico de página; no introducir utilería nueva.
 
 ## Chequeo de aprobación

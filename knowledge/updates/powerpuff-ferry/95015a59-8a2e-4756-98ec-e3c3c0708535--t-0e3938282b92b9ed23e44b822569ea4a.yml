@@ -1,0 +1,53 @@
+{
+  "schema": 3,
+  "id": "95015a59-8a2e-4756-98ec-e3c3c0708535",
+  "at": "2026-09-08T21:08:09Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "d6ea836a-a27a-4574-9ade-508cf30d2672",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/d6ea836a-a27a-4574-9ade-508cf30d2672--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "be87817d7dc8788b56d469cb1b6bccfb091d5978c81523adbfa7a521e831fd49",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/95015a59-8a2e-4756-98ec-e3c3c0708535.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "v9-selective-failed-retry",
+      "statement": "El modo --retry-failed rearma sólo fases terminales seleccionadas sin borrar PNGs ni recibos archivados."
+    },
+    {
+      "ledger": "verification",
+      "id": "v9-failed-retry-preview",
+      "statement": "El preview detectó exactamente final 90 y las siete guías agotadas; por página limita correctamente el rearmado."
+    },
+    {
+      "ledger": "last_session",
+      "id": "v9-retry-ready",
+      "statement": "La final 90 puede reintentarse por su 500 transitorio; las siete guías requieren una adaptación por exceso de longitud."
+    },
+    {
+      "ledger": "timeline",
+      "id": "v9-selective-recovery",
+      "statement": "Se añadió reintento selectivo de fases terminales de V9."
+    }
+  ],
+  "timeline": {
+    "summary": "2026-09-08: se añadió recuperación selectiva de fallos terminales a V9."
+  },
+  "log": {
+    "summary": "V9 puede rearmar fallos terminales por página sin tocar arte terminado ni recibos archivados."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

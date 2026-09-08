@@ -1,0 +1,53 @@
+{
+  "schema": 3,
+  "id": "39a73401-9126-4a8e-a4ff-1176087aece0",
+  "at": "2026-09-08T21:10:20Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "d6ea836a-a27a-4574-9ade-508cf30d2672",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/d6ea836a-a27a-4574-9ade-508cf30d2672--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "9c721f778570fb6049476797001e36821f5566ce2748bb93743f2dce0da92e0c",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/39a73401-9126-4a8e-a4ff-1176087aece0.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "gpt-image-2-guide-text-limit",
+      "statement": "Las guías V9 deben materializarse con 20,000 caracteres o menos para gpt-image-2."
+    },
+    {
+      "ledger": "verification",
+      "id": "gpt-image-2-guide-text-threshold",
+      "statement": "83 guías pasaron hasta 19,888 caracteres y siete fallaron desde 20,002; la documentación local declara 20,000."
+    },
+    {
+      "ledger": "last_session",
+      "id": "v9-guide-text-limit-diagnosed",
+      "statement": "Los fallos de guías 28 y 72–77 son deterministas por límite de texto, no transitorios."
+    },
+    {
+      "ledger": "timeline",
+      "id": "v9-guide-text-limit-measured",
+      "statement": "Se estableció con snapshots reales el límite de 20,000 caracteres de la guía V9."
+    }
+  ],
+  "timeline": {
+    "summary": "2026-09-08: se midió el umbral de texto de Kie en las snapshots de V9."
+  },
+  "log": {
+    "summary": "La corrida V9 confirmó el límite de 20,000 caracteres de gpt-image-2 para prompts de guía."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

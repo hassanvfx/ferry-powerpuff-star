@@ -1,0 +1,53 @@
+{
+  "schema": 3,
+  "id": "5ce5c916-fe4a-4739-b213-7593b42fc7e5",
+  "at": "2026-09-08T19:25:07Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "d6ea836a-a27a-4574-9ade-508cf30d2672",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/d6ea836a-a27a-4574-9ade-508cf30d2672--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "3b14ff9aec1d7dcb4178779e229dbf6c3c7aa55d9d4e37f73ae63b29fd8586a8",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/5ce5c916-fe4a-4739-b213-7593b42fc7e5.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "v9-declared-reference-payload",
+      "statement": "V9 toma de cada prompt fuente las fichas declaradas y materializa una lista exacta de adjuntos para guía y final."
+    },
+    {
+      "ledger": "verification",
+      "id": "v9-declared-reference-proof",
+      "statement": "Las 90 fuentes, la página 16 sin/con candidatas y un submit aislado confirmaron rutas, filtros y paridad snapshot-payload."
+    },
+    {
+      "ledger": "last_session",
+      "id": "v9-dry-run-ready",
+      "statement": "V9 está preparada localmente, sin envío a Kie; las fichas candidatas requieren el flag explícito."
+    },
+    {
+      "ledger": "timeline",
+      "id": "v9-declared-reference-run",
+      "statement": "Se creó el ejecutor y configuración V9 aislados para referencias declaradas por página."
+    }
+  ],
+  "timeline": {
+    "summary": "2026-09-08: se preparó V9 de guía→final con declaraciones de referencias y candidatas opt-in."
+  },
+  "log": {
+    "summary": "V9 aislada selecciona referencias declaradas por página y registra el payload de guía y final."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

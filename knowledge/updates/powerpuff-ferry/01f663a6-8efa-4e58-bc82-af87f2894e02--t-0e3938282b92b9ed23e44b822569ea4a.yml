@@ -1,0 +1,20 @@
+{
+  "schema": 3,
+  "id": "01f663a6-8efa-4e58-bc82-af87f2894e02",
+  "at": "2026-09-08T22:19:29Z",
+  "author": {"id": "t-0e3938282b92b9ed23e44b822569ea4a"},
+  "topic": "powerpuff-ferry",
+  "stream": "7742bbea-0414-4e9a-9ca8-cd7944732ea5",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/7742bbea-0414-4e9a-9ca8-cd7944732ea5--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "231fd9a6d9775ec79cdee888ff3acde9487c17264d6b7d779da7c05706ee9638",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/01f663a6-8efa-4e58-bc82-af87f2894e02.md"
+  },
+  "reviews": {"specification": "changed", "verification": "changed", "goals": "unchanged", "last_session": "changed", "timeline": "changed"},
+  "ledger_changes": [],
+  "timeline": {"summary": "La voz de Hassan y Ferry se ajustó en el umbral, la nota, el matraz y la llegada final."},
+  "log": {"summary": "Se recompilaron los 90 prompts y las 90 guías sin exceder el límite de producción."},
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

@@ -212,7 +212,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto diegético permitido:** NINGUNO
 3. **inferior central — plano medio dinámico, gesto y acción perfectamente legibles.** Gira en el aire con seguridad atlética.
    **Lettering:** globo de diálogo de Hassan; superior izquierda de la celda, globo redondeado junto a Hassan; cola clara dirigida a Hassan, máximo 18% del área de la celda.
-   **Texto impreso exacto:** "Ferry… hasta dormido sigo pensando en ti."
+   **Texto impreso exacto:** "Amorcito… ¿eres tú?"
    **Texto diegético permitido:** NINGUNO
 4. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Aterriza con una sonrisa cálida frente a Hassan.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
@@ -229,7 +229,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto diegético permitido:** NINGUNO
 2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Su chaqueta corta coral y blanca se mueve con el salto, sin emblemas.
    **Lettering:** globo de diálogo de Ferry; superior derecha de la celda, globo redondeado junto a Ferry; cola clara, máximo 18% del área de la celda.
-   **Texto impreso exacto:** "Holi, Hassan. Llegaste justo a tiempo."
+   **Texto impreso exacto:** "Holi, Amorcito. Llegaste justo a tiempo."
    **Texto diegético permitido:** NINGUNO
 3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Un hilo rojo casi invisible cruza el fondo entre ella y Hassan.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
@@ -253,15 +253,15 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 **Retícula:** una viñeta superior de 48%; dos viñetas inferiores iguales.
 
-1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** Un Rottweiler grande y tranquilo sale de una sombra dorada.
+1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** Un Rottweiler adulto macho negro y fuego sale de una sombra dorada y reconoce a Ferry.
    **Lettering:** globo de diálogo de Ferry; superior izquierda de la celda, globo redondeado junto a Ferry; cola clara, máximo 18% del área de la celda.
    **Texto impreso exacto:** "Zeus."
    **Texto diegético permitido:** NINGUNO
-2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Ferry se agacha a su altura sin perder elegancia.
+2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Ferry se agacha a su altura, mira el sendero y lo llama con voz suave.
    **Lettering:** globo de diálogo de Ferry; superior derecha de la celda, globo redondeado junto a Ferry; cola clara, máximo 18% del área de la celda.
-   **Texto impreso exacto:** "Todo bien, mi Pakito. Estoy aquí contigo."
+   **Texto impreso exacto:** "Ven, mi Pakito. Estoy aquí."
    **Texto diegético permitido:** NINGUNO
-3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Zeus mueve la cola al verla.
+3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Zeus mueve la cola y avanza hacia ella, seguro de que la conoce.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "wuf"
    **Texto diegético permitido:** NINGUNO
@@ -270,47 +270,47 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 **Retícula:** dos viñetas superiores iguales; una viñeta inferior de ancho completo.
 
-1. **superior izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** Zeus apoya la cabeza en el hombro de Ferry.
+1. **superior izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** Zeus se acerca despacio y apoya la cabeza en el hombro de Ferry.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "thump"
    **Texto diegético permitido:** NINGUNO
-2. **superior derecha — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Ella le acaricia el lomo con ambas manos.
+2. **superior derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Ferry le rasca detrás de la oreja; Zeus relaja el peso del cuerpo y acepta el abrazo.
    **Lettering:** globo de diálogo de Ferry; superior derecha de la celda, globo redondeado junto a Ferry; cola clara, máximo 18% del área de la celda.
-   **Texto impreso exacto:** "Buen chico. Ya sabía que podías confiar en mí."
+   **Texto impreso exacto:** "Ven, mi bebé. Quédate cerquita."
    **Texto diegético permitido:** NINGUNO
-3. **inferior panorámica — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Un halo de escudo dorado los protege, suave y no agresivo.
-   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "tinnn"
+3. **inferior panorámica — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Hassan observa cómo Ferry revisa con la mirada el cuerpo de Zeus antes de dejarlo jugar.
+   **Lettering:** globo de diálogo de Hassan; superior izquierda de la celda, globo redondeado junto a Hassan; cola clara dirigida a Hassan, máximo 18% del área de la celda.
+   **Texto impreso exacto:** "Primero lo calma; luego se fija si algo le duele."
    **Texto diegético permitido:** NINGUNO
 
 ## 18. Cuidado fuerte — 2 celdas
 
 **Retícula:** dos franjas horizontales: superior 58%, inferior 42%.
 
-1. **franja superior a sangre — plano de establecimiento, composición clara y aire alrededor del sujeto.** Ferry revisa con atención una pequeña espina vegetal junto a la pata de Zeus.
+1. **franja superior a sangre — plano de establecimiento, composición clara y aire alrededor del sujeto.** Ferry ve que Zeus levanta una pata: una pequeña espina vegetal quedó entre sus almohadillas. Hassan se agacha a su lado mientras ella la retira con cuidado.
    **Lettering:** globo de diálogo de Ferry; superior izquierda de la celda, globo redondeado junto a Ferry; cola clara, máximo 18% del área de la celda.
-   **Texto impreso exacto:** "Déjame ver. No quiero que te duela ni un poquito."
+   **Texto impreso exacto:** "A ver, mi bebé precioso, ¿qué te pasó? Yo te curo."
    **Texto diegético permitido:** NINGUNO
-2. **franja inferior a sangre — plano general cinematográfico, profundidad visible y lectura de ambiente.** Zeus corre sano hacia ella por un campo de luz.
-   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "zap"
+2. **franja inferior a sangre — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Zeus apoya las cuatro patas, prueba el peso sin dolor y corre sano hacia Ferry por el sendero seco; no hay agua, gota ni magia nueva.
+   **Lettering:** globo de diálogo de Ferry; superior derecha de la celda, globo redondeado junto a Ferry; cola clara, máximo 18% del área de la celda.
+   **Texto impreso exacto:** "Listo, Pakito. Prueba tu patita conmigo."
    **Texto diegético permitido:** NINGUNO
 
 ## 19. La mano protectora — 3 celdas
 
 **Retícula:** dos viñetas superiores iguales; una viñeta inferior de ancho completo.
 
-1. **superior izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** Una gota enorme cae sobre el jardín.
-   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "plop"
+1. **superior izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** Zeus frena frente a Ferry y ella abre los brazos; Hassan queda detrás, viendo que el cuidado tuvo una consecuencia clara.
+   **Lettering:** globo de diálogo de Hassan; superior izquierda de la celda, globo redondeado junto a Hassan; cola clara dirigida a Hassan, máximo 18% del área de la celda.
+   **Texto impreso exacto:** "No fue suerte. Ella vio el problema antes de que él pudiera explicarlo."
    **Texto diegético permitido:** NINGUNO
-2. **superior derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Ferry abre la palma y desvía la gota como una burbuja luminosa.
+2. **superior derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Zeus llega a ella, recibe una caricia en la cabeza y se recuesta junto a sus piernas, ya tranquilo.
    **Lettering:** globo de diálogo de Ferry; superior derecha de la celda, globo redondeado junto a Ferry; cola clara, máximo 18% del área de la celda.
-   **Texto impreso exacto:** "Aquí estás. No te me escondas solito."
+   **Texto impreso exacto:** "Ya estás bien, mi Pakito. Ven a descansar."
    **Texto diegético permitido:** NINGUNO
-3. **inferior panorámica — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Zeus mira la escena seguro, sin sobresalto.
-   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "fiuu"
+3. **inferior panorámica — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Ferry deja una mano protectora sobre el lomo de Zeus; él mira a Hassan seguro, sin sobresalto. No hay gota, burbuja ni otro animal.
+   **Lettering:** globo de diálogo de Hassan; superior izquierda de la celda, globo redondeado junto a Hassan; cola clara dirigida a Hassan, máximo 18% del área de la celda.
+   **Texto impreso exacto:** "Por eso Zeus confía: contigo el cuidado sí llega a algún lado."
    **Texto diegético permitido:** NINGUNO
 
 ## 20. Yohi y la hoja fresca — 3 celdas
@@ -319,9 +319,9 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** Ferry corta una hoja verde fresca con cuidado.
    **Lettering:** globo de diálogo de Ferry; superior izquierda de la celda, globo redondeado junto a Ferry; cola clara, máximo 18% del área de la celda.
-   **Texto impreso exacto:** "Buenos días, Yohi. ¿Listo para tu hoja favorita?"
+   **Texto impreso exacto:** "Buenos días, Yohi. ¿Lista para tu hoja favorita?"
    **Texto diegético permitido:** NINGUNO
-2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Una tortuga sulcata bebé, Yohi, asoma desde un rincón cálido.
+2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Una tortuga sulcata bebé hembra, Yohi, asoma desde un rincón cálido.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "crisp"
    **Texto diegético permitido:** NINGUNO
@@ -338,9 +338,9 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "toc… toc…"
    **Texto diegético permitido:** NINGUNO
-2. **celda derecha dominante — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Ferry sonríe desde el fondo, sin invadir su espacio.
+2. **celda derecha dominante — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Ferry sonríe desde el fondo, sin invadir su espacio ni apurarla.
    **Lettering:** globo de diálogo de Ferry; superior derecha de la celda, globo redondeado junto a Ferry; cola clara, máximo 18% del área de la celda.
-   **Texto impreso exacto:** "Sin prisa. Tú marcas el paso."
+   **Texto impreso exacto:** "Sin prisa, amorcita. A tu ritmo."
    **Texto diegético permitido:** NINGUNO
 
 ## 22. Paciencia — 3 celdas
@@ -353,9 +353,9 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto diegético permitido:** NINGUNO
 2. **inferior izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Ferry espera sentada, con las manos sobre las rodillas.
    **Lettering:** globo de diálogo de Ferry; superior derecha de la celda, globo redondeado junto a Ferry; cola clara, máximo 18% del área de la celda.
-   **Texto impreso exacto:** "Todo a tu tiempo. Aquí nadie tiene que correr."
+   **Texto impreso exacto:** "No te presiones, bebita. Aquí nadie te anda correteando."
    **Texto diegético permitido:** NINGUNO
-3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Hassan observa que la calma de ella colorea el sueño de oro.
+3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Hassan observa que la calma de ella colorea el sueño de oro; Yohi sigue comiendo a su ritmo.
    **Lettering:** globo de diálogo de Hassan; superior izquierda de la celda, globo redondeado junto a Hassan; cola clara dirigida a Hassan, máximo 18% del área de la celda.
    **Texto impreso exacto:** "Tienes una paciencia que yo todavía estoy aprendiendo a tener."
    **Texto diegético permitido:** NINGUNO
@@ -377,15 +377,15 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 **Retícula:** una viñeta superior de 48%; dos viñetas inferiores iguales.
 
-1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** Dos caracoles avanzan sobre una hoja húmeda.
+1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** Exactamente dos caracoles avanzan sobre una hoja húmeda hacia un hueco entre dos piedras del sendero.
+   **Lettering:** globo de diálogo de Ferry; superior izquierda de la celda, globo redondeado junto a Ferry; cola clara, máximo 18% del área de la celda.
+   **Texto impreso exacto:** "Por aquí no se mojan y por aquí no se lastiman."
+   **Texto diegético permitido:** NINGUNO
+2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Ferry coloca una ramita firme como puente bajo y una hoja ancha encima para que la corriente de riego no moje ni desvíe el cruce.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "slip"
+   **Texto impreso exacto:** "tap"
    **Texto diegético permitido:** NINGUNO
-2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Una gota de agua gigantesca amenaza con golpearlos.
-   **Lettering:** globo de diálogo de Ferry; superior derecha de la celda, globo redondeado junto a Ferry; cola clara, máximo 18% del área de la celda.
-   **Texto impreso exacto:** "Cuidado. Vamos a cruzar sin lastimarnos."
-   **Texto diegético permitido:** NINGUNO
-3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Ferry coloca una ramita como techo protector.
+3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Los dos caracoles cruzan la ramita uno detrás del otro; Ferry espera a un lado hasta que ambos llegan al musgo seguro.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "tap"
    **Texto diegético permitido:** NINGUNO
@@ -394,7 +394,7 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 **Retícula:** dos celdas verticales: izquierda 42%, derecha 58%.
 
-1. **celda izquierda alta — plano de establecimiento, composición clara y aire alrededor del sujeto.** Los caracoles cruzan la ramita hacia una zona segura.
+1. **celda izquierda alta — plano de establecimiento, composición clara y aire alrededor del sujeto.** Los dos caracoles ya están en el musgo seguro y continúan juntos, lejos del hilo de agua y del hueco del sendero.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "slip… slip…"
    **Texto diegético permitido:** NINGUNO
@@ -505,14 +505,14 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 **Retícula:** una viñeta superior de 48%; dos viñetas inferiores iguales.
 
-1. **superior panorámica — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Una hoja doblada se asoma de la mano de Ferry mientras corre.
+1. **superior panorámica — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Una hoja doblada con el título legible "29 razones" se asoma de la mano de Ferry mientras corre.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "flap"
-   **Texto diegético permitido:** NINGUNO
-2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** El viento abre la hoja: se ven líneas numeradas, todas borrosas.
+   **Texto diegético permitido:** "29 razones"
+2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** El viento abre la hoja: se ve el título "29 razones" y líneas numeradas continuas, pero el contenido de cada renglón sigue borroso.
    **Lettering:** cartela del narrador omnipresente; esquina superior izquierda de la celda, caja crema de borde negro; no cubrir rostro ni acción.
-   **Texto impreso exacto:** "Una lista imposible."
-   **Texto diegético permitido:** NINGUNO
+   **Texto impreso exacto:** "29 razones."
+   **Texto diegético permitido:** "29 razones"
 3. **inferior derecha — plano detalle, foco nítido en el objeto y profundidad de campo suave.** La nota cae girando hacia Hassan.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "fiuu"
@@ -537,15 +537,15 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** Hassan intenta enfocar los renglones; siguen ilegibles.
    **Lettering:** globo de diálogo de Hassan; superior izquierda de la celda, globo redondeado junto a Hassan; cola clara dirigida a Hassan, máximo 18% del área de la celda.
-   **Texto impreso exacto:** "No entiendo la lista, pero siento que importa."
+   **Texto impreso exacto:** "No entiendo la lista, pero creo que hay algo mágico…"
    **Texto diegético permitido:** NINGUNO
 2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Algunos trazos cambian un instante a iconos: cristal, nube y estrella.
    **Lettering:** cartela del narrador omnipresente; esquina superior izquierda de la celda, caja crema de borde negro; no cubrir rostro ni acción.
    **Texto impreso exacto:** "Cristal. Nube. Estrella."
    **Texto diegético permitido:** NINGUNO
 3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Al levantar la vista, Ferry ya es sólo una luz lejana.
-   **Lettering:** globo de diálogo de Hassan; superior izquierda de la celda, globo redondeado junto a Hassan; cola clara dirigida a Hassan, máximo 18% del área de la celda.
-   **Texto impreso exacto:** "No sé qué es esto, pero voy a buscarlo."
+   **Lettering:** silencio; sin lettering, globo ni SFX.
+   **Texto impreso exacto:** SILENCIO
    **Texto diegético permitido:** NINGUNO
 
 ## 35. El sueño se apaga — 2 celdas
@@ -588,7 +588,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto diegético permitido:** NINGUNO
 2. **celda derecha dominante — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** La chispa se esconde detrás del monitor, como invitándolo a levantarse.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "¿Qué es esto? ¿Por qué me da tanta mala espina?"
+   **Texto impreso exacto:** "¡Vamos, sin miedo a nada!"
    **Texto diegético permitido:** NINGUNO
 
 ## 38. Camino a la cocina — 3 celdas
@@ -646,45 +646,45 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 **Retícula:** dos celdas verticales: izquierda 42%, derecha 58%.
 
-1. **celda izquierda alta — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Hassan despega con cuidado la nota del monitor.
+1. **celda izquierda alta — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Hassan despega con cuidado la nota del monitor y fotografía ambos lados antes de tocar el hilo rojo.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "peel"
-   **Texto diegético permitido:** NINGUNO
-2. **celda derecha dominante — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** La vuelve a mirar junto al vapor de café; los números siguen indescifrables.
+   **Texto diegético permitido:** "29 razones"
+2. **celda derecha dominante — plano general cinematográfico, profundidad visible y lectura de ambiente.** Junto al vapor de café conserva visible el título "29 razones" y descubre que los veintinueve renglones son una sola lista continua: cada uno tiene un icono, un color y una marca de orden todavía borrosa.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Es real. Todavía no sé cómo explicarlo."
-   **Texto diegético permitido:** NINGUNO
+   **Texto impreso exacto:** "Es real. Veintinueve renglones continuos y cada uno apunta a algo."
+   **Texto diegético permitido:** "29 razones"
 
 ## 42. Decisión — 3 celdas
 
 **Retícula:** una viñeta superior de 48%; dos viñetas inferiores iguales.
 
-1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** Hassan observa el laboratorio desde la puerta de la cocina.
+1. **superior panorámica — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Hassan observa el laboratorio desde la puerta de la cocina y decide no interpretar la nota por impulso.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Antes de hacerme historias, voy a revisarlo bien."
+   **Texto impreso exacto:** "No voy a inventarle un significado. Primero la ordeno."
    **Texto diegético permitido:** NINGUNO
-2. **inferior izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Guarda la nota en un bolsillo interior.
+2. **inferior izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Guarda la nota en un sobre transparente, con el hilo rojo visible y protegido.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "tap"
    **Texto diegético permitido:** NINGUNO
-3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Toma el matraz vacío con determinación tranquila.
+3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Toma el matraz vacío y una caja de evidencias: primero hará un mapa, luego buscará equivalentes reales.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Voy al laboratorio. Ahí por lo menos puedo empezar."
+   **Texto impreso exacto:** "Mapa, evidencia y matraz. Luego veo qué me está pidiendo."
    **Texto diegético permitido:** NINGUNO
 
 ## 43. Regreso al laboratorio — 3 celdas
 
 **Retícula:** dos viñetas superiores iguales; una viñeta inferior de ancho completo.
 
-1. **superior izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** Hassan enciende una fila de lámparas blancas.
+1. **superior izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** Hassan enciende una fila de lámparas blancas y deja una sola mesa libre.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Necesito ver esto con calma y sin inventar nada."
+   **Texto impreso exacto:** "Una pista por tarjeta. Si se repite, la sigo; si no, se queda fuera."
    **Texto diegético permitido:** NINGUNO
-2. **superior derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Limpia una mesa de trabajo ya impecable, por puro ritual.
+2. **superior derecha — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Extiende la nota, el sobre transparente, una libreta y tarjetas vacías en orden de lectura.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "swish"
    **Texto diegético permitido:** NINGUNO
-3. **inferior panorámica — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Coloca la nota, el matraz y una lupa bajo la lámpara.
+3. **inferior panorámica — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Coloca el matraz, la lupa y una caja de hallazgos bajo la lámpara: cada pista tendrá lugar, prueba y destino.
    **Lettering:** cartela del narrador omnipresente; esquina superior izquierda de la celda, caja crema de borde negro; no cubrir rostro ni acción.
    **Texto impreso exacto:** "Una pregunta merece método."
    **Texto diegético permitido:** NINGUNO
@@ -693,66 +693,66 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 **Retícula:** una viñeta superior de 48%; dos viñetas inferiores iguales.
 
-1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** La lente amplía un renglón borroso sin volverlo texto legible.
+1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** La lente amplía el primer renglón sin volverlo texto legible, pero deja ver un círculo de orden y un cristal transparente.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "zoom"
    **Texto diegético permitido:** NINGUNO
-2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Dentro del círculo aparece un cristal transparente.
-   **Lettering:** cartela del narrador omnipresente; esquina superior izquierda de la celda, caja crema de borde negro; no cubrir rostro ni acción.
-   **Texto impreso exacto:** "Sinceridad."
+2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Hassan calca el icono, su color y una flecha que apunta hacia fuera de la hoja.
+   **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "No puedo leerlo, pero sí puedo registrar forma, color y dirección."
    **Texto diegético permitido:** NINGUNO
-3. **inferior derecha — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Hassan anota un dibujo de cristal en su libreta.
+3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** En una tarjeta escribe "pista, no respuesta" y la fija al primer espacio de su tablero.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Primero: sinceridad. A ver qué me pide esta nota."
+   **Texto impreso exacto:** "Esto no me da una respuesta. Me da el primer punto de partida."
    **Texto diegético permitido:** NINGUNO
 
 ## 45. Los primeros símbolos — 4 celdas
 
 **Retícula:** tira superior de ancho completo y tres celdas inferiores: izquierda, centro, derecha.
 
-1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** Otro renglón revela una nube tibia.
-   **Lettering:** cartela del narrador omnipresente; esquina superior izquierda de la celda, caja crema de borde negro; no cubrir rostro ni acción.
-   **Texto impreso exacto:** "Empatía."
+1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** Otro renglón revela una nube tibia y una línea que se dirige al pasillo.
+   **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "Nube, frasco, luna… y cada uno marca un lugar distinto."
    **Texto diegético permitido:** NINGUNO
-2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Otro se vuelve un frasco de luz azul.
-   **Lettering:** cartela del narrador omnipresente; esquina superior izquierda de la celda, caja crema de borde negro; no cubrir rostro ni acción.
-   **Texto impreso exacto:** "Inteligencia."
+2. **inferior izquierda — plano general cinematográfico, profundidad visible y lectura de ambiente.** Otro se vuelve un frasco de luz azul y marca el cajón de herramientas.
+   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
+   **Texto impreso exacto:** "tap"
    **Texto diegético permitido:** NINGUNO
-3. **inferior central — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Otro es una lupa bajo una luna.
-   **Lettering:** cartela del narrador omnipresente; esquina superior izquierda de la celda, caja crema de borde negro; no cubrir rostro ni acción.
-   **Texto impreso exacto:** "Curiosidad."
+3. **inferior central — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Otro es una lupa bajo una luna y deja una pequeña marca en la cocina.
+   **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "Si los separo por habitación, la nota deja de ser puro ruido."
    **Texto diegético permitido:** NINGUNO
-4. **inferior derecha — plano general cinematográfico, profundidad visible y lectura de ambiente.** Hassan ordena sus dibujos como si armara una fórmula.
+4. **inferior derecha — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Hassan ordena sus tarjetas por símbolo, color y habitación: la nota ya no es un misterio plano, es una ruta.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "¿Una receta de Ferry? Esto tiene que querer decir algo."
+   **Texto impreso exacto:** "Va. Ya tengo una ruta."
    **Texto diegético permitido:** NINGUNO
 
 ## 46. La receta visual — 3 celdas
 
 **Retícula:** una viñeta superior de 48%; dos viñetas inferiores iguales.
 
-1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** La hoja flota sobre la mesa y deja escapar iconos sin palabras.
+1. **superior panorámica — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Hassan coloca las tarjetas alrededor del matraz vacío; al acercar cada una, la nota deja escapar el icono correspondiente, sin letras.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "fwoom"
    **Texto diegético permitido:** NINGUNO
-2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Los iconos forman una órbita alrededor del matraz vacío.
+2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Los iconos forman una órbita incompleta y señalan once anclas físicas que puede encontrar en casa.
    **Lettering:** cartela del narrador omnipresente; esquina superior izquierda de la celda, caja crema de borde negro; no cubrir rostro ni acción.
    **Texto impreso exacto:** "No son palabras. Son pistas."
    **Texto diegético permitido:** NINGUNO
-3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Hassan asiente: sabe que deberá buscarlos en equivalentes reales y mágicos.
+3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Hassan entiende la regla: reunirá esas anclas primero; el orden del uno al veintinueve sólo aparecerá cuando la fórmula pueda sostenerlo.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "No son palabras al azar. Me están dejando pistas."
+   **Texto impreso exacto:** "Primero anclas reales; el orden completo tendrá que aparecer después."
    **Texto diegético permitido:** NINGUNO
 
 ## 47. Primer mapa de búsqueda — 2 celdas
 
 **Retícula:** dos celdas verticales: izquierda 42%, derecha 58%.
 
-1. **celda izquierda alta — plano general cinematográfico, profundidad visible y lectura de ambiente.** Hassan dibuja planos simples de cocina, sala, patio y recámara.
+1. **celda izquierda alta — plano general cinematográfico, profundidad visible y lectura de ambiente.** Hassan dibuja planos simples de cocina, sala, patio y recámara y conecta cada tarjeta con una ruta corta.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Cocina, sala, patio. Voy a revisar todo."
+   **Texto impreso exacto:** "Cocina, sala, patio, recámara. Once marcas para empezar."
    **Texto diegético permitido:** NINGUNO
-2. **celda derecha dominante — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Un icono de estrella se posa en el centro del mapa.
+2. **celda derecha dominante — plano general cinematográfico, profundidad visible y lectura de ambiente.** La estrella se posa en el centro, mientras once marcas de color señalan dónde empezar; el resto queda en blanco hasta volver al laboratorio.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "tinnn"
    **Texto diegético permitido:** NINGUNO
@@ -761,15 +761,15 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 **Retícula:** una viñeta superior de 48%; dos viñetas inferiores iguales.
 
-1. **superior panorámica — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Abre la puerta de la despensa con una lupa en una mano.
+1. **superior panorámica — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Abre la puerta de la despensa con la lupa en una mano y consulta el mapa sujeto al marco.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "clac"
    **Texto diegético permitido:** NINGUNO
-2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Lleva una pequeña caja para guardar hallazgos en la otra.
+2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Lleva el matraz vacío en un soporte de viaje y una caja de evidencias; el vidrio aún no tiene magia ni contenido.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Empiezo por aquí. Algo de esto tiene que tener sentido."
+   **Texto impreso exacto:** "Caja con compartimentos, mapa a la vista. Ahora sí sé qué estoy buscando."
    **Texto diegético permitido:** NINGUNO
-3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** El hilo rojo se asoma del bolsillo y apunta hacia el interior.
+3. **inferior derecha — plano general cinematográfico, profundidad visible y lectura de ambiente.** El hilo rojo asoma del sobre transparente y se orienta hacia la primera marca del mapa, junto al matraz.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "fiuu"
    **Texto diegético permitido:** NINGUNO
@@ -778,15 +778,15 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 **Retícula:** dos viñetas superiores iguales; una viñeta inferior de ancho completo.
 
-1. **superior izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** Una caja de especias cae de una repisa.
+1. **superior izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** Una caja de especias cae de una repisa cuando Hassan busca el símbolo ámbar.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "crash"
    **Texto diegético permitido:** NINGUNO
-2. **superior derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Hassan intenta atraparla y derrama una nube de canela.
+2. **superior derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Hassan intenta atraparla y derrama una nube de canela sobre la tarjeta correcta.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "No, no, no… bueno. Tal vez sí sirve."
+   **Texto impreso exacto:** "Canela sobre el símbolo ámbar… ok, eso sí es una coincidencia demasiado exacta."
    **Texto diegético permitido:** NINGUNO
-3. **inferior panorámica — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** La canela flota como un remolino ámbar, señalando que va por buen camino.
+3. **inferior panorámica — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** La canela forma el mismo remolino ámbar del mapa y el matraz responde con un destello: primera coincidencia comprobable, no una casualidad.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "fwoom"
    **Texto diegético permitido:** NINGUNO
@@ -795,11 +795,11 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 **Retícula:** dos franjas horizontales: superior 58%, inferior 42%.
 
-1. **franja superior a sangre — plano de establecimiento, composición clara y aire alrededor del sujeto.** Hassan abre una alacena iluminada con tono de aventura.
+1. **franja superior a sangre — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Hassan acerca sólo el rastro de canela al tapón del matraz para probar si la nota también responde fuera del laboratorio.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Ya empecé. Ahora quiero saber a dónde lleva esto."
+   **Texto impreso exacto:** "Usaré mi matraz de fusión emocional… wow, lo aceptó."
    **Texto diegético permitido:** NINGUNO
-2. **franja inferior a sangre — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** El matraz vacío espera en el laboratorio, visible en un pequeño reflejo de la puerta.
+2. **franja inferior a sangre — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** El rastro entra como una chispa ámbar y el matraz vuelve a quedar vacío; Hassan confirma que puede recibir cada ingrediente completo cuando lo encuentre.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "tinnn"
    **Texto diegético permitido:** NINGUNO
@@ -808,47 +808,47 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 **Retícula:** dos viñetas superiores iguales; una viñeta inferior de ancho completo.
 
-1. **superior izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** Hassan encuentra un frasco de canela.
-   **Lettering:** cartela del narrador omnipresente; esquina superior izquierda de la celda, caja crema de borde negro; no cubrir rostro ni acción.
-   **Texto impreso exacto:** "Talento que da calor."
+1. **superior izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Hassan confirma la canela como ingrediente 1 y la nombra mientras el icono ámbar coincide con la nota.
+   **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "1. Canela."
    **Texto diegético permitido:** NINGUNO
-2. **superior derecha — plano medio dinámico, gesto y acción perfectamente legibles.** El polvo dibuja un remolino cálido al abrirlo.
+2. **superior derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Deposita una pizca en el matraz mágico; el polvo se absorbe como remolino cálido y partículas de espiral.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "fwoom"
    **Texto diegético permitido:** NINGUNO
-3. **inferior panorámica — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Guarda una pizca en su caja con una sonrisa de sorpresa.
+3. **inferior panorámica — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Escribe lo que le recuerda de Ferry antes de seguir la ruta hacia la vainilla.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Canela. Contigo hasta lo simple se siente especial."
+   **Texto impreso exacto:** "Ferry, contigo hasta lo simple se hace con intención."
    **Texto diegético permitido:** NINGUNO
 
 ## 52. Vainilla — 3 celdas
 
 **Retícula:** una viñeta superior de 48%; dos viñetas inferiores iguales.
 
-1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** Busca entre frascos de cocina.
+1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** Sigue la ruta ámbar entre frascos de cocina, sin saltarse el mapa.
+   **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "2. Vainilla."
+   **Texto diegético permitido:** NINGUNO
+2. **inferior izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Una vaina de vainilla cae sobre su mano: ingrediente 2, marcado con un icono crema.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "rustle"
    **Texto diegético permitido:** NINGUNO
-2. **inferior izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Una vaina de vainilla cae sobre su mano.
-   **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Vainilla. Suave, pero de las que se quedan."
-   **Texto diegético permitido:** NINGUNO
-3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Canela y vainilla juntas emiten un brillo ámbar suave.
-   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "tinnn"
+3. **inferior derecha — plano detalle, foco nítido en el objeto y profundidad de campo suave.** El matraz absorbe la vainilla como cinta dorada y partículas de flor; Hassan anota el recuerdo que le despierta.
+   **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "Ferry, suave, pero de las cosas que se quedan."
    **Texto diegético permitido:** NINGUNO
 
 ## 53. La cuchara — 2 celdas
 
 **Retícula:** dos celdas verticales: izquierda 42%, derecha 58%.
 
-1. **celda izquierda alta — plano de establecimiento, composición clara y aire alrededor del sujeto.** Una cuchara vieja se ilumina al tocar las especias.
-   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "tinnn"
+1. **celda izquierda alta — plano de establecimiento, composición clara y aire alrededor del sujeto.** Una cuchara vieja se ilumina al tocar las especias: Hassan la registra como ingrediente 3, con icono de cucharita de luz.
+   **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "3. Cuchara de cocina."
    **Texto diegético permitido:** NINGUNO
-2. **celda derecha dominante — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Hassan la levanta como si hubiera encontrado una reliquia científica.
+2. **celda derecha dominante — plano general cinematográfico, profundidad visible y lectura de ambiente.** La cuchara se vuelve una chispa ámbar dentro del matraz; Hassan dice qué gesto cotidiano de Ferry le recuerda antes de marcar la siguiente ruta.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Una cuchara. No parece importante, pero aquí está."
+   **Texto impreso exacto:** "Ferry, hasta un gesto diario puede sentirse especial cuando le pones cuidado."
    **Texto diegético permitido:** NINGUNO
 
 ## 54. Moneda de miel — 3 celdas
@@ -856,44 +856,44 @@ Este dossier es la especificación de producción. Cada página define retícula
 **Retícula:** una viñeta superior de 48%; dos viñetas inferiores iguales.
 
 1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** Abre una alacena alta con un banco pequeño.
+   **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "4. Moneda de miel."
+   **Texto diegético permitido:** NINGUNO
+2. **inferior izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Encuentra una moneda color miel: ingrediente 4, con icono de moneda hexagonal.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "scrape"
    **Texto diegético permitido:** NINGUNO
-2. **inferior izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Encuentra una moneda color miel entre objetos cotidianos.
-   **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "¿Una moneda? Todo esto está más raro de lo que pensé."
-   **Texto diegético permitido:** NINGUNO
-3. **inferior derecha — plano detalle, foco nítido en el objeto y profundidad de campo suave.** La moneda gira y proyecta engranes de luz sobre su cara.
-   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "vrrr"
+3. **inferior derecha — plano detalle, foco nítido en el objeto y profundidad de campo suave.** La moneda se absorbe en el matraz como destello dorado; de ahí salen engranes de luz que señalan la siguiente tarjeta.
+   **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "Ferry, haces que el trabajo tenga sentido y no sólo prisa."
    **Texto diegético permitido:** NINGUNO
 
 ## 55. Engranes — 2 celdas
 
 **Retícula:** dos celdas verticales: izquierda 42%, derecha 58%.
 
-1. **celda izquierda alta — plano de establecimiento, composición clara y aire alrededor del sujeto.** Hassan sigue la proyección hasta un cajón de herramientas.
+1. **celda izquierda alta — plano de establecimiento, composición clara y aire alrededor del sujeto.** Hassan sigue la proyección hasta un cajón de herramientas y encuentra engranes pequeños: ingrediente 5.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Trabajo y paciencia. Así se hacen las cosas, supongo."
+   **Texto impreso exacto:** "5. Engranes pequeños."
    **Texto diegético permitido:** NINGUNO
-2. **celda derecha dominante — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Pequeños engranes encajan solos alrededor de la moneda.
-   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "clic clic"
+2. **celda derecha dominante — plano detalle, foco nítido en el objeto y profundidad de campo suave.** El matraz los absorbe como ruedas luminosas ordenadas; Hassan anota el recuerdo de Ferry que convierte esfuerzo en avance.
+   **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "Ferry, sabes avanzar sin querer controlarlo todo."
    **Texto diegético permitido:** NINGUNO
 
 ## 56. Hilo rojo — 3 celdas
 
 **Retícula:** una viñeta superior de 48%; dos viñetas inferiores iguales.
 
-1. **superior panorámica — plano detalle, foco nítido en el objeto y profundidad de campo suave.** El hilo de la nota se desenrolla por el pasillo.
-   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "fiuu"
+1. **superior panorámica — plano detalle, foco nítido en el objeto y profundidad de campo suave.** El hilo de la nota se desenrolla por el pasillo y se detiene sólo cuando Hassan acerca la siguiente tarjeta.
+   **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "6. Carrete de hilo rojo."
    **Texto diegético permitido:** NINGUNO
-2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Hassan lo sigue hasta un carrete rojo escondido en un cajón.
+2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Él lo sigue hasta un carrete rojo escondido en un cajón: ingrediente 6.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "El hilo otra vez. Esto ya no puede ser coincidencia."
+   **Texto impreso exacto:** "Ferry, este hilo me lleva a ti, pero nunca te amarra. Así debe ser."
    **Texto diegético permitido:** NINGUNO
-3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** El carrete se enlaza por sí mismo a la caja de hallazgos.
+3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** El carrete se absorbe como una hebra roja que orbita dentro del matraz; Hassan decide seguir la pista, no obedecerla.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "tinnn"
    **Texto diegético permitido:** NINGUNO
@@ -904,13 +904,13 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 1. **superior izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** En una repisa, Hassan encuentra una concha olvidada.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Una concha. ¿Por qué siento que ya la conozco?"
+   **Texto impreso exacto:** "7. Concha dorada."
    **Texto diegético permitido:** NINGUNO
 2. **superior derecha — plano medio dinámico, gesto y acción perfectamente legibles.** La limpia con cuidado.
-   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "swish"
+   **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "Ferry, el mar contigo no es escape; es una manera de volver a respirar."
    **Texto diegético permitido:** NINGUNO
-3. **inferior panorámica — plano detalle, foco nítido en el objeto y profundidad de campo suave.** La concha revela una gota de luz turquesa que flota sobre su palma.
+3. **inferior panorámica — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Hassan la nombra ingrediente 7; el matraz la absorbe como gota turquesa y abre una ruta hacia el patio.
    **Lettering:** cartela del narrador omnipresente; esquina superior izquierda de la celda, caja crema de borde negro; no cubrir rostro ni acción.
    **Texto impreso exacto:** "Una gota de horizonte."
    **Texto diegético permitido:** NINGUNO
@@ -920,14 +920,14 @@ Este dossier es la especificación de producción. Cada página define retícula
 **Retícula:** una viñeta superior de 48%; dos viñetas inferiores iguales.
 
 1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** En el patio, una maceta se ha inclinado.
-   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "scrape"
+   **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "8. Raíz firme."
    **Texto diegético permitido:** NINGUNO
 2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Hassan endereza la planta y descubre una raíz firme.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Resistir y volver a crecer. Eso sí te lo admiro."
+   **Texto impreso exacto:** "Ferry, mover la piedra sin romper la maceta: esa fuerza paciente sí me recuerda a ti."
    **Texto diegético permitido:** NINGUNO
-3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Una raíz luminosa atraviesa una pequeña piedra sin romper la maceta.
+3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Hassan nombra la raíz ingrediente 8; el matraz la absorbe como línea verde de raíz y él la registra como fuerza paciente, no como truco.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "crack"
    **Texto diegético permitido:** NINGUNO
@@ -938,11 +938,11 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 1. **celda izquierda alta — plano general cinematográfico, profundidad visible y lectura de ambiente.** En la recámara, encuentra una manta blanca y suave.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Cariño que abriga. Sí, esa parte es muy tuya."
+   **Texto impreso exacto:** "9. Manta de algodón."
    **Texto diegético permitido:** NINGUNO
-2. **celda derecha dominante — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Al doblarla, una nube tibia queda atrapada dentro del pliegue.
-   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "poof"
+2. **celda derecha dominante — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Hassan cuenta la manta como ingrediente 9 y el matraz la absorbe como nube blanca; una segunda nube tibia señala que aún falta algo.
+   **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "Ferry, contigo el cariño no ahoga; nomás abriga."
    **Texto diegético permitido:** NINGUNO
 
 ## 60. Llave — 3 celdas
@@ -950,14 +950,14 @@ Este dossier es la especificación de producción. Cada página define retícula
 **Retícula:** una viñeta superior de 48%; dos viñetas inferiores iguales.
 
 1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** Busca en una bandeja de objetos perdidos.
-   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "clink"
+   **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "10. Llave sencilla."
    **Texto diegético permitido:** NINGUNO
 2. **inferior izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Una llave sencilla responde con un destello cuando el hilo rojo la roza.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Confianza. Esa sí cuesta ganársela."
+   **Texto impreso exacto:** "Ferry, la confianza se construye y se cuida, como esta llave."
    **Texto diegético permitido:** NINGUNO
-3. **inferior derecha — plano detalle, foco nítido en el objeto y profundidad de campo suave.** La llave abre un pequeño compartimento de luz en la caja de hallazgos.
+3. **inferior derecha — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Hassan nombra la llave ingrediente 10 y el matraz la absorbe como llave de luz; el último símbolo del mapa se enciende.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "tinnn"
    **Texto diegético permitido:** NINGUNO
@@ -967,14 +967,14 @@ Este dossier es la especificación de producción. Cada página define retícula
 **Retícula:** dos viñetas superiores iguales; una viñeta inferior de ancho completo.
 
 1. **superior izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** La nube tibia se escapa de la manta por el pasillo.
-   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "poof"
+   **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "11. Nube tibia."
    **Texto diegético permitido:** NINGUNO
 2. **superior derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Hassan corre de forma cómica con un frasco vacío.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Tranquila, nube. No tengo que entenderte hoy."
+   **Texto impreso exacto:** "Ferry, sabes quedarte cerca sin preguntar de más."
    **Texto diegético permitido:** NINGUNO
-3. **inferior panorámica — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** La atrapa sin aplastarla; la nube se acomoda contenta dentro.
+3. **inferior panorámica — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** La atrapa sin aplastarla y la nombra ingrediente 11; el matraz la absorbe como vapor rosa y queda con once iconos flotando dentro.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "pop"
    **Texto diegético permitido:** NINGUNO
@@ -983,32 +983,32 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 **Retícula:** una viñeta superior de 48%; dos viñetas inferiores iguales.
 
-1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** Hassan camina hacia el laboratorio con caja, frascos y manta.
+1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** Hassan camina hacia el laboratorio con el matraz ahora lleno de once iconos luminosos y el mapa doblado.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "clink"
    **Texto diegético permitido:** NINGUNO
-2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Algunos objetos flotan detrás de él, unidos por el hilo rojo.
+2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Los iconos giran dentro del vidrio, unidos por el hilo rojo; ya no carga los objetos físicos porque el matraz los recibió.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "fiuu"
    **Texto diegético permitido:** NINGUNO
-3. **inferior derecha — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Tropieza levemente, pero la concha y la lupa aterrizan a salvo.
+3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Tropieza levemente, pero sostiene el matraz a salvo: las once luces no se mezclan ni se pierden.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Casi está todo. Sólo falta saber qué significa."
+   **Texto impreso exacto:** "Once luces, once recuerdos. El mismo matraz las está guardando."
    **Texto diegético permitido:** NINGUNO
 
 ## 63. La mesa preparada — 3 celdas
 
 **Retícula:** dos viñetas superiores iguales; una viñeta inferior de ancho completo.
 
-1. **superior izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** Ordena los hallazgos sobre la mesa en familias de color.
+1. **superior izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** Coloca el matraz sobre la mesa y ordena las once tarjetas alrededor: adentro siguen separadas las once luces que encontró.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Todo tiene un lugar. Esta nota también."
+   **Texto impreso exacto:** "La nota no escondía más objetos: abre del doce al veintinueve dentro del matraz."
    **Texto diegético permitido:** NINGUNO
-2. **superior derecha — plano detalle, foco nítido en el objeto y profundidad de campo suave.** La nota proyecta nuevos iconos que aún faltan.
+2. **superior derecha — plano detalle, foco nítido en el objeto y profundidad de campo suave.** La nota proyecta los círculos 12 al 29 alrededor del vidrio: no son objetos de casa, son cualidades que las primeras luces pueden revelar.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "tinnn"
-   **Texto diegético permitido:** NINGUNO
-3. **inferior panorámica — plano general cinematográfico, profundidad visible y lectura de ambiente.** Hassan ajusta su bata y se prepara para transformar los objetos.
+   **Texto diegético permitido:** "29 razones"
+3. **inferior panorámica — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Hassan ajusta su bata, entiende que cada siguiente hallazgo nacerá en el matraz y se prepara para nombrarlos uno por uno.
    **Lettering:** cartela del narrador omnipresente; esquina superior izquierda de la celda, caja crema de borde negro; no cubrir rostro ni acción.
    **Texto impreso exacto:** "La fórmula empieza a mirar de vuelta."
    **Texto diegético permitido:** NINGUNO
@@ -1019,324 +1019,324 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** Hassan coloca el matraz en el centro de un aro de herramientas.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "No es una mezcla cualquiera. Algo está por pasar."
+   **Texto impreso exacto:** "El doce se encendió. No voy a adelantarlo."
    **Texto diegético permitido:** NINGUNO
 2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Las lámparas del laboratorio apuntan al vidrio vacío.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "beeeep"
    **Texto diegético permitido:** NINGUNO
-3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Una primera chispa rosa-dorada cruza el fondo del matraz.
+3. **inferior derecha — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Una primera chispa rosa-dorada cruza el fondo del matraz, conecta las once luces y enciende el círculo "12" de la nota.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "tinnn"
-   **Texto diegético permitido:** NINGUNO
+   **Texto diegético permitido:** "29 razones"
 
 ## 65. Antes de mezclar — 2 celdas
 
 **Retícula:** dos celdas verticales: izquierda 42%, derecha 58%.
 
-1. **celda izquierda alta — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Hassan compara la nota con los objetos reunidos.
+1. **celda izquierda alta — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Hassan compara la nota con el matraz: los ingredientes 1 al 11 ya flotan adentro; del 12 al 29 esperan ser revelados por la mezcla.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Faltan cosas. Seguro las últimas son las importantes."
-   **Texto diegético permitido:** NINGUNO
-2. **celda derecha dominante — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Los iconos restantes giran sobre la mesa, anunciando la receta completa.
+   **Texto impreso exacto:** "Ahora sigo del doce al veintinueve, sin saltarme lo que cada uno significa."
+   **Texto diegético permitido:** "29 razones"
+2. **celda derecha dominante — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Los iconos giran del 12 al 29 sobre la mesa; Hassan decide decirlos en voz alta para no perder ni el orden ni lo que cada uno le recuerda de Ferry.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "fwoom"
-   **Texto diegético permitido:** NINGUNO
+   **Texto diegético permitido:** "29 razones"
 
 ## 66. Claridad y empatía — 4 celdas
 
 **Retícula:** cuadrícula 2×2, con la lectura en zigzag de arriba a abajo.
 
-1. **superior izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** Cristales de sinceridad: cuatro cristales transparentes tintinean y liberan luz limpia. Ferry aparece al fondo como una heroína lectora original, con capa dorada-rosa y una rosa cristalina; energía de honestidad, sin parecerse a personaje existente.
+1. **superior izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** 12. Cristales de sinceridad: cuatro cristales transparentes aparecen entre las once luces y liberan luz limpia. Ferry aparece como lectora de verdad original, capa coral-dorada y cristales traslúcidos; energía clara y propia, sin parecerse a personaje existente.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "1. Cristales de sinceridad."
+   **Texto impreso exacto:** "12. Cristales de sinceridad."
    **Texto diegético permitido:** NINGUNO
-2. **superior derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Hassan deja los cristales caer al matraz; el líquido nace celeste.
+2. **superior derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Hassan los recibe en el mismo matraz; se absorben como partículas celestes con icono de cristal y dejan un recuerdo visible de Ferry.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "No esconder lo que siento. Esa parte me cuesta."
+   **Texto impreso exacto:** "Ferry, contigo aprendí que la verdad también se dice con cuidado."
    **Texto diegético permitido:** NINGUNO
-3. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Nube tibia de empatía: la nube abraza el cuello del vidrio. Ferry aparece como una heroína humanitaria original de blanco y azul suave, gesto compasivo y manos abiertas; energía de empatía, no retrato de persona real.
+3. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** 13. Frasco de luz científica: un vial azul se forma dentro del vidrio, sin salir del matraz. Ferry aparece como investigadora pionera original, bata azul suave y vial luminoso; energía científica, sin copiar una figura histórica.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "2. Nube tibia de empatía."
+   **Texto impreso exacto:** "13. Frasco de luz científica."
    **Texto diegético permitido:** NINGUNO
-4. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** La nube entra sin deshacerse y deja vapor rosa sobre la mezcla.
-   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "fwoom"
+4. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** El vial se disuelve en líneas ordenadas y un icono de átomo; Hassan nombra qué le recuerda de Ferry.
+   **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "Ferry, quieres entender primero para poder cuidar mejor."
    **Texto diegético permitido:** NINGUNO
 
 ## 67. Ciencia y curiosidad — 4 celdas
 
 **Retícula:** tira superior de ancho completo y tres celdas inferiores: izquierda, centro, derecha.
 
-1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** Frasco de luz científica: un vial azul vierte luz ordenada, no líquido. Ferry aparece como investigadora pionera original, bata azul, vial luminoso y mirada curiosa; energía científica sin copiar a ninguna figura histórica.
+1. **superior panorámica — plano detalle, foco nítido en el objeto y profundidad de campo suave.** 14. Lupa de luna curiosa: la lente se revela entre las luces y refleja una luna con pequeños puntos de estrella. Ferry aparece como detective curiosa original, falda coral, abrigo corto y lupa plateada; energía investigadora, sin vestuario reconocible.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "3. Frasco de luz científica."
+   **Texto impreso exacto:** "14. Lupa de luna curiosa."
    **Texto diegético permitido:** NINGUNO
-2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** El laboratorio responde con líneas de constelación.
+2. **inferior izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** La lupa se absorbe como un aro plateado y partículas de pregunta; Hassan enlaza la curiosidad con Ferry.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Entender para cuidar. Contigo todo se ve más claro."
+   **Texto impreso exacto:** "Ferry, siempre encuentras una pregunta que a mí no se me había ocurrido."
    **Texto diegético permitido:** NINGUNO
-3. **inferior central — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Lupa de luna curiosa: la lente refleja una luna con pequeños puntos de estrella. Ferry aparece como detective juvenil original, falda coral, abrigo corto y lupa plateada; energía investigadora sin vestuario reconocible.
+3. **inferior central — plano medio dinámico, gesto y acción perfectamente legibles.** 15. Polvo de sonrisa encantada: partículas doradas nacen de una curva alegre dentro del vidrio. Ferry aparece como figura de alegría original, detalles amarillo-coral y polvo de sonrisa flotante; energía ligera, sin imitar a una cantante real.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "4. Lupa de luna curiosa."
+   **Texto impreso exacto:** "15. Polvo de sonrisa encantada."
    **Texto diegético permitido:** NINGUNO
-4. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Esa constelación cae al matraz y gira con el líquido.
-   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "fwoom"
+4. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** El polvo se integra como chispas de sonrisa; Hassan deja la memoria correspondiente antes de pasar al siguiente número.
+   **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "Cuando sonríes, Ferry, hasta el día pesado se afloja poquito."
    **Texto diegético permitido:** NINGUNO
 
 ## 68. Sonrisa y fuego — 4 celdas
 
 **Retícula:** cuadrícula 2×2, con la lectura en zigzag de arriba a abajo.
 
-1. **superior izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** Polvo de sonrisa encantada: partículas doradas nacen de una curva de luz alegre. Ferry aparece como vigilante felina original de negro, rosa y oro, sonrisa segura y máscara abstracta no reconocible; energía de sensualidad natural.
+1. **superior izquierda — plano general cinematográfico, profundidad visible y lectura de ambiente.** 16. Llama de leona roja: una llama carmesí gira dentro del vidrio sin quemarlo. Ferry aparece como leona protectora original en coral, rojo y oro, con melena simbólica de luz; energía valiente, sin iconografía de franquicia.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "5. Polvo de sonrisa encantada."
+   **Texto impreso exacto:** "16. Llama de leona roja."
    **Texto diegético permitido:** NINGUNO
-2. **superior derecha — plano medio dinámico, gesto y acción perfectamente legibles.** El polvo se mezcla y vuelve el celeste más cálido.
+2. **superior derecha — plano medio dinámico, gesto y acción perfectamente legibles.** La llama se absorbe como espiral protectora y partículas de brasa; Hassan recuerda la fuerza discreta de Ferry.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Cuando sonríes, se me cambia el día."
+   **Texto impreso exacto:** "Ferry, tu fuerza no hace ruido; aparece cuando alguien necesita respaldo."
    **Texto diegético permitido:** NINGUNO
-3. **inferior izquierda — plano general cinematográfico, profundidad visible y lectura de ambiente.** Llama de leona roja: una llama carmesí gira sin quemar. Ferry aparece como estrella pop original de escenario, capa carmesí geométrica y micrófono-linterna; energía de pasión sin imitar a una cantante real.
+3. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** 17. Nido de ternura: un nido pequeño de luz aparece entre las capas de color. Ferry aparece como guardiana de refugio original, chaqueta blanca, nido tibio y gesto de cuidado; energía de ternura, sin copiar personajes.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "6. Llama de leona roja."
+   **Texto impreso exacto:** "17. Nido de ternura."
    **Texto diegético permitido:** NINGUNO
-4. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** La llama toma forma de espiral protectora alrededor del matraz.
-   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "fwoosh"
+4. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** El nido se vuelve un halo cálido dentro del matraz; Hassan nombra el cuidado que reconoce en Ferry.
+   **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "Ferry, siempre haces lugar para que alguien se sienta a salvo."
    **Texto diegético permitido:** NINGUNO
 
 ## 69. Cuidado y valor — 4 celdas
 
 **Retícula:** tira superior de ancho completo y tres celdas inferiores: izquierda, centro, derecha.
 
-1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** Nido de ternura: un nido con pequeñas huellas deja luz tibia en el vidrio. Ferry aparece como guardiana de hogar original, chal rojo cálido, nido y huellas protegidas; energía maternal sin copiar personajes.
+1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** 18. Escudo de oro valiente: un escudo se abre como aro fino alrededor de las luces. Ferry aparece como guerrera de coraje original, armadura blanca y oro con escudo circular abstracto; energía firme y propia.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "7. Nido de ternura."
+   **Texto impreso exacto:** "18. Escudo de oro valiente."
    **Texto diegético permitido:** NINGUNO
-2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Hassan ve por un instante el recuerdo de Zeus, Yohi, caracoles y araña.
+2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** El aro protege la mezcla sin encerrarla; Hassan ve el recuerdo de Ferry cuidando a Zeus, Yohi, caracoles y araña.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Siempre estás pendiente de todos. Eso no se te quita."
+   **Texto impreso exacto:** "Ferry, proteges sin encerrar. Eso es lo que más admiro de ti."
    **Texto diegético permitido:** NINGUNO
-3. **inferior central — plano medio dinámico, gesto y acción perfectamente legibles.** Escudo de oro valiente: un escudo se abre como un aro fino. Ferry aparece como guerrera de verdad original, armadura blanca y oro con escudo circular abstracto; energía valiente sin iconografía de franquicia.
+3. **inferior central — plano medio dinámico, gesto y acción perfectamente legibles.** 19. Estrella de esperanza infinita: una estrella pequeña se revela, todavía contenida dentro del vidrio. Ferry aparece como maga de esperanza original, vestido rosa de líneas simples y estrella propia; energía luminosa, sin copiar una bruja conocida.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "8. Escudo de oro valiente."
+   **Texto impreso exacto:** "19. Estrella de esperanza infinita."
    **Texto diegético permitido:** NINGUNO
-4. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** El aro protege la mezcla sin encerrarla.
-   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "clang"
+4. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** La estrella se absorbe como pulso rosa-dorado y Hassan dice por qué Ferry le ayuda a seguir cuando algo se complica.
+   **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "Ferry, cuando algo se complica todavía encuentras por dónde seguir."
    **Texto diegético permitido:** NINGUNO
 
 ## 70. Trabajo y esperanza — 4 celdas
 
 **Retícula:** cuadrícula 2×2, con la lectura en zigzag de arriba a abajo.
 
-1. **superior izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Monedas de miel y engranes: la moneda gira entre engranes de luz. Ferry aparece como empresaria pop original, chaqueta miel, libreta de planes y engranes luminosos; energía de trabajo y emprendimiento.
+1. **superior izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** 20. Flor de inocencia: una flor pálida se abre despacio dentro de la luz reunida. Ferry aparece como soñadora original, vestido verde-rosa y flor inocente en la mano; energía curiosa, sin retrato cinematográfico.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "9. Monedas de miel y engranes."
+   **Texto impreso exacto:** "20. Flor de inocencia."
    **Texto diegético permitido:** NINGUNO
-2. **superior derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Hassan regula su giro con precisión, sin dominarla.
+2. **superior derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Una chispa de la flor entra al núcleo; Hassan recuerda la forma de Ferry de hacer importante lo pequeño.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Con cuidado. No quiero echar a perder nada."
+   **Texto impreso exacto:** "Ferry, me recuerdas que una cosa pequeña puede cambiar todo el día."
    **Texto diegético permitido:** NINGUNO
-3. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Estrella de esperanza infinita: una estrella pequeña flota sobre el frasco. Ferry aparece como maga de esperanza original, vestido rosa de líneas simples y estrella flotante propia; energía luminosa sin copiar una bruja conocida.
+3. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** 21. Prisma de orden: un prisma simétrico alinea destellos caóticos sin borrar sus colores. Ferry aparece como arquitecta del orden original, uniforme blanco-cian, prisma y gestos precisos; energía de armonía, sin retrato de figura pública.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "10. Estrella de esperanza infinita."
+   **Texto impreso exacto:** "21. Prisma de orden."
    **Texto diegético permitido:** NINGUNO
-4. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** La estrella se sumerge y deja un pulso rosa-dorado.
-   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "tinnn"
+4. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** El prisma se absorbe como geometría luminosa y Hassan recuerda que Ferry ordena sin apagar lo vivo.
+   **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "Ferry, ordenas sin apagar el desorden bonito que te hace tú."
    **Texto diegético permitido:** NINGUNO
 
 ## 71. Dulzura y mar — 4 celdas
 
 **Retícula:** tira superior de ancho completo y tres celdas inferiores: izquierda, centro, derecha.
 
-1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** Flor de inocencia: una flor pálida se abre despacio. Ferry aparece como soñadora romántica original, vestido verde-rosa y flor en la mano; energía de inocencia curiosa, sin retrato cinematográfico.
+1. **superior panorámica — plano general cinematográfico, profundidad visible y lectura de ambiente.** 22. Campanillas de sol: tres campanillas sueltan chispas amarillas dentro del matraz. Ferry aparece como aventurera solar original, vestido lavanda-oro, campanillas y sonrisa radiante; energía de alegría, sin copiar princesas.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "11. Flor de inocencia."
+   **Texto impreso exacto:** "22. Campanillas de sol."
    **Texto diegético permitido:** NINGUNO
-2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Una sola chispa cae de su centro al líquido.
+2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Las chispas se absorben como ritmo alegre; Hassan recuerda la alegría de Ferry cuando llega contenta.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "A veces una cosa pequeña cambia todo."
+   **Texto impreso exacto:** "Cuando llegas contenta, Ferry, se me contagia la alegría."
    **Texto diegético permitido:** NINGUNO
-3. **inferior central — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Concha dorada del mar: la concha libera una gota turquesa. Ferry aparece como princesa marina original, capa turquesa, concha dorada y cabello movido por agua gráfica; energía oceánica sin cola ni diseño reconocible.
+3. **inferior central — plano medio dinámico, gesto y acción perfectamente legibles.** 23. Reloj de arena sereno: los granos caen despacio dentro de una burbuja de luz. Ferry aparece como escuchadora serena original, atuendo arena-azul y reloj de arena; energía paciente, paisaje minimalista de viento y agua.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "12. Concha dorada del mar."
+   **Texto impreso exacto:** "23. Reloj de arena sereno."
    **Texto diegético permitido:** NINGUNO
-4. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** La gota crea una ola minúscula dentro del matraz.
-   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "swish"
+4. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** El reloj se vuelve polvo dorado y Hassan recuerda que Ferry sabe esperar sin presionar.
+   **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "Ferry, esperar sin presionar también es querer. Tú me lo enseñaste."
    **Texto diegético permitido:** NINGUNO
 
 ## 72. Persistencia, talento y orden — 6 celdas
 
 **Retícula:** cuadrícula regular de 2 columnas × 3 filas.
 
-1. **fila 1 izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** Raíz de perseverancia: una raíz luminosa rompe una piedra mínima. Ferry aparece como guerrera resiliente original en rojo coral, raíz luminosa y postura firme; energía de perseverancia sin copiar heroínas existentes.
+1. **fila 1 izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** 24. Sobres perfumados de amor: tres sobres sin palabras liberan pétalos dentro del vidrio. Ferry aparece como mensajera romántica original, capa vino-rosa y sobres de luz; energía de amor escrito, sin alusiones literarias.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "13. Raíz de perseverancia."
+   **Texto impreso exacto:** "24. Sobres perfumados de amor."
    **Texto diegético permitido:** NINGUNO
-2. **fila 1 derecha — plano medio dinámico, gesto y acción perfectamente legibles.** La raíz florece dentro del vidrio.
+2. **fila 1 derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Los pétalos se absorben como partículas de mensaje; Hassan recuerda cómo Ferry lo hace sentir cerca.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Sigues aunque estés cansada. Eso admiro de ti."
+   **Texto impreso exacto:** "Tus mensajes hacen que te sienta cerca, Ferry, aunque no estés aquí."
    **Texto diegético permitido:** NINGUNO
-3. **fila 2 izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Cuchara de canela y vainilla: las especias giran en la cuchara ámbar. Ferry aparece como chef heroína original, delantal coral, cuchara brillante y remolino de especias; energía culinaria sin uniforme reconocible.
+3. **fila 2 izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** 25. Puente de pétalos: los pétalos forman un puente sobre el borde interior del matraz. Ferry aparece como constructora de puentes original, vestido coral bordado, arco de pétalos y gesto de comprensión; energía conciliadora.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "14. Cuchara de canela y vainilla."
+   **Texto impreso exacto:** "25. Puente de pétalos."
    **Texto diegético permitido:** NINGUNO
-4. **fila 2 derecha — plano medio dinámico, gesto y acción perfectamente legibles.** El remolino entra al matraz y perfuma la luz.
+4. **fila 2 derecha — plano medio dinámico, gesto y acción perfectamente legibles.** El puente se vuelve arco de luz y Hassan recuerda que con Ferry se puede hablar sin esconder nada.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Tu talento hace que hasta lo diario se sienta bonito."
+   **Texto impreso exacto:** "Ferry, hablar contigo aclara cosas; no las barre debajo del tapete."
    **Texto diegético permitido:** NINGUNO
-5. **fila 3 izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Cristal de orden: un prisma simétrico alinea destellos caóticos. Ferry aparece como arquitecta del orden original, uniforme blanco-cian, prisma y gestos precisos; energía de armonía sin retrato de figura pública.
+5. **fila 3 izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** 26. Chispa salvaje: una chispa naranja salta fuera de un frasco de luz, pero no se pierde. Ferry aparece como chispa libre original, mechón coral, chaqueta negra-rosa y destello naranja; energía atrevida, sin iconografía de antihéroes.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "15. Cristal de orden."
+   **Texto impreso exacto:** "26. Chispa salvaje."
    **Texto diegético permitido:** NINGUNO
-6. **fila 3 derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** El laboratorio se vuelve exacto y acogedor a la vez.
-   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "tinnn"
+6. **fila 3 derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Regresa al matraz como zigzag coral; Hassan recuerda las ideas inesperadas de Ferry.
+   **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "Ferry, luego sales con una idea que me cambia todo el plan."
    **Texto diegético permitido:** NINGUNO
 
 ## 73. Alegría, paciencia y cariño — 6 celdas
 
 **Retícula:** cuadrícula regular de 2 columnas × 3 filas.
 
-1. **fila 1 izquierda — plano general cinematográfico, profundidad visible y lectura de ambiente.** Campanillas de sol: tres campanillas sueltan chispas amarillas. Ferry aparece como aventurera solar original, vestido lavanda-oro, campanillas y sonrisa radiante; energía de alegría sin copiar princesas.
+1. **fila 1 izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** 27. Trofeo de cuerpo en movimiento: un trofeo abstracto deja una estela de salto dentro del matraz. Ferry aparece como atleta campeona original, uniforme coral-oro sin logos, pose de salto y trofeo abstracto; energía de movimiento y fortaleza.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "16. Campanillas de sol."
+   **Texto impreso exacto:** "27. Trofeo de cuerpo en movimiento."
    **Texto diegético permitido:** NINGUNO
-2. **fila 1 derecha — plano medio dinámico, gesto y acción perfectamente legibles.** El líquido responde con ondas alegres.
+2. **fila 1 derecha — plano medio dinámico, gesto y acción perfectamente legibles.** La estela se absorbe como líneas de fuerza y Hassan recuerda la fuerza de Ferry sin necesidad de presumirla.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Cuando llegas contenta, se me contagia la alegría."
+   **Texto impreso exacto:** "Tu fuerza se nota aunque no la presumas, Ferry."
    **Texto diegético permitido:** NINGUNO
-3. **fila 2 izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Reloj de arena sereno: los granos caen despacio, suspendiendo el caos. Ferry aparece como escuchadora serena original, atuendo arena-azul y reloj de arena; energía paciente, paisaje minimalista de viento y agua.
+3. **fila 2 izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** 28. Anillo de fidelidad: un anillo sobrio gira alrededor de las luces sin encadenarlas. Ferry aparece como viajera fiel original, anillo sobrio, abrigo marfil y mirada tranquila; energía de lealtad libre.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "17. Reloj de arena sereno."
+   **Texto impreso exacto:** "28. Anillo de fidelidad."
    **Texto diegético permitido:** NINGUNO
-4. **fila 2 derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Hassan espera antes de agregar el siguiente elemento.
+4. **fila 2 derecha — plano medio dinámico, gesto y acción perfectamente legibles.** El anillo se integra con holgura y Hassan recuerda que Ferry siempre puede elegir quedarse o partir.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Esperar sin presionar también es querer."
+   **Texto impreso exacto:** "Quedarse porque quieres, Ferry; no porque tienes que hacerlo."
    **Texto diegético permitido:** NINGUNO
-5. **fila 3 izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Manta de algodón: la manta envuelve un instante el matraz como una nube. Ferry aparece como icono de cariño original, moño coral propio y manta blanca envolvente; energía de refugio, sin rasgos de personaje conocido.
+5. **fila 3 izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Las veintiocho luces se ordenan y dejan un espacio vacío, coral y dorado, para el último ingrediente.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "18. Manta de algodón de cariño."
+   **Texto impreso exacto:** "Falta una razón. Y el matraz ya me dijo dónde está."
    **Texto diegético permitido:** NINGUNO
-6. **fila 3 derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Al retirarse, deja una luz blanca y suave en la mezcla.
-   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "poof"
+6. **fila 3 derecha — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Hassan busca en la nota el círculo 29; el matraz responde con un latido que apunta al pincel que aún falta.
+   **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "El último círculo apunta al pincel."
    **Texto diegético permitido:** NINGUNO
 
 ## 74. Mensajes, consideración y atrevimiento — 6 celdas
 
 **Retícula:** cuadrícula regular de 2 columnas × 3 filas.
 
-1. **fila 1 izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** Sobres perfumados: tres sobres sin palabras liberan pétalos. Ferry aparece como mensajera romántica original, capa vino-rosa y sobres perfumados; energía de amor escrito sin aludir a personajes literarios.
+1. **fila 1 izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** El espacio del ingrediente 29 late dentro del matraz y proyecta una línea coral hacia la repisa de Hassan.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "19. Sobres perfumados de amor."
+   **Texto impreso exacto:** "Las veintiocho luces no se mezclan: se hacen espacio para la que falta."
    **Texto diegético permitido:** NINGUNO
-2. **fila 1 derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Los pétalos se ordenan en espiral alrededor del vidrio.
+2. **fila 1 derecha — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Hassan compara esa línea con el último círculo de la nota: ya sabe dónde buscar, pero aún no sabe qué forma tomará.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Tus mensajes hacen que te sienta más cerca."
+   **Texto impreso exacto:** "La última pista está en mi repisa. Voy a verla antes de tocarla."
    **Texto diegético permitido:** NINGUNO
-3. **fila 2 izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Puente de pétalos: los pétalos forman un puente sobre el borde. Ferry aparece como constructora de puentes familiar original, vestido bordado coral y pétalos; energía de comprensión sin copiar personajes de cine.
-   **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "20. Puente de pétalos."
-   **Texto diegético permitido:** NINGUNO
-4. **fila 2 derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Hassan coloca un objeto al otro lado sin perderlo.
-   **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Hablar contigo aclara muchas cosas."
-   **Texto diegético permitido:** NINGUNO
-5. **fila 3 izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Chispa salvaje: una chispa naranja salta fuera de su contenedor. Ferry aparece como aventurera caótica original, mechón coral, chaqueta negra-rosa y chispa naranja; energía atrevida sin iconografía de antihéroes conocidos.
-   **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "21. Chispa salvaje."
-   **Texto diegético permitido:** NINGUNO
-6. **fila 3 derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Vuelve al matraz por voluntad propia, dejando una risa visual de zigzags.
+3. **fila 2 izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Las veintiocho luces se separan sin escapar, haciendo sitio para que el último hallazgo no las opaque.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "zap"
+   **Texto impreso exacto:** "tinnn"
+   **Texto diegético permitido:** NINGUNO
+4. **fila 2 derecha — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Hassan revisa la repisa con calma, dejando que la nota y el matraz coincidan antes de tocar nada.
+   **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "Un pincel. No es para copiarte, Ferry; es para crear algo que hable de ti."
+   **Texto diegético permitido:** NINGUNO
+5. **fila 3 izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Entre libros y herramientas aparece un pincel sencillo, de mango claro, que responde con una chispa coral.
+   **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "Todavía no lo agrego. Primero quiero entender lo que significa."
+   **Texto diegético permitido:** NINGUNO
+6. **fila 3 derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Hassan lo toma sin agregarlo todavía: el número 29 debe entrar sólo cuando pueda nombrar lo que significa.
+   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
+   **Texto impreso exacto:** "fiuu"
    **Texto diegético permitido:** NINGUNO
 
 ## 75. Fortaleza, nutrición y confianza — 6 celdas
 
 **Retícula:** cuadrícula regular de 2 columnas × 3 filas.
 
-1. **fila 1 izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** Trofeo en movimiento: un trofeo abstracto adopta una pose de salto. Ferry aparece como atleta campeona original, uniforme coral-oro sin logos, pose de salto y trofeo abstracto; energía de fortaleza.
+1. **fila 1 izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** Hassan gira el pincel entre los dedos y ve cómo su punta copia la espiral del sueño.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "22. Trofeo de cuerpo en movimiento."
+   **Texto impreso exacto:** "El pincel dibuja la misma espiral del sueño."
    **Texto diegético permitido:** NINGUNO
-2. **fila 1 derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Su estela recuerda el aterrizaje de Ferry en el concurso.
+2. **fila 1 derecha — plano medio dinámico, gesto y acción perfectamente legibles.** En el reflejo, Ferry aterriza en el concurso y después se agacha a cuidar a Zeus: crear y cuidar caben en el mismo gesto.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Tu fuerza se nota, aunque no hagas ruido."
+   **Texto impreso exacto:** "Ferry, crear y cuidar te salen del mismo lugar."
    **Texto diegético permitido:** NINGUNO
-3. **fila 2 izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Cáliz de nutrición: un cáliz vierte luz verde-dorada. Ferry aparece como guía de nutrición original, túnica verde-dorada, cáliz y gesto protector; energía que nutre cuerpo y esperanza.
+3. **fila 2 izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** El matraz abre el espacio coral sin jalar el pincel; Hassan decide acercarlo por voluntad propia.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "23. Cáliz de nutrición sagrada."
+   **Texto impreso exacto:** "No tengo que forzarlo. Sólo acercarlo cuando esté listo."
    **Texto diegético permitido:** NINGUNO
-4. **fila 2 derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Esa luz nutre las demás sin taparlas.
-   **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Cuidar a alguien todos los días también es amor."
-   **Texto diegético permitido:** NINGUNO
-5. **fila 3 izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Llave de confianza: la llave abre una cerradura dibujada en luz. Ferry aparece como estudiosa confiable original, abrigo índigo, llave dorada y libro cerrado sin símbolos reconocibles; energía de confianza.
-   **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "24. Llave de confianza."
-   **Texto diegético permitido:** NINGUNO
-6. **fila 3 derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** La cerradura se convierte en puerta de luz hacia el centro del matraz.
+4. **fila 2 derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Las veintiocho luces se acomodan alrededor, más vivas que antes pero todavía separadas.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "clic"
+   **Texto impreso exacto:** "tinnn"
+   **Texto diegético permitido:** NINGUNO
+5. **fila 3 izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Hassan mira la nota, el pincel y el matraz: ya no está resolviendo un acertijo, está entendiendo una forma de mirar a Ferry.
+   **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "El círculo veintinueve tiene el tamaño exacto de su punta."
+   **Texto diegético permitido:** NINGUNO
+6. **fila 3 derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** La punta del pincel toca el vidrio y dibuja una línea rosa-dorada que espera su nombre.
+   **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "Ya entendí qué falta."
    **Texto diegético permitido:** NINGUNO
 
 ## 76. Lealtad, conexión y dulzura con fuego — 6 celdas
 
 **Retícula:** cuadrícula regular de 2 columnas × 3 filas.
 
-1. **fila 1 izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** Anillo de fidelidad: un anillo gira y se posa junto al borde, sin encadenar nada. Ferry aparece como viajera fiel original, anillo sobrio, abrigo marfil y mirada tranquila; energía de lealtad libre.
+1. **fila 1 izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** El hilo rojo ya absorbido aparece dentro del matraz y conecta las veintiocho luces con holgura, sin hacer nudos.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "25. Anillo de fidelidad."
+   **Texto impreso exacto:** "El hilo une las veintiocho luces sin borrar ninguna."
    **Texto diegético permitido:** NINGUNO
-2. **fila 1 derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Hassan contempla su órbita tranquila.
+2. **fila 1 derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Hassan ve que ninguna luz pierde su color ni su lugar al acercarse a las demás.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Quedarse porque quieres, no porque tienes que hacerlo."
+   **Texto impreso exacto:** "Así se siente conocerte, Ferry: cerca, pero siempre libre."
    **Texto diegético permitido:** NINGUNO
-3. **fila 2 izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Hilo rojo del destino: el hilo cruza la página y entra al líquido. Ferry aparece como heroína cósmica original, uniforme blanco-coral, hilo rojo orbital y estrella propia; energía de conexión eterna sin copiar diseños existentes.
+3. **fila 2 izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** El pincel deja una segunda línea coral; ambas líneas forman la base de una estrella todavía incompleta.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "26. Hilo rojo del destino."
+   **Texto impreso exacto:** "La espiral ya parece estrella. Sólo falta nombrarla."
    **Texto diegético permitido:** NINGUNO
-4. **fila 2 derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Dentro del matraz, conecta todos los colores ya reunidos.
+4. **fila 2 derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Hassan respira y espera: el último ingrediente no es una orden, es una elección que debe entender.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Este hilo siempre termina llevándome a ti."
+   **Texto impreso exacto:** "No es una orden. Es mi elección completar esto con cuidado."
    **Texto diegético permitido:** NINGUNO
-5. **fila 3 izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Moño rosa con fuego: un moño satinado tiene un borde coral cálido. Ferry aparece como estrella pop coqueta original, moño rosa satinado, borde coral luminoso y pose segura; energía dulce y ardiente.
+5. **fila 3 izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** La nota ilumina el título "29 razones" y el círculo vacío se vuelve del tamaño exacto de la punta del pincel.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "27. Moño rosa con fuego."
+   **Texto impreso exacto:** "29 razones."
    **Texto diegético permitido:** NINGUNO
-6. **fila 3 derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** El moño se disuelve y enciende la paleta de Ferry en el vidrio.
-   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "fwoom"
+6. **fila 3 derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Hassan sonríe: por fin sabe qué está a punto de encontrar.
+   **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "Y la última es que conviertes cualquier cosa en una idea nueva."
    **Texto diegético permitido:** NINGUNO
 
 ## 77. Curiosidad y creación — 5 celdas
 
 **Retícula:** viñeta superior de ancho completo 36%; dos celdas centrales y dos inferiores.
 
-1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** Luciérnagas de madrugada: pequeñas luces recorren rutas impredecibles. Ferry aparece como exploradora lunar original, vestido violeta suave, luciérnagas y mirada curiosa; energía de preguntas inesperadas.
+1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** Las luciérnagas de la memoria recorren el taller y se reúnen sobre la punta del pincel, como puntos de cielo. Ferry aparece como exploradora lunar original, vestido violeta suave, luciérnagas y mirada curiosa; energía de preguntas inesperadas.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "28. Luciérnagas de madrugada."
+   **Texto impreso exacto:** "Las luciérnagas llegaron al pincel. Ya sé por qué era el último."
    **Texto diegético permitido:** NINGUNO
-2. **centro izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Hassan intenta seguirlas con la lupa y se ríe de su propio esfuerzo.
+2. **centro izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Hassan las sigue con la lupa y entiende que no lo llevan a una respuesta fija, sino a la posibilidad de crear algo nuevo.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Siempre estás preguntando cosas. Por eso contigo nunca me aburro."
+   **Texto impreso exacto:** "Ferry, tu curiosidad siempre abre una puerta que no estaba antes."
    **Texto diegético permitido:** NINGUNO
-3. **centro derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Las luciérnagas entran al matraz como puntos de cielo.
+3. **centro derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Las luciérnagas entran al mismo matraz como puntos de cielo y el espacio coral queda abierto.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
    **Texto impreso exacto:** "tinnn"
    **Texto diegético permitido:** NINGUNO
-4. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Pincel de creatividad infinita: un pincel luminoso aparece como el último ingrediente. Ferry aparece como creadora original, overol coral con manchas abstractas de pintura y pincel rosa-dorado; no evoca a una figura externa.
+4. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** 29. Pincel de creatividad infinita: Hassan nombra el pincel y lo acerca al matraz. Ferry aparece como creadora original, overol coral con manchas abstractas de pintura y pincel rosa-dorado; no evoca a una figura externa.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
    **Texto impreso exacto:** "29. Pincel de creatividad infinita."
    **Texto diegético permitido:** NINGUNO
-5. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** El pincel traza dentro del líquido una espiral rosa-dorada: la primera forma de la estrella.
-   **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
-   **Texto impreso exacto:** "shraaa"
+5. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** El pincel se absorbe como espiral rosa-dorada y partículas de trazo; las veintinueve luces quedan completas y dibujan la primera forma de la estrella.
+   **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+   **Texto impreso exacto:** "Ferry, conviertes cualquier cosa en una idea nueva. Por eso esta estrella se parece a ti."
    **Texto diegético permitido:** NINGUNO
 
 ## 78. Fórmula completa — 4 celdas
@@ -1353,7 +1353,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto diegético permitido:** NINGUNO
 3. **inferior izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Coloca ambas manos a los lados del vidrio, con respeto.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Quiero que estés porque quieres estar, no por esta fórmula."
+   **Texto impreso exacto:** "Quiero que estés porque me amas, no por este hechizo."
    **Texto diegético permitido:** NINGUNO
 4. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** El laboratorio entero recibe por primera vez una luz coral y dorada.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
@@ -1510,7 +1510,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto diegético permitido:** NINGUNO
 2. **superior derecha — plano medio dinámico, gesto y acción perfectamente legibles.** La luz se retira y revela su diseño adulto, original y cálido.
    **Lettering:** globo de diálogo de Ferry; superior derecha de la celda, globo redondeado junto a Ferry; cola clara, máximo 18% del área de la celda.
-   **Texto impreso exacto:** "Llegué. ¿Ves? Nunca estuve tan lejos."
+   **Texto impreso exacto:** "Siempre estuve aquí. ¿Ves? Nunca estuve tan lejos."
    **Texto diegético permitido:** NINGUNO
 3. **inferior panorámica — plano general cinematográfico, profundidad visible y lectura de ambiente.** Hassan queda en segundo plano, maravillado, sin gesto de posesión.
    **Lettering:** silencio; sin lettering, globo ni SFX.
@@ -1523,7 +1523,7 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** Ferry mira a Hassan y luego al laboratorio transformado.
    **Lettering:** globo de diálogo de Ferry; superior izquierda de la celda, globo redondeado junto a Ferry; cola clara, máximo 18% del área de la celda.
-   **Texto impreso exacto:** "¿Nos vamos?"
+   **Texto impreso exacto:** "Sólo tenías que volver a mí."
    **Texto diegético permitido:** NINGUNO
 2. **inferior izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Ella le ofrece la mano por decisión propia.
    **Lettering:** globo de diálogo de Ferry; superior derecha de la celda, globo redondeado junto a Ferry; cola clara, máximo 18% del área de la celda.

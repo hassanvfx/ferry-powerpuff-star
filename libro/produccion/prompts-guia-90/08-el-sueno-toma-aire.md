@@ -33,32 +33,32 @@ NO dibujes arte final, pintura digital pulida, cel shading terminado, superficie
 
 ### Celda 1 — franja superior a sangre
 - Función en lectura: ancla de entrada: establece el lugar, tiempo y eje espacial.
-- Entorno y hora: habitación minimalista de Hassan, azul gris y luz baja; noche profunda, antes de dormir.
-- Personajes y vestuario: Hassan adulto; no aparece Ferry. Hassan: camiseta azul marino y pantalón carbón cómodos; sin bata ni accesorios de laboratorio.
+- Entorno y hora: continuidad del estado global de página; sólo cambia lo declarado en acción.
+- Personajes y vestuario: usar clave ID/VEST global; no introducir personajes ni accesorios extra.
 - Cámara/composición: plano general cinematográfico, profundidad visible y lectura de ambiente; posición en retícula: franja superior a sangre.
-- Anotaciones gráficas obligatorias: esquina con código C1; rectángulo de encuadre, línea de horizonte, flecha de cámara, flecha de mirada, flecha de luz, línea de acción y círculo rojo alrededor de la utilería crítica.
+- Marcas: C1, cámara, mirada, luz, línea de acción, horizonte, prop rojo y silueta vacía de lettering.
 - Especie/raza bloqueada: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
-- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: Hassan adulto; no aparece Ferry; VEST: Hassan: camiseta azul marino y pantalón carbón cómodos; sin bata ni accesorios de laboratorio; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/TIEMPO: habitación minimalista de Hassan, azul gris y luz baja, noche profunda, antes de dormir; CÁMARA/ESPACIO: plano general cinematográfico, profundidad visible y lectura de ambiente, franja superior a sangre; CUERPO/MIRADA: cuerpo apoyado de manera creíble; hombros y cadera descansan en el colchón, brazos visibles sin torsión; mirada dirigida al libro; no mirar a cámara salvo que la acción lo exija; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: conserva el estado visible para la siguiente celda de esta página.
+- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: H/F (según leyenda de página); VEST: base de página, sólo cambios declarados; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/T: continuo; CAM: plano general cinematográfico, profundidad visible y lectura de ambiente; CUERPO/MIRADA: cuerpo apoyado de manera creíble; hombros y cadera descansan en el colchón, brazos visibles sin torsión; mirada dirigida al libro; no mirar a cámara salvo que la acción lo exija; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: continúa a C2.
 - Acción y utilería exacta: Vista cenital: Hassan duerme mientras las ondas rodean la cama; el libro rosa “Volver a mí”, de Ferry Beltran, queda cerrado en la mesa de noche.
 - Pose y apoyo corporal: cuerpo apoyado de manera creíble; hombros y cadera descansan en el colchón, brazos visibles sin torsión.
 - Mirada/eje de atención: mirada dirigida al libro; no mirar a cámara salvo que la acción lo exija.
 - Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): Narrador omnipresente — cartela: "El sueño toma aire."; texto de portada permitido: "Volver a mí" — "Ferry Beltran"
-- Marcador visual de lettering: dibuja sólo la silueta vacía y ubicación de esquina superior izquierda de la celda, caja crema de borde negro; no cubrir rostro ni acción; usa un código corto de celda, nunca el diálogo literal.
+- Lettering: silueta vacía en esquina superior izquierda de la celda, caja crema de borde negro; no cubrir rostro ni acción; sólo código corto, nunca diálogo literal.
 - Estado que debe respetarse: Mantener el estado canónico de página; no introducir utilería nueva.
 
 ### Celda 2 — franja inferior a sangre
 - Función en lectura: cierre: deja una dirección, objeto o emoción que sostenga el siguiente corte.
-- Entorno y hora: habitación minimalista de Hassan, azul gris y luz baja; noche profunda, antes de dormir.
-- Personajes y vestuario: Hassan adulto; no aparece Ferry. Hassan: camiseta azul marino y pantalón carbón cómodos; sin bata ni accesorios de laboratorio.
+- Entorno y hora: continuidad del estado global de página; sólo cambia lo declarado en acción.
+- Personajes y vestuario: usar clave ID/VEST global; no introducir personajes ni accesorios extra.
 - Cámara/composición: primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página; posición en retícula: franja inferior a sangre.
-- Anotaciones gráficas obligatorias: esquina con código C2; rectángulo de encuadre, línea de horizonte, flecha de cámara, flecha de mirada, flecha de luz, línea de acción y círculo rojo alrededor de la utilería crítica.
+- Marcas: C2, cámara, mirada, luz, línea de acción, horizonte, prop rojo y silueta vacía de lettering.
 - Especie/raza bloqueada: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
-- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: Hassan adulto; no aparece Ferry; VEST: Hassan: camiseta azul marino y pantalón carbón cómodos; sin bata ni accesorios de laboratorio; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/TIEMPO: habitación minimalista de Hassan, azul gris y luz baja, noche profunda, antes de dormir; CÁMARA/ESPACIO: primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página, franja inferior a sangre; CUERPO/MIRADA: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales; mirada y líneas de acción orientadas hacia la salida narrativa de la página siguiente; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: prepara el estado que recoge la siguiente página.
+- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: ELENCO (según leyenda de página); VEST: base de página, sólo cambios declarados; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/T: continuo; CAM: primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página; CUERPO/MIRADA: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales; mirada y líneas de acción orientadas hacia la salida narrativa de la página siguiente; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: salida a página siguiente.
 - Acción y utilería exacta: Las partículas rosas se agrupan sobre él como una constelación silenciosa.
 - Pose y apoyo corporal: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales.
 - Mirada/eje de atención: mirada y líneas de acción orientadas hacia la salida narrativa de la página siguiente.
 - Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): SFX / efecto visual: "hummm"
-- Marcador visual de lettering: dibuja sólo la silueta vacía y ubicación de junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave; usa un código corto de celda, nunca el diálogo literal.
+- Lettering: silueta vacía en junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave; sólo código corto, nunca diálogo literal.
 - Estado que debe respetarse: Mantener el estado canónico de página; no introducir utilería nueva.
 
 ## Chequeo de aprobación

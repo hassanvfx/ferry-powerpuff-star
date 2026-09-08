@@ -25,7 +25,7 @@ NO dibujes arte final, pintura digital pulida, cel shading terminado, superficie
 
 ## Continuidad de borde a borde
 
-- ENTRADA — última acción/estado de la página previa: Ferry coloca una ramita como techo protector.
+- ENTRADA — última acción/estado de la página previa: Los dos caracoles cruzan la ramita uno detrás del otro; Ferry espera a un lado hasta que ambos llegan al musgo seguro.
 - SALIDA — primera acción/estado que debe poder sostener la página siguiente: Una araña pequeña tiembla sobre una rama al viento.
 - La primera celda debe continuar esa entrada o mostrar visualmente la transición. La última celda debe dejar la salida preparada; no copies composición de otra página.
 
@@ -33,32 +33,32 @@ NO dibujes arte final, pintura digital pulida, cel shading terminado, superficie
 
 ### Celda 1 — celda izquierda alta
 - Función en lectura: ancla de entrada: establece el lugar, tiempo y eje espacial.
-- Entorno y hora: escenario y jardín onírico coral, rosa, oro y carmín; sueño continuo, de concurso luminoso a jardín protector.
-- Personajes y vestuario: Hassan adulto y Ferry adulta; no enumerar animales de la historia en este bloque: cada celda define de forma exclusiva su criatura visible mediante ESPECIE/RAZA. Hassan: atuendo nocturno azul marino sin bata. Ferry: vestido coral plisado, chaqueta blanca corta, cinturón dorado y tenis blanco-oro; concha, moño y cordón rojo sólo si el beat los nombra.
+- Entorno y hora: continuidad del estado global de página; sólo cambia lo declarado en acción.
+- Personajes y vestuario: usar clave ID/VEST global; no introducir personajes ni accesorios extra.
 - Cámara/composición: plano de establecimiento, composición clara y aire alrededor del sujeto; posición en retícula: celda izquierda alta.
-- Anotaciones gráficas obligatorias: esquina con código C1; rectángulo de encuadre, línea de horizonte, flecha de cámara, flecha de mirada, flecha de luz, línea de acción y círculo rojo alrededor de la utilería crítica.
+- Marcas: C1, cámara, mirada, luz, línea de acción, horizonte, prop rojo y silueta vacía de lettering.
 - Especie/raza bloqueada: ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: exactamente DOS CARACOLES TERRESTRES pequeños: cada uno con cuerpo húmedo gris, UNA concha espiral marrón/ámbar y cuatro tentáculos finos; nunca tortugas, babosas sin concha, insectos ni un número distinto de dos
-- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: Hassan adulto y Ferry adulta; no enumerar animales de la historia en este bloque: cada celda define de forma exclusiva su criatura visible mediante ESPECIE/RAZA; VEST: Hassan: atuendo nocturno azul marino sin bata. Ferry: vestido coral plisado, chaqueta blanca corta, cinturón dorado y tenis blanco-oro; concha, moño y cordón rojo sólo si el beat los nombra; ESPECIE/RAZA: ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: exactamente DOS CARACOLES TERRESTRES pequeños: cada uno con cuerpo húmedo gris, UNA concha espiral marrón/ámbar y cuatro tentáculos finos; nunca tortugas, babosas sin concha, insectos ni un número distinto de dos; ESP/TIEMPO: escenario y jardín onírico coral, rosa, oro y carmín, sueño continuo, de concurso luminoso a jardín protector; CÁMARA/ESPACIO: plano de establecimiento, composición clara y aire alrededor del sujeto, celda izquierda alta; CUERPO/MIRADA: desplazamiento claro: un pie recibe el peso, el otro inicia el paso; torso y mirada orientados hacia el destino; mirada dirigida a los caracoles; no mirar a cámara salvo que la acción lo exija; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: conserva el estado visible para la siguiente celda de esta página.
-- Acción y utilería exacta: Los caracoles cruzan la ramita hacia una zona segura.
-- Pose y apoyo corporal: desplazamiento claro: un pie recibe el peso, el otro inicia el paso; torso y mirada orientados hacia el destino.
+- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: ELENCO (según leyenda de página); VEST: base de página, sólo cambios declarados; ESPECIE/RAZA: ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: exactamente DOS CARACOLES TERRESTRES pequeños: cada uno con cuerpo húmedo gris, UNA concha espiral marrón/ámbar y cuatro tentáculos finos; nunca tortugas, babosas sin concha, insectos ni un número distinto de dos; ESP/T: continuo; CAM: plano de establecimiento, composición clara y aire alrededor del sujeto; CUERPO/MIRADA: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales; mirada dirigida a los caracoles; no mirar a cámara salvo que la acción lo exija; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: continúa a C2.
+- Acción y utilería exacta: Los dos caracoles ya están en el musgo seguro y continúan juntos, lejos del hilo de agua y del hueco del sendero.
+- Pose y apoyo corporal: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales.
 - Mirada/eje de atención: mirada dirigida a los caracoles; no mirar a cámara salvo que la acción lo exija.
 - Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): SFX / efecto visual: "slip… slip…"
-- Marcador visual de lettering: dibuja sólo la silueta vacía y ubicación de junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave; usa un código corto de celda, nunca el diálogo literal.
+- Lettering: silueta vacía en junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave; sólo código corto, nunca diálogo literal.
 - Estado que debe respetarse: Mantener el estado canónico de página; no introducir utilería nueva.
 
 ### Celda 2 — celda derecha dominante
 - Función en lectura: cierre: deja una dirección, objeto o emoción que sostenga el siguiente corte.
-- Entorno y hora: escenario y jardín onírico coral, rosa, oro y carmín; sueño continuo, de concurso luminoso a jardín protector.
-- Personajes y vestuario: Hassan adulto y Ferry adulta; no enumerar animales de la historia en este bloque: cada celda define de forma exclusiva su criatura visible mediante ESPECIE/RAZA. Hassan: atuendo nocturno azul marino sin bata. Ferry: vestido coral plisado, chaqueta blanca corta, cinturón dorado y tenis blanco-oro; concha, moño y cordón rojo sólo si el beat los nombra.
+- Entorno y hora: continuidad del estado global de página; sólo cambia lo declarado en acción.
+- Personajes y vestuario: usar clave ID/VEST global; no introducir personajes ni accesorios extra.
 - Cámara/composición: primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página; posición en retícula: celda derecha dominante.
-- Anotaciones gráficas obligatorias: esquina con código C2; rectángulo de encuadre, línea de horizonte, flecha de cámara, flecha de mirada, flecha de luz, línea de acción y círculo rojo alrededor de la utilería crítica.
+- Marcas: C2, cámara, mirada, luz, línea de acción, horizonte, prop rojo y silueta vacía de lettering.
 - Especie/raza bloqueada: ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: exactamente DOS CARACOLES TERRESTRES pequeños: cada uno con cuerpo húmedo gris, UNA concha espiral marrón/ámbar y cuatro tentáculos finos; nunca tortugas, babosas sin concha, insectos ni un número distinto de dos
-- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: Hassan adulto y Ferry adulta; no enumerar animales de la historia en este bloque: cada celda define de forma exclusiva su criatura visible mediante ESPECIE/RAZA; VEST: Hassan: atuendo nocturno azul marino sin bata. Ferry: vestido coral plisado, chaqueta blanca corta, cinturón dorado y tenis blanco-oro; concha, moño y cordón rojo sólo si el beat los nombra; ESPECIE/RAZA: ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: exactamente DOS CARACOLES TERRESTRES pequeños: cada uno con cuerpo húmedo gris, UNA concha espiral marrón/ámbar y cuatro tentáculos finos; nunca tortugas, babosas sin concha, insectos ni un número distinto de dos; ESP/TIEMPO: escenario y jardín onírico coral, rosa, oro y carmín, sueño continuo, de concurso luminoso a jardín protector; CÁMARA/ESPACIO: primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página, celda derecha dominante; CUERPO/MIRADA: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales; mirada y líneas de acción orientadas hacia la salida narrativa de la página siguiente; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: prepara el estado que recoge la siguiente página.
+- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: ELENCO (según leyenda de página); VEST: base de página, sólo cambios declarados; ESPECIE/RAZA: ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: exactamente DOS CARACOLES TERRESTRES pequeños: cada uno con cuerpo húmedo gris, UNA concha espiral marrón/ámbar y cuatro tentáculos finos; nunca tortugas, babosas sin concha, insectos ni un número distinto de dos; ESP/T: continuo; CAM: primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página; CUERPO/MIRADA: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales; mirada y líneas de acción orientadas hacia la salida narrativa de la página siguiente; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: salida a página siguiente.
 - Acción y utilería exacta: Su rastro forma por un instante una curva rosa que recuerda al hilo rojo.
 - Pose y apoyo corporal: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales.
 - Mirada/eje de atención: mirada y líneas de acción orientadas hacia la salida narrativa de la página siguiente.
 - Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): Narrador omnipresente — cartela: "Un camino seguro."
-- Marcador visual de lettering: dibuja sólo la silueta vacía y ubicación de esquina superior izquierda de la celda, caja crema de borde negro; no cubrir rostro ni acción; usa un código corto de celda, nunca el diálogo literal.
+- Lettering: silueta vacía en esquina superior izquierda de la celda, caja crema de borde negro; no cubrir rostro ni acción; sólo código corto, nunca diálogo literal.
 - Estado que debe respetarse: Mantener el estado canónico de página; no introducir utilería nueva.
 
 ## Chequeo de aprobación

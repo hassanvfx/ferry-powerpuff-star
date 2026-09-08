@@ -81,8 +81,8 @@ def main() -> None:
         "missing production-guide policy",
     )
     require(
-        "raza o especie se bloquea por celda" in plan["creature_identity_policy"],
-        "missing per-cell creature identity policy",
+        "raza, especie y género se bloquean por celda" in plan["creature_identity_policy"],
+        "missing per-cell creature identity-and-gender policy",
     )
     require("cinco dedos visibles" in plan["anatomy_policy"], "missing plan anatomy policy")
     require(
@@ -99,7 +99,7 @@ def main() -> None:
         40: "LA NOTA FÍSICA YA EXISTE",
         44: "LA LUPA YA ES HERRAMIENTA",
         56: "EL CARRETE Y LA CONCHA existen",
-        64: "EL MATRAZ SIGUE VACÍO",
+        64: "EL MISMO MATRAZ contiene las once luces",
         66: "CONJURO: la transformación ocurre",
     }
     for page_number, phrase in phase_locks.items():
@@ -155,6 +155,9 @@ def main() -> None:
     require("portada rosa intenso" in page_three_first_cell["state_lock"], "page 03/1 must establish the pink book")
     prompt_texts = [path.read_text(encoding="utf-8") for path in PROMPTS.glob("*.txt")]
     require(len(prompt_texts) == 90, "expected 90 generated prompts")
+    max_prompt_characters = 19_000
+    require(plan.get("max_prompt_characters") == max_prompt_characters, "plan must declare the 19,000-character prompt limit")
+    require(all(len(prompt) <= max_prompt_characters for prompt in prompt_texts), "a final prompt exceeds 19,000 characters")
     require(
         all("REFERENCIAS DECLARADAS PARA ESTA PÁGINA — ARCHIVOS DE EJECUCIÓN:" in prompt for prompt in prompt_texts),
         "every source prompt must declare its execution reference sheets",
@@ -187,14 +190,18 @@ def main() -> None:
         all("PROMPT NEGATIVO — ESPECIE/RAZA" in prompt for prompt in prompt_texts),
         "every prompt needs negative species/breed controls",
     )
+    require(
+        all("MATRAZ CANÓNICO ÚNICO" in prompt for prompt in prompt_texts),
+        "every prompt needs the single canonical flask continuity lock",
+    )
     creature_cells = {
-        (16, 1): "Zeus — ROTTWEILER adulto negro y fuego",
-        (19, 3): "Zeus — ROTTWEILER adulto negro y fuego",
-        (20, 2): "Yohi — TORTUGA SULCATA BEBÉ",
+        (16, 1): "Zeus — niño, ROTTWEILER adulto macho negro y fuego",
+        (19, 3): "Zeus — niño, ROTTWEILER adulto macho negro y fuego",
+        (20, 2): "Yohi — niña, TORTUGA SULCATA BEBÉ hembra",
         (24, 1): "exactamente DOS CARACOLES TERRESTRES",
         (26, 1): "UNA ARAÑA TEJEDORA pequeña",
-        (28, 1): "Zeus — ROTTWEILER adulto negro y fuego",
-        (28, 2): "Yohi — TORTUGA SULCATA BEBÉ",
+        (28, 1): "Zeus — niño, ROTTWEILER adulto macho negro y fuego",
+        (28, 2): "Yohi — niña, TORTUGA SULCATA BEBÉ hembra",
         (28, 3): "exactamente DOS CARACOLES TERRESTRES",
         (28, 4): "UNA ARAÑA TEJEDORA pequeña",
     }
@@ -203,7 +210,7 @@ def main() -> None:
         require(identity in cell["creature_lock"], f"page {page_number:02d}/{cell_number} missing species lock: {identity}")
     page_19_prompt = (PROMPTS / "19-la-mano-protectora.txt").read_text(encoding="utf-8")
     require(
-        "Zeus — ROTTWEILER adulto negro y fuego" in page_19_prompt
+        "Zeus — niño, ROTTWEILER adulto macho negro y fuego" in page_19_prompt
         and "nunca golden retriever, labrador, perro dorado/crema" in page_19_prompt,
         "page 19 must explicitly prevent Zeus from becoming a golden retriever",
     )
@@ -264,6 +271,7 @@ def main() -> None:
     require(len(guide_paths) == 90, "expected 90 production guides")
     for page, guide_path in zip(pages, guide_paths):
         guide = guide_path.read_text(encoding="utf-8")
+        require(len(guide) <= max_prompt_characters, f"{guide_path.name} exceeds 19,000 characters")
         require(guide.startswith(f"# Prompt de storyboard anotado {page['id'][:2]}"), f"bad guide title: {guide_path.name}")
         for heading in ("## Estado de escena", "## Continuidad de borde a borde", "## Desglose por celda", "## Chequeo de aprobación"):
             require(heading in guide, f"{guide_path.name} missing {heading}")
@@ -287,8 +295,8 @@ def main() -> None:
         )
         prompt = (ROOT / "produccion" / page["prompt"]).read_text(encoding="utf-8")
         species_tokens = {
-            "Zeus": "Zeus — ROTTWEILER adulto negro y fuego",
-            "Yohi": "Yohi — TORTUGA SULCATA BEBÉ",
+            "Zeus": "Zeus — niño, ROTTWEILER adulto macho negro y fuego",
+            "Yohi": "Yohi — niña, TORTUGA SULCATA BEBÉ hembra",
             "caracoles": "exactamente DOS CARACOLES TERRESTRES",
             "araña": "UNA ARAÑA TEJEDORA pequeña",
         }
@@ -305,11 +313,33 @@ def main() -> None:
             )
     page_19_guide = (GUIDES / "19-la-mano-protectora.md").read_text(encoding="utf-8")
     require(
-        "Zeus — ROTTWEILER adulto negro y fuego" in page_19_guide
+        "Zeus — niño, ROTTWEILER adulto macho negro y fuego" in page_19_guide
         and "nunca golden retriever, labrador, perro dorado/crema" in page_19_guide,
         "page 19 guide must carry Zeus's full breed lock",
     )
-    print("Continuity, voice, anatomy and v2 character-sheet audit passed: 90→01 report, state locks, page 01–03 transitions, Hassan's narrative interiority, 90 pose controls, dark brown eyes and primary v2-sheet authority.")
+    for page_number, cell_number in ((32, 1), (32, 2), (41, 1), (41, 2), (63, 2), (64, 3), (65, 1), (65, 2)):
+        cell = pages[page_number - 1]["cells"][cell_number - 1]
+        require(cell["permitted_diegetic_text"] == '"29 razones"', f"page {page_number:02d}/{cell_number} lost the canonical list heading")
+
+    visible_cells = [cell for page in pages for cell in page["cells"]]
+    numbered_positions = []
+    for position, cell in enumerate(visible_cells):
+        match = re.match(r'^"(\d+)\. ', cell["printed_text"])
+        if match:
+            numbered_positions.append((position, int(match.group(1))))
+    require([number for _, number in numbered_positions] == list(range(1, 30)), "ingredients must be visibly counted once, continuously, from 1 to 29")
+    for index, (position, number) in enumerate(numbered_positions):
+        next_position = numbered_positions[index + 1][0] if index + 1 < len(numbered_positions) else len(visible_cells)
+        memory_window = " ".join(cell["printed_text"] for cell in visible_cells[position + 1:next_position])
+        require("Ferry" in memory_window, f"ingredient {number} needs Hassan's visible Ferry memory before the next count")
+    page_18 = " ".join(cell["action"] for cell in pages[17]["cells"])
+    page_19 = " ".join(cell["action"] for cell in pages[18]["cells"])
+    page_24 = " ".join(cell["action"] for cell in pages[23]["cells"])
+    page_37_text = " ".join(cell["printed_text"] for cell in pages[36]["cells"])
+    require("no hay agua, gota" in page_18.lower() and "no hay gota" in page_19.lower(), "pages 18–19 must exclude the unexplained water-drop beat")
+    require("exactamente dos" in page_24.lower() and "ramita" in page_24.lower(), "page 24 must make the two-snail dry crossing legible")
+    require("¡Vamos, sin miedo a nada!" in page_37_text and "mala espina" not in page_37_text.lower(), "page 37 must play as courage and hope")
+    print("Continuity, voice, anatomy and v2 character-sheet audit passed: 90→01 report, 19,000-character cap, one canonical flask, continuous 1–29 recipe count, species/gender locks, state locks, natural voice and primary v2-sheet authority.")
 
 
 if __name__ == "__main__":

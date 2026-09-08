@@ -32,7 +32,7 @@
       "kind": "creature",
       "status": "candidate",
       "path": "../arte/referencias/zeus-character-sheet-v3.png",
-      "description": "Zeus: Rottweiler adulto negro y fuego, de pelo corto, musculoso, con collar azul marino y placa Zeus.",
+      "description": "Zeus: niño, Rottweiler adulto macho negro y fuego, de pelo corto, musculoso, con collar azul marino y placa Zeus.",
       "pages": { "ranges": [[16, 19]], "values": [28, 69, 85] }
     },
     {
@@ -40,7 +40,7 @@
       "kind": "creature",
       "status": "candidate",
       "path": "../arte/referencias/yohi-character-sheet-v1.png",
-      "description": "Yohi: tortuga sulcata bebé terrestre, caparazón alto arena y patas gruesas escamosas.",
+      "description": "Yohi: niña, tortuga sulcata bebé hembra terrestre, caparazón alto arena y patas gruesas escamosas.",
       "pages": { "ranges": [[20, 23]], "values": [28, 69, 85] }
     },
     {

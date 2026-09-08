@@ -1,0 +1,53 @@
+{
+  "schema": 3,
+  "id": "5c88d49c-a9e7-4e0a-98bc-45fbaf993fa0",
+  "at": "2026-09-08T21:43:02Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "d6ea836a-a27a-4574-9ade-508cf30d2672",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/d6ea836a-a27a-4574-9ade-508cf30d2672--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "e26ca94d0be88193fb75a997e105b58e97c700df477deedc84c80cf9c69da3e6",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/5c88d49c-a9e7-4e0a-98bc-45fbaf993fa0.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "v9-source-lock-refresh",
+      "statement": "Un cambio de fuentes requiere actualizar el lock y regenerar las copias preparadas antes de un envío V9."
+    },
+    {
+      "ledger": "verification",
+      "id": "v9-source-lock-refresh-proof",
+      "statement": "El nuevo digest a239 coincidió con las fuentes, se prepararon 180 prompts dentro del límite y el dry-run volvió a pasar."
+    },
+    {
+      "ledger": "last_session",
+      "id": "v9-resume-after-source-refresh",
+      "statement": "V9 no tiene fallos terminales; debe reanudar para sondear recibos y generar sólo guías/finales faltantes."
+    },
+    {
+      "ledger": "timeline",
+      "id": "v9-source-lock-refreshed",
+      "statement": "Se aprobó el lote fuente actualizado y se renovó la preparación V9."
+    }
+  ],
+  "timeline": {
+    "summary": "2026-09-08: se actualizó el lock de V9 y se renovaron los prompts preparados tras el cambio de fuentes."
+  },
+  "log": {
+    "summary": "V9 aceptó el lote fuente actualizado y regeneró sus copias preparadas antes de reanudar."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

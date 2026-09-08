@@ -1,0 +1,53 @@
+{
+  "schema": 3,
+  "id": "9a57b249-7616-4de4-8a5c-8a0b453d493b",
+  "at": "2026-09-08T21:15:49Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "d6ea836a-a27a-4574-9ade-508cf30d2672",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/d6ea836a-a27a-4574-9ade-508cf30d2672--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "e49e612f8f5f741bc8f1be0f846375713d3f8ffca3b679c29ab9dfc99618ce1b",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/9a57b249-7616-4de4-8a5c-8a0b453d493b.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "v9-prepared-execution-prompts",
+      "statement": "V9 prioriza versiones ejecutables revisables preparadas y usa la fuente sólo como fallback previo a la preparación."
+    },
+    {
+      "ledger": "verification",
+      "id": "v9-prepared-prompt-proof",
+      "statement": "Se prepararon 180 prompts dentro del límite; siete guías se compactaron y un submit aislado confirmó prioridad de la copia preparada."
+    },
+    {
+      "ledger": "last_session",
+      "id": "v9-prepared-retries-ready",
+      "statement": "Las guías fallidas ya tienen versiones preparadas <=20,000 y pueden reintentarse selectivamente junto con la final 90."
+    },
+    {
+      "ledger": "timeline",
+      "id": "v9-preparation-stage-added",
+      "statement": "Se añadió el paso reusable de copia, revisión y compactación local antes de envíos V9."
+    }
+  ],
+  "timeline": {
+    "summary": "2026-09-08: se incorporó preparación reusable y límite local de prompts V9."
+  },
+  "log": {
+    "summary": "V9 prepara y revisa prompts ejecutables en carpeta aislada antes de enviarlos a Kie."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

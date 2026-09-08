@@ -1,0 +1,53 @@
+{
+  "schema": 3,
+  "id": "24b33f24-649c-4148-865f-26655d7518b8",
+  "at": "2026-09-08T19:29:07Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "d6ea836a-a27a-4574-9ade-508cf30d2672",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/d6ea836a-a27a-4574-9ade-508cf30d2672--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "c042674946b4d37e95ee356b7fc575a7be3fbe777f15ba4991e992c35625df38",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/24b33f24-649c-4148-865f-26655d7518b8.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "v9-candidates-default",
+      "statement": "Las mascotas y lugares candidatos declarados se adjuntan por defecto en V9."
+    },
+    {
+      "ledger": "verification",
+      "id": "v9-candidates-default-proof",
+      "statement": "El dry-run de la página 16 sin flag incluyó estilo, Hassan, Ferry, Zeus y jardín; el flag heredado no cambió la lista."
+    },
+    {
+      "ledger": "last_session",
+      "id": "v9-ready-default-references",
+      "statement": "El comando live V9 ya no requiere un flag para las referencias declaradas candidatas."
+    },
+    {
+      "ledger": "timeline",
+      "id": "v9-candidates-default-enabled",
+      "statement": "Se habilitaron por defecto las referencias candidatas de V9 por autorización del autor."
+    }
+  ],
+  "timeline": {
+    "summary": "2026-09-08: las candidatas de referencias quedaron habilitadas por defecto en V9."
+  },
+  "log": {
+    "summary": "V9 incluye por defecto todas las fichas declaradas, incluidas candidatas autorizadas."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

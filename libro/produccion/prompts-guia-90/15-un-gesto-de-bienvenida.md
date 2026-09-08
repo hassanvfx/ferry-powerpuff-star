@@ -26,39 +26,39 @@ NO dibujes arte final, pintura digital pulida, cel shading terminado, superficie
 ## Continuidad de borde a borde
 
 - ENTRADA — última acción/estado de la página previa: Un hilo rojo casi invisible cruza el fondo entre ella y Hassan.
-- SALIDA — primera acción/estado que debe poder sostener la página siguiente: Un Rottweiler grande y tranquilo sale de una sombra dorada.
+- SALIDA — primera acción/estado que debe poder sostener la página siguiente: Un Rottweiler adulto macho negro y fuego sale de una sombra dorada y reconoce a Ferry.
 - La primera celda debe continuar esa entrada o mostrar visualmente la transición. La última celda debe dejar la salida preparada; no copies composición de otra página.
 
 ## Desglose por celda
 
 ### Celda 1 — celda izquierda alta
 - Función en lectura: ancla de entrada: establece el lugar, tiempo y eje espacial.
-- Entorno y hora: escenario y jardín onírico coral, rosa, oro y carmín; sueño continuo, de concurso luminoso a jardín protector.
-- Personajes y vestuario: Hassan adulto y Ferry adulta; no enumerar animales de la historia en este bloque: cada celda define de forma exclusiva su criatura visible mediante ESPECIE/RAZA. Hassan: atuendo nocturno azul marino sin bata. Ferry: vestido coral plisado, chaqueta blanca corta, cinturón dorado y tenis blanco-oro; concha, moño y cordón rojo sólo si el beat los nombra.
+- Entorno y hora: continuidad del estado global de página; sólo cambia lo declarado en acción.
+- Personajes y vestuario: usar clave ID/VEST global; no introducir personajes ni accesorios extra.
 - Cámara/composición: plano detalle, foco nítido en el objeto y profundidad de campo suave; posición en retícula: celda izquierda alta.
-- Anotaciones gráficas obligatorias: esquina con código C1; rectángulo de encuadre, línea de horizonte, flecha de cámara, flecha de mirada, flecha de luz, línea de acción y círculo rojo alrededor de la utilería crítica.
+- Marcas: C1, cámara, mirada, luz, línea de acción, horizonte, prop rojo y silueta vacía de lettering.
 - Especie/raza bloqueada: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
-- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: Hassan adulto y Ferry adulta; no enumerar animales de la historia en este bloque: cada celda define de forma exclusiva su criatura visible mediante ESPECIE/RAZA; VEST: Hassan: atuendo nocturno azul marino sin bata. Ferry: vestido coral plisado, chaqueta blanca corta, cinturón dorado y tenis blanco-oro; concha, moño y cordón rojo sólo si el beat los nombra; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/TIEMPO: escenario y jardín onírico coral, rosa, oro y carmín, sueño continuo, de concurso luminoso a jardín protector; CÁMARA/ESPACIO: plano detalle, foco nítido en el objeto y profundidad de campo suave, celda izquierda alta; CUERPO/MIRADA: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales; mirada dirigida a Ferry; no mirar a cámara salvo que la acción lo exija; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: conserva el estado visible para la siguiente celda de esta página.
+- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: H/F (según leyenda de página); VEST: base de página, sólo cambios declarados; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/T: continuo; CAM: plano detalle, foco nítido en el objeto y profundidad de campo suave; CUERPO/MIRADA: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales; mirada dirigida a Ferry; no mirar a cámara salvo que la acción lo exija; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: continúa a C2.
 - Acción y utilería exacta: Ferry reconoce a Hassan desde el escenario y levanta la mano.
 - Pose y apoyo corporal: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales.
 - Mirada/eje de atención: mirada dirigida a Ferry; no mirar a cámara salvo que la acción lo exija.
 - Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): Ferry — diálogo: "Ven, te enseño el lugar donde cuido lo que amo."
-- Marcador visual de lettering: dibuja sólo la silueta vacía y ubicación de superior izquierda de la celda, globo redondeado junto a Ferry; cola clara, máximo 18% del área de la celda; usa un código corto de celda, nunca el diálogo literal.
+- Lettering: silueta vacía en superior izquierda de la celda, globo redondeado junto a Ferry; cola clara, máximo 18% del área de la celda; sólo código corto, nunca diálogo literal.
 - Estado que debe respetarse: Mantener el estado canónico de página; no introducir utilería nueva.
 
 ### Celda 2 — celda derecha dominante
 - Función en lectura: cierre: deja una dirección, objeto o emoción que sostenga el siguiente corte.
-- Entorno y hora: escenario y jardín onírico coral, rosa, oro y carmín; sueño continuo, de concurso luminoso a jardín protector.
-- Personajes y vestuario: Hassan adulto y Ferry adulta; no enumerar animales de la historia en este bloque: cada celda define de forma exclusiva su criatura visible mediante ESPECIE/RAZA. Hassan: atuendo nocturno azul marino sin bata. Ferry: vestido coral plisado, chaqueta blanca corta, cinturón dorado y tenis blanco-oro; concha, moño y cordón rojo sólo si el beat los nombra.
+- Entorno y hora: continuidad del estado global de página; sólo cambia lo declarado en acción.
+- Personajes y vestuario: usar clave ID/VEST global; no introducir personajes ni accesorios extra.
 - Cámara/composición: primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página; posición en retícula: celda derecha dominante.
-- Anotaciones gráficas obligatorias: esquina con código C2; rectángulo de encuadre, línea de horizonte, flecha de cámara, flecha de mirada, flecha de luz, línea de acción y círculo rojo alrededor de la utilería crítica.
+- Marcas: C2, cámara, mirada, luz, línea de acción, horizonte, prop rojo y silueta vacía de lettering.
 - Especie/raza bloqueada: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
-- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: Hassan adulto y Ferry adulta; no enumerar animales de la historia en este bloque: cada celda define de forma exclusiva su criatura visible mediante ESPECIE/RAZA; VEST: Hassan: atuendo nocturno azul marino sin bata. Ferry: vestido coral plisado, chaqueta blanca corta, cinturón dorado y tenis blanco-oro; concha, moño y cordón rojo sólo si el beat los nombra; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/TIEMPO: escenario y jardín onírico coral, rosa, oro y carmín, sueño continuo, de concurso luminoso a jardín protector; CÁMARA/ESPACIO: primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página, celda derecha dominante; CUERPO/MIRADA: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales; mirada y líneas de acción orientadas hacia la salida narrativa de la página siguiente; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: prepara el estado que recoge la siguiente página.
+- Notas de continuidad por dimensión (traducir a micro-iconos/códigos en la canaleta): ID: ELENCO (según leyenda de página); VEST: base de página, sólo cambios declarados; ESPECIE/RAZA: SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.; ESP/T: continuo; CAM: primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página; CUERPO/MIRADA: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales; mirada y líneas de acción orientadas hacia la salida narrativa de la página siguiente; PROP/ESTADO: sin prop nuevo fuera de la acción declarada; RELEVO: salida a página siguiente.
 - Acción y utilería exacta: Él responde tímidamente; el escenario se disuelve hacia un jardín cálido.
 - Pose y apoyo corporal: postura adulta semi-chibi equilibrada, apoyo corporal visible, hombros y pelvis alineados, dos brazos y dos manos naturales.
 - Mirada/eje de atención: mirada y líneas de acción orientadas hacia la salida narrativa de la página siguiente.
 - Guion de voz/efecto para el prompt final (NO renderizarlo en esta guía): Hassan — diálogo: "Voy contigo. No sé a dónde, pero voy."
-- Marcador visual de lettering: dibuja sólo la silueta vacía y ubicación de superior derecha de la celda, globo redondeado junto a Hassan; cola clara dirigida a Hassan, máximo 18% del área de la celda; usa un código corto de celda, nunca el diálogo literal.
+- Lettering: silueta vacía en superior derecha de la celda, globo redondeado junto a Hassan; cola clara dirigida a Hassan, máximo 18% del área de la celda; sólo código corto, nunca diálogo literal.
 - Estado que debe respetarse: Mantener el estado canónico de página; no introducir utilería nueva.
 
 ## Chequeo de aprobación

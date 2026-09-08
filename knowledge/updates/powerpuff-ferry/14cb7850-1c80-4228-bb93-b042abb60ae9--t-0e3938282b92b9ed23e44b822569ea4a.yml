@@ -1,0 +1,20 @@
+{
+  "schema": 3,
+  "id": "14cb7850-1c80-4228-bb93-b042abb60ae9",
+  "at": "2026-09-08T22:01:20Z",
+  "author": {"id": "t-0e3938282b92b9ed23e44b822569ea4a"},
+  "topic": "powerpuff-ferry",
+  "stream": "1bd2a70d-2631-4eaf-9c80-9469e1bded23",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/1bd2a70d-2631-4eaf-9c80-9469e1bded23--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "5f2156b5d2f9efe6bc6b6e609a6e4a570643295b74fde3ba577f817b94aa4921",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/14cb7850-1c80-4228-bb93-b042abb60ae9.md"
+  },
+  "reviews": {"specification": "changed", "verification": "changed", "goals": "unchanged", "last_session": "changed", "timeline": "changed"},
+  "ledger_changes": [],
+  "timeline": {"summary": "La cadena de la receta queda visible de 1 a 29 dentro del mismo Erlenmeyer; los renders V9 se conservaron como evidencia y se catalogaron para regeneración."},
+  "log": {"summary": "Se impuso el límite de 19,000 caracteres, se bloquearon género/especie por celda y se auditó la corrida V9 sin alterar PNG externos."},
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

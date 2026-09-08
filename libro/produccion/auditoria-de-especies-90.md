@@ -107,56 +107,56 @@ Esta auditoría se deriva de las mismas celdas que los prompts finales y las gu�
 
 ## 16. Zeus aparece
 
-- **Criaturas permitidas en la página:** ZEUS — ROTTWEILER negro y fuego.
-- **Celda 1:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — ROTTWEILER adulto negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico
-- **Celda 2:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — ROTTWEILER adulto negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico
-- **Celda 3:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — ROTTWEILER adulto negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico
+- **Criaturas permitidas en la página:** ZEUS — niño ROTTWEILER negro y fuego.
+- **Celda 1:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — niño, ROTTWEILER adulto macho negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico
+- **Celda 2:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — niño, ROTTWEILER adulto macho negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico
+- **Celda 3:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — niño, ROTTWEILER adulto macho negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico
 
 ## 17. La confianza de Zeus
 
-- **Criaturas permitidas en la página:** ZEUS — ROTTWEILER negro y fuego.
-- **Celda 1:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — ROTTWEILER adulto negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico
-- **Celda 2:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — ROTTWEILER adulto negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico
-- **Celda 3:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — ROTTWEILER adulto negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico
+- **Criaturas permitidas en la página:** ZEUS — niño ROTTWEILER negro y fuego.
+- **Celda 1:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — niño, ROTTWEILER adulto macho negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico
+- **Celda 2:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — niño, ROTTWEILER adulto macho negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico
+- **Celda 3:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — niño, ROTTWEILER adulto macho negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico
 
 ## 18. Cuidado fuerte
 
-- **Criaturas permitidas en la página:** ZEUS — ROTTWEILER negro y fuego.
-- **Celda 1:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — ROTTWEILER adulto negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico
-- **Celda 2:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — ROTTWEILER adulto negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico
+- **Criaturas permitidas en la página:** ZEUS — niño ROTTWEILER negro y fuego.
+- **Celda 1:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — niño, ROTTWEILER adulto macho negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico
+- **Celda 2:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — niño, ROTTWEILER adulto macho negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico
 
 ## 19. La mano protectora
 
-- **Criaturas permitidas en la página:** ZEUS — ROTTWEILER negro y fuego.
-- **Celda 1:** SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
-- **Celda 2:** SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
-- **Celda 3:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — ROTTWEILER adulto negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico
+- **Criaturas permitidas en la página:** ZEUS — niño ROTTWEILER negro y fuego.
+- **Celda 1:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — niño, ROTTWEILER adulto macho negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico
+- **Celda 2:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — niño, ROTTWEILER adulto macho negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico
+- **Celda 3:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — niño, ROTTWEILER adulto macho negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico
 
 ## 20. Yohi y la hoja fresca
 
-- **Criaturas permitidas en la página:** YOHI — TORTUGA SULCATA bebé.
+- **Criaturas permitidas en la página:** YOHI — niña TORTUGA SULCATA bebé.
 - **Celda 1:** SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
-- **Celda 2:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Yohi — TORTUGA SULCATA BEBÉ (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico
-- **Celda 3:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Yohi — TORTUGA SULCATA BEBÉ (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico
+- **Celda 2:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Yohi — niña, TORTUGA SULCATA BEBÉ hembra (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico
+- **Celda 3:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Yohi — niña, TORTUGA SULCATA BEBÉ hembra (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico
 
 ## 21. Paso pequeño
 
-- **Criaturas permitidas en la página:** YOHI — TORTUGA SULCATA bebé.
-- **Celda 1:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Yohi — TORTUGA SULCATA BEBÉ (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico
-- **Celda 2:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Yohi — TORTUGA SULCATA BEBÉ (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico
+- **Criaturas permitidas en la página:** YOHI — niña TORTUGA SULCATA bebé.
+- **Celda 1:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Yohi — niña, TORTUGA SULCATA BEBÉ hembra (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico
+- **Celda 2:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Yohi — niña, TORTUGA SULCATA BEBÉ hembra (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico
 
 ## 22. Paciencia
 
-- **Criaturas permitidas en la página:** YOHI — TORTUGA SULCATA bebé.
-- **Celda 1:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Yohi — TORTUGA SULCATA BEBÉ (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico
-- **Celda 2:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Yohi — TORTUGA SULCATA BEBÉ (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico
-- **Celda 3:** SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
+- **Criaturas permitidas en la página:** YOHI — niña TORTUGA SULCATA bebé.
+- **Celda 1:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Yohi — niña, TORTUGA SULCATA BEBÉ hembra (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico
+- **Celda 2:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Yohi — niña, TORTUGA SULCATA BEBÉ hembra (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico
+- **Celda 3:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Yohi — niña, TORTUGA SULCATA BEBÉ hembra (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico
 
 ## 23. Un hogar a escala pequeña
 
-- **Criaturas permitidas en la página:** YOHI — TORTUGA SULCATA bebé.
-- **Celda 1:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Yohi — TORTUGA SULCATA BEBÉ (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico
-- **Celda 2:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Yohi — TORTUGA SULCATA BEBÉ (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico
+- **Criaturas permitidas en la página:** YOHI — niña TORTUGA SULCATA bebé.
+- **Celda 1:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Yohi — niña, TORTUGA SULCATA BEBÉ hembra (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico
+- **Celda 2:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Yohi — niña, TORTUGA SULCATA BEBÉ hembra (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico
 
 ## 24. Los caracoles
 
@@ -186,9 +186,9 @@ Esta auditoría se deriva de las mismas celdas que los prompts finales y las gu�
 
 ## 28. El jardín completo
 
-- **Criaturas permitidas en la página:** ZEUS — ROTTWEILER negro y fuego, YOHI — TORTUGA SULCATA bebé, DOS CARACOLES TERRESTRES, UNA ARAÑA TEJEDORA — 8 PATAS.
-- **Celda 1:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — ROTTWEILER adulto negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico
-- **Celda 2:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Yohi — TORTUGA SULCATA BEBÉ (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico
+- **Criaturas permitidas en la página:** ZEUS — niño ROTTWEILER negro y fuego, YOHI — niña TORTUGA SULCATA bebé, DOS CARACOLES TERRESTRES, UNA ARAÑA TEJEDORA — 8 PATAS.
+- **Celda 1:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — niño, ROTTWEILER adulto macho negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico
+- **Celda 2:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Yohi — niña, TORTUGA SULCATA BEBÉ hembra (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico
 - **Celda 3:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: exactamente DOS CARACOLES TERRESTRES pequeños: cada uno con cuerpo húmedo gris, UNA concha espiral marrón/ámbar y cuatro tentáculos finos; nunca tortugas, babosas sin concha, insectos ni un número distinto de dos
 - **Celda 4:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: UNA ARAÑA TEJEDORA pequeña: abdomen ovalado y exactamente OCHO patas articuladas; nunca mariposa, escarabajo, insecto de seis patas ni criatura con más/menos de ocho patas
 
@@ -467,9 +467,9 @@ Esta auditoría se deriva de las mismas celdas que los prompts finales y las gu�
 
 ## 69. Cuidado y valor
 
-- **Criaturas permitidas en la página:** ZEUS — ROTTWEILER negro y fuego, YOHI — TORTUGA SULCATA bebé, DOS CARACOLES TERRESTRES, UNA ARAÑA TEJEDORA — 8 PATAS.
+- **Criaturas permitidas en la página:** ZEUS — niño ROTTWEILER negro y fuego, YOHI — niña TORTUGA SULCATA bebé, DOS CARACOLES TERRESTRES, UNA ARAÑA TEJEDORA — 8 PATAS.
 - **Celda 1:** SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
-- **Celda 2:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — ROTTWEILER adulto negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico | Yohi — TORTUGA SULCATA BEBÉ (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico | exactamente DOS CARACOLES TERRESTRES pequeños: cada uno con cuerpo húmedo gris, UNA concha espiral marrón/ámbar y cuatro tentáculos finos; nunca tortugas, babosas sin concha, insectos ni un número distinto de dos | UNA ARAÑA TEJEDORA pequeña: abdomen ovalado y exactamente OCHO patas articuladas; nunca mariposa, escarabajo, insecto de seis patas ni criatura con más/menos de ocho patas
+- **Celda 2:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — niño, ROTTWEILER adulto macho negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico | Yohi — niña, TORTUGA SULCATA BEBÉ hembra (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico | exactamente DOS CARACOLES TERRESTRES pequeños: cada uno con cuerpo húmedo gris, UNA concha espiral marrón/ámbar y cuatro tentáculos finos; nunca tortugas, babosas sin concha, insectos ni un número distinto de dos | UNA ARAÑA TEJEDORA pequeña: abdomen ovalado y exactamente OCHO patas articuladas; nunca mariposa, escarabajo, insecto de seis patas ni criatura con más/menos de ocho patas
 - **Celda 3:** SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
 - **Celda 4:** SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
 
@@ -521,9 +521,9 @@ Esta auditoría se deriva de las mismas celdas que los prompts finales y las gu�
 
 ## 75. Fortaleza, nutrición y confianza
 
-- **Criaturas permitidas en la página:** ninguna criatura visible.
+- **Criaturas permitidas en la página:** ZEUS — niño ROTTWEILER negro y fuego.
 - **Celda 1:** SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
-- **Celda 2:** SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
+- **Celda 2:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — niño, ROTTWEILER adulto macho negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico
 - **Celda 3:** SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
 - **Celda 4:** SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
 - **Celda 5:** SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
@@ -602,9 +602,9 @@ Esta auditoría se deriva de las mismas celdas que los prompts finales y las gu�
 
 ## 85. Estrella gigantesca
 
-- **Criaturas permitidas en la página:** ZEUS — ROTTWEILER negro y fuego, YOHI — TORTUGA SULCATA bebé, DOS CARACOLES TERRESTRES, UNA ARAÑA TEJEDORA — 8 PATAS.
+- **Criaturas permitidas en la página:** DOS CARACOLES TERRESTRES, UNA ARAÑA TEJEDORA — 8 PATAS.
 - **Celda 1:** SIN CRIATURA EN CUADRO: no introducir animales de decoración ni una silueta animal fuera del beat.
-- **Celda 2:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — ROTTWEILER adulto negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico | Yohi — TORTUGA SULCATA BEBÉ (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico | exactamente DOS CARACOLES TERRESTRES pequeños: cada uno con cuerpo húmedo gris, UNA concha espiral marrón/ámbar y cuatro tentáculos finos; nunca tortugas, babosas sin concha, insectos ni un número distinto de dos | UNA ARAÑA TEJEDORA pequeña: abdomen ovalado y exactamente OCHO patas articuladas; nunca mariposa, escarabajo, insecto de seis patas ni criatura con más/menos de ocho patas
+- **Celda 2:** ESPECIE/RAZA BLOQUEADA PARA ESTA CELDA: Zeus — niño, ROTTWEILER adulto macho negro y fuego: pelo corto negro, marcas fuego nítidas en cejas, hocico, pecho y patas, cabeza ancha/cuadrada, hocico fuerte, cuerpo musculoso y orejas triangulares naturales caídas; nunca golden retriever, labrador, perro dorado/crema, pelo largo ni perro genérico | Yohi — niña, TORTUGA SULCATA BEBÉ hembra (africana de espolones), terrestre: caparazón alto color arena con escudos definidos y patas gruesas escamosas; nunca tortuga acuática, tortuga de orejas rojas, galápago ni reptil genérico | exactamente DOS CARACOLES TERRESTRES pequeños: cada uno con cuerpo húmedo gris, UNA concha espiral marrón/ámbar y cuatro tentáculos finos; nunca tortugas, babosas sin concha, insectos ni un número distinto de dos | UNA ARAÑA TEJEDORA pequeña: abdomen ovalado y exactamente OCHO patas articuladas; nunca mariposa, escarabajo, insecto de seis patas ni criatura con más/menos de ocho patas
 
 ## 86. Flor de luz
 
