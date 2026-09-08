@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "abbf1495-129c-4222-8687-9cea2bc05fc7",
+  "at": "2026-09-08T09:09:58Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "88a8d0a7-b590-43d0-955c-f33a17d9343c",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/88a8d0a7-b590-43d0-955c-f33a17d9343c--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "4d157eefaa1b1b92f07ef3a4da817e93fd94b588e2b6d65df563c7aef55d0578",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/abbf1495-129c-4222-8687-9cea2bc05fc7.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "anatomy-and-natural-pose-policy",
+      "statement": "Todo prompt exige anatomía adulta chibi clara, manos de cinco dedos cuando son visibles, articulaciones posibles, interacción objeto-mano natural y un bloque negativo contra deformaciones."
+    },
+    {
+      "ledger": "verification",
+      "id": "anatomy-prompt-coverage",
+      "statement": "El verificador confirmó que los 90 prompts incluyen controles positivos y negativos de pose/anatomía y que la celda 03/2 conserva su cámara y estado detallados."
+    },
+    {
+      "ledger": "goals",
+      "id": "anatomically-legible-comic-pages",
+      "statement": "Reducir deformaciones visuales y hacer cada gesto importante verificable antes de aprobar una página."
+    },
+    {
+      "ledger": "last_session",
+      "id": "first-three-pages-rejected-for-regeneration",
+      "statement": "Las muestras 01–03 no deben aprobarse ni alimentar continuidad: adelantan props y la página 03 tiene una pose deformada; sus prompts corregidos esperan regeneración y revisión humana."
+    },
+    {
+      "ledger": "timeline",
+      "id": "global-pose-and-negative-prompt-pass-completed",
+      "statement": "Se incorporó anatomía positiva, prompt negativo y una corrección específica de cámara/pose para la página 03."
+    }
+  ],
+  "timeline": {
+    "summary": "Los prompts ahora excluyen deformaciones y la página 03/2 fija una pose natural verificable; las muestras 01–03 requieren regeneración antes de aprobación."
+  },
+  "log": {
+    "summary": "Se añadieron controles positivos y negativos de anatomía y poses naturales a los 90 prompts, con corrección de la página 03."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

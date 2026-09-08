@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "e81f257b-9422-4127-9911-2b6b17948dbd",
+  "at": "2026-09-08T08:22:27Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "a5188ac8-bf90-4c75-81fd-7ae487262d53",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/a5188ac8-bf90-4c75-81fd-7ae487262d53--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "20eaf237dff54409a3c11c72f588ec2331c005a9ec847c7cd808b7b72a05bae6",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/e81f257b-9422-4127-9911-2b6b17948dbd.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "approved-style-reference",
+      "statement": "La referencia de estilo aprobada guía sólo el acabado gráfico general y se adjunta a las generaciones, sin copiar personajes ni elementos distintivos."
+    },
+    {
+      "ledger": "verification",
+      "id": "five-page-production-sample",
+      "statement": "Las cinco páginas de muestra aceptaron los prompts regenerados y las referencias aprobadas, terminaron en Kie y se descargaron como PNG 2048x3072."
+    },
+    {
+      "ledger": "goals",
+      "id": "sample-before-full-production",
+      "statement": "Evaluar cinco páginas representativas antes de producir el resto de las 90 páginas."
+    },
+    {
+      "ledger": "last_session",
+      "id": "five-page-sample-awaiting-review",
+      "statement": "Las páginas 01, 35, 69, 76 y 90 están disponibles para revisión visual del autor; ninguna ha sido aprobada para el libro."
+    },
+    {
+      "ledger": "timeline",
+      "id": "five-page-sample-completed",
+      "statement": "Se generó y mostró una muestra de cinco páginas con referencias de estilo y hojas v2 aprobadas, sin transferir fotos privadas."
+    }
+  ],
+  "timeline": {
+    "summary": "Kie completó las páginas 01, 35, 69, 76 y 90; los resultados se mostraron al autor y esperan aprobación visual."
+  },
+  "log": {
+    "summary": "Se completó una muestra de cinco páginas 2:3 usando los prompts regenerados, la referencia de estilo aprobada y las hojas v2, sin fotos privadas."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

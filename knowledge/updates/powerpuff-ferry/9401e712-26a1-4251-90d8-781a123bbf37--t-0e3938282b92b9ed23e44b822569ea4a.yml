@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "9401e712-26a1-4251-90d8-781a123bbf37",
+  "at": "2026-09-08T08:55:52Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "1ef12ec3-bd20-477f-99f0-15cb5f6d70fe",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/1ef12ec3-bd20-477f-99f0-15cb5f6d70fe--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "5c7f05679466be5d5413822d78eaf310f77b7d0a6cc9cff976d263ac16cce05c",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/9401e712-26a1-4251-90d8-781a123bbf37.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "state-locked-continuity",
+      "statement": "La referencia anterior conserva apariencia, no inventario; el plan fija prop, ausencia y transición canónica por página y por celda."
+    },
+    {
+      "ledger": "verification",
+      "id": "state-lock-audit",
+      "statement": "El verificador de continuidad confirma 90 enlaces secuenciales, los bloqueos de fase y el ciclo encendido→apagado del monitor en 01–02."
+    },
+    {
+      "ledger": "goals",
+      "id": "consistent-stateful-pages",
+      "statement": "Reducir inconsistencias visuales mediante estados canónicos auditables antes de cada generación y aprobación."
+    },
+    {
+      "ledger": "last_session",
+      "id": "regenerate-first-two-pages-before-approval",
+      "statement": "Las muestras de las páginas 01 y 02 revelaron props adelantados y monitor inconsistente; sus prompts fueron corregidos y ambas requieren regeneración y revisión antes de servir como anclas."
+    },
+    {
+      "ledger": "timeline",
+      "id": "backward-continuity-audit-completed",
+      "statement": "Se ejecutó una pasada retrospectiva de monitor, matraz, hilo, nota, lupa, carrete, concha y estrella, y se materializó en la producción local."
+    }
+  ],
+  "timeline": {
+    "summary": "El plan y los prompts ahora fijan bloqueos de estado por página y celda; las muestras 01–02 deben regenerarse antes de aprobarse."
+  },
+  "log": {
+    "summary": "Se añadió una auditoría retrospectiva de estados para impedir anticipaciones de props y cambios de estado entre páginas."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

@@ -10,6 +10,7 @@ Este es el espacio editorial del libro-regalo para Ferry. La idea: revelar una r
 - [Receta simbólica](manuscrito/01-receta-de-ferry.md): los 29 ingredientes que ya están confirmados.
 - [Corpus narrativo de 90 páginas](manuscrito/06-corpus-narrativo-90-paginas.md): fuente de verdad actual, con cada página y viñeta del cómic visual.
 - [Guion técnico de 90 páginas](manuscrito/08-guion-tecnico-90-paginas.md): retícula, celda, cámara, acción, diálogos y SFX exactos entre comillas.
+- [Tratamiento visual 2:3](produccion/tratamiento-visual-2-3.md): proporción chibi adulta, ojos, línea, color, fondos, acción, lettering y exclusiones.
 - [Mapa de ingredientes de 90 páginas](manuscrito/07-mapa-de-ingredientes-90.md): las 29 cualidades y la viñeta concreta que las representa.
 - [Escaleta, guion, lectura y mapa de 32 páginas](manuscrito/02-escaleta-visual.md): antecedentes de desarrollo; no usar para producción.
 - [Portada y dedicatoria](manuscrito/00-portada-y-dedicatoria.md): punto de partida del manuscrito.

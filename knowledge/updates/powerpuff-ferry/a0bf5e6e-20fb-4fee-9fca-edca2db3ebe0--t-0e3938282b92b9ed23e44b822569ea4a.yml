@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "a0bf5e6e-20fb-4fee-9fca-edca2db3ebe0",
+  "at": "2026-09-08T09:23:11Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "55a2154d-fcc4-4b6a-a596-0f5ea575976f",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/55a2154d-fcc4-4b6a-a596-0f5ea575976f--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "a9a30792d56ebc8214496afaf683a636f16afde9dc9c227e4131a8e9a8fb4d2a",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/a0bf5e6e-20fb-4fee-9fca-edca2db3ebe0.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "90-page-production-package",
+      "statement": "unchanged"
+    },
+    {
+      "ledger": "verification",
+      "id": "commit-preflight",
+      "statement": "Se revisaron los cambios, diff --check y validadores antes del staging."
+    },
+    {
+      "ledger": "goals",
+      "id": "sheet-faithful-character-continuity",
+      "statement": "unchanged"
+    },
+    {
+      "ledger": "last_session",
+      "id": "next-safe-step",
+      "statement": "Regenerar y revisar una muestra secuencial con los prompts ya comprometidos."
+    },
+    {
+      "ledger": "timeline",
+      "id": "production-package-commit-prepared",
+      "statement": "2026-09-08: paquete de producción preparado para commit."
+    }
+  ],
+  "timeline": {
+    "summary": "2026-09-08: preflight de commit completado para corpus, prompts, controles de continuidad, anatomía y autoridad de sheets v2."
+  },
+  "log": {
+    "summary": "Se prepara un commit único del paquete de producción de 90 páginas y su reconciliación visual con los sheets v2."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

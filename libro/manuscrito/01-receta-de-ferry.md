@@ -1,8 +1,8 @@
 # Receta simbólica para crear a Ferry
 
-> Cada entrada es un ingrediente mágico y una semilla de ilustración. “Arquetipo que evoca” orienta la energía emocional; no autoriza retratos ni copias literales.
+> Cada entrada es un ingrediente mágico y una semilla de ilustración. “Arquetipo o figura famosa que evoca” orienta la energía emocional; no autoriza retratos ni copias literales.
 
-| # | Ingrediente simbólico | Imagen guía | Simboliza | Semilla emocional | Arquetipo que evoca |
+| # | Ingrediente simbólico | Imagen guía | Simboliza | Semilla emocional | Arquetipo o figura famosa que evoca |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Cristales de sinceridad | Cristales transparentes brillando | Honestidad | Su esencia es clara y verdadera, incluso cuando calla para no herir. | Bella |
 | 2 | Nube tibia de empatía | Nube rosada o dorada envolvente | Empatía máxima | Siente a los demás profundamente, aun cuando cargar sus emociones la canse. | Princess Diana |

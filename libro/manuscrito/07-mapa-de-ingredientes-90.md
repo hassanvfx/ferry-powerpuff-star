@@ -1,6 +1,6 @@
 # Mapa de los 29 ingredientes — edición de 90 páginas
 
-Este mapa vincula cada cualidad con una sola viñeta del [corpus de 90 páginas](06-corpus-narrativo-90-paginas.md). Ningún ingrediente se etiqueta con texto dentro de la imagen: se reconoce por su materia, acción y luz.
+Este mapa vincula cada cualidad con una sola viñeta del [corpus de 90 páginas](06-corpus-narrativo-90-paginas.md). En las páginas 66–77 Hassan enumera y nombra cada ingrediente en su voz interior; el objeto se reconoce además por su materia, acción y luz. En su viñeta asignada, Ferry adopta un arquetipo visual original de la energía evocada, nunca el retrato, nombre, vestuario o diseño de una figura existente.
 
 | # | Ingrediente y cualidad | Página / viñeta | Acción visual | Eco posterior |
 | --- | --- | --- | --- | --- |

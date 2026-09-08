@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "c267a9dc-33f3-4f11-ac6c-054dc5c46d88",
+  "at": "2026-09-08T09:22:09Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "55a2154d-fcc4-4b6a-a596-0f5ea575976f",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/55a2154d-fcc4-4b6a-a596-0f5ea575976f--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "f101a18ba6a76c2050009ad7d2ae7e2d525df4efdad048bd10339205174d87a4",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/c267a9dc-33f3-4f11-ac6c-054dc5c46d88.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "v2-character-sheets-primary-authority",
+      "statement": "Las hojas v2 prevalecen para identidad física, rostro, ojos, cabello, barba, silueta, paleta, vestuario base y accesorios; la cronología sólo gobierna props, acción y vestuario de escena."
+    },
+    {
+      "ledger": "verification",
+      "id": "v2-sheet-authority-coverage",
+      "statement": "Los 90 prompts incluyen el bloque de autoridad v2, ojos café oscuro y proporción semi-chibi adulta."
+    },
+    {
+      "ledger": "goals",
+      "id": "sheet-faithful-character-continuity",
+      "statement": "Las próximas páginas deben conservar los rasgos visibles de los sheets v2."
+    },
+    {
+      "ledger": "last_session",
+      "id": "regenerate-narrative-samples-against-v2",
+      "statement": "Las muestras narrativas previas requieren regeneración y revisión contra las hojas v2."
+    },
+    {
+      "ledger": "timeline",
+      "id": "v2-sheet-reconciliation-complete",
+      "statement": "2026-09-08: se inspeccionaron los sheets, se eliminó jerarquía obsoleta y se recompilaron 90 prompts."
+    }
+  ],
+  "timeline": {
+    "summary": "2026-09-08: los 90 prompts adoptan las hojas v2 como fuente de verdad y corrigen su jerarquía y proporción."
+  },
+  "log": {
+    "summary": "Se revisaron las hojas v2 y se declararon como autoridad visual primaria sobre datos textuales obsoletos."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

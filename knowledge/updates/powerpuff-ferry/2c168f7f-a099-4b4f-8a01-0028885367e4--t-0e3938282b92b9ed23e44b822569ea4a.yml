@@ -1,0 +1,53 @@
+{
+  "schema": 3,
+  "id": "2c168f7f-a099-4b4f-8a01-0028885367e4",
+  "at": "2026-09-08T09:17:16Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "f35327cb-e350-4df5-9ecb-e523c2d925e1",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/f35327cb-e350-4df5-9ecb-e523c2d925e1--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "b8d7cb6e9e04b0f9336ef11ba84c4dadec16b535992e2e45f569773e3e130df2",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/2c168f7f-a099-4b4f-8a01-0028885367e4.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "reusable-full-regeneration-skill",
+      "statement": "La habilidad personal regenerar-imagenes-4k recupera la corrida de 90 páginas 4K 2:3 con preflight, hash de prompts y operación secuencial."
+    },
+    {
+      "ledger": "verification",
+      "id": "regeneration-skill-manual-validation",
+      "statement": "La habilidad tiene frontmatter y flujo revisados; el validador automático está bloqueado por falta del módulo yaml en los intérpretes locales."
+    },
+    {
+      "ledger": "last_session",
+      "id": "full-regeneration-skill-available",
+      "statement": "El autor puede pedir regenera todas las imágenes para recuperar el flujo, que seguirá esperando prompts congelados y autorización de consumo."
+    },
+    {
+      "ledger": "timeline",
+      "id": "full-regeneration-skill-saved",
+      "statement": "Se creó la habilidad reusable de regeneración completa 4K."
+    }
+  ],
+  "timeline": {
+    "summary": "La habilidad regenerar-imagenes-4k quedó disponible para futuras conversaciones con los gates de seguridad de la corrida."
+  },
+  "log": {
+    "summary": "Se guardó una habilidad personal para recuperar el flujo de regeneración completa 4K mediante lenguaje natural."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

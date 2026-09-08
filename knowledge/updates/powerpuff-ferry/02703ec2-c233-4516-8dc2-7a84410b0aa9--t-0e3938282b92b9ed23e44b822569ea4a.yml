@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "02703ec2-c233-4516-8dc2-7a84410b0aa9",
+  "at": "2026-09-08T09:14:05Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "f35327cb-e350-4df5-9ecb-e523c2d925e1",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/f35327cb-e350-4df5-9ecb-e523c2d925e1--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "c75f22fcd59c57325e17c70dd18bb9f7285616489f7ec59fbb357676100cd774",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/02703ec2-c233-4516-8dc2-7a84410b0aa9.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "full-4k-run-contract",
+      "statement": "La corrida completa usa gpt-image-2 a 4K 2:3 con referencias aprobadas, carpeta de salidas aislada, hash de prompts y prohibición de aprobación automática."
+    },
+    {
+      "ledger": "verification",
+      "id": "full-4k-run-preflight",
+      "statement": "El operador validó 90 prompts y el dry-run 4K 2:3 fue aceptado localmente por Kie sin enviar trabajo."
+    },
+    {
+      "ledger": "goals",
+      "id": "reusable-full-production-run",
+      "statement": "Preparar una corrida completa reanudable de las 90 páginas después del cierre creativo de prompts."
+    },
+    {
+      "ledger": "last_session",
+      "id": "full-4k-infrastructure-awaits-prompt-lock",
+      "statement": "La plantilla y el operador están listos; falta congelar prompts, fijar su hash, activar la configuración y autorizar consumo."
+    },
+    {
+      "ledger": "timeline",
+      "id": "full-4k-run-infrastructure-prepared",
+      "statement": "Se preparó la operación programable de una página por ciclo para la futura producción 4K."
+    }
+  ],
+  "timeline": {
+    "summary": "Se añadieron la plantilla de corrida 4K, el operador de un paso por ciclo y overrides aislados del generador; no se enviaron imágenes."
+  },
+  "log": {
+    "summary": "Infraestructura reanudable preparada para una corrida completa de 90 páginas a 4K 2:3, pendiente de cierre de prompts y autorización de consumo."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

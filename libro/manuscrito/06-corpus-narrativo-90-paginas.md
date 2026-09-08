@@ -11,19 +11,19 @@ La realidad de Hassan es fría, limpia y geométrica; el sueño de Ferry entra e
 ### 01. El laboratorio al anochecer — 3 viñetas
 
 1. Fachada nocturna del edificio: una única ventana blanca sigue encendida.
-2. Interior amplio: Hassan, pequeño entre mesas precisas, termina un experimento en un laboratorio blanco, acero y azul gris.
-3. Detalle: un matraz vacío refleja un punto rosa-dorado imperceptible.
+2. Interior amplio: Hassan, pequeño entre mesas precisas, termina un experimento; el monitor a su derecha sigue encendido con gráficos abstractos azules, en un laboratorio blanco, acero y azul gris.
+3. Detalle: un matraz vacío y transparente refleja sólo un punto rosa-dorado imperceptible, nunca una estrella ni un hilo.
 
 ### 02. Última revisión — 3 viñetas
 
-1. Hassan alinea frascos y herramientas con cuidado.
-2. Un monitor muestra gráficos abstractos y se apaga.
-3. Hassan mira el reloj; su cansancio es sereno, no dramático.
+1. Hassan alinea frascos y herramientas con cuidado; el mismo monitor sigue encendido con gráficos abstractos azules.
+2. Hassan pulsa el botón: el monitor está encendido al inicio de la viñeta y se apaga en ese gesto.
+3. Hassan mira el reloj; el monitor ya negro queda detrás de él y su cansancio es sereno, no dramático.
 
 ### 03. La libreta cerrada — 2 viñetas
 
 1. Sus manos cierran una libreta llena de diagramas no legibles.
-2. Apaga la lámpara de trabajo; la luz del pasillo enfría su silueta.
+2. Hassan está de pie en perfil de tres cuartos junto a la lámpara: un brazo queda relajado a su costado y el otro, con codo suavemente flexionado, toca el interruptor con una mano natural de cinco dedos. La luz del pasillo enfría su silueta.
 
 ### 04. Pasillo silencioso — 3 viñetas
 
@@ -390,7 +390,7 @@ La realidad de Hassan es fría, limpia y geométrica; el sueño de Ferry entra e
 
 ## Acto V — Las veintinueve cualidades (66–78)
 
-Cada ingrediente ocupa al menos una viñeta propia. Hassan lo reconoce por su efecto, no porque aparezca texto en la nota.
+Cada ingrediente ocupa al menos una viñeta propia. Hassan lo reconoce por su efecto, no porque aparezca texto en la nota. Durante el conjuro, su pensamiento nombra los veintinueve ingredientes en orden; en cada viñeta de ingrediente, Ferry aparece brevemente como una manifestación arquetípica original de la cualidad evocada, nunca como copia de una persona o personaje existente.
 
 ### 66. Claridad y empatía — 4 viñetas
 

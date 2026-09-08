@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "9163bbc9-cc57-4365-bf2c-4be57e7071b0",
+  "at": "2026-09-08T09:15:36Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "b7eda9e0-680b-4db1-9152-007b0d14dc88",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/b7eda9e0-680b-4db1-9152-007b0d14dc88--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "434b404e0b4d149c458f02e0b17d167c4ea3880355733defb30c1de284f9bca8",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/9163bbc9-cc57-4365-bf2c-4be57e7071b0.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "dark-brown-eye-canon",
+      "statement": "Ferry y Hassan tienen ojos café oscuro, profundos y expresivos; el canon prevalece sobre referencias anteriores."
+    },
+    {
+      "ledger": "verification",
+      "id": "eye-canon-prompt-coverage",
+      "statement": "Los 90 prompts contienen el bloque canónico y el verificador rechaza los colores heredados."
+    },
+    {
+      "ledger": "goals",
+      "id": "faithful-character-eye-identity",
+      "statement": "La identidad visual de ambos protagonistas exige ojos café oscuro."
+    },
+    {
+      "ledger": "last_session",
+      "id": "regenerate-blue-eye-samples",
+      "statement": "Las muestras existentes con ojos azules requieren regeneración y revisión antes de aprobación."
+    },
+    {
+      "ledger": "timeline",
+      "id": "dark-brown-eye-canon-propagated",
+      "statement": "2026-09-08: canon de ojos café oscuro propagado y verificado."
+    }
+  ],
+  "timeline": {
+    "summary": "2026-09-08: se sustituyeron los colores heredados de ojos, se recompilaron los prompts y se añadió su auditoría."
+  },
+  "log": {
+    "summary": "Se corrigió el canon de ojos café oscuro de Ferry y Hassan y se propagó a las 90 páginas de producción."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

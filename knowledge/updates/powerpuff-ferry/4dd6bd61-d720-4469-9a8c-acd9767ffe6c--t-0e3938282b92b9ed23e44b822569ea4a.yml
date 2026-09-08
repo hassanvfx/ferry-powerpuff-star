@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "4dd6bd61-d720-4469-9a8c-acd9767ffe6c",
+  "at": "2026-09-08T08:11:59Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "2407e6e1-4b2e-45f7-916b-2d78cad3c126",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/2407e6e1-4b2e-45f7-916b-2d78cad3c126--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "bceed764ec2006ae16d9d5451194a3155a6ae705a91b995f02275ad9859bc8e9",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/4dd6bd61-d720-4469-9a8c-acd9767ffe6c.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "visual-treatment-2-3",
+      "statement": "El cómic usa un tratamiento 2:3 de chibi adulto original: ojos expresivos, siluetas simples, línea gruesa, color plano, acción legible y fondos gráficos."
+    },
+    {
+      "ledger": "goals",
+      "id": "consistent-visual-treatment",
+      "statement": "Aplicar una guía visual común a los 90 prompts sin perder identidad de personaje ni legibilidad."
+    },
+    {
+      "ledger": "verification",
+      "id": "visual-treatment-propagated",
+      "statement": "Los 90 prompts incluyen la base de tratamiento 2:3 y el plan referencia la guía; se conservan 2–6 celdas por página."
+    },
+    {
+      "ledger": "last_session",
+      "id": "visual-treatment-ready",
+      "statement": "La guía visual, biblia y prompts están alineados para revisión de un piloto; no se generó arte en este hito."
+    },
+    {
+      "ledger": "timeline",
+      "id": "visual-treatment-guide-defined",
+      "statement": "Se documentó la guía de tratamiento visual a partir de las sugerencias del autor y se propagó a la cola local."
+    }
+  ],
+  "timeline": {
+    "summary": "Las sugerencias del autor se consolidaron como guía visual original de chibi adulto, ojos expresivos, color plano y acción gráfica."
+  },
+  "log": {
+    "summary": "Se guardó y propagó el tratamiento visual 2:3 a la biblia y los 90 prompts del cómic."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

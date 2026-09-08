@@ -1,0 +1,53 @@
+{
+  "schema": 3,
+  "id": "9aec7bcd-5d61-4702-a605-572fb6fbab24",
+  "at": "2026-09-08T09:04:40Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "1bfefd7a-43f0-4ac0-9dcb-588ab7198439",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/1bfefd7a-43f0-4ac0-9dcb-588ab7198439--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "394b908658071a7d3f83cb1552ded130c815e68cfe7db3fbed37161e083fb5dd",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/9aec7bcd-5d61-4702-a605-572fb6fbab24.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "sequential-preview-continuity",
+      "statement": "El generador admite una carpeta explícita de previsualización para continuidad lineal sin escribir en arte-aprobado."
+    },
+    {
+      "ledger": "verification",
+      "id": "sequential-first-five-completed",
+      "statement": "Los cinco PNG 01–05 de la cadena terminaron en Kie y miden 2048 × 3072."
+    },
+    {
+      "ledger": "last_session",
+      "id": "sequential-first-five-awaiting-review",
+      "statement": "La cadena de previsualización 01–05 está disponible en carpeta temporal para revisión del autor y no está aprobada para producción."
+    },
+    {
+      "ledger": "timeline",
+      "id": "sequential-first-five-generated",
+      "statement": "Se generaron las páginas 01 a 05 en secuencia usando referencia de estilo, hoja v2 de Hassan y el PNG anterior inmediato."
+    }
+  ],
+  "timeline": {
+    "summary": "Las cinco primeras páginas se generaron y descargaron en orden; cada salida alimentó exclusivamente la página siguiente."
+  },
+  "log": {
+    "summary": "Prueba secuencial 01–05 completada con referencias aprobadas y continuidad lineal de previsualización."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

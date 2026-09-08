@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "b5969d3f-34a0-4203-8f5d-42026b24c148",
+  "at": "2026-09-08T09:11:53Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "92cdf6da-9f8f-438e-b79b-2622289281a3",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/92cdf6da-9f8f-438e-b79b-2622289281a3--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "edc5a55cc0a85955fb9ddbc1fa0165167bb4c8a70f8ba1715386eb2c71e82597",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/b5969d3f-34a0-4203-8f5d-42026b24c148.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "dated-opening-and-closing-cards",
+      "statement": "Página 01 imprime “9 de septiembre 2026. Una noche más...” y página 90 imprime “10 de septiembre 2026 -Happy Bday my Love.” como cartelas literales."
+    },
+    {
+      "ledger": "verification",
+      "id": "dated-cards-and-anatomy-coverage",
+      "statement": "El verificador confirmó ambas cartelas exactas y los 90 bloques positivos y negativos de anatomía/pose."
+    },
+    {
+      "ledger": "goals",
+      "id": "personalized-dated-comic-book",
+      "statement": "Personalizar el inicio y el cierre del cómic sin perder el control de continuidad y anatomía de producción."
+    },
+    {
+      "ledger": "last_session",
+      "id": "dated-prompts-await-regeneration",
+      "statement": "Las fechas y controles están integrados en prompts; las imágenes existentes son anteriores y requieren regeneración y revisión humana."
+    },
+    {
+      "ledger": "timeline",
+      "id": "opening-and-closing-dates-locked",
+      "statement": "Se aplicaron y bloquearon en el plan las cartelas de fecha solicitadas para páginas 01 y 90."
+    }
+  ],
+  "timeline": {
+    "summary": "La página 01 abre el 9 de septiembre de 2026 y la página 90 cierra el 10 de septiembre con el mensaje de cumpleaños; la cola completa conserva controles de pose y malformación."
+  },
+  "log": {
+    "summary": "Se fijaron las cartelas de apertura y cierre y se verificó la protección anatómica en los 90 prompts."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

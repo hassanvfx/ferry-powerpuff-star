@@ -2,6 +2,8 @@
 
 Este sistema convierte la historia en **90 páginas individuales de cómic vertical 6×9** y, una vez aprobadas, las ensambla como interior de Lulu de 6×9 pulgadas. El corpus y la cola local actuales viven en `../manuscrito/06-corpus-narrativo-90-paginas.md` y `plan-de-imagenes-90.json`.
 
+El [tratamiento visual 2:3](tratamiento-visual-2-3.md) es obligatorio para todas las páginas: mantiene la lectura de ojos, silueta, color, acción y lettering sin copiar una franquicia.
+
 ## Fuente actual: corpus a prompts
 
 Los 90 prompts de `prompts-90/` se generan localmente desde el corpus y el guion técnico; no activan Kie ni transmiten referencias. Cada prompt define la retícula, sus celdas, cámara, acción y una posición segura de lettering. Sólo el valor de `Texto impreso exacto` se dibuja entre comillas dobles: las etiquetas técnicas jamás son letras dentro de la viñeta. Si se cambia el corpus o el texto técnico, recompilar así:
@@ -12,11 +14,27 @@ python3 libro/produccion/scripts/compilar_prompts_desde_corpus.py
 
 El plan y los prompts previos de 32 páginas se conservan sólo como antecedente. Antes de ejecutar cualquier generación externa, el ejecutor debe configurarse explícitamente para leer `plan-de-imagenes-90.json` y se requiere la autorización vigente para las fotos privadas.
 
+## Continuidad secuencial
+
+La página 01 no usa una página narrativa previa. De la página 02 en adelante, el prompt recibe la página anterior **aprobada** como referencia adicional. Esta referencia preserva diseño, paleta, luz, escala, vestuario y motivos; no autoriza repetir la composición, los paneles, poses, acción, diálogos, SFX, fondos u objetos. El brief de la página actual manda siempre.
+
+En modo `--live`, el ejecutor bloquea cada página si no existe el archivo aprobado de su predecesora en `arte-aprobado/`. Por ello, la producción debe ser secuencial: generar → revisar → mover a `arte-aprobado/` → generar la página siguiente. Los dry runs no exigen esa imagen y nunca la transmiten.
+
+La referencia visual no controla por sí sola el inventario de la historia. La [auditoría de estados](continuidad-de-estados.md) fija el origen, ausencia y transición de monitor, matraz, hilo, nota, lupa, carrete, concha y estrella. El compilador inserta sus bloqueos por página y por celda; antes de aprobar una imagen, revísala contra esa tabla.
+
+La [auditoría retrospectiva 90→01](auditoria-retroactiva-90.md) recorre las 90 páginas en orden inverso y enlaza cada estado con su predecesora inmediata. Se regenera junto con los prompts y se comprueba sin llamar a ningún servicio externo:
+
+```bash
+python3 libro/produccion/scripts/verificar_continuidad.py
+```
+
 ## Personajes y privacidad
 
-`referencias.local.json` apunta a las tres fotos entregadas por el autor: una de Hassan y dos de Ferry. Está ignorado por Git; las fotos no se copian al repositorio. Las hojas aprobadas de producción viven en `../arte/referencias/ferry-character-sheet-v2.png` y `../arte/referencias/hassan-character-sheet-v2.png`; el ejecutor añade automáticamente la correspondiente junto a la referencia facial del personaje. Al ejecutar Kie en modo real, el CLI sube temporalmente sólo las referencias requeridas por cada página.
+`referencias.local.json` apunta a las tres fotos entregadas por el autor: una de Hassan y dos de Ferry. Está ignorado por Git; las fotos no se copian al repositorio. La referencia de estilo aprobada vive en `../arte/referencias/chibi-superhero-comic-style-reference.png` y se adjunta siempre; las hojas aprobadas de producción viven en `../arte/referencias/ferry-character-sheet-v2.png` y `../arte/referencias/hassan-character-sheet-v2.png`, y el ejecutor añade la correspondiente a cada personaje. Al ejecutar Kie en modo real, el CLI sube temporalmente sólo las referencias requeridas por cada página.
 
 La [biblia visual](biblia-visual.md) fija la continuidad de personajes, color, objetos y revisión de cada página.
+
+Para una prueba que no transmite fotografías privadas, añade `--approved-references-only`; entonces sólo se adjuntan la referencia de estilo y las hojas v2 aprobadas.
 
 ## Generar páginas con Kie
 

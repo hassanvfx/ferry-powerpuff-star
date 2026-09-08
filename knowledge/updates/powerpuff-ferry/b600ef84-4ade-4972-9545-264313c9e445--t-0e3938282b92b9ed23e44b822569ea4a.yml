@@ -1,0 +1,48 @@
+{
+  "schema": 3,
+  "id": "b600ef84-4ade-4972-9545-264313c9e445",
+  "at": "2026-09-08T09:15:03Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "f35327cb-e350-4df5-9ecb-e523c2d925e1",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/f35327cb-e350-4df5-9ecb-e523c2d925e1--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "a2ccfe90eb39b77d124873f7e38b89c79fc47d6a2628f2bf4dad20b5002a7df4",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/b600ef84-4ade-4972-9545-264313c9e445.md"
+  },
+  "reviews": {
+    "specification": "unchanged",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "verification",
+      "id": "full-4k-run-directories-prepared",
+      "statement": "Las carpetas declaradas para salidas, trabajos y snapshots existen vacías con .gitkeep, sin PNG ni jobs de Kie."
+    },
+    {
+      "ledger": "last_session",
+      "id": "full-4k-directories-ready",
+      "statement": "La infraestructura local incluye ya las rutas físicas de la corrida; siguen pendientes el cierre de prompts y la autorización de arranque."
+    },
+    {
+      "ledger": "timeline",
+      "id": "full-4k-run-directories-created",
+      "statement": "Se prepararon las rutas locales aisladas para la futura corrida completa 4K."
+    }
+  ],
+  "timeline": {
+    "summary": "Las rutas de salida, jobs y snapshots declaradas por la plantilla quedaron preparadas para el futuro arranque."
+  },
+  "log": {
+    "summary": "Se materializaron las carpetas vacías y versionables de la futura corrida 4K, sin arte ni trabajos externos."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

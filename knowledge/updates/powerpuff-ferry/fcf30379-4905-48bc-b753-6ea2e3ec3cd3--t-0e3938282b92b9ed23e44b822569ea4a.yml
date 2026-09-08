@@ -1,0 +1,50 @@
+{
+  "schema": 3,
+  "id": "fcf30379-4905-48bc-b753-6ea2e3ec3cd3",
+  "at": "2026-09-08T09:19:37Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "f35327cb-e350-4df5-9ecb-e523c2d925e1",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/f35327cb-e350-4df5-9ecb-e523c2d925e1--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "754d693f2cbad525a0a3a225fff8f9284921942ded5c43176f1e6a04a1500d14",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/fcf30379-4905-48bc-b753-6ea2e3ec3cd3.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "unchanged",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "repository-local-production-operator",
+      "statement": "La regeneración completa se opera únicamente con scripts y configuración dentro de libro/produccion, sin habilidad global de Codex."
+    },
+    {
+      "ledger": "last_session",
+      "id": "global-skill-removed",
+      "statement": "La habilidad personal fue eliminada; operar_corrida.py y la plantilla 4K permanecen como fuente reusable del flujo."
+    },
+    {
+      "ledger": "timeline",
+      "id": "production-operator-scoped-to-repository",
+      "statement": "El flujo de regeneración se restringió al repositorio por decisión del autor."
+    }
+  ],
+  "timeline": {
+    "summary": "El autor corrigió el alcance: no se conservará habilidad personal; sólo infraestructura versionada del proyecto."
+  },
+  "log": {
+    "summary": "Se retiró la habilidad global; la corrida queda exclusivamente como operador local del repositorio."
+  },
+  "revises": [],
+  "retracts": [
+    "2c168f7f-a099-4b4f-8a01-0028885367e4"
+  ],
+  "resolves": []
+}

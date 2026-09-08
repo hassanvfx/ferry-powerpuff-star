@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "444e7d51-3a7e-48b1-aac3-4f2537b6a7e2",
+  "at": "2026-09-08T08:32:58Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "bb7af813-718f-440a-bdef-39743a49b5e2",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/bb7af813-718f-440a-bdef-39743a49b5e2--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "c6f582b1504fff17e1add20b9c916f40a22f5e5520bc935cdd120701071c3044",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/444e7d51-3a7e-48b1-aac3-4f2537b6a7e2.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "voice-and-archetype-treatment",
+      "statement": "Cartelas del narrador omnipresente, pensamiento íntimo de Hassan y voz Gen Z adulta de Ferry rigen el texto visible; cada ingrediente tiene una manifestación arquetípica original, nunca una copia de una figura evocada."
+    },
+    {
+      "ledger": "verification",
+      "id": "continuity-and-ingredient-proof",
+      "statement": "El plan recompilado confirma 89 enlaces consecutivos a la página anterior, 29 líneas numeradas de Hassan y 29 apariciones arquetípicas originales de Ferry."
+    },
+    {
+      "ledger": "goals",
+      "id": "production-ready-voice-and-conjure",
+      "statement": "Dejar la historia lista para producción con continuidad encadenada, voces legibles y el ritual de ingredientes completo."
+    },
+    {
+      "ledger": "last_session",
+      "id": "awaiting-human-page-approval",
+      "statement": "Los prompts y guías están actualizados; la producción visual sigue requiriendo aprobación humana de cada página antes de usarla como referencia de la siguiente."
+    },
+    {
+      "ledger": "timeline",
+      "id": "voice-and-archetype-refinement-completed",
+      "statement": "Se integraron voz, diálogo interno, cartelas, enumeración 1–29 y arquetipos originales en el corpus y los prompts."
+    }
+  ],
+  "timeline": {
+    "summary": "Los prompts 02–90 usan la página previa aprobada sólo como continuidad; el conjuro enumera los 29 ingredientes y muestra sus manifestaciones originales de Ferry."
+  },
+  "log": {
+    "summary": "Se consolidó el tratamiento de continuidad, voces y arquetipos para el cómic de 90 páginas."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}
