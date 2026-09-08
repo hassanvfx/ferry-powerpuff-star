@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "corrida-90-4k-2-3",
+  "status": "ready",
+  "source_plan": "libro/produccion/plan-de-imagenes-90.json",
+  "generation": {
+    "model": "gpt-image-2",
+    "aspect_ratio": "2:3",
+    "resolution": "4K",
+    "approved_references_only": true
+  },
+  "storage": {
+    "output_dir": "libro/arte/salidas/corrida-90-4k-2-3",
+    "jobs_dir": "libro/produccion/jobs/corrida-90-4k-2-3",
+    "prompt_snapshot_dir": "libro/produccion/prompts-corridas/corrida-90-4k-2-3",
+    "state_file": "libro/arte/salidas/corrida-90-4k-2-3/estado.json"
+  },
+  "prompt_lock": {
+    "status": "locked_for_production",
+    "sha256": "d81bce2af25a1d6e3a898981604633beaf12617afb4c5afdba9f1049d759d4ed"
+  },
+  "operation": {
+    "heartbeat_interval_minutes": 3,
+    "max_pages_per_cycle": 1,
+    "stop_on_failure": true,
+    "never_auto_approve": true
+  }
+}

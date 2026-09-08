@@ -1,0 +1,48 @@
+{
+  "schema": 3,
+  "id": "364a9a1d-95df-4584-ae02-f0e0ec41c0e6",
+  "at": "2026-09-08T19:21:11Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "7cc9f760-f1e2-4242-b89f-26ae759adb95",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/7cc9f760-f1e2-4242-b89f-26ae759adb95--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "8fd6801e784eb102da5de784d3acc20675f8029c45317f0c376e44707e133ed5",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/364a9a1d-95df-4584-ae02-f0e0ec41c0e6.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "unchanged",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "production-input-versioning",
+      "statement": "Las corridas, prompts y scripts de producción se versionan; libro/arte/salidas queda ignorado."
+    },
+    {
+      "ledger": "last_session",
+      "id": "production-input-versioning-ready",
+      "statement": "La configuración de Git impide añadir los PNG de salidas y archivos de sistema al próximo commit."
+    },
+    {
+      "ledger": "timeline",
+      "id": "production-input-versioning-applied",
+      "statement": "Se añadió el ignore de arte pesado y se preparó la publicación de insumos de producción."
+    }
+  ],
+  "timeline": {
+    "summary": "2026-09-08: se registraron corridas y prompts de producción y se excluyeron las salidas PNG pesadas."
+  },
+  "log": {
+    "summary": "Se versionan insumos de producción y se ignoran las salidas de arte pesadas."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

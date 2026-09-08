@@ -1,0 +1,68 @@
+# Prompt de storyboard anotado 01 — El laboratorio al anochecer
+
+Genera una sola imagen-guía de storyboard anotado para la página 01, formato vertical 2:3. No es la ilustración final: es una composición técnica visual que el orquestador usará como referencia antes de generar la página final. Dibuja exactamente 3 celdas con canaletas limpias y la retícula indicada. Cada celda debe conservar el encuadre, personajes, vestuario, lugar, luz, pose, mirada, objetos, texto y SFX especificados abajo. Usa siluetas adultas semi-chibi coherentes con las hojas v2, bloques de color simples y anatomía clara; no uses fotorrealismo, render 3D, textura pictórica, decoración libre, personajes extra ni letras fuera de las declaradas.
+
+## Formato de página
+
+- Retícula: dos viñetas superiores iguales; una viñeta inferior de ancho completo.
+- Número de celdas: 3. Lectura: arriba-izquierda a abajo-derecha.
+- Seguridad: rostros, manos, globos y objetos focales a mínimo 10% de cada borde; anatomía adulta semi-chibi, dos brazos, dos piernas y manos de cinco dedos.
+
+## Estado de escena
+
+- Tiempo/luz: noche del 9 de septiembre de 2026; luz blanca fría de laboratorio.
+- Lugar: laboratorio minimalista de Hassan, acero, blanco y azul gris.
+- Personajes: Hassan adulto; no aparece Ferry.
+- Vestuario/accesorios: Hassan: bata blanca sobre camiseta azul marino, pantalón carbón y tenis azul marino.
+- Bloqueo de cronología: BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. REALIDAD INICIAL: no existe hilo rojo, carrete, nota, lupa, llave, concha ni estrella como objeto; el laboratorio es frío y no emite magia.
+
+## Continuidad de borde a borde
+
+- ENTRADA — última acción/estado de la página previa: No aplica: esta página establece la realidad inicial.
+- SALIDA — primera acción/estado que debe poder sostener la página siguiente: Hassan alinea frascos y herramientas con cuidado; el mismo monitor sigue encendido con gráficos abstractos azules.
+- La primera celda debe continuar esa entrada o mostrar visualmente la transición. La última celda debe dejar la salida preparada; no copies composición de otra página.
+
+## Desglose por celda
+
+### Celda 1 — superior izquierda
+- Función en lectura: ancla de entrada: establece el lugar, tiempo y eje espacial.
+- Entorno y hora: laboratorio minimalista de Hassan, acero, blanco y azul gris; noche del 9 de septiembre de 2026; luz blanca fría de laboratorio.
+- Personajes y vestuario: Hassan adulto; no aparece Ferry. Hassan: bata blanca sobre camiseta azul marino, pantalón carbón y tenis azul marino.
+- Cámara/composición: plano general cinematográfico, profundidad visible y lectura de ambiente; posición en retícula: superior izquierda.
+- Acción y utilería exacta: Fachada nocturna del edificio: una única ventana blanca sigue encendida. ESTADO CANÓNICO DE ESTA CELDA (OBLIGATORIO): Fachada puramente realista nocturna: sin hilo rojo, carrete, nota, lupa, llave, concha, estrella ni destello mágico.
+- Pose y apoyo corporal: plano de objeto: no inventar extremidades; si entra una mano, mostrar una sola mano de cinco dedos con agarre posible.
+- Mirada/eje de atención: mirada dirigida a la nota; no mirar a cámara salvo que la acción lo exija.
+- Texto/efecto: Narrador omnipresente — cartela: "9 de septiembre 2026. Una noche más..."
+- Colocación de lettering: esquina superior izquierda de la celda, caja crema de borde negro; no cubrir rostro ni acción.
+- Estado que debe respetarse: Fachada puramente realista nocturna: sin hilo rojo, carrete, nota, lupa, llave, concha, estrella ni destello mágico.
+
+### Celda 2 — superior derecha
+- Función en lectura: desarrollo: avanza una única acción sin cambiar de lugar ni de estado sin mostrar la causa.
+- Entorno y hora: laboratorio minimalista de Hassan, acero, blanco y azul gris; noche del 9 de septiembre de 2026; luz blanca fría de laboratorio.
+- Personajes y vestuario: Hassan adulto; no aparece Ferry. Hassan: bata blanca sobre camiseta azul marino, pantalón carbón y tenis azul marino.
+- Cámara/composición: plano general cinematográfico, profundidad visible y lectura de ambiente; posición en retícula: superior derecha.
+- Acción y utilería exacta: Interior amplio: Hassan, pequeño entre mesas precisas, termina un experimento; el monitor a su derecha sigue encendido con gráficos abstractos azules, en un laboratorio blanco, acero y azul gris. ESTADO CANÓNICO DE ESTA CELDA (OBLIGATORIO): El monitor de la derecha está ENCENDIDO y muestra gráficos abstractos azules. No hay hilo rojo, carrete, nota, lupa, llave, concha, estrella ni props mágicos.
+- Pose y apoyo corporal: plano de objeto: no inventar extremidades; si entra una mano, mostrar una sola mano de cinco dedos con agarre posible.
+- Mirada/eje de atención: mirada dirigida al monitor; no mirar a cámara salvo que la acción lo exija.
+- Texto/efecto: Hassan — pensamiento interior: "Una última medición y ya. Necesito terminar por hoy."
+- Colocación de lettering: superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+- Estado que debe respetarse: El monitor de la derecha está ENCENDIDO y muestra gráficos abstractos azules. No hay hilo rojo, carrete, nota, lupa, llave, concha, estrella ni props mágicos.
+
+### Celda 3 — inferior panorámica
+- Función en lectura: cierre: deja una dirección, objeto o emoción que sostenga el siguiente corte.
+- Entorno y hora: laboratorio minimalista de Hassan, acero, blanco y azul gris; noche del 9 de septiembre de 2026; luz blanca fría de laboratorio.
+- Personajes y vestuario: Hassan adulto; no aparece Ferry. Hassan: bata blanca sobre camiseta azul marino, pantalón carbón y tenis azul marino.
+- Cámara/composición: plano detalle, foco nítido en el objeto y profundidad de campo suave; posición en retícula: inferior panorámica.
+- Acción y utilería exacta: Detalle: un matraz vacío y transparente refleja sólo un punto rosa-dorado imperceptible, nunca una estrella ni un hilo. ESTADO CANÓNICO DE ESTA CELDA (OBLIGATORIO): El matraz está completamente vacío y transparente. El único indicio permitido es un punto rosa-dorado microscópico de reflexión; NO dibujes hilo, curva roja, carrete, llave, estrella con puntas, nota ni emisión de magia.
+- Pose y apoyo corporal: plano de objeto: no inventar extremidades; si entra una mano, mostrar una sola mano de cinco dedos con agarre posible.
+- Mirada/eje de atención: mirada dirigida a la nota; no mirar a cámara salvo que la acción lo exija.
+- Texto/efecto: SFX / efecto visual: "bip"
+- Colocación de lettering: junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
+- Estado que debe respetarse: El matraz está completamente vacío y transparente. El único indicio permitido es un punto rosa-dorado microscópico de reflexión; NO dibujes hilo, curva roja, carrete, llave, estrella con puntas, nota ni emisión de magia.
+
+## Chequeo de aprobación
+
+- ¿Identidad, ojos café oscuro y silueta v2 de Hassan/Ferry son correctos?
+- ¿Vestuario, accesorios, manos, dirección de mirada y apoyo corporal coinciden con la celda?
+- ¿Cada objeto existe ya y ningún objeto futuro aparece de decoración?
+- ¿Globos, cartelas, SFX y texto de portada coinciden exactamente con la guía?

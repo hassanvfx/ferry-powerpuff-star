@@ -1,0 +1,56 @@
+# Prompt de storyboard anotado 03 — El libro rosa
+
+Genera una sola imagen-guía de storyboard anotado para la página 03, formato vertical 2:3. No es la ilustración final: es una composición técnica visual que el orquestador usará como referencia antes de generar la página final. Dibuja exactamente 2 celdas con canaletas limpias y la retícula indicada. Cada celda debe conservar el encuadre, personajes, vestuario, lugar, luz, pose, mirada, objetos, texto y SFX especificados abajo. Usa siluetas adultas semi-chibi coherentes con las hojas v2, bloques de color simples y anatomía clara; no uses fotorrealismo, render 3D, textura pictórica, decoración libre, personajes extra ni letras fuera de las declaradas.
+
+## Formato de página
+
+- Retícula: dos celdas verticales: izquierda 42%, derecha 58%.
+- Número de celdas: 2. Lectura: arriba-izquierda a abajo-derecha.
+- Seguridad: rostros, manos, globos y objetos focales a mínimo 10% de cada borde; anatomía adulta semi-chibi, dos brazos, dos piernas y manos de cinco dedos.
+
+## Estado de escena
+
+- Tiempo/luz: noche del 9 de septiembre de 2026; luz blanca fría de laboratorio.
+- Lugar: laboratorio minimalista de Hassan, acero, blanco y azul gris.
+- Personajes: Hassan adulto; no aparece Ferry.
+- Vestuario/accesorios: Hassan: bata blanca sobre camiseta azul marino, pantalón carbón y tenis azul marino.
+- Bloqueo de cronología: BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. REALIDAD INICIAL: no existe hilo rojo, carrete, nota, lupa, llave, concha ni estrella como objeto; el laboratorio es frío y no emite magia.
+
+## Continuidad de borde a borde
+
+- ENTRADA — última acción/estado de la página previa: Hassan mira el reloj; el monitor ya negro queda detrás de él y su cansancio es sereno, no dramático.
+- SALIDA — primera acción/estado que debe poder sostener la página siguiente: Hassan cruza el laboratorio vacío con la bata doblada sobre un brazo y el libro rosa “Volver a mí” de Ferry Beltran sujeto con naturalidad en la otra mano.
+- La primera celda debe continuar esa entrada o mostrar visualmente la transición. La última celda debe dejar la salida preparada; no copies composición de otra página.
+
+## Desglose por celda
+
+### Celda 1 — celda izquierda alta
+- Función en lectura: ancla de entrada: establece el lugar, tiempo y eje espacial.
+- Entorno y hora: laboratorio minimalista de Hassan, acero, blanco y azul gris; noche del 9 de septiembre de 2026; luz blanca fría de laboratorio.
+- Personajes y vestuario: Hassan adulto; no aparece Ferry. Hassan: bata blanca sobre camiseta azul marino, pantalón carbón y tenis azul marino.
+- Cámara/composición: plano detalle, foco nítido en el objeto y profundidad de campo suave; posición en retícula: celda izquierda alta.
+- Acción y utilería exacta: Sus manos cierran el libro personal que se llevará a dormir: portada rosa intenso, título legible “Volver a mí” y crédito “Ferry Beltran”. ESTADO CANÓNICO DE ESTA CELDA (OBLIGATORIO): Sólo el libro personal cerrado de Hassan: portada rosa intenso con texto perfectamente legible “Volver a mí” y debajo “Ferry Beltran”; sin diagramas, carrete, hilo rojo, estrella, llave, nota, lupa ni props futuros. Sus manos lo cierran de forma natural.
+- Pose y apoyo corporal: interacción natural: brazo que trabaja con codo suavemente flexionado y muñeca posible; mano libre relajada y visible.
+- Mirada/eje de atención: mirada dirigida a la nota; no mirar a cámara salvo que la acción lo exija.
+- Texto/efecto: Hassan — pensamiento interior: "Mañana sigo. Ahora necesito dormir un rato."; texto de portada permitido: "Volver a mí" — "Ferry Beltran"
+- Colocación de lettering: superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+- Estado que debe respetarse: Sólo el libro personal cerrado de Hassan: portada rosa intenso con texto perfectamente legible “Volver a mí” y debajo “Ferry Beltran”; sin diagramas, carrete, hilo rojo, estrella, llave, nota, lupa ni props futuros. Sus manos lo cierran de forma natural.
+
+### Celda 2 — celda derecha dominante
+- Función en lectura: cierre: deja una dirección, objeto o emoción que sostenga el siguiente corte.
+- Entorno y hora: laboratorio minimalista de Hassan, acero, blanco y azul gris; noche del 9 de septiembre de 2026; luz blanca fría de laboratorio.
+- Personajes y vestuario: Hassan adulto; no aparece Ferry. Hassan: bata blanca sobre camiseta azul marino, pantalón carbón y tenis azul marino.
+- Cámara/composición: plano medio en tres cuartos: torso completo, ambos hombros, codos, muñecas y la lámpara visibles para comprobar una pose natural; posición en retícula: celda derecha dominante.
+- Acción y utilería exacta: Hassan está de pie en perfil de tres cuartos junto a la lámpara: un brazo queda relajado a su costado y el otro, con codo suavemente flexionado, toca el interruptor con una mano natural de cinco dedos. La luz del pasillo enfría su silueta. ESTADO CANÓNICO DE ESTA CELDA (OBLIGATORIO): Hassan está de pie en perfil de tres cuartos junto a la lámpara. Con un solo brazo relajado junto al torso, extiende el otro de forma natural: codo ligeramente flexionado y una mano de cinco dedos toca el interruptor. Ambos hombros, muñecas y codos son visibles, proporcionados y no se cruzan; sin props futuros.
+- Pose y apoyo corporal: desplazamiento claro: un pie recibe el peso, el otro inicia el paso; torso y mirada orientados hacia el destino.
+- Mirada/eje de atención: sin mirada de personaje obligatoria; el eje visual conduce al objeto o fenómeno descrito.
+- Texto/efecto: SFX / efecto visual: "clac"
+- Colocación de lettering: junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
+- Estado que debe respetarse: Hassan está de pie en perfil de tres cuartos junto a la lámpara. Con un solo brazo relajado junto al torso, extiende el otro de forma natural: codo ligeramente flexionado y una mano de cinco dedos toca el interruptor. Ambos hombros, muñecas y codos son visibles, proporcionados y no se cruzan; sin props futuros.
+
+## Chequeo de aprobación
+
+- ¿Identidad, ojos café oscuro y silueta v2 de Hassan/Ferry son correctos?
+- ¿Vestuario, accesorios, manos, dirección de mirada y apoyo corporal coinciden con la celda?
+- ¿Cada objeto existe ya y ningún objeto futuro aparece de decoración?
+- ¿Globos, cartelas, SFX y texto de portada coinciden exactamente con la guía?

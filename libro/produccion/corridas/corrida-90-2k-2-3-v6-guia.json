@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "corrida-90-2k-2-3-v6-guia",
+  "status": "ready",
+  "source_plan": "libro/produccion/plan-de-imagenes-90.json",
+  "generation": {
+    "model": "gpt-image-2",
+    "aspect_ratio": "2:3",
+    "resolution": "2K",
+    "approved_references_only": true
+  },
+  "storage": {
+    "guide_output_dir": "libro/arte/salidas/corrida-90-2k-2-3-v6-guia/guias",
+    "final_output_dir": "libro/arte/salidas/corrida-90-2k-2-3-v6-guia/finales",
+    "guide_jobs_dir": "libro/produccion/jobs/corrida-90-2k-2-3-v6-guia/guias",
+    "final_jobs_dir": "libro/produccion/jobs/corrida-90-2k-2-3-v6-guia/finales",
+    "guide_prompt_snapshot_dir": "libro/produccion/prompts-corridas/corrida-90-2k-2-3-v6-guia/guias",
+    "final_prompt_snapshot_dir": "libro/produccion/prompts-corridas/corrida-90-2k-2-3-v6-guia/finales",
+    "state_file": "libro/arte/salidas/corrida-90-2k-2-3-v6-guia/estado.json"
+  },
+  "prompt_lock": {
+    "status": "locked_for_production",
+    "sha256": "bfa6cb2ac2ac153a0c33c6747b4c313cf5f9e8eb0c3bb872fc3ae0b2b873b381"
+  },
+  "operation": {
+    "max_active": 5,
+    "submission_pause_seconds": 3,
+    "max_retries": 3,
+    "retry_base_seconds": 15,
+    "previous_page_reference": "never_attached",
+    "stop_on_no_credits": true,
+    "never_auto_approve": true
+  }
+}

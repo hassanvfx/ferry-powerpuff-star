@@ -1,0 +1,68 @@
+# Prompt de storyboard anotado 04 — Pasillo silencioso
+
+Genera una sola imagen-guía de storyboard anotado para la página 04, formato vertical 2:3. No es la ilustración final: es una composición técnica visual que el orquestador usará como referencia antes de generar la página final. Dibuja exactamente 3 celdas con canaletas limpias y la retícula indicada. Cada celda debe conservar el encuadre, personajes, vestuario, lugar, luz, pose, mirada, objetos, texto y SFX especificados abajo. Usa siluetas adultas semi-chibi coherentes con las hojas v2, bloques de color simples y anatomía clara; no uses fotorrealismo, render 3D, textura pictórica, decoración libre, personajes extra ni letras fuera de las declaradas.
+
+## Formato de página
+
+- Retícula: una viñeta superior de 48%; dos viñetas inferiores iguales.
+- Número de celdas: 3. Lectura: arriba-izquierda a abajo-derecha.
+- Seguridad: rostros, manos, globos y objetos focales a mínimo 10% de cada borde; anatomía adulta semi-chibi, dos brazos, dos piernas y manos de cinco dedos.
+
+## Estado de escena
+
+- Tiempo/luz: noche continua, al salir del laboratorio.
+- Lugar: pasillo y salida del laboratorio minimalista.
+- Personajes: Hassan adulto; no aparece Ferry.
+- Vestuario/accesorios: Hassan: camiseta azul marino y pantalón carbón; la bata blanca va doblada sobre un brazo.
+- Bloqueo de cronología: BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. REALIDAD INICIAL: no existe hilo rojo, carrete, nota, lupa, llave, concha ni estrella como objeto; el laboratorio es frío y no emite magia.
+
+## Continuidad de borde a borde
+
+- ENTRADA — última acción/estado de la página previa: Hassan está de pie en perfil de tres cuartos junto a la lámpara: un brazo queda relajado a su costado y el otro, con codo suavemente flexionado, toca el interruptor con una mano natural de cinco dedos. La luz del pasillo enfría su silueta.
+- SALIDA — primera acción/estado que debe poder sostener la página siguiente: En su habitación minimalista, sirve una copa pequeña, sobria y sin glamour.
+- La primera celda debe continuar esa entrada o mostrar visualmente la transición. La última celda debe dejar la salida preparada; no copies composición de otra página.
+
+## Desglose por celda
+
+### Celda 1 — superior panorámica
+- Función en lectura: ancla de entrada: establece el lugar, tiempo y eje espacial.
+- Entorno y hora: pasillo y salida del laboratorio minimalista; noche continua, al salir del laboratorio.
+- Personajes y vestuario: Hassan adulto; no aparece Ferry. Hassan: camiseta azul marino y pantalón carbón; la bata blanca va doblada sobre un brazo.
+- Cámara/composición: plano detalle, foco nítido en el objeto y profundidad de campo suave; posición en retícula: superior panorámica.
+- Acción y utilería exacta: Hassan cruza el laboratorio vacío con la bata doblada sobre un brazo y el libro rosa “Volver a mí” de Ferry Beltran sujeto con naturalidad en la otra mano.
+- Pose y apoyo corporal: desplazamiento claro: un pie recibe el peso, el otro inicia el paso; torso y mirada orientados hacia el destino.
+- Mirada/eje de atención: mirada dirigida al libro; no mirar a cámara salvo que la acción lo exija.
+- Texto/efecto: Hassan — pensamiento interior: "A esta hora el laboratorio se siente más grande."; texto de portada permitido: "Volver a mí" — "Ferry Beltran"
+- Colocación de lettering: superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+- Estado que debe respetarse: Mantener el estado canónico de página; no introducir utilería nueva.
+
+### Celda 2 — inferior izquierda
+- Función en lectura: desarrollo: avanza una única acción sin cambiar de lugar ni de estado sin mostrar la causa.
+- Entorno y hora: pasillo y salida del laboratorio minimalista; noche continua, al salir del laboratorio.
+- Personajes y vestuario: Hassan adulto; no aparece Ferry. Hassan: camiseta azul marino y pantalón carbón; la bata blanca va doblada sobre un brazo.
+- Cámara/composición: plano medio dinámico, gesto y acción perfectamente legibles; posición en retícula: inferior izquierda.
+- Acción y utilería exacta: Un plano bajo sigue sus pasos por el suelo pulido.
+- Pose y apoyo corporal: desplazamiento claro: un pie recibe el peso, el otro inicia el paso; torso y mirada orientados hacia el destino.
+- Mirada/eje de atención: mirada dirigida al foco de la acción de esta celda; no usar mirada perdida ni contacto a cámara gratuito.
+- Texto/efecto: Hassan — pensamiento interior: "Ya me voy. Sólo quiero llegar, bañarme y dormir."
+- Colocación de lettering: superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
+- Estado que debe respetarse: Mantener el estado canónico de página; no introducir utilería nueva.
+
+### Celda 3 — inferior derecha
+- Función en lectura: cierre: deja una dirección, objeto o emoción que sostenga el siguiente corte.
+- Entorno y hora: pasillo y salida del laboratorio minimalista; noche continua, al salir del laboratorio.
+- Personajes y vestuario: Hassan adulto; no aparece Ferry. Hassan: camiseta azul marino y pantalón carbón; la bata blanca va doblada sobre un brazo.
+- Cámara/composición: primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página; posición en retícula: inferior derecha.
+- Acción y utilería exacta: Desde una repisa, el matraz vacío queda atrás como una promesa.
+- Pose y apoyo corporal: plano de objeto: no inventar extremidades; si entra una mano, mostrar una sola mano de cinco dedos con agarre posible.
+- Mirada/eje de atención: mirada dirigida al matraz; no mirar a cámara salvo que la acción lo exija.
+- Texto/efecto: Narrador omnipresente — cartela: "El laboratorio guarda el silencio."
+- Colocación de lettering: esquina superior izquierda de la celda, caja crema de borde negro; no cubrir rostro ni acción.
+- Estado que debe respetarse: Mantener el estado canónico de página; no introducir utilería nueva.
+
+## Chequeo de aprobación
+
+- ¿Identidad, ojos café oscuro y silueta v2 de Hassan/Ferry son correctos?
+- ¿Vestuario, accesorios, manos, dirección de mirada y apoyo corporal coinciden con la celda?
+- ¿Cada objeto existe ya y ningún objeto futuro aparece de decoración?
+- ¿Globos, cartelas, SFX y texto de portada coinciden exactamente con la guía?
