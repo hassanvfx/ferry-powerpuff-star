@@ -28,6 +28,7 @@ DEFAULT_BACK_COVER = ROOT / "libro/arte/referencias/ferry-powerpuff-star-back-co
 DEFAULT_GUIDE_AVATAR = ROOT / "libro/arte/referencias/ferry-guide-avatar.png"
 PLAYER_SOURCE = ROOT / "libro/produccion/player"
 OUTPUT_FILES = ("index.html", "styles.css", "app.js")
+PLAYER_DIRECTORIES = ("vendor",)
 
 
 class PublicationError(ValueError):
@@ -155,13 +156,15 @@ def save_webp(source: Path, destination: Path, max_width: int) -> tuple[int, int
 def asset_record(source: Path, directory: Path, stem: str) -> dict[str, object]:
     small_path = directory / f"{stem}-small.webp"
     large_path = directory / f"{stem}-large.webp"
-    small_width, _ = save_webp(source, small_path, 780)
-    large_width, _ = save_webp(source, large_path, 1440)
+    small_width, small_height = save_webp(source, small_path, 780)
+    large_width, large_height = save_webp(source, large_path, 1440)
     return {
         "small": small_path.relative_to(directory.parents[1]).as_posix(),
         "smallWidth": small_width,
+        "smallHeight": small_height,
         "large": large_path.relative_to(directory.parents[1]).as_posix(),
         "largeWidth": large_width,
+        "largeHeight": large_height,
     }
 
 
@@ -185,6 +188,11 @@ def copy_player(destination: Path) -> None:
         if not source.is_file():
             raise PublicationError(f"Falta el archivo fuente del player: {source}")
         shutil.copy2(source, destination / filename)
+    for directory_name in PLAYER_DIRECTORIES:
+        source = PLAYER_SOURCE / directory_name
+        if not source.is_dir():
+            raise PublicationError(f"Falta el directorio fuente del player: {source}")
+        shutil.copytree(source, destination / directory_name)
 
 
 def build_site(

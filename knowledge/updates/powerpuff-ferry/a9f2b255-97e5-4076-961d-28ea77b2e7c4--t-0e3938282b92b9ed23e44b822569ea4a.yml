@@ -1,0 +1,53 @@
+{
+  "schema": 3,
+  "id": "a9f2b255-97e5-4076-961d-28ea77b2e7c4",
+  "at": "2026-09-08T19:09:09Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "7cc9f760-f1e2-4242-b89f-26ae759adb95",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/7cc9f760-f1e2-4242-b89f-26ae759adb95--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "c816fbb4b191765cc664bd70a14cde5149d37ff08f333ca121be4326d30685a4",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/a9f2b255-97e5-4076-961d-28ea77b2e7c4.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "photoswipe-lightbox",
+      "statement": "El player usa PhotoSwipe versionado localmente con dimensiones WebP del manifest para zoom, pinch, pan y controles nativos."
+    },
+    {
+      "ledger": "verification",
+      "id": "photoswipe-lightbox-proof",
+      "statement": "La publicación V7, pruebas del publicador y navegador local desktop/móvil verificaron apertura, X y Escape."
+    },
+    {
+      "ledger": "last_session",
+      "id": "photoswipe-lightbox-ready",
+      "statement": "El deployment generado incluye el runtime y CSS de PhotoSwipe sin dependencia de CDN."
+    },
+    {
+      "ledger": "timeline",
+      "id": "photoswipe-lightbox-adopted",
+      "statement": "Se sustituyó el lightbox personalizado por una librería mantenida y apta para gestos."
+    }
+  ],
+  "timeline": {
+    "summary": "2026-09-08: el player adoptó PhotoSwipe para el lightbox fullscreen y zoom por gestos."
+  },
+  "log": {
+    "summary": "PhotoSwipe sustituye el lightbox propio por gestos de zoom fiables en escritorio y móvil."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

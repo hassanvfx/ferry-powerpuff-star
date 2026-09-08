@@ -1,3 +1,6 @@
+import PhotoSwipeLightbox from "./vendor/photoswipe/photoswipe-lightbox.esm.js";
+import PhotoSwipe from "./vendor/photoswipe/photoswipe.esm.js";
+
 const root = document.querySelector("#comic-player");
 const desktopQuery = window.matchMedia("(min-width: 768px)");
 const POSITION_STORAGE_PREFIX = "ferry-powerpuff-star:position:";
@@ -7,7 +10,7 @@ let desktopIndex = 0;
 let guideMode = false;
 let currentPosition = { kind: "cover" };
 let mobileObserver;
-let activeLightbox;
+let photoSwipeLightbox;
 
 function materialIcon(name) {
   return `<span class="material-symbols-rounded" aria-hidden="true">${name}</span>`;
@@ -79,130 +82,30 @@ function imageMarkup(page, className = "") {
     : asset.large;
   const sizes = asset.small ? "(max-width: 767px) 100vw, 50vw" : "(max-width: 767px) 100vw, 46vw";
   const guideClass = isGuide ? "comic-image--guide" : "";
-  const pageData = page.kind === "page" ? `data-page-number="${page.number}"` : "";
-  return `<button class="comic-page-button" type="button" data-action="open-lightbox" data-page-kind="${page.kind}" ${pageData} aria-label="Abrir ${alt.toLowerCase()} en pantalla completa">
+  return `<a class="comic-page-button" href="${asset.large}" data-pswp-width="${asset.largeWidth}" data-pswp-height="${asset.largeHeight}" data-pswp-srcset="${srcset}" aria-label="Abrir ${alt.toLowerCase()} en pantalla completa">
     <img class="comic-image ${guideClass} ${className}" src="${asset.large}" srcset="${srcset}" sizes="${sizes}" alt="${alt}" decoding="async" ${page.kind === "cover" ? "fetchpriority=\"high\"" : "loading=\"lazy\""}>
-  </button>`;
+  </a>`;
 }
 
-function pageFromButton(button) {
-  const position = button.dataset.pageKind === "page"
-    ? { kind: "page", number: Number(button.dataset.pageNumber) }
-    : { kind: button.dataset.pageKind };
-  return pageForPosition(position);
+function resetLightbox() {
+  photoSwipeLightbox?.destroy();
+  photoSwipeLightbox = undefined;
 }
 
-function bindLightboxButtons(container) {
-  container.querySelectorAll("[data-action='open-lightbox']").forEach((button) => {
-    button.addEventListener("click", () => openLightbox(pageFromButton(button)));
+function initializeLightbox(gallery) {
+  resetLightbox();
+  photoSwipeLightbox = new PhotoSwipeLightbox({
+    gallery,
+    children: ".comic-page-button",
+    pswpModule: PhotoSwipe,
+    bgOpacity: .94,
+    wheelToZoom: true,
+    pinchToClose: false,
+    closeOnVerticalDrag: false,
+    allowPanToNext: false,
+    maxZoomLevel: 4,
   });
-}
-
-function closeLightbox() {
-  if (!activeLightbox) return;
-  const { element, previousFocus } = activeLightbox;
-  activeLightbox = undefined;
-  document.body.classList.remove("lightbox-open");
-  element.remove();
-  if (previousFocus instanceof HTMLElement && previousFocus.isConnected) previousFocus.focus();
-}
-
-function openLightbox(page) {
-  if (!page) return;
-  closeLightbox();
-
-  const asset = activeAsset(page);
-  const isGuide = asset === page.guide;
-  const alt = imageAlt(page, isGuide);
-  const srcset = asset.small
-    ? `${asset.small} ${asset.smallWidth}w, ${asset.large} ${asset.largeWidth}w`
-    : asset.large;
-  const dialog = document.createElement("section");
-  dialog.className = "comic-lightbox";
-  dialog.setAttribute("role", "dialog");
-  dialog.setAttribute("aria-modal", "true");
-  dialog.setAttribute("aria-label", `${alt}. Vista ampliada`);
-  dialog.innerHTML = `
-    <button class="lightbox-close" type="button" aria-label="Cerrar vista ampliada">${materialIcon("close")}</button>
-    <div class="lightbox-stage">
-      <img class="lightbox-image" src="${asset.large}" srcset="${srcset}" sizes="100vw" alt="${alt}" draggable="false">
-      <p class="lightbox-hint">Pellizca o usa la rueda para ampliar</p>
-    </div>`;
-
-  const previousFocus = document.activeElement;
-  const stage = dialog.querySelector(".lightbox-stage");
-  const image = dialog.querySelector(".lightbox-image");
-  const closeButton = dialog.querySelector(".lightbox-close");
-  const pointers = new Map();
-  let scale = 1;
-  let x = 0;
-  let y = 0;
-  let pinchDistance = 0;
-  let pinchScale = 1;
-
-  const constrainPosition = () => {
-    const maxX = Math.max(0, (image.offsetWidth * (scale - 1)) / 2);
-    const maxY = Math.max(0, (image.offsetHeight * (scale - 1)) / 2);
-    x = Math.max(-maxX, Math.min(maxX, x));
-    y = Math.max(-maxY, Math.min(maxY, y));
-  };
-  const paint = () => {
-    constrainPosition();
-    image.style.transform = `translate3d(${x}px, ${y}px, 0) scale(${scale})`;
-    stage.classList.toggle("is-zoomed", scale > 1);
-  };
-  const setScale = (nextScale) => {
-    scale = Math.max(1, Math.min(4, nextScale));
-    paint();
-  };
-  const pointerDistance = () => {
-    const [first, second] = [...pointers.values()];
-    return Math.hypot(second.x - first.x, second.y - first.y);
-  };
-
-  stage.addEventListener("pointerdown", (event) => {
-    stage.setPointerCapture(event.pointerId);
-    pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
-    if (pointers.size === 2) {
-      pinchDistance = pointerDistance();
-      pinchScale = scale;
-    }
-  });
-  stage.addEventListener("pointermove", (event) => {
-    const previous = pointers.get(event.pointerId);
-    if (!previous) return;
-    pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
-    if (pointers.size === 2 && pinchDistance) {
-      setScale(pinchScale * (pointerDistance() / pinchDistance));
-    } else if (scale > 1) {
-      x += event.clientX - previous.x;
-      y += event.clientY - previous.y;
-      paint();
-    }
-  });
-  ["pointerup", "pointercancel"].forEach((eventName) => stage.addEventListener(eventName, (event) => {
-    pointers.delete(event.pointerId);
-    if (pointers.size < 2) pinchDistance = 0;
-  }));
-  stage.addEventListener("wheel", (event) => {
-    event.preventDefault();
-    setScale(scale + (event.deltaY < 0 ? .25 : -.25));
-  }, { passive: false });
-  stage.addEventListener("dblclick", () => {
-    scale = scale > 1 ? 1 : 2;
-    x = 0;
-    y = 0;
-    paint();
-  });
-  closeButton.addEventListener("click", closeLightbox);
-  dialog.addEventListener("click", (event) => {
-    if (event.target === dialog) closeLightbox();
-  });
-
-  document.body.append(dialog);
-  document.body.classList.add("lightbox-open");
-  activeLightbox = { element: dialog, previousFocus, closeButton };
-  closeButton.focus();
+  photoSwipeLightbox.init();
 }
 
 function desktopViews() {
@@ -239,6 +142,7 @@ function homeButtonMarkup(hidden = false) {
 
 function renderDesktop() {
   if (mobileObserver) mobileObserver.disconnect();
+  resetLightbox();
   const views = desktopViews();
   desktopIndex = Math.max(0, Math.min(desktopIndex, views.length - 1));
   const view = views[desktopIndex];
@@ -271,9 +175,9 @@ function renderDesktop() {
     </section>`;
 
   const reader = root.querySelector(".desktop-reader");
-  bindLightboxButtons(reader);
+  initializeLightbox(reader);
   reader.addEventListener("click", (event) => {
-    if (event.target.closest("button")) return;
+    if (event.target.closest("button, a")) return;
     const rect = event.currentTarget.getBoundingClientRect();
     changeDesktopIndex(desktopIndex + (event.clientX - rect.left < rect.width / 2 ? -1 : 1));
   });
@@ -328,6 +232,7 @@ function startMobilePositionTracking(reader) {
 
 function renderMobile() {
   if (mobileObserver) mobileObserver.disconnect();
+  resetLightbox();
   const pages = readerPages();
   root.innerHTML = `<section class="mobile-reader" aria-label="Lector de cómic vertical">
     ${mobileControlsMarkup()}
@@ -338,7 +243,7 @@ function renderMobile() {
       </article>`).join("")}
     </section>`;
   const reader = root.querySelector(".mobile-reader");
-  bindLightboxButtons(reader);
+  initializeLightbox(reader);
   root.querySelector("[data-action='home']").addEventListener("click", goHome);
   root.querySelector("[data-action='toggle-guide']").addEventListener("click", toggleGuide);
   window.requestAnimationFrame(() => {
@@ -375,17 +280,6 @@ function render() {
 }
 
 window.addEventListener("keydown", (event) => {
-  if (activeLightbox) {
-    if (event.key === "Escape") {
-      event.preventDefault();
-      closeLightbox();
-    }
-    if (event.key === "Tab") {
-      event.preventDefault();
-      activeLightbox.closeButton.focus();
-    }
-    return;
-  }
   if (!comic || !desktopQuery.matches) return;
   if (event.key === "Home") {
     event.preventDefault();

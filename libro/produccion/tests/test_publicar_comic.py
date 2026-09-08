@@ -66,6 +66,9 @@ class ComicPublisherTests(unittest.TestCase):
         self.assertTrue((output / manifest["guideAvatar"]["src"]).is_file())
         self.assertEqual(160, manifest["guideAvatar"]["width"])
         self.assertTrue((output / manifest["pages"][0]["guide"]["small"]).is_file())
+        self.assertEqual(180, manifest["pages"][0]["largeHeight"])
+        self.assertTrue((output / "vendor/photoswipe/photoswipe.css").is_file())
+        self.assertTrue((output / "vendor/photoswipe/photoswipe-lightbox.esm.js").is_file())
         self.assertFalse(list(output.rglob("*.png")))
 
     def test_collect_pages_rejects_a_gap_and_an_odd_interior(self) -> None:
