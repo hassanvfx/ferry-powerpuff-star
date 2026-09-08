@@ -1,0 +1,53 @@
+{
+  "schema": 3,
+  "id": "81024ae9-49f6-42f5-8900-779808283482",
+  "at": "2026-09-08T21:53:22Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "38e30ccb-56f3-43a5-99c6-4ab923ab9bad",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/38e30ccb-56f3-43a5-99c6-4ab923ab9bad--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "4b00c8d8f80362af66b6a85ff0a4698454b4fe5d95a79ae5e979142c78c27e78",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/81024ae9-49f6-42f5-8900-779808283482.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "v9-complete-published",
+      "statement": "docs declara la edición V9 completa con 90 páginas consecutivas y guía por cada final."
+    },
+    {
+      "ledger": "verification",
+      "id": "v9-complete-publication-proof",
+      "statement": "El publicador estricto, el manifest de 90 entradas, los assets WebP, seis tests y la sintaxis del player fueron verificados."
+    },
+    {
+      "ledger": "last_session",
+      "id": "v9-complete-ready-to-push",
+      "statement": "El artefacto V9 completo está preparado para commit y push a main."
+    },
+    {
+      "ledger": "timeline",
+      "id": "v9-complete-artifact-generated",
+      "statement": "Se regeneró docs desde los 90 pares final/guía de V9."
+    }
+  ],
+  "timeline": {
+    "summary": "2026-09-08: V9 completa reemplazó el artefacto parcial publicado."
+  },
+  "log": {
+    "summary": "V9 completa fue regenerada como artefacto WebP de 90 páginas y quedó lista para el despliegue manual."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

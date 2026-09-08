@@ -1,8 +1,8 @@
 {
   "title": "Ferry PowerPuff Star",
   "edition": "corrida-90-2k-2-3-v9-referencias-guia",
-  "pageCount": 82,
-  "generatedAt": "2026-09-08T21:17:00+00:00",
+  "pageCount": 90,
+  "generatedAt": "2026-09-08T21:52:23+00:00",
   "cover": {
     "small": "assets/covers/cover-small.webp",
     "smallWidth": 780,
@@ -482,6 +482,23 @@
         "large": "assets/guides/27-large.webp",
         "largeWidth": 1360,
         "largeHeight": 2048
+      }
+    },
+    {
+      "number": 28,
+      "small": "assets/pages/28-small.webp",
+      "smallWidth": 780,
+      "smallHeight": 1170,
+      "large": "assets/pages/28-large.webp",
+      "largeWidth": 1440,
+      "largeHeight": 2160,
+      "guide": {
+        "small": "assets/guides/28-small.webp",
+        "smallWidth": 780,
+        "smallHeight": 1170,
+        "large": "assets/guides/28-large.webp",
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -1216,6 +1233,108 @@
       }
     },
     {
+      "number": 72,
+      "small": "assets/pages/72-small.webp",
+      "smallWidth": 780,
+      "smallHeight": 1170,
+      "large": "assets/pages/72-large.webp",
+      "largeWidth": 1440,
+      "largeHeight": 2160,
+      "guide": {
+        "small": "assets/guides/72-small.webp",
+        "smallWidth": 780,
+        "smallHeight": 1170,
+        "large": "assets/guides/72-large.webp",
+        "largeWidth": 1440,
+        "largeHeight": 2160
+      }
+    },
+    {
+      "number": 73,
+      "small": "assets/pages/73-small.webp",
+      "smallWidth": 780,
+      "smallHeight": 1170,
+      "large": "assets/pages/73-large.webp",
+      "largeWidth": 1440,
+      "largeHeight": 2160,
+      "guide": {
+        "small": "assets/guides/73-small.webp",
+        "smallWidth": 780,
+        "smallHeight": 1170,
+        "large": "assets/guides/73-large.webp",
+        "largeWidth": 1440,
+        "largeHeight": 2160
+      }
+    },
+    {
+      "number": 74,
+      "small": "assets/pages/74-small.webp",
+      "smallWidth": 780,
+      "smallHeight": 1170,
+      "large": "assets/pages/74-large.webp",
+      "largeWidth": 1440,
+      "largeHeight": 2160,
+      "guide": {
+        "small": "assets/guides/74-small.webp",
+        "smallWidth": 780,
+        "smallHeight": 1170,
+        "large": "assets/guides/74-large.webp",
+        "largeWidth": 1440,
+        "largeHeight": 2160
+      }
+    },
+    {
+      "number": 75,
+      "small": "assets/pages/75-small.webp",
+      "smallWidth": 780,
+      "smallHeight": 1170,
+      "large": "assets/pages/75-large.webp",
+      "largeWidth": 1440,
+      "largeHeight": 2160,
+      "guide": {
+        "small": "assets/guides/75-small.webp",
+        "smallWidth": 780,
+        "smallHeight": 1175,
+        "large": "assets/guides/75-large.webp",
+        "largeWidth": 1360,
+        "largeHeight": 2048
+      }
+    },
+    {
+      "number": 76,
+      "small": "assets/pages/76-small.webp",
+      "smallWidth": 780,
+      "smallHeight": 1175,
+      "large": "assets/pages/76-large.webp",
+      "largeWidth": 1360,
+      "largeHeight": 2048,
+      "guide": {
+        "small": "assets/guides/76-small.webp",
+        "smallWidth": 780,
+        "smallHeight": 1170,
+        "large": "assets/guides/76-large.webp",
+        "largeWidth": 1440,
+        "largeHeight": 2160
+      }
+    },
+    {
+      "number": 77,
+      "small": "assets/pages/77-small.webp",
+      "smallWidth": 780,
+      "smallHeight": 1170,
+      "large": "assets/pages/77-large.webp",
+      "largeWidth": 1440,
+      "largeHeight": 2160,
+      "guide": {
+        "small": "assets/guides/77-small.webp",
+        "smallWidth": 780,
+        "smallHeight": 1170,
+        "large": "assets/guides/77-large.webp",
+        "largeWidth": 1440,
+        "largeHeight": 2160
+      }
+    },
+    {
       "number": 78,
       "small": "assets/pages/78-small.webp",
       "smallWidth": 780,
@@ -1417,6 +1536,23 @@
         "large": "assets/guides/89-large.webp",
         "largeWidth": 1440,
         "largeHeight": 2160
+      }
+    },
+    {
+      "number": 90,
+      "small": "assets/pages/90-small.webp",
+      "smallWidth": 780,
+      "smallHeight": 1170,
+      "large": "assets/pages/90-large.webp",
+      "largeWidth": 1440,
+      "largeHeight": 2160,
+      "guide": {
+        "small": "assets/guides/90-small.webp",
+        "smallWidth": 780,
+        "smallHeight": 1170,
+        "large": "assets/guides/90-large.webp",
+        "largeWidth": 1344,
+        "largeHeight": 2016
       }
     }
   ]
