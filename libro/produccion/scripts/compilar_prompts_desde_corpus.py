@@ -7,6 +7,7 @@ para que corpus, conteo de viñetas y prompts no se separen con el tiempo.
 
 from __future__ import annotations
 
+import argparse
 import json
 import re
 import unicodedata
@@ -33,19 +34,17 @@ TREATMENT_BASE = (
     "photorealism, anime proportions, painterly texture, 3D rendering or realistic anatomy."
 )
 
-PREVIOUS_PAGE_CONTINUITY = """CONTINUIDAD CON LA PÁGINA ANTERIOR: Se adjunta la página inmediatamente anterior, ya aprobada, únicamente como referencia de continuidad visual. Conserva identidad de personajes, proporción semi-chibi adulta aprobada, paleta, línea, luz, escala, vestuario y evolución de los motivos (hilo rojo, matraz, estrella y concha) cuando correspondan. NO copies ni repitas su composición, retícula, encuadre, pose, expresión, acción, diálogo, SFX, objetos, fondo o solución visual. Esta página debe ser original y resolver exclusivamente la retícula, las celdas, la acción y el texto que se especifican abajo. Las instrucciones de esta página tienen prioridad absoluta sobre la referencia adjunta."""
+PREVIOUS_PAGE_CONTINUITY = """OPCIÓN ACTIVADA — REFERENCIA DE PÁGINA ANTERIOR: Se adjunta la página inmediatamente anterior ya aprobada. Lee únicamente su ÚLTIMA CELDA como estado de partida para esta página: personaje presente, vestuario, accesorios, pose final, dirección de la mirada, ubicación, hora y objetos que ya existen. Conserva esos elementos sólo cuando la celda 1 de esta página los continúe. NO copies ni repitas la composición, retícula, encuadre, pose, expresión, acción, diálogo, SFX, objetos, fondo o solución visual de la página adjunta. Esta página debe ser original y resolver exclusivamente las celdas de abajo. Las instrucciones y bloqueos de esta página tienen prioridad absoluta sobre la referencia adjunta."""
 
-FIRST_PAGE_CONTINUITY = """PUNTO DE ARRANQUE DE CONTINUIDAD: No hay una página anterior adjunta. Establece aquí el canon visual de personajes, laboratorio, línea, paleta y motivos para la secuencia; las páginas siguientes podrán usar esta página aprobada sólo como referencia de continuidad, nunca como composición para repetir."""
-
-VOICE_DIRECTION = """VOCES Y RITMO: El NARRADOR OMNIPRESENTE aparece en cartelas breves, poéticas y concretas; da contexto sin explicar lo obvio. HASSAN habla y piensa con una voz íntima, observadora, romántica y directa: deja mini-monólogos de 6–18 palabras cuando está solo, con memoria, duda, humor suave y cuidado; nunca grandilocuente. Sus reflexiones internas usan nube de pensamiento. FERRY habla como una adulta Gen Z cálida, segura, juguetona y espontánea: lenguaje actual ligero, afectuoso y claro, sin saturar de slang ni convertirla en caricatura. Alternar diálogo, pensamiento, cartela y silencio para que la página respire."""
+VOICE_DIRECTION = """VOCES Y RITMO: El NARRADOR OMNIPRESENTE aparece en cartelas breves, poéticas y concretas; da contexto sin explicar lo obvio. HASSAN habla y piensa como un hombre adulto que observa, duda y decide mientras intenta entender lo que siente. Usa español mexicano claro, cotidiano e íntimo: cada frase expresa un hecho, una pregunta, una decisión o un cariño específico. Evita metáforas vagas, frases de autoayuda, solemnidad y palabras que no diría en una conversación real. Sus reflexiones internas usan nube de pensamiento y suelen tener 6–18 palabras. FERRY habla como una adulta Gen Z cálida, segura, juguetona y espontánea: lenguaje actual ligero, afectuoso y claro, sin saturar de slang ni convertirla en caricatura. Alternar diálogo, pensamiento, cartela y silencio para que la página respire."""
 
 POSE_ANATOMY_RULES = """POSE Y ANATOMÍA (OBLIGATORIO): Cada adulto semi-chibi conserva anatomía humana clara y natural: exactamente dos brazos, dos piernas, dos manos y una cabeza; hombros, codos y muñecas siguen una dirección posible, sin torsiones imposibles. Conserva la silueta madura, piernas largas y cabeza no extrema de la hoja v2. Cuando se vea una mano, dibuja cinco dedos separados y legibles, proporcionados al estilo semi-chibi. Cada celda tiene un solo gesto principal, con peso corporal, línea de hombros, pelvis y punto de apoyo comprensibles. La mano que usa un objeto debe sujetarlo o tocarlo de forma natural; el otro brazo tiene una posición visible y relajada. Prioriza plano medio o tres cuartos cuando el gesto de brazos y manos sea importante."""
 
 NEGATIVE_ANATOMY_PROMPT = """PROMPT NEGATIVO — EVITAR ESTRICTAMENTE: dedos extra, dedos faltantes, dedos fusionados, manos deformes, manos duplicadas, brazos extra, piernas extra, miembros ausentes, muñecas rotas, codos invertidos, hombros dislocados, articulaciones dobladas en dirección imposible, brazos atravesando torso u objetos, extremidades cortadas accidentalmente, manos escondidas sin motivo, postura retorcida, perspectiva anatómica imposible, pose rígida de maniquí, cuerpo flotando sin apoyo, objetos atravesando manos, caras duplicadas, ojos desalineados, cabeza infantil desproporcionadamente enorme, proporción de bebé, anatomía realista o cuerpo infantil."""
 
-CHARACTER_SHEET_AUTHORITY = """HOJAS DE PERSONAJE V2 — AUTORIDAD VISUAL PRIMARIA: Las hojas adjuntas de Ferry y Hassan son la fuente de verdad para su identidad física, silueta, peinado, rostro, ojos, paleta, vestuario base y accesorios. No las contradigas con resúmenes heredados. Ferry es adulta, de piel cálida, atlética y de silueta madura semi-chibi; tiene cabello largo ondulado castaño con mechas doradas, cejas oscuras y ojos café oscuro, profundos y expresivos (nunca azules, cian, rosa, magenta, verdes ni de otro color). Su look firma es vestido coral plisado, chaqueta blanca corta, cinturón dorado y tenis blanco-oro; la concha es un dije dorado, y el moño coral y el cordón rojo son accesorios que sólo aparecen si el beat los nombra. Hassan es adulto, de piel cálida, sensible y meticuloso; tiene cabello corto oscuro, cejas oscuras, barba completa cuidada y ojos café oscuro, profundos y expresivos (nunca azules, cian, rosa, magenta, verdes ni de otro color). Su look de laboratorio es bata blanca sobre camiseta azul marino, pantalón carbón y tenis azul marino; sus variaciones aprobadas son sobrecamisa índigo, chaqueta azul de campo y traje azul noche. Matraz, libreta azul, lupa de latón, audífonos negros, lente de microscopio, carrete de hilo rojo y estrella sólo aparecen cuando la cronología lo permita. La celda actual gobierna utilería, acción y vestuario específico de escena; nunca modifica la identidad física definida por la hoja v2."""
+CHARACTER_SHEET_AUTHORITY = """HOJAS DE PERSONAJE V2 — AUTORIDAD VISUAL PRIMARIA: Las hojas adjuntas de Ferry y Hassan son la fuente de verdad para su identidad física, silueta, peinado, rostro, ojos, paleta, vestuario base y accesorios. No las contradigas con resúmenes heredados. Ferry es adulta, de piel cálida, atlética y de silueta madura semi-chibi; tiene cabello largo ondulado castaño con mechas doradas, cejas oscuras y ojos café oscuro, profundos y expresivos (nunca azules, cian, rosa, magenta, verdes ni de otro color). Su look firma es vestido coral plisado, chaqueta blanca corta, cinturón dorado y tenis blanco-oro; la concha es un dije dorado, y el moño coral y el cordón rojo son accesorios que sólo aparecen si el beat los nombra. Hassan es adulto, de piel cálida, sensible y meticuloso; tiene cabello corto oscuro, cejas oscuras, barba completa cuidada y ojos café oscuro, profundos y expresivos (nunca azules, cian, rosa, magenta, verdes ni de otro color). Su look de laboratorio es bata blanca sobre camiseta azul marino, pantalón carbón y tenis azul marino; sus variaciones aprobadas son sobrecamisa índigo, chaqueta azul de campo y traje azul noche. Matraz, libreta azul de trabajo, libro rosa personal “Volver a mí” de Ferry Beltran, lupa de latón, audífonos negros, lente de microscopio, carrete de hilo rojo y estrella sólo aparecen cuando la cronología y el beat lo permitan. La celda actual gobierna utilería, acción y vestuario específico de escena; nunca modifica la identidad física definida por la hoja v2."""
 
-TIMELINE_RULE = """BLOQUEO DE CRONOLOGÍA: La referencia anterior conserva apariencia, no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura."""
+TIMELINE_RULE = """BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura."""
 
 # Estados con transición dentro de una misma celda. Se añaden al arte y al plan;
 # no se dejan a la interpretación del modelo a partir de la página previa.
@@ -56,9 +55,14 @@ CELL_STATE_LOCKS = {
     (2, 1): "El mismo monitor está todavía ENCENDIDO y muestra gráficos abstractos azules. No hay hilo rojo, carrete, nota, lupa, llave, concha, estrella ni props mágicos.",
     (2, 2): "El mismo monitor inicia esta celda ENCENDIDO. Hassan pulsa su botón y sólo en esta celda pasa a pantalla negra/apagada; no adelantes ningún objeto de la receta.",
     (2, 3): "El mismo monitor ya está APAGADO con pantalla negra. No hay hilo rojo, carrete, nota, lupa, llave, concha, estrella ni props mágicos.",
-    (3, 1): "Sólo la libreta cerrada, sus diagramas no legibles y las manos naturales de Hassan sobre la mesa; sin carrete, hilo rojo, estrella, llave, nota, lupa ni props futuros.",
+    (3, 1): "Sólo el libro personal cerrado de Hassan: portada rosa intenso con texto perfectamente legible “Volver a mí” y debajo “Ferry Beltran”; sin diagramas, carrete, hilo rojo, estrella, llave, nota, lupa ni props futuros. Sus manos lo cierran de forma natural.",
     (3, 2): "Hassan está de pie en perfil de tres cuartos junto a la lámpara. Con un solo brazo relajado junto al torso, extiende el otro de forma natural: codo ligeramente flexionado y una mano de cinco dedos toca el interruptor. Ambos hombros, muñecas y codos son visibles, proporcionados y no se cruzan; sin props futuros.",
 }
+
+# Estas celdas contienen el único texto diegético permitido fuera de globos,
+# cartelas y SFX: la portada recurrente del libro personal de Hassan.
+BOOK_COVER_CELLS = {(3, 1), (4, 1), (5, 2), (6, 4), (7, 1), (8, 1), (82, 3)}
+BOOK_COVER_TEXT = '"Volver a mí" — "Ferry Beltran"'
 
 CELL_CAMERA_OVERRIDES = {
     (3, 2): "plano medio en tres cuartos: torso completo, ambos hombros, codos, muñecas y la lámpara visibles para comprobar una pose natural",
@@ -101,96 +105,96 @@ INGREDIENT_CAMEOS = {
 # Una entrada por página y una instrucción de texto por celda.  SILENCIO es una
 # elección consciente: no se permite que el modelo invente letras para llenarlo.
 TEXT_TRACKS = [
-    ["CARTELA: «9 de septiembre 2026. Una noche más...»", "GLOBO DE HASSAN: «Una última medición y podré dejar el día en paz.»", "SFX: «bip»"],
-    ["GLOBO DE HASSAN: «Si cierro esto bien, quizá también cierre el ruido.»", "SFX: «clic»", "CARTELA: «Por hoy, basta.»"],
-    ["GLOBO DE HASSAN: «Mañana seguirá aquí. Yo también necesito volver a mí.»", "SFX: «clac»"],
-    ["GLOBO DE HASSAN: «Este silencio siempre llega antes que el cansancio.»", "GLOBO DE HASSAN: «Paso a paso. Ya casi estoy en casa.»", "CARTELA: «El laboratorio guarda el silencio.»"],
-    ["GLOBO DE HASSAN: «Sólo una copa. No para olvidar: para bajar el ruido.»", "SFX: «clin»", "GLOBO DE HASSAN: «Que la música me desate el nudo de hoy.»"],
-    ["GLOBO DE HASSAN: «Frecuencia estable. Ojalá mi cabeza aprendiera de estas ondas.»", "SFX: «mmmm»", "GLOBO DE HASSAN: «Un minuto sin resolver nada también cuenta.»", "CARTELA: «Respira.»"],
-    ["GLOBO DE HASSAN: «Respira, Hassan. Hoy ya hiciste lo que pudiste.»", "SFX: «hummm»", "GLOBO DE HASSAN: «Mañana será menos pesado.»"],
+    ["CARTELA: «9 de septiembre 2026. Una noche más...»", "GLOBO DE HASSAN: «Una última medición y ya. Necesito terminar por hoy.»", "SFX: «bip»"],
+    ["GLOBO DE HASSAN: «Ya quedó. Lo demás puede esperar hasta mañana.»", "SFX: «clic»", "CARTELA: «Por hoy, basta.»"],
+    ["GLOBO DE HASSAN: «Mañana sigo. Ahora necesito dormir un rato.»", "SFX: «clac»"],
+    ["GLOBO DE HASSAN: «A esta hora el laboratorio se siente más grande.»", "GLOBO DE HASSAN: «Ya voy. Sólo quiero llegar, bañarme y dormir.»", "CARTELA: «El laboratorio guarda el silencio.»"],
+    ["GLOBO DE HASSAN: «Una copa y ya. Necesito bajar un poco.»", "SFX: «clin»", "GLOBO DE HASSAN: «Pongo música. A ver si dejo de pensar.»"],
+    ["GLOBO DE HASSAN: «La frecuencia está bien. Ojalá mi cabeza también.»", "SFX: «mmmm»", "GLOBO DE HASSAN: «No tengo que resolver todo hoy.»", "CARTELA: «Respira.»"],
+    ["GLOBO DE HASSAN: «Respira. Hoy hiciste lo que pudiste.»", "SFX: «hummm»", "GLOBO DE HASSAN: «Mañana veo las cosas con más calma.»"],
     ["CARTELA: «El sueño toma aire.»", "SFX: «hummm»"],
-    ["SFX: «shhh»", "SFX: «tinnn»", "GLOBO DE HASSAN: «No estaba dormido así… esto se siente distinto.»"],
-    ["SFX: «whooosh»", "GLOBO DE HASSAN: «Si esto es un sueño, no quiero pelearle.»"],
-    ["SFX: «ta-dá»", "SFX: «aplausos lejanos»", "GLOBO DE HASSAN: «Parece un recuerdo que nunca tuve. ¿Dónde estoy?»"],
+    ["SFX: «shhh»", "SFX: «tinnn»", "GLOBO DE HASSAN: «Esto no se siente como los otros sueños.»"],
+    ["SFX: «whooosh»", "GLOBO DE HASSAN: «Si estoy soñando, prefiero no despertar todavía.»"],
+    ["SFX: «ta-dá»", "SFX: «aplausos lejanos»", "GLOBO DE HASSAN: «¿Qué lugar es este? Siento que ya lo conozco.»"],
     ["SFX: «tap»", "SFX: «fwoosh»", "CARTELA: «Una luz toma forma.»"],
-    ["SFX: «FWOOSH»", "SFX: «vrrr»", "GLOBO DE HASSAN: «Ferry… hasta mi sueño sabe pronunciarte.»", "SFX: «TÁ!»"],
+    ["SFX: «FWOOSH»", "SFX: «vrrr»", "GLOBO DE HASSAN: «Ferry… hasta dormido sigo pensando en ti.»", "SFX: «TÁ!»"],
     ["CARTELA: «La chica de sus sueños.»", "GLOBO DE FERRY: «Holi, Hassan. Llegaste justo a tiempo.»", "SFX: «tinnn»"],
-    ["GLOBO DE FERRY: «Ven, te enseño el lugar donde cuido lo que amo.»", "GLOBO DE HASSAN: «Voy. Aunque no sé a dónde me llevas.»"],
+    ["GLOBO DE FERRY: «Ven, te enseño el lugar donde cuido lo que amo.»", "GLOBO DE HASSAN: «Voy contigo. No sé a dónde, pero voy.»"],
     ["GLOBO DE FERRY: «Zeus.»", "GLOBO DE FERRY: «Todo bien, grandote. Estoy aquí contigo.»", "SFX: «wuf»"],
     ["SFX: «thump»", "GLOBO DE FERRY: «Buen chico. Sabía que podías confiar.»", "SFX: «tinnn»"],
     ["GLOBO DE FERRY: «Déjame ver. No quiero que te duela ni un poquito.»", "SFX: «zap»"],
     ["SFX: «plop»", "GLOBO DE FERRY: «Aquí estás. No te me escondas solito.»", "SFX: «fiuu»"],
     ["GLOBO DE FERRY: «Buenos días, Yohi. ¿Listo para tu hoja favorita?»", "SFX: «crisp»", "SILENCIO"],
     ["SFX: «toc… toc…»", "GLOBO DE FERRY: «Sin prisa. Tú marcas el paso.»"],
-    ["SFX: «ñam»", "GLOBO DE FERRY: «Todo a tu tiempo. Aquí nadie tiene que correr.»", "GLOBO DE HASSAN: «Qué paciencia… cada ser encuentra su tiempo.»"],
+    ["SFX: «ñam»", "GLOBO DE FERRY: «Todo a tu tiempo. Aquí nadie tiene que correr.»", "GLOBO DE HASSAN: «Tienes una paciencia que yo todavía estoy aprendiendo.»"],
     ["GLOBO DE FERRY: «Tu casa está lista. Ven, mira lo que hice.»", "SFX: «tinnn»"],
     ["SFX: «slip»", "GLOBO DE FERRY: «Cuidado. Vamos a cruzar sin lastimarnos.»", "SFX: «tap»"],
     ["SFX: «slip… slip…»", "CARTELA: «Un camino seguro.»"],
     ["SFX: «frrr»", "GLOBO DE FERRY: «Ey, tranqui. Ya pasó. Estoy contigo.»", "SFX: «tinnn»"],
-    ["SFX: «tac tac»", "GLOBO DE HASSAN: «Todo ser importa. Tú los miras como si siempre lo supieras.»"],
+    ["SFX: «tac tac»", "GLOBO DE HASSAN: «Tú sí te fijas en todo, hasta en lo que nadie ve.»"],
     ["SILENCIO", "SILENCIO", "SILENCIO", "CARTELA: «Cuidar también es un poder.»"],
-    ["GLOBO DE FERRY: «Hassan.»", "GLOBO DE FERRY: «Qué bueno que llegaste hasta aquí.»", "GLOBO DE HASSAN: «No quiero despertar todavía. Aquí todo tiene sentido.»"],
+    ["GLOBO DE FERRY: «Hassan.»", "GLOBO DE FERRY: «Qué bueno que llegaste hasta aquí.»", "GLOBO DE HASSAN: «No quiero despertar. Aquí todo se siente demasiado real.»"],
     ["SFX: «tinnn»", "GLOBO DE FERRY: «Ven, sígueme. Te falta ver una cosa.»"],
-    ["SFX: «fwoosh»", "GLOBO DE HASSAN: «¡Ferry, espera! Aún no te he dicho nada.»", "SFX: «tinnn»"],
+    ["SFX: «fwoosh»", "GLOBO DE HASSAN: «¡Ferry, espera! Quiero preguntarte algo.»", "SFX: «tinnn»"],
     ["SFX: «flap»", "CARTELA: «Una lista imposible.»", "SFX: «fiuu»"],
     ["SFX: «whoop»", "SFX: «tap»"],
-    ["GLOBO DE HASSAN: «No puedo leerlo, pero algo en mí ya entiende.»", "CARTELA: «Cristal. Nube. Estrella.»", "GLOBO DE HASSAN: «No sé qué eres, pero voy a encontrarte.»"],
+    ["GLOBO DE HASSAN: «No entiendo la lista, pero siento que importa.»", "CARTELA: «Cristal. Nube. Estrella.»", "GLOBO DE HASSAN: «No sé qué es esto, pero voy a buscarlo.»"],
     ["CARTELA: «Y el sueño se cerró.»", "SFX: «shhh…»"],
-    ["SFX: «gasp»", "GLOBO DE HASSAN: «Fue un sueño… y sin embargo sigue mirándome.»", "SFX: «tinnn»"],
-    ["SFX: «clic»", "GLOBO DE HASSAN: «¿Qué dejó aquí? ¿Por qué me reconoce este miedo?»"],
+    ["SFX: «gasp»", "GLOBO DE HASSAN: «Fue un sueño, pero no se me va de la cabeza.»", "SFX: «tinnn»"],
+    ["SFX: «clic»", "GLOBO DE HASSAN: «¿Qué es esto? ¿Por qué me da tanta mala espina?»"],
     ["SFX: «tap»", "SFX: «tac»", "CARTELA: «La mañana ya no es igual.»"],
     ["SFX: «grrr»", "SFX: «blup»", "SFX: «pssshh»"],
-    ["GLOBO DE HASSAN: «Mi café… y esa esquina roja que no soñé.»", "SFX: «tinnn»", "GLOBO DE HASSAN: «La nota. Estaba aquí antes de que despertara.»"],
-    ["SFX: «peel»", "GLOBO DE HASSAN: «Es real. Entonces el sueño no terminó al abrir los ojos.»"],
-    ["GLOBO DE HASSAN: «Necesito comprobarlo antes de inventarme una historia.»", "SFX: «tap»", "GLOBO DE HASSAN: «Al laboratorio. Ahí las dudas al menos tienen nombre.»"],
-    ["GLOBO DE HASSAN: «Vuelvo a la luz fría. A lo que puedo medir.»", "SFX: «swish»", "CARTELA: «Una pregunta merece método.»"],
-    ["SFX: «zoom»", "CARTELA: «Sinceridad.»", "GLOBO DE HASSAN: «Primero: sinceridad. ¿Qué quiere decirme con esto?»"],
-    ["CARTELA: «Empatía.»", "CARTELA: «Inteligencia.»", "CARTELA: «Curiosidad.»", "GLOBO DE HASSAN: «Una receta de ella… o una forma de acercarme.»"],
-    ["SFX: «fwoom»", "CARTELA: «No son palabras. Son pistas.»", "GLOBO DE HASSAN: «Las reuniré, una por una, aunque no sepa por qué.»"],
-    ["GLOBO DE HASSAN: «Cocina, sala, patio. Mi casa conoce el camino.»", "SFX: «tinnn»"],
-    ["SFX: «clac»", "GLOBO DE HASSAN: «Aquí empieza. No busco objetos: busco sus señales.»", "SFX: «fiuu»"],
-    ["SFX: «crash»", "GLOBO DE HASSAN: «No, no, no… espera. Quizá esto también cuenta.»", "SFX: «fwoom»"],
-    ["GLOBO DE HASSAN: «La búsqueda comenzó. Y ya no sé si quiero acabarla.»", "SFX: «tinnn»"],
-    ["CARTELA: «Talento que da calor.»", "SFX: «fwoom»", "GLOBO DE HASSAN: «Canela. Talento que da calor sin pedir permiso.»"],
-    ["SFX: «rustle»", "GLOBO DE HASSAN: «Vainilla. Lo sencillo también puede quedarse contigo.»", "SFX: «tinnn»"],
-    ["SFX: «tinnn»", "GLOBO DE HASSAN: «Una cuchara es magia si alguien cocina con amor.»"],
-    ["SFX: «scrape»", "GLOBO DE HASSAN: «¿Una moneda? Trabajo guardado en las cosas pequeñas.»", "SFX: «vrrr»"],
-    ["GLOBO DE HASSAN: «Trabajo y paciencia. Así se construye algo que dura.»", "SFX: «clic clic»"],
-    ["SFX: «fiuu»", "GLOBO DE HASSAN: «El mismo hilo. Como si supiera dónde encontrarme.»", "SFX: «tinnn»"],
-    ["GLOBO DE HASSAN: «El mar estaba aquí, esperando detrás del polvo.»", "SFX: «swish»", "CARTELA: «Una gota de horizonte.»"],
-    ["SFX: «scrape»", "GLOBO DE HASSAN: «Resistir y florecer. Eso también eres tú, ¿verdad?»", "SFX: «crack»"],
-    ["GLOBO DE HASSAN: «Cariño que abriga incluso cuando nadie lo está pidiendo.»", "SFX: «poof»"],
-    ["SFX: «clink»", "GLOBO DE HASSAN: «Confianza. La parte difícil no es encontrarla: merecerla.»", "SFX: «tinnn»"],
-    ["SFX: «poof»", "GLOBO DE HASSAN: «Espera, nube. No todo tiene que resolverse rápido.»", "SFX: «pop»"],
-    ["SFX: «clink»", "SFX: «fiuu»", "GLOBO DE HASSAN: «Casi lo tengo. O quizá esto apenas empieza.»"],
-    ["GLOBO DE HASSAN: «Cada cosa tiene su lugar. Y tú sigues faltando.»", "SFX: «tinnn»", "CARTELA: «La fórmula empieza a mirar de vuelta.»"],
-    ["GLOBO DE HASSAN: «No es una mezcla. Es una pregunta tomando forma.»", "SFX: «beeeep»", "SFX: «tinnn»"],
-    ["GLOBO DE HASSAN: «Faltan piezas. Las últimas siempre cambian todo.»", "SFX: «fwoom»"],
-    ["GLOBO DE HASSAN: «1. Cristales de sinceridad.»", "GLOBO DE HASSAN: «Que nada se oculte, ni siquiera lo que me asusta sentir.»", "GLOBO DE HASSAN: «2. Nube tibia de empatía.»", "SFX: «fwoom»"],
-    ["GLOBO DE HASSAN: «3. Frasco de luz científica.»", "GLOBO DE HASSAN: «Entender para cuidar. Eso aprendí mirándote.»", "GLOBO DE HASSAN: «4. Lupa de luna curiosa.»", "SFX: «fwoom»"],
-    ["GLOBO DE HASSAN: «5. Polvo de sonrisa encantada.»", "GLOBO DE HASSAN: «Tu sonrisa no pide permiso: cambia la habitación.»", "GLOBO DE HASSAN: «6. Llama de leona roja.»", "SFX: «fwoosh»"],
-    ["GLOBO DE HASSAN: «7. Nido de ternura.»", "GLOBO DE HASSAN: «Cuidas porque tu corazón no sabe mirar hacia otro lado.»", "GLOBO DE HASSAN: «8. Escudo de oro valiente.»", "SFX: «clang»"],
-    ["GLOBO DE HASSAN: «9. Monedas de miel y engranes.»", "GLOBO DE HASSAN: «Con cuidado. Hasta la esperanza necesita manos firmes.»", "GLOBO DE HASSAN: «10. Estrella de esperanza infinita.»", "SFX: «tinnn»"],
-    ["GLOBO DE HASSAN: «11. Flor de inocencia.»", "GLOBO DE HASSAN: «Una chispa basta cuando alguien te enseña a verla.»", "GLOBO DE HASSAN: «12. Concha dorada del mar.»", "SFX: «swish»"],
-    ["GLOBO DE HASSAN: «13. Raíz de perseverancia.»", "GLOBO DE HASSAN: «Resistir no es endurecerse. Es volver a florecer.»", "GLOBO DE HASSAN: «14. Cuchara de canela y vainilla.»", "GLOBO DE HASSAN: «Tu talento también sabe hacer hogar.»", "GLOBO DE HASSAN: «15. Cristal de orden.»", "SFX: «tinnn»"],
-    ["GLOBO DE HASSAN: «16. Campanillas de sol.»", "GLOBO DE HASSAN: «Tu alegría siempre llega antes que el miedo.»", "GLOBO DE HASSAN: «17. Reloj de arena sereno.»", "GLOBO DE HASSAN: «Espero, como quien cuida algo que todavía no nace.»", "GLOBO DE HASSAN: «18. Manta de algodón de cariño.»", "SFX: «poof»"],
-    ["GLOBO DE HASSAN: «19. Sobres perfumados de amor.»", "GLOBO DE HASSAN: «Tus mensajes vuelven cercana incluso a la distancia.»", "GLOBO DE HASSAN: «20. Puente de pétalos.»", "GLOBO DE HASSAN: «Tender puentes no es fácil, y tú lo haces bonito.»", "GLOBO DE HASSAN: «21. Chispa salvaje.»", "SFX: «zap»"],
-    ["GLOBO DE HASSAN: «22. Trofeo de cuerpo en movimiento.»", "GLOBO DE HASSAN: «Tu fuerza no necesita ruido para sostenerse.»", "GLOBO DE HASSAN: «23. Cáliz de nutrición sagrada.»", "GLOBO DE HASSAN: «Nutrir es recordar que alguien importa todos los días.»", "GLOBO DE HASSAN: «24. Llave de confianza.»", "SFX: «clic»"],
-    ["GLOBO DE HASSAN: «25. Anillo de fidelidad.»", "GLOBO DE HASSAN: «Sin cadenas. Elegirse también es quedarse.»", "GLOBO DE HASSAN: «26. Hilo rojo del destino.»", "GLOBO DE HASSAN: «Todo vuelve a este hilo, pero nunca aprieta.»", "GLOBO DE HASSAN: «27. Moño rosa con fuego.»", "SFX: «fwoom»"],
-    ["GLOBO DE HASSAN: «28. Luciérnagas de madrugada.»", "GLOBO DE HASSAN: «No se quedan quietas, igual que tus preguntas.»", "SFX: «tinnn»", "GLOBO DE HASSAN: «29. Pincel de creatividad infinita.»", "SFX: «shraaa»"],
-    ["CARTELA: «Veintinueve razones.»", "GLOBO DE HASSAN: «Todas llevan a ti. Ninguna intenta encerrarte.»", "GLOBO DE HASSAN: «Con respeto, con cuidado y con espacio para que seas tú.»", "SFX: «fwoom»"],
-    ["SFX: «clic»", "CARTELA: «La receta ya no necesita palabras.»", "SFX: «fiuu»", "GLOBO DE HASSAN: «Ahora. No para obligar al sueño, sino para escucharlo.»"],
-    ["SFX: «KRAK»", "GLOBO DE HASSAN: «Si algo nace aquí, que nazca por voluntad propia.»", "SFX: «FWOOM»"],
-    ["SFX: «vrrr»", "SFX: «tinnn»", "GLOBO DE HASSAN: «Funciona… pero no porque yo tenga control de esto.»", "SFX: «shraaa»"],
-    ["GLOBO DE HASSAN: «Despacio. Lo que importa no se fuerza.»", "CARTELA: «El sueño también tiene memoria.»", "GLOBO DE HASSAN: «La magia también es método cuando se hace con cuidado.»"],
-    ["SFX: «vrrr»", "GLOBO DE HASSAN: «Todavía puedo detenerme. Pero ya no quiero huir.»", "SFX: «crack»"],
+    ["GLOBO DE HASSAN: «Eso rojo no estaba aquí ayer.»", "SFX: «tinnn»", "GLOBO DE HASSAN: «La nota… entonces no lo imaginé.»"],
+    ["SFX: «peel»", "GLOBO DE HASSAN: «Es real. Todavía no sé cómo explicarlo.»"],
+    ["GLOBO DE HASSAN: «Antes de hacerme historias, voy a revisarlo bien.»", "SFX: «tap»", "GLOBO DE HASSAN: «Al laboratorio. Ahí por lo menos puedo empezar.»"],
+    ["GLOBO DE HASSAN: «Necesito ver esto con calma y sin inventar nada.»", "SFX: «swish»", "CARTELA: «Una pregunta merece método.»"],
+    ["SFX: «zoom»", "CARTELA: «Sinceridad.»", "GLOBO DE HASSAN: «Primero: sinceridad. A ver qué me pide esta nota.»"],
+    ["CARTELA: «Empatía.»", "CARTELA: «Inteligencia.»", "CARTELA: «Curiosidad.»", "GLOBO DE HASSAN: «¿Una receta de Ferry? Esto tiene que significar algo.»"],
+    ["SFX: «fwoom»", "CARTELA: «No son palabras. Son pistas.»", "GLOBO DE HASSAN: «No son palabras al azar. Me están dejando pistas.»"],
+    ["GLOBO DE HASSAN: «Cocina, sala, patio. Voy a revisar todo.»", "SFX: «tinnn»"],
+    ["SFX: «clac»", "GLOBO DE HASSAN: «Empiezo por aquí. Algo tiene que hacer sentido.»", "SFX: «fiuu»"],
+    ["SFX: «crash»", "GLOBO DE HASSAN: «No, no, no… bueno. Tal vez sí sirve.»", "SFX: «fwoom»"],
+    ["GLOBO DE HASSAN: «Ya empecé. Ahora quiero saber a dónde lleva esto.»", "SFX: «tinnn»"],
+    ["CARTELA: «Talento que da calor.»", "SFX: «fwoom»", "GLOBO DE HASSAN: «Canela. Contigo hasta lo simple se siente especial.»"],
+    ["SFX: «rustle»", "GLOBO DE HASSAN: «Vainilla. Suave, pero se queda.»", "SFX: «tinnn»"],
+    ["SFX: «tinnn»", "GLOBO DE HASSAN: «Una cuchara. No parece importante, pero aquí está.»"],
+    ["SFX: «scrape»", "GLOBO DE HASSAN: «¿Una moneda? Todo esto está más raro de lo que pensé.»", "SFX: «vrrr»"],
+    ["GLOBO DE HASSAN: «Trabajo y paciencia. Supongo que así se hacen las cosas.»", "SFX: «clic clic»"],
+    ["SFX: «fiuu»", "GLOBO DE HASSAN: «El hilo otra vez. Esto ya no puede ser coincidencia.»", "SFX: «tinnn»"],
+    ["GLOBO DE HASSAN: «Una concha. ¿Por qué siento que la conozco?»", "SFX: «swish»", "CARTELA: «Una gota de horizonte.»"],
+    ["SFX: «scrape»", "GLOBO DE HASSAN: «Resistir y volver a crecer. Eso sí te lo reconozco.»", "SFX: «crack»"],
+    ["GLOBO DE HASSAN: «Cariño que abriga. Sí, esa parte es muy tuya.»", "SFX: «poof»"],
+    ["SFX: «clink»", "GLOBO DE HASSAN: «Confianza. Esa sí cuesta encontrarla.»", "SFX: «tinnn»"],
+    ["SFX: «poof»", "GLOBO DE HASSAN: «Tranquila, nube. No tengo que entenderte hoy.»", "SFX: «pop»"],
+    ["SFX: «clink»", "SFX: «fiuu»", "GLOBO DE HASSAN: «Casi está todo. Sólo falta saber qué significa.»"],
+    ["GLOBO DE HASSAN: «Todo tiene un lugar. Y esta nota también.»", "SFX: «tinnn»", "CARTELA: «La fórmula empieza a mirar de vuelta.»"],
+    ["GLOBO DE HASSAN: «No es una mezcla cualquiera. Algo está por pasar.»", "SFX: «beeeep»", "SFX: «tinnn»"],
+    ["GLOBO DE HASSAN: «Faltan cosas. Las últimas deben ser las importantes.»", "SFX: «fwoom»"],
+    ["GLOBO DE HASSAN: «1. Cristales de sinceridad.»", "GLOBO DE HASSAN: «No esconder lo que siento. Esa parte me cuesta.»", "GLOBO DE HASSAN: «2. Nube tibia de empatía.»", "SFX: «fwoom»"],
+    ["GLOBO DE HASSAN: «3. Frasco de luz científica.»", "GLOBO DE HASSAN: «Entender para cuidar. Contigo lo veo más claro.»", "GLOBO DE HASSAN: «4. Lupa de luna curiosa.»", "SFX: «fwoom»"],
+    ["GLOBO DE HASSAN: «5. Polvo de sonrisa encantada.»", "GLOBO DE HASSAN: «Cuando sonríes, se me cambia el día.»", "GLOBO DE HASSAN: «6. Llama de leona roja.»", "SFX: «fwoosh»"],
+    ["GLOBO DE HASSAN: «7. Nido de ternura.»", "GLOBO DE HASSAN: «Siempre estás pendiente de todos. Eso no se te quita.»", "GLOBO DE HASSAN: «8. Escudo de oro valiente.»", "SFX: «clang»"],
+    ["GLOBO DE HASSAN: «9. Monedas de miel y engranes.»", "GLOBO DE HASSAN: «Con cuidado. No quiero echar a perder nada.»", "GLOBO DE HASSAN: «10. Estrella de esperanza infinita.»", "SFX: «tinnn»"],
+    ["GLOBO DE HASSAN: «11. Flor de inocencia.»", "GLOBO DE HASSAN: «A veces una cosa pequeña cambia todo.»", "GLOBO DE HASSAN: «12. Concha dorada del mar.»", "SFX: «swish»"],
+    ["GLOBO DE HASSAN: «13. Raíz de perseverancia.»", "GLOBO DE HASSAN: «Sigues aunque estés cansada. Eso admiro de ti.»", "GLOBO DE HASSAN: «14. Cuchara de canela y vainilla.»", "GLOBO DE HASSAN: «Tu talento hace que hasta lo diario se sienta bonito.»", "GLOBO DE HASSAN: «15. Cristal de orden.»", "SFX: «tinnn»"],
+    ["GLOBO DE HASSAN: «16. Campanillas de sol.»", "GLOBO DE HASSAN: «Cuando llegas contenta, se me contagia.»", "GLOBO DE HASSAN: «17. Reloj de arena sereno.»", "GLOBO DE HASSAN: «Esperar sin presionar también es querer.»", "GLOBO DE HASSAN: «18. Manta de algodón de cariño.»", "SFX: «poof»"],
+    ["GLOBO DE HASSAN: «19. Sobres perfumados de amor.»", "GLOBO DE HASSAN: «Tus mensajes hacen que el día se sienta más cerca.»", "GLOBO DE HASSAN: «20. Puente de pétalos.»", "GLOBO DE HASSAN: «Hablar contigo aclara muchas cosas.»", "GLOBO DE HASSAN: «21. Chispa salvaje.»", "SFX: «zap»"],
+    ["GLOBO DE HASSAN: «22. Trofeo de cuerpo en movimiento.»", "GLOBO DE HASSAN: «Tu fuerza se nota, aunque no hagas ruido.»", "GLOBO DE HASSAN: «23. Cáliz de nutrición sagrada.»", "GLOBO DE HASSAN: «Cuidar a alguien diario también es amor.»", "GLOBO DE HASSAN: «24. Llave de confianza.»", "SFX: «clic»"],
+    ["GLOBO DE HASSAN: «25. Anillo de fidelidad.»", "GLOBO DE HASSAN: «Quedarse porque quieres, no porque tienes que hacerlo.»", "GLOBO DE HASSAN: «26. Hilo rojo del destino.»", "GLOBO DE HASSAN: «Este hilo siempre termina llevándome a ti.»", "GLOBO DE HASSAN: «27. Moño rosa con fuego.»", "SFX: «fwoom»"],
+    ["GLOBO DE HASSAN: «28. Luciérnagas de madrugada.»", "GLOBO DE HASSAN: «Siempre estás preguntando cosas. Por eso nunca me aburro.»", "SFX: «tinnn»", "GLOBO DE HASSAN: «29. Pincel de creatividad infinita.»", "SFX: «shraaa»"],
+    ["CARTELA: «Veintinueve razones.»", "GLOBO DE HASSAN: «Todas hablan de ti. Ninguna te pide que seas otra persona.»", "GLOBO DE HASSAN: «Quiero que estés porque quieres estar, no por esta fórmula.»", "SFX: «fwoom»"],
+    ["SFX: «clic»", "CARTELA: «La receta ya no necesita palabras.»", "SFX: «fiuu»", "GLOBO DE HASSAN: «Ahora sí. Voy a hacerlo con cuidado.»"],
+    ["SFX: «KRAK»", "GLOBO DE HASSAN: «Si algo va a pasar, las piezas ya están listas.»", "SFX: «FWOOM»"],
+    ["SFX: «vrrr»", "SFX: «tinnn»", "GLOBO DE HASSAN: «Está funcionando… y no sé si debería asustarme.»", "SFX: «shraaa»"],
+    ["GLOBO DE HASSAN: «Despacio. No quiero arruinarlo por querer correr.»", "CARTELA: «El sueño también tiene memoria.»", "GLOBO DE HASSAN: «La magia también necesita que uno haga las cosas bien.»"],
+    ["SFX: «vrrr»", "GLOBO DE HASSAN: «Todavía puedo parar. Pero necesito ver qué es esto.»", "SFX: «crack»"],
     ["SFX: «tinnn»", "SFX: «FWOOM»", "CARTELA: «Una estrella aprende a nacer.»"],
-    ["GLOBO DE HASSAN: «Ferry… te vi en sueños y el mundo se abre.»", "CARTELA: «Todas sus luces estaban ahí.»"],
-    ["SFX: «shraaa»", "SFX: «tinnn»", "GLOBO DE HASSAN: «No te hice. Te encontré cuando dejé de querer controlarlo.»"],
+    ["GLOBO DE HASSAN: «Ferry… te vi en sueños. Y ahora estás aquí.»", "CARTELA: «Todas sus luces estaban ahí.»"],
+    ["SFX: «shraaa»", "SFX: «tinnn»", "GLOBO DE HASSAN: «No te inventé. Sólo te estaba buscando.»"],
     ["SFX: «tap»", "GLOBO DE FERRY: «Llegué. ¿Ves? Nunca estuve tan lejos.»", "SILENCIO"],
-    ["GLOBO DE FERRY: «¿Nos vamos?»", "GLOBO DE FERRY: «Al mar, obvio. Quiero enseñarte algo.»", "GLOBO DE HASSAN: «Juntos. Sin promesas que nos quiten el aire.»"],
+    ["GLOBO DE FERRY: «¿Nos vamos?»", "GLOBO DE FERRY: «Al mar, obvio. Quiero enseñarte algo.»", "GLOBO DE HASSAN: «Juntos. Sin prisa y sin complicarnos la vida.»"],
     ["SFX: «swish»", "SFX: «clic»", "SFX: «clac»", "SFX: «vrrum»", "CARTELA: «Hacia la costa.»"],
-    ["SFX: «shhh»", "GLOBO DE HASSAN: «La concha. El mismo mar que me estaba llamando.»", "CARTELA: «10 de septiembre 2026 -Happy Bday my Love.»"],
+    ["SFX: «shhh»", "GLOBO DE HASSAN: «La concha… entonces el mar también era parte de esto.»", "CARTELA: «10 de septiembre 2026 -Happy Bday my Love.»"],
 ]
 
 
@@ -297,10 +301,10 @@ def literal_text(value: str) -> str:
     return value.replace("«", '"').replace("»", '"')
 
 
-def previous_page_reference(page: dict[str, object]) -> dict[str, object]:
+def previous_page_reference(page: dict[str, object], attach: bool) -> dict[str, object]:
     number = page["number"]
-    if number == 1:
-        return {"attached": False, "instruction": FIRST_PAGE_CONTINUITY}
+    if number == 1 or not attach:
+        return {"attached": False, "instruction": ""}
     return {
         "attached": True,
         "instruction": PREVIOUS_PAGE_CONTINUITY,
@@ -399,6 +403,7 @@ def cells_for(page: dict[str, object]) -> tuple[str, list[dict[str, str]]]:
                 "lettering_type": lettering_type,
                 "lettering_placement": lettering_placement,
                 "printed_text": printed_text,
+                "permitted_diegetic_text": BOOK_COVER_TEXT if (number, index) in BOOK_COVER_CELLS else "",
             }
         )
     return layout, cells
@@ -412,13 +417,14 @@ def prompt_for(page: dict[str, object], layout: str, cells: list[dict[str, str]]
         f"CELDA {cell['cell']} — posición: {cell['placement']}; cámara: {cell['camera']}.\n"
         f"Acción y arte: {cell['action']}\n"
         f"Tipo de lettering: {cell['lettering_type']}. Posición de lettering: {cell['lettering_placement']}.\n"
-        f"Texto impreso exacto: {cell['printed_text']}"
+        f"Texto impreso exacto: {cell['printed_text']}\n"
+        f"Texto diegético permitido: {cell['permitted_diegetic_text'] or 'NINGUNO'}"
         for cell in cells
     )
     return f"""Create one original vertical 6x9 comic-book page in a 2:3 aspect ratio.
 Use exactly {panels} distinct comic panels separated by clean, consistent gutters; do not make a collage or a poster.
 Exact page reticle: {layout}. Read from upper left to lower right.
-The only letters permitted in the art are the phrases after “Texto impreso exacto:”. Render each phrase character for character, including accents and punctuation, using the double quotes shown. “CELDA”, “Tipo de lettering”, “Posición de lettering” and every other label are production instructions only: never render those labels in the image. Place the lettering exactly as specified per cell. If “Texto impreso exacto” says SILENCIO, draw no bubble and no letters in that cell. Do not add, alter, translate or invent any other text, number, logo or watermark. The recipe note, when present, must show only deliberately illegible numbered-looking strokes.
+The only letters permitted in the art are the phrases after “Texto impreso exacto:” plus, only where declared, the exact cover text after “Texto diegético permitido:”. Render each permitted phrase character for character, including accents and punctuation, using the double quotes shown. “CELDA”, “Tipo de lettering”, “Posición de lettering”, “Texto diegético permitido” and every other label are production instructions only: never render those labels in the image. Place the lettering exactly as specified per cell. If “Texto impreso exacto” says SILENCIO, draw no bubble and no letters in that cell, except a cover text explicitly declared for that cell. Do not add, alter, translate or invent any other text, number, logo or watermark. The recipe note, when present, must show only deliberately illegible numbered-looking strokes.
 {TREATMENT_BASE}
 Hassan is a gentle, meticulous adult scientist; Ferry is an original adult pop heroine, warm, athletic and protective. Ferry is never created, owned or controlled by Hassan. Follow their attached approved v2 character sheets as the primary visual authority; use this page only for story-specific action, temporal props and scene wardrobe.
 {CHARACTER_SHEET_AUTHORITY}
@@ -452,6 +458,7 @@ def dossier_for(pages: list[dict[str, object]]) -> str:
                 f"{cell['action']}\n"
                 f"   **Lettering:** {cell['lettering_type']}; {cell['lettering_placement']}.\n"
                 f"   **Texto impreso exacto:** {cell['printed_text']}\n"
+                f"   **Texto diegético permitido:** {cell['permitted_diegetic_text'] or 'NINGUNO'}\n"
             )
     return "".join(entries)
 
@@ -488,6 +495,18 @@ def retrograde_audit_for(pages: list[dict[str, object]]) -> str:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(
+        description="Compila los 90 prompts locales de cómic desde el corpus narrativo."
+    )
+    parser.add_argument(
+        "--attach-previous-page-reference",
+        action="store_true",
+        help=(
+            "Activa de forma explícita la referencia visual de la última celda de la página "
+            "anterior para las páginas 02–90. Por defecto no se adjunta ninguna página anterior."
+        ),
+    )
+    args = parser.parse_args()
     pages = parse()
     errors: list[str] = []
     if len(pages) != 90:
@@ -512,8 +531,8 @@ def main() -> None:
     for page in pages:
         identifier = f"{page['number']:02d}-{slug(page['title'])}"
         layout, cells = cells_for(page)
-        continuity = previous_page_reference(page)
-        if page["number"] > 1:
+        continuity = previous_page_reference(page, args.attach_previous_page_reference)
+        if continuity["attached"]:
             preceding = plan_pages[-1]["id"]
             continuity["approved_page_id"] = preceding
             continuity["approved_art"] = f"arte-aprobado/{preceding}.png"
@@ -551,7 +570,8 @@ def main() -> None:
                 "voice_policy": "Cartelas del narrador omnipresente; Hassan íntimo y directo en diálogo o pensamiento; Ferry adulta Gen Z cálida y ligera. Las páginas 66–77 enumeran los ingredientes 1–29 en la voz de Hassan.",
                 "anatomy_policy": "Anatomía adulta semi-chibi clara y poses naturales: dos brazos, dos piernas, dos manos, cinco dedos visibles por mano, articulaciones posibles, silueta madura y cabeza no extrema; los prompts incluyen control negativo contra deformaciones.",
                 "character_sheet_policy": "Las hojas v2 adjuntas de Ferry y Hassan son la autoridad visual primaria para identidad física, rostro, cabello, ojos café oscuro, silueta, paleta, vestuario base y accesorios. La cronología por celda sólo gobierna props, acción y vestuario específico de escena.",
-                "state_continuity_policy": "La referencia anterior conserva apariencia, no inventario: cada prop, ausencia y transición canónica se bloquea por página y, cuando corresponde, por celda.",
+                "previous_page_reference_policy": "Opcional y desactivada por defecto. Al compilar con --attach-previous-page-reference, sólo la última celda aprobada de la página previa fija el estado inicial; nunca autoriza copiar composición ni introducir objetos.",
+                "state_continuity_policy": "Cada prop, ausencia y transición canónica se bloquea por página y, cuando corresponde, por celda; la continuidad no depende de adjuntar una página anterior.",
                 "pages": plan_pages,
             },
             ensure_ascii=False,

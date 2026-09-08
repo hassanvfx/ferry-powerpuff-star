@@ -1,0 +1,38 @@
+{
+  "schema": 3,
+  "id": "dbfa3423-f56b-4dbe-b8af-d67543bf2d01",
+  "at": "2026-09-08T15:17:41Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "08550f91-2fd5-4f50-afcd-b6753dc2b1a1",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/08550f91-2fd5-4f50-afcd-b6753dc2b1a1--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "ecaa46c196be7d855b21e128ee1451d8efc0dd38c131359a6f73778dfd695b1a",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/dbfa3423-f56b-4dbe-b8af-d67543bf2d01.md"
+  },
+  "reviews": {
+    "specification": "unchanged",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "verification",
+      "id": "auditoria",
+      "statement": "corrida-90-4k-2-3-v2-auditoria.md"
+    }
+  ],
+  "timeline": {
+    "summary": "Auditoría visual de las páginas 01–56 de la corrida v2: continuidad, especies, vestuario, locación y voces."
+  },
+  "log": {
+    "summary": "Auditoría visual de las páginas 01–56 de la corrida v2: continuidad, especies, vestuario, locación y voces."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

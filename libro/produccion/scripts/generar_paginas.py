@@ -5,7 +5,7 @@ Default mode is dry-run so no credit is spent and no personal photo is uploaded.
 Pass --live only after reviewing the printed prompts.
 """
 from __future__ import annotations
-import argparse, json, os, shutil, subprocess, sys
+import argparse, json, os, shutil, subprocess, sys, time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -101,6 +101,7 @@ def main() -> None:
     parser.add_argument("--resolution", help="Override the plan resolution for a named production run.")
     parser.add_argument("--jobs-dir", type=Path, help="Store job receipts in this run-specific directory.")
     parser.add_argument("--prompt-output-dir", type=Path, help="Store materialized prompt snapshots in this run-specific directory.")
+    parser.add_argument("--delay-between-pages", type=float, default=0, help="Pause this many seconds between submissions in a multi-page batch.")
     parser.add_argument("--live", action="store_true", help="Submit real KIE jobs and upload personal references.")
     args = parser.parse_args()
     if not args.all and not args.page: parser.error("Choose --page ID or --all.")
@@ -112,5 +113,9 @@ def main() -> None:
     resolution = args.resolution or plan["resolution"]
     prompts = args.prompt_output_dir or ROOT / "prompts"
     jobs = args.jobs_dir or ROOT / "jobs"
-    for page in choose(plan, args.page, args.all): submit(page, plan, reference_map, args.live, not args.approved_references_only, args.continuity_preview_dir, model, aspect_ratio, resolution, prompts, jobs)
+    selected = choose(plan, args.page, args.all)
+    for index, page in enumerate(selected):
+        if index and args.delay_between_pages:
+            time.sleep(args.delay_between_pages)
+        submit(page, plan, reference_map, args.live, not args.approved_references_only, args.continuity_preview_dir, model, aspect_ratio, resolution, prompts, jobs)
 if __name__ == "__main__": main()

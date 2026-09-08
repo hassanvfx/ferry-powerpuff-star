@@ -1,0 +1,32 @@
+{
+  "schema": 3,
+  "id": "1c37892d-3267-417b-96f0-bf94071320db",
+  "at": "2026-09-08T15:27:12Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "b0e0a34a-c236-460f-a50b-bb1d7aa4c8a3",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/b0e0a34a-c236-460f-a50b-bb1d7aa4c8a3--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "3fff006a0d0908b91b76742120c221efe6d689983639bbf562f2e8620ce40be2",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/1c37892d-3267-417b-96f0-bf94071320db.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [],
+  "timeline": {
+    "summary": "La referencia de página anterior es opcional y queda desactivada por defecto; el estado canónico local mantiene la continuidad."
+  },
+  "log": {
+    "summary": "La referencia de página anterior es opcional y queda desactivada por defecto; el estado canónico local mantiene la continuidad."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

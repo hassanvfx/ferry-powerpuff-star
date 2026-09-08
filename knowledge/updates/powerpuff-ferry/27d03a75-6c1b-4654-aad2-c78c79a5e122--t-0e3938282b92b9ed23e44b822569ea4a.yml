@@ -1,0 +1,32 @@
+{
+  "schema": 3,
+  "id": "27d03a75-6c1b-4654-aad2-c78c79a5e122",
+  "at": "2026-09-08T15:35:39Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "f065f51c-a2fd-41bc-850e-c2a51f295b1f",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/f065f51c-a2fd-41bc-850e-c2a51f295b1f--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "191e9889a13e0c3ec9794351c62b593dfec7615c2dda637bd7912d458bece520",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/27d03a75-6c1b-4654-aad2-c78c79a5e122.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [],
+  "timeline": {
+    "summary": "El libro rosa Volver a mí de Ferry Beltran sustituye la libreta de descanso y reaparece en la página 82."
+  },
+  "log": {
+    "summary": "El libro rosa Volver a mí de Ferry Beltran sustituye la libreta de descanso y reaparece en la página 82."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

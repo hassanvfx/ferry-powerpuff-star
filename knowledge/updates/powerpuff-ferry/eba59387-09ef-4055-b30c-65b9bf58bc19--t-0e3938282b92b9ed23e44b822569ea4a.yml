@@ -1,0 +1,53 @@
+{
+  "schema": 3,
+  "id": "eba59387-09ef-4055-b30c-65b9bf58bc19",
+  "at": "2026-09-08T09:54:29Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "f35327cb-e350-4df5-9ecb-e523c2d925e1",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/f35327cb-e350-4df5-9ecb-e523c2d925e1--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "1235d25be9d7596be6661ce9655bddedd765e1f9e6c3e17847037463ab56c68a",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/eba59387-09ef-4055-b30c-65b9bf58bc19.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "v2-resolution-2k-2-3",
+      "statement": "La corrida V2 usa gpt-image-2 a 2K en relación 2:3 y mantiene almacenamiento separado de V1."
+    },
+    {
+      "ledger": "verification",
+      "id": "v2-2k-preflight",
+      "statement": "El operador compiló y validó la plantilla V2 con 90 páginas y hash de prompts actual, sin envío externo."
+    },
+    {
+      "ledger": "last_session",
+      "id": "v2-2k-awaits-author-start",
+      "statement": "La V2 2K está preparada pero permanece sin congelar ni iniciar hasta la instrucción del autor."
+    },
+    {
+      "ledger": "timeline",
+      "id": "v2-resolution-changed-to-2k",
+      "statement": "Se configuró la próxima corrida como 2K 2:3 por decisión del autor."
+    }
+  ],
+  "timeline": {
+    "summary": "El autor cambió la resolución objetivo de la siguiente corrida a 2K manteniendo 2:3."
+  },
+  "log": {
+    "summary": "La V2 de producción queda configurada a 2K 2:3; la V1 4K permanece pausada y aislada."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

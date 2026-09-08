@@ -20,21 +20,21 @@ La realidad de Hassan es fría, limpia y geométrica; el sueño de Ferry entra e
 2. Hassan pulsa el botón: el monitor está encendido al inicio de la viñeta y se apaga en ese gesto.
 3. Hassan mira el reloj; el monitor ya negro queda detrás de él y su cansancio es sereno, no dramático.
 
-### 03. La libreta cerrada — 2 viñetas
+### 03. El libro rosa — 2 viñetas
 
-1. Sus manos cierran una libreta llena de diagramas no legibles.
+1. Sus manos cierran el libro personal que se llevará a dormir: portada rosa intenso, título legible “Volver a mí” y crédito “Ferry Beltran”.
 2. Hassan está de pie en perfil de tres cuartos junto a la lámpara: un brazo queda relajado a su costado y el otro, con codo suavemente flexionado, toca el interruptor con una mano natural de cinco dedos. La luz del pasillo enfría su silueta.
 
 ### 04. Pasillo silencioso — 3 viñetas
 
-1. Hassan cruza el laboratorio vacío con la bata doblada sobre el brazo.
+1. Hassan cruza el laboratorio vacío con la bata doblada sobre un brazo y el libro rosa “Volver a mí” de Ferry Beltran sujeto con naturalidad en la otra mano.
 2. Un plano bajo sigue sus pasos por el suelo pulido.
 3. Desde una repisa, el matraz vacío queda atrás como una promesa.
 
 ### 05. Pequeño ritual — 3 viñetas
 
 1. En su habitación minimalista, sirve una copa pequeña, sobria y sin glamour.
-2. Deja el vaso en una mesa lateral junto a un libro cerrado.
+2. Deja el vaso en una mesa lateral junto al libro rosa cerrado “Volver a mí”, de Ferry Beltran, con la portada orientada para leerse.
 3. Se pone audífonos grandes y respira antes de acostarse.
 
 ### 06. Música binaural — 4 viñetas
@@ -42,17 +42,17 @@ La realidad de Hassan es fría, limpia y geométrica; el sueño de Ferry entra e
 1. Hassan ajusta los audífonos.
 2. Una onda azul fina nace de un auricular.
 3. La onda se duplica y ordena el aire de la habitación.
-4. Hassan se recuesta, ya más tranquilo.
+4. Hassan se recuesta, ya más tranquilo; el libro rosa “Volver a mí”, de Ferry Beltran, descansa cerrado sobre la mesa de noche.
 
 ### 07. Mirar el techo — 3 viñetas
 
-1. Plano de perfil: Hassan observa el techo en penumbra.
+1. Plano de perfil: Hassan observa el techo en penumbra; el libro rosa “Volver a mí”, de Ferry Beltran, permanece cerrado y legible en la mesa de noche.
 2. Las ondas azules forman círculos concéntricos.
 3. Dentro de uno de los círculos aparece una minúscula partícula rosa.
 
 ### 08. El sueño toma aire — 2 viñetas
 
-1. Vista cenital: Hassan duerme mientras las ondas rodean la cama.
+1. Vista cenital: Hassan duerme mientras las ondas rodean la cama; el libro rosa “Volver a mí”, de Ferry Beltran, queda cerrado en la mesa de noche.
 2. Las partículas rosas se agrupan sobre él como una constelación silenciosa.
 
 ### 09. Techo de agua — 3 viñetas
@@ -520,7 +520,7 @@ Cada ingrediente ocupa al menos una viñeta propia. Hassan lo reconoce por su ef
 
 1. Hassan estabiliza un dial mientras una luz coral corre por su bata.
 2. En el reflejo del vidrio ve el escenario y el jardín del sueño.
-3. Sonríe al comprender que la magia también puede seguir una secuencia.
+3. Sonríe al comprender que la magia también puede seguir una secuencia; en una repisa lateral del laboratorio reaparece de manera casual el libro rosa cerrado “Volver a mí”, de Ferry Beltran, separado de la acción y con la portada legible.
 
 ### 83. A punto de romper la lógica — 3 viñetas
 

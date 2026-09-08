@@ -70,7 +70,7 @@ Las hojas de personaje v2 aprobadas son la fuente visual primaria. Ferry y Hassa
 ## Voz visible
 
 - El **narrador omnipresente** sólo entra por cartelas crema: frases breves, concretas y poéticas que sitúan una emoción, un salto de tiempo o una consecuencia que la imagen no puede expresar sola. Nunca describe lo que ya se ve.
-- **Hassan** alterna diálogo y pensamiento. Sus pensamientos se dibujan en nubes pequeñas y hablan desde la observación íntima: directo, romántico, cuidadoso y sin adornar de más. En las páginas 66–77 nombra en pantalla los ingredientes del **1 al 29**; esa enumeración forma parte de su conjuro, no de una lista de producción.
+- **Hassan** alterna diálogo y pensamiento. Sus pensamientos se dibujan en nubes pequeñas y suenan como español mexicano cotidiano: observa algo concreto, se hace una pregunta, toma una decisión o nombra un cariño específico. No declama, no usa metáforas vagas ni frases de autoayuda. En las páginas 66–77 nombra en pantalla los ingredientes del **1 al 29**; esa enumeración forma parte de su conjuro, no de una lista de producción.
 - **Ferry** usa globos redondeados y una voz adulta Gen Z: cálida, segura, juguetona y espontánea. Puede decir “Holi”, “Ey, tranqui” o “Al mar, obvio”, pero el slang siempre es ligero, natural y dosificado.
 - Una misma página debe respirar: combinar cartela, voz, pensamiento, SFX y `SILENCIO` según el beat; nunca llenar todas las celdas de texto.
 

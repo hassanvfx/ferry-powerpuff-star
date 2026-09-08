@@ -16,9 +16,11 @@ El plan y los prompts previos de 32 páginas se conservan sólo como antecedente
 
 ## Continuidad secuencial
 
-La página 01 no usa una página narrativa previa. De la página 02 en adelante, el prompt recibe la página anterior **aprobada** como referencia adicional. Esta referencia preserva diseño, paleta, luz, escala, vestuario y motivos; no autoriza repetir la composición, los paneles, poses, acción, diálogos, SFX, fondos u objetos. El brief de la página actual manda siempre.
+Por defecto, ninguna página adjunta una imagen narrativa previa: la continuidad se sostiene con el estado canónico, las celdas y los bloqueos de cronología de su propio prompt. La página 01 tampoco recibe una referencia anterior.
 
-En modo `--live`, el ejecutor bloquea cada página si no existe el archivo aprobado de su predecesora en `arte-aprobado/`. Por ello, la producción debe ser secuencial: generar → revisar → mover a `arte-aprobado/` → generar la página siguiente. Los dry runs no exigen esa imagen y nunca la transmiten.
+Si una corrida realmente requiere esa ayuda visual, recompila de forma explícita con `--attach-previous-page-reference`. Sólo entonces, las páginas 02–90 reciben la página previa aprobada y leen exclusivamente su **última celda** como estado de partida: personaje, vestuario, accesorios, pose final, mirada, ubicación, hora y objetos existentes. La referencia no autoriza repetir composición, paneles, poses, acción, diálogos, SFX, fondos u objetos nuevos; el brief de la página actual manda siempre.
+
+En ese modo opcional, una corrida real bloquea cada página si no existe el archivo aprobado de su predecesora en `arte-aprobado/`. La producción puede seguir siendo secuencial, pero ya no depende de esa imagen por defecto. Los dry runs nunca exigen ni transmiten una página previa.
 
 La referencia visual no controla por sí sola el inventario de la historia. La [auditoría de estados](continuidad-de-estados.md) fija el origen, ausencia y transición de monitor, matraz, hilo, nota, lupa, carrete, concha y estrella. El compilador inserta sus bloqueos por página y por celda; antes de aprobar una imagen, revísala contra esa tabla.
 

@@ -1,0 +1,53 @@
+{
+  "schema": 3,
+  "id": "618d0394-bda0-466c-9085-14c3b4455212",
+  "at": "2026-09-08T15:07:29Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "f35327cb-e350-4df5-9ecb-e523c2d925e1",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/f35327cb-e350-4df5-9ecb-e523c2d925e1--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "0473de03c41dbb70e25b17c2196ce2f2dfde1875b62bd413b19cd1e493c92521",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/618d0394-bda0-466c-9085-14c3b4455212.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "v3-independent-batches",
+      "statement": "V3 elimina lenguaje y adjuntos de página anterior; envía lotes independientes de hasta diez con referencias aprobadas."
+    },
+    {
+      "ledger": "verification",
+      "id": "v3-no-previous-page-proof",
+      "statement": "Los 90 snapshots V3 no contienen menciones prohibidas y sus 90 adjuntos de página anterior están desactivados."
+    },
+    {
+      "ledger": "last_session",
+      "id": "v3-awaiting-authorization",
+      "statement": "V3 está lista para revisión y requiere autorización explícita antes de enviar el primer lote de diez."
+    },
+    {
+      "ledger": "timeline",
+      "id": "v3-prepared",
+      "statement": "2026-09-08: se preparó V3 sin continuidad entre páginas y con lotes de diez."
+    }
+  ],
+  "timeline": {
+    "summary": "2026-09-08: se preparó la corrida V3 sin continuidad entre páginas, pendiente de autorización de envío."
+  },
+  "log": {
+    "summary": "Se preparó V3 con 90 prompts sin referencias de página anterior y lotes independientes de diez."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

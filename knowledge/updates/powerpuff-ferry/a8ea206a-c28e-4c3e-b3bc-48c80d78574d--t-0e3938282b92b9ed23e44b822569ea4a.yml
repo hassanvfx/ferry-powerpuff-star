@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "a8ea206a-c28e-4c3e-b3bc-48c80d78574d",
+  "at": "2026-09-08T09:56:10Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "66348c8d-aa0d-4ad8-88af-349e6373d520",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/66348c8d-aa0d-4ad8-88af-349e6373d520--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "f268293b9454d10bab154431ea7e9f5bff58c00d4038038b202b6c06c78e7e72",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/a8ea206a-c28e-4c3e-b3bc-48c80d78574d.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "hassan-natural-voice",
+      "statement": "Hassan usa español mexicano claro y cotidiano; cada línea expresa una observación, pregunta, decisión o cariño específico, sin prosa impostada."
+    },
+    {
+      "ledger": "verification",
+      "id": "hassan-voice-rewrite-coverage",
+      "statement": "Los 90 prompts fueron recompilados; la auditoría protege la dirección de voz y rechaza las cuatro frases artificiales conocidas."
+    },
+    {
+      "ledger": "goals",
+      "id": "credible-hassan-voice",
+      "statement": "La voz de Hassan debe sentirse íntima y real, no decorativa."
+    },
+    {
+      "ledger": "last_session",
+      "id": "review-hassan-voice-in-next-sample",
+      "statement": "La próxima muestra debe revisarse por lettering y voz usando los prompts activos, no snapshots históricas."
+    },
+    {
+      "ledger": "timeline",
+      "id": "hassan-voice-rewritten",
+      "statement": "2026-09-08: voz de Hassan reescrita y verificada en los 90 prompts."
+    }
+  ],
+  "timeline": {
+    "summary": "2026-09-08: se sustituyeron las frases artificiales de Hassan por pensamientos situados y se añadió una protección contra su regreso."
+  },
+  "log": {
+    "summary": "Se reescribió la voz de Hassan para que sea natural, cotidiana y coherente en los 90 prompts activos."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

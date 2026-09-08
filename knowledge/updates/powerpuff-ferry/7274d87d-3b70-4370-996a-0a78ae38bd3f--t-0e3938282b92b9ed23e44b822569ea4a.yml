@@ -1,0 +1,38 @@
+{
+  "schema": 3,
+  "id": "7274d87d-3b70-4370-996a-0a78ae38bd3f",
+  "at": "2026-09-08T15:19:31Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "08550f91-2fd5-4f50-afcd-b6753dc2b1a1",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/08550f91-2fd5-4f50-afcd-b6753dc2b1a1--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "1c8ff9e528787dfd5701d082aedafcc95d193b4e99d8fd322fb0d3f88d530416",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/7274d87d-3b70-4370-996a-0a78ae38bd3f.md"
+  },
+  "reviews": {
+    "specification": "unchanged",
+    "verification": "unchanged",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "unchanged"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "last_session",
+      "id": "cierre-auditoria",
+      "statement": "estado-estable"
+    }
+  ],
+  "timeline": {
+    "summary": "Cierre de la auditoría visual v2; el informe queda listo para una fase posterior de corrección y regeneración."
+  },
+  "log": {
+    "summary": "Cierre de la auditoría visual v2; el informe queda listo para una fase posterior de corrección y regeneración."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

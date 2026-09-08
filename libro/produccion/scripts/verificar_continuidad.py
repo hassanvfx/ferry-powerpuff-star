@@ -28,21 +28,21 @@ def main() -> None:
     pages = plan["pages"]
     require(len(pages) == 90, "expected 90 pages")
     require(
-        "referencia anterior conserva apariencia, no inventario" in plan["state_continuity_policy"],
+        "continuidad no depende de adjuntar una página anterior" in plan["state_continuity_policy"],
         "missing plan state-continuity policy",
+    )
+    require(
+        "Opcional y desactivada por defecto" in plan["previous_page_reference_policy"],
+        "previous-page reference must be optional and disabled by default",
     )
     require("cinco dedos visibles" in plan["anatomy_policy"], "missing plan anatomy policy")
     require(
         "autoridad visual primaria" in plan["character_sheet_policy"],
         "missing v2 character-sheet authority policy",
     )
-    require(not pages[0]["previous_page_reference"]["attached"], "page 01 has a predecessor")
     require(
-        all(
-            page["previous_page_reference"]["approved_page_id"] == pages[index - 1]["id"]
-            for index, page in enumerate(pages[1:], 1)
-        ),
-        "predecessor chain is not sequential",
+        all(not page["previous_page_reference"]["attached"] for page in pages),
+        "default plan must not attach a predecessor page",
     )
     phase_locks = {
         7: "ANTES DEL SUEÑO",
@@ -88,8 +88,17 @@ def main() -> None:
     require("ya negro" in pages[1]["beats"][2], "page 02 cell 3 must keep monitor off")
 
     page_three_second_cell = pages[2]["cells"][1]
+    page_three_first_cell = pages[2]["cells"][0]
     require("plano medio en tres cuartos" in page_three_second_cell["camera"], "page 03/2 needs a three-quarter pose camera")
     require("cinco dedos" in page_three_second_cell["state_lock"], "page 03/2 needs explicit hand anatomy")
+    book_cells = ((3, 1), (4, 1), (5, 2), (6, 4), (7, 1), (8, 1), (82, 3))
+    for page_number, cell_number in book_cells:
+        require(
+            pages[page_number - 1]["cells"][cell_number - 1]["permitted_diegetic_text"]
+            == '"Volver a mí" — "Ferry Beltran"',
+            f"page {page_number:02d}/{cell_number} is missing the canonical book cover",
+        )
+    require("portada rosa intenso" in page_three_first_cell["state_lock"], "page 03/1 must establish the pink book")
     prompt_texts = [path.read_text(encoding="utf-8") for path in PROMPTS.glob("*.txt")]
     require(len(prompt_texts) == 90, "expected 90 generated prompts")
     require(
@@ -124,6 +133,20 @@ def main() -> None:
             for prompt in prompt_texts
         ),
         "a stale character-sheet hierarchy or extreme chibi proportion remains in prompts",
+    )
+    require(
+        all("Evita metáforas vagas, frases de autoayuda, solemnidad" in prompt for prompt in prompt_texts),
+        "every prompt needs Hassan's natural-voice direction",
+    )
+    rejected_hassan_lines = (
+        "Si cierro esto bien, quizá también cierre el ruido.",
+        "Mañana seguirá aquí. Yo también necesito volver a mí.",
+        "Que la música me desate el nudo de hoy.",
+        "No es una mezcla. Es una pregunta tomando forma.",
+    )
+    require(
+        not any(line in prompt for prompt in prompt_texts for line in rejected_hassan_lines),
+        "a rejected, artificial Hassan line remains in active prompts",
     )
 
     thoughts = [
