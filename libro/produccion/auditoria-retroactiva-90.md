@@ -606,7 +606,7 @@ Este reporte se lee de la última página a la primera. Para cada página, el re
 
 ## 04. Pasillo silencioso
 
-- **Estado narrativo que se reconcilia:** Hassan cruza el laboratorio vacío con la bata doblada sobre un brazo y el libro rosa “Volver a mí” de Ferry Beltran sujeto con naturalidad en la otra mano. / Un plano bajo sigue sus pasos por el suelo pulido. / Desde una repisa, el matraz vacío queda atrás como una promesa.
+- **Estado narrativo que se reconcilia:** Hassan cruza el laboratorio vacío con la bata doblada sobre un brazo y el libro rosa cerrado “Volver a mí” de Ferry Beltran sujeto con naturalidad en la otra mano; no lo está leyendo. / Un plano bajo sigue sus pasos por el suelo pulido. / Desde una repisa, el matraz vacío queda atrás como una promesa.
 - **Estado de página:** BLOQUEO DE CRONOLOGÍA: El estado canónico de esta página no autoriza objetos nuevos. Un prop, motivo o cambio de estado sólo puede aparecer si esta página y celda lo introducen explícitamente. No añadas como decoración presagios, accesorios, hilos, carretes, notas, llaves, lupas, conchas, estrellas o magia de una escena futura. REALIDAD INICIAL: no existe hilo rojo, carrete, nota, lupa, llave, concha ni estrella como objeto; el laboratorio es frío y no emite magia.
 - **Verificación hacia atrás:** La página 03 (El libro rosa) debe sostener este estado antes de esta transición.
 - **Celdas con transición:** Sin transición interna adicional; mantener el bloqueo de página.

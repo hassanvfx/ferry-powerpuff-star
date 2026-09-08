@@ -1,0 +1,55 @@
+{
+  "schema": 3,
+  "id": "e1e888f4-9aea-468b-82da-1fb40e1b2198",
+  "at": "2026-09-08T16:49:24Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "f1bbc83b-a749-49a4-8eb6-8af251d447e2",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/f1bbc83b-a749-49a4-8eb6-8af251d447e2--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "f17c65475bb384d7edb1b14dcd8d5324be054786bc0d062f61745a20f9f55d54",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/e1e888f4-9aea-468b-82da-1fb40e1b2198.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "guide-watch",
+      "statement": "El gestor -guia puede mantenerse en watch y avanzar automáticamente de la guía descargada al final dependiente."
+    },
+    {
+      "ledger": "verification",
+      "id": "guide-watch-dry-run",
+      "statement": "Un ciclo seco de watch confirmó página 01 en fase guide; el dry-run de las 90 confirmó la misma dependencia sin red."
+    },
+    {
+      "ledger": "last_session",
+      "id": "guide-lock-current",
+      "statement": "El candado -guia se actualizó desde la función del gestor para reflejar los bytes fuente actuales."
+    },
+    {
+      "ledger": "timeline",
+      "id": "guide-lock-revalidated",
+      "statement": "La discrepancia de candado se detuvo antes de cualquier envío y se resolvió con un nuevo dry-run."
+    }
+  ],
+  "timeline": {
+    "summary": "Tras detectar una discrepancia de candado antes de cualquier envío, se volvió a fijar contra los bytes actuales y se validó el watch en seco."
+  },
+  "log": {
+    "summary": "El gestor guia→final ahora incluye watch y su candado se fijó contra las fuentes actuales verificadas."
+  },
+  "revises": [
+    "d714319f-495f-4b4f-b135-d213d1abe358"
+  ],
+  "retracts": [],
+  "resolves": []
+}

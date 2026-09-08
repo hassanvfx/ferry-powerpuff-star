@@ -1,0 +1,50 @@
+{
+  "schema": 3,
+  "id": "540d236e-2888-4fce-b973-addf62530a75",
+  "at": "2026-09-08T16:35:49Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "64abe638-469e-4a52-8a81-9ad286d0e45f",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/64abe638-469e-4a52-8a81-9ad286d0e45f--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "1c5de19feb0af4fc7fd9be15a167578fc1ec519938811e978f3ab0793688613b",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/540d236e-2888-4fce-b973-addf62530a75.md"
+  },
+  "reviews": {
+    "specification": "unchanged",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "verification",
+      "id": "kie-failed-json-parsing",
+      "statement": "Una prueba sin red confirmó que un JSON failed 422 con retorno no cero se procesa como fallo reintentable."
+    },
+    {
+      "ledger": "last_session",
+      "id": "failed-job-recovery",
+      "statement": "El gestor archiva los trabajos 01, 04, 07 y 10 cuando el nuevo proceso lea sus estados fallidos y programa backoff."
+    },
+    {
+      "ledger": "timeline",
+      "id": "stalled-jobs-diagnosed",
+      "statement": "Consultas de Kie confirmaron 422 para 01, 04 y 10, y 500 para 07."
+    }
+  ],
+  "timeline": {
+    "summary": "El reporte del operador reveló cuatro trabajos retenidos por un error de interpretación; consultas de sólo lectura confirmaron tres 422 y un 500 de Kie."
+  },
+  "log": {
+    "summary": "El gestor V5 ya reconoce como fallidos los JSON de Kie aunque kie-cli termine con salida no cero."
+  },
+  "revises": [
+    "32b9a6da-c9bb-43c6-b866-1c7bb97fb29b"
+  ],
+  "retracts": [],
+  "resolves": []
+}

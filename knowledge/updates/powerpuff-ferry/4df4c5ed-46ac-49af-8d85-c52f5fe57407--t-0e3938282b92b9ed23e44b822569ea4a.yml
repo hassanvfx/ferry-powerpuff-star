@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "4df4c5ed-46ac-49af-8d85-c52f5fe57407",
+  "at": "2026-09-08T17:16:27Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "a79f3c53-144a-4710-b489-3805db21ded6",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/a79f3c53-144a-4710-b489-3805db21ded6--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "ef60164634566cd97ff120718f00f870d5c23ca325d44ec7ca6a27c30fcac485",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/4df4c5ed-46ac-49af-8d85-c52f5fe57407.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "v7-current-prompt-lock",
+      "statement": "V7-guia se bloquea con el hash de las 90 parejas actuales de prompt final y guía."
+    },
+    {
+      "ledger": "verification",
+      "id": "v7-dry-run",
+      "statement": "El dry-run confirmó 90 páginas, capacidad cinco y fase inicial guide sin red."
+    },
+    {
+      "ledger": "goals",
+      "id": "v7-isolated-run",
+      "statement": "Disponer de una corrida V7 sin arte, estado ni recibos heredados de V5 o V6."
+    },
+    {
+      "ledger": "last_session",
+      "id": "v7-ready",
+      "statement": "V7-guia está lista para una autorización futura de --live."
+    },
+    {
+      "ledger": "timeline",
+      "id": "v7-config-request",
+      "statement": "El autor pidió configurar V7 a partir de los prompts actualizados."
+    }
+  ],
+  "timeline": {
+    "summary": "El autor solicitó una V7 configurada con los prompts actualizados recientemente."
+  },
+  "log": {
+    "summary": "Se preparó V7-guia aislada y bloqueada contra los prompts actuales; el dry-run de 90 páginas pasó."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

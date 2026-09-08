@@ -1,0 +1,32 @@
+{
+  "schema": 3,
+  "id": "5ba06680-70fc-40d8-993b-594297e4467f",
+  "at": "2026-09-08T16:44:52Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "638224c2-e523-4cc8-b91e-06f9dd29ca1e",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/638224c2-e523-4cc8-b91e-06f9dd29ca1e--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "cb70eedc53b67b631df242133da6fd8b7eda93062e105887b3e7452b4025e8ba",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/5ba06680-70fc-40d8-993b-594297e4467f.md"
+  },
+  "reviews": {
+    "specification": "unchanged",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [],
+  "timeline": {
+    "summary": "Se cerró la revisión editorial de diálogos: Zeus recibe el apodo mi Pakito y Hassan dice La música está bien, con correcciones de fluidez en el resto."
+  },
+  "log": {
+    "summary": "Se cerró la revisión editorial de diálogos: Zeus recibe el apodo mi Pakito y Hassan dice La música está bien, con correcciones de fluidez en el resto."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

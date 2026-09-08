@@ -4,6 +4,8 @@ Este sistema convierte la historia en **90 páginas individuales de cómic verti
 
 El [tratamiento visual 2:3](tratamiento-visual-2-3.md) es obligatorio para todas las páginas: mantiene la lectura de ojos, silueta, color, acción y lettering sin copiar una franquicia.
 
+Antes de cada imagen final, genera y revisa su [prompt de storyboard anotado](prompts-guia-90/README.md). Hay una guía por página: usa la misma retícula, y cada celda declara entorno, hora, personajes, vestuario, utilería, pose, mirada, texto, SFX y estado de continuidad. Esa lámina guía se pasa al orquestador junto con el prompt final y las hojas v2.
+
 ## Fuente actual: corpus a prompts
 
 Los 90 prompts de `prompts-90/` se generan localmente desde el corpus y el guion técnico; no activan Kie ni transmiten referencias. Cada prompt define la retícula, sus celdas, cámara, acción y una posición segura de lettering. Sólo el valor de `Texto impreso exacto` se dibuja entre comillas dobles: las etiquetas técnicas jamás son letras dentro de la viñeta. Si se cambia el corpus o el texto técnico, recompilar así:
@@ -37,6 +39,20 @@ python3 libro/produccion/scripts/verificar_continuidad.py
 La [biblia visual](biblia-visual.md) fija la continuidad de personajes, color, objetos y revisión de cada página.
 
 Para una prueba que no transmite fotografías privadas, añade `--approved-references-only`; entonces sólo se adjuntan la referencia de estilo y las hojas v2 aprobadas.
+
+### Índice de criaturas y lugares
+
+El [índice de continuidad](indice-de-continuidad.json) es la fuente única de qué imagen se adjunta a cada página. Cada asset registra su tipo, ruta, estado, descripción visual y sus páginas. El compilador incorpora esa declaración en los 90 prompts fuente bajo **REFERENCIAS DECLARADAS PARA ESTA PÁGINA**; al materializar un trabajo, `generar_paginas.py` añade además **REFERENCIAS VISUALES ADJUNTAS** con sólo los archivos que efectivamente viajan en ese payload. Por ello el modelo sabe qué ficha corresponde a la página, qué rol tiene (estilo, personaje, criatura o entorno) y si todavía requiere inclusión explícita por ser candidata.
+
+Las fichas v2 de Hassan y Ferry y la referencia de estilo están aprobadas. Las fichas de Zeus, Yohi, los caracoles, la araña y los cinco lugares son candidatas hasta revisión humana. No se adjuntan por defecto. Para inspeccionarlas de forma explícita en un dry-run —o después de aprobarlas, en una corrida real— añade:
+
+```bash
+python3 libro/produccion/scripts/generar_paginas.py \
+  --plan libro/produccion/plan-de-imagenes-90.json \
+  --page 16-zeus-aparece \
+  --approved-references-only \
+  --include-candidate-continuity-assets
+```
 
 ## Generar páginas con Kie
 

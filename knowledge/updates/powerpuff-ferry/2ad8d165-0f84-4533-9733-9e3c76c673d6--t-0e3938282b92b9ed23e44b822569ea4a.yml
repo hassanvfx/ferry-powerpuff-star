@@ -1,0 +1,32 @@
+{
+  "schema": 3,
+  "id": "2ad8d165-0f84-4533-9733-9e3c76c673d6",
+  "at": "2026-09-08T17:55:40Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "d58f3640-f4eb-4196-b350-636f4350b48e",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/d58f3640-f4eb-4196-b350-636f4350b48e--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "0fecce262d079d854f4c200c6042703aaf304f78c4eb59987583ff62ed7448b9",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/2ad8d165-0f84-4533-9733-9e3c76c673d6.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [],
+  "timeline": {
+    "summary": "Los prompts finales y las guías ahora bloquean por celda la raza o especie de Zeus, Yohi, los caracoles y la araña, con rasgos positivos y negativos verificables."
+  },
+  "log": {
+    "summary": "Los prompts finales y las guías ahora bloquean por celda la raza o especie de Zeus, Yohi, los caracoles y la araña, con rasgos positivos y negativos verificables."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

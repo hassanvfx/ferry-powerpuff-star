@@ -1,0 +1,32 @@
+{
+  "schema": 3,
+  "id": "844d2db5-2e8c-4b17-aa01-88ad75f32768",
+  "at": "2026-09-08T19:16:10Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "d58f3640-f4eb-4196-b350-636f4350b48e",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/d58f3640-f4eb-4196-b350-636f4350b48e--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "8a31e26ba786b3a0c3cc25ed4864370d95f314e43149fa75a717e07ff6cd0973",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/844d2db5-2e8c-4b17-aa01-88ad75f32768.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [],
+  "timeline": {
+    "summary": "Preparado el commit del paquete de producción de 90 páginas con prompts, guías, referencias activas y auditoría de especies; se excluyen corridas e imágenes generadas."
+  },
+  "log": {
+    "summary": "Preparado el commit del paquete de producción de 90 páginas con prompts, guías, referencias activas y auditoría de especies; se excluyen corridas e imágenes generadas."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

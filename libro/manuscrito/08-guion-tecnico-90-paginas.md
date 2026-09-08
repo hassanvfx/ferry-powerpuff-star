@@ -53,13 +53,13 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 **Retícula:** una viñeta superior de 48%; dos viñetas inferiores iguales.
 
-1. **superior panorámica — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Hassan cruza el laboratorio vacío con la bata doblada sobre un brazo y el libro rosa “Volver a mí” de Ferry Beltran sujeto con naturalidad en la otra mano.
+1. **superior panorámica — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Hassan cruza el laboratorio vacío con la bata doblada sobre un brazo y el libro rosa cerrado “Volver a mí” de Ferry Beltran sujeto con naturalidad en la otra mano; no lo está leyendo.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
    **Texto impreso exacto:** "A esta hora el laboratorio se siente más grande."
    **Texto diegético permitido:** "Volver a mí" — "Ferry Beltran"
 2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Un plano bajo sigue sus pasos por el suelo pulido.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Ya voy. Sólo quiero llegar, bañarme y dormir."
+   **Texto impreso exacto:** "Ya me voy. Sólo quiero llegar, bañarme y dormir."
    **Texto diegético permitido:** NINGUNO
 3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Desde una repisa, el matraz vacío queda atrás como una promesa.
    **Lettering:** cartela del narrador omnipresente; esquina superior izquierda de la celda, caja crema de borde negro; no cubrir rostro ni acción.
@@ -72,7 +72,7 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 1. **superior izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** En su habitación minimalista, sirve una copa pequeña, sobria y sin glamour.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Una copa y ya. Necesito bajar un poco."
+   **Texto impreso exacto:** "Una copa y ya. Necesito bajarle un poco."
    **Texto diegético permitido:** NINGUNO
 2. **superior derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Deja el vaso en una mesa lateral junto al libro rosa cerrado “Volver a mí”, de Ferry Beltran, con la portada orientada para leerse.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
@@ -89,7 +89,7 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 1. **superior izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** Hassan ajusta los audífonos.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "La frecuencia está bien. Ojalá mi cabeza también."
+   **Texto impreso exacto:** "La música está bien..."
    **Texto diegético permitido:** NINGUNO
 2. **superior derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Una onda azul fina nace de un auricular.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
@@ -177,7 +177,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto impreso exacto:** "aplausos lejanos"
    **Texto diegético permitido:** NINGUNO
 3. **inferior panorámica — plano general cinematográfico, profundidad visible y lectura de ambiente.** Hassan llega al borde del escenario, maravillado.
-   **Lettering:** globo de diálogo; superior izquierda de la celda, junto a la cabeza del hablante; cola clara al personaje, máximo 18% del área de la celda.
+   **Lettering:** globo de diálogo de Hassan; superior izquierda de la celda, globo redondeado junto a Hassan; cola clara dirigida a Hassan, máximo 18% del área de la celda.
    **Texto impreso exacto:** "¿Qué lugar es este? Siento que ya lo conozco."
    **Texto diegético permitido:** NINGUNO
 
@@ -211,7 +211,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto impreso exacto:** "vrrr"
    **Texto diegético permitido:** NINGUNO
 3. **inferior central — plano medio dinámico, gesto y acción perfectamente legibles.** Gira en el aire con seguridad atlética.
-   **Lettering:** globo de diálogo; superior izquierda de la celda, junto a la cabeza del hablante; cola clara al personaje, máximo 18% del área de la celda.
+   **Lettering:** globo de diálogo de Hassan; superior izquierda de la celda, globo redondeado junto a Hassan; cola clara dirigida a Hassan, máximo 18% del área de la celda.
    **Texto impreso exacto:** "Ferry… hasta dormido sigo pensando en ti."
    **Texto diegético permitido:** NINGUNO
 4. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Aterriza con una sonrisa cálida frente a Hassan.
@@ -245,7 +245,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto impreso exacto:** "Ven, te enseño el lugar donde cuido lo que amo."
    **Texto diegético permitido:** NINGUNO
 2. **celda derecha dominante — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Él responde tímidamente; el escenario se disuelve hacia un jardín cálido.
-   **Lettering:** globo de diálogo; superior derecha de la celda, junto a la cabeza del hablante; cola clara al personaje, máximo 18% del área de la celda.
+   **Lettering:** globo de diálogo de Hassan; superior derecha de la celda, globo redondeado junto a Hassan; cola clara dirigida a Hassan, máximo 18% del área de la celda.
    **Texto impreso exacto:** "Voy contigo. No sé a dónde, pero voy."
    **Texto diegético permitido:** NINGUNO
 
@@ -259,7 +259,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto diegético permitido:** NINGUNO
 2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Ferry se agacha a su altura sin perder elegancia.
    **Lettering:** globo de diálogo de Ferry; superior derecha de la celda, globo redondeado junto a Ferry; cola clara, máximo 18% del área de la celda.
-   **Texto impreso exacto:** "Todo bien, grandote. Estoy aquí contigo."
+   **Texto impreso exacto:** "Todo bien, mi Pakito. Estoy aquí contigo."
    **Texto diegético permitido:** NINGUNO
 3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Zeus mueve la cola al verla.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
@@ -276,7 +276,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto diegético permitido:** NINGUNO
 2. **superior derecha — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Ella le acaricia el lomo con ambas manos.
    **Lettering:** globo de diálogo de Ferry; superior derecha de la celda, globo redondeado junto a Ferry; cola clara, máximo 18% del área de la celda.
-   **Texto impreso exacto:** "Buen chico. Sabía que podías confiar."
+   **Texto impreso exacto:** "Buen chico. Ya sabía que podías confiar en mí."
    **Texto diegético permitido:** NINGUNO
 3. **inferior panorámica — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Un halo de escudo dorado los protege, suave y no agresivo.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
@@ -356,8 +356,8 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto impreso exacto:** "Todo a tu tiempo. Aquí nadie tiene que correr."
    **Texto diegético permitido:** NINGUNO
 3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Hassan observa que la calma de ella colorea el sueño de oro.
-   **Lettering:** globo de diálogo; superior izquierda de la celda, junto a la cabeza del hablante; cola clara al personaje, máximo 18% del área de la celda.
-   **Texto impreso exacto:** "Tienes una paciencia que yo todavía estoy aprendiendo."
+   **Lettering:** globo de diálogo de Hassan; superior izquierda de la celda, globo redondeado junto a Hassan; cola clara dirigida a Hassan, máximo 18% del área de la celda.
+   **Texto impreso exacto:** "Tienes una paciencia que yo todavía estoy aprendiendo a tener."
    **Texto diegético permitido:** NINGUNO
 
 ## 23. Un hogar a escala pequeña — 2 celdas
@@ -429,7 +429,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto impreso exacto:** "tac tac"
    **Texto diegético permitido:** NINGUNO
 2. **celda derecha dominante — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Ferry mira satisfecha mientras Hassan comprende la ternura de su fuerza.
-   **Lettering:** globo de diálogo; superior derecha de la celda, junto a la cabeza del hablante; cola clara al personaje, máximo 18% del área de la celda.
+   **Lettering:** globo de diálogo de Hassan; superior derecha de la celda, globo redondeado junto a Hassan; cola clara dirigida a Hassan, máximo 18% del área de la celda.
    **Texto impreso exacto:** "Tú sí te fijas en todo, hasta en lo que nadie ve."
    **Texto diegético permitido:** NINGUNO
 
@@ -467,7 +467,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto impreso exacto:** "Qué bueno que llegaste hasta aquí."
    **Texto diegético permitido:** NINGUNO
 3. **inferior panorámica — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Hassan da un paso hacia ella, atraído por el hilo rojo.
-   **Lettering:** globo de diálogo; superior izquierda de la celda, junto a la cabeza del hablante; cola clara al personaje, máximo 18% del área de la celda.
+   **Lettering:** globo de diálogo de Hassan; superior izquierda de la celda, globo redondeado junto a Hassan; cola clara dirigida a Hassan, máximo 18% del área de la celda.
    **Texto impreso exacto:** "No quiero despertar. Aquí todo se siente demasiado real."
    **Texto diegético permitido:** NINGUNO
 
@@ -493,7 +493,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto impreso exacto:** "fwoosh"
    **Texto diegético permitido:** NINGUNO
 2. **superior derecha — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Hassan estira la mano para seguirla.
-   **Lettering:** globo de diálogo; superior derecha de la celda, junto a la cabeza del hablante; cola clara al personaje, máximo 18% del área de la celda.
+   **Lettering:** globo de diálogo de Hassan; superior derecha de la celda, globo redondeado junto a Hassan; cola clara dirigida a Hassan, máximo 18% del área de la celda.
    **Texto impreso exacto:** "¡Ferry, espera! Quiero preguntarte algo."
    **Texto diegético permitido:** NINGUNO
 3. **inferior panorámica — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** El hilo rojo se tensa suavemente entre ambos, pero no la detiene.
@@ -536,7 +536,7 @@ Este dossier es la especificación de producción. Cada página define retícula
 **Retícula:** una viñeta superior de 48%; dos viñetas inferiores iguales.
 
 1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** Hassan intenta enfocar los renglones; siguen ilegibles.
-   **Lettering:** globo de diálogo; superior izquierda de la celda, junto a la cabeza del hablante; cola clara al personaje, máximo 18% del área de la celda.
+   **Lettering:** globo de diálogo de Hassan; superior izquierda de la celda, globo redondeado junto a Hassan; cola clara dirigida a Hassan, máximo 18% del área de la celda.
    **Texto impreso exacto:** "No entiendo la lista, pero siento que importa."
    **Texto diegético permitido:** NINGUNO
 2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Algunos trazos cambian un instante a iconos: cristal, nube y estrella.
@@ -544,7 +544,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto impreso exacto:** "Cristal. Nube. Estrella."
    **Texto diegético permitido:** NINGUNO
 3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Al levantar la vista, Ferry ya es sólo una luz lejana.
-   **Lettering:** globo de diálogo; superior izquierda de la celda, junto a la cabeza del hablante; cola clara al personaje, máximo 18% del área de la celda.
+   **Lettering:** globo de diálogo de Hassan; superior izquierda de la celda, globo redondeado junto a Hassan; cola clara dirigida a Hassan, máximo 18% del área de la celda.
    **Texto impreso exacto:** "No sé qué es esto, pero voy a buscarlo."
    **Texto diegético permitido:** NINGUNO
 
@@ -669,7 +669,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto diegético permitido:** NINGUNO
 3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Toma el matraz vacío con determinación tranquila.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Al laboratorio. Ahí por lo menos puedo empezar."
+   **Texto impreso exacto:** "Voy al laboratorio. Ahí por lo menos puedo empezar."
    **Texto diegético permitido:** NINGUNO
 
 ## 43. Regreso al laboratorio — 3 celdas
@@ -724,7 +724,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto diegético permitido:** NINGUNO
 4. **inferior derecha — plano general cinematográfico, profundidad visible y lectura de ambiente.** Hassan ordena sus dibujos como si armara una fórmula.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "¿Una receta de Ferry? Esto tiene que significar algo."
+   **Texto impreso exacto:** "¿Una receta de Ferry? Esto tiene que querer decir algo."
    **Texto diegético permitido:** NINGUNO
 
 ## 46. La receta visual — 3 celdas
@@ -767,7 +767,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto diegético permitido:** NINGUNO
 2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Lleva una pequeña caja para guardar hallazgos en la otra.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Empiezo por aquí. Algo tiene que hacer sentido."
+   **Texto impreso exacto:** "Empiezo por aquí. Algo de esto tiene que tener sentido."
    **Texto diegético permitido:** NINGUNO
 3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** El hilo rojo se asoma del bolsillo y apunta hacia el interior.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
@@ -831,7 +831,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto diegético permitido:** NINGUNO
 2. **inferior izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Una vaina de vainilla cae sobre su mano.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Vainilla. Suave, pero se queda."
+   **Texto impreso exacto:** "Vainilla. Suave, pero de las que se quedan."
    **Texto diegético permitido:** NINGUNO
 3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Canela y vainilla juntas emiten un brillo ámbar suave.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
@@ -874,7 +874,7 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 1. **celda izquierda alta — plano de establecimiento, composición clara y aire alrededor del sujeto.** Hassan sigue la proyección hasta un cajón de herramientas.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Trabajo y paciencia. Supongo que así se hacen las cosas."
+   **Texto impreso exacto:** "Trabajo y paciencia. Así se hacen las cosas, supongo."
    **Texto diegético permitido:** NINGUNO
 2. **celda derecha dominante — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Pequeños engranes encajan solos alrededor de la moneda.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
@@ -904,7 +904,7 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 1. **superior izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** En una repisa, Hassan encuentra una concha olvidada.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Una concha. ¿Por qué siento que la conozco?"
+   **Texto impreso exacto:** "Una concha. ¿Por qué siento que ya la conozco?"
    **Texto diegético permitido:** NINGUNO
 2. **superior derecha — plano medio dinámico, gesto y acción perfectamente legibles.** La limpia con cuidado.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
@@ -925,7 +925,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto diegético permitido:** NINGUNO
 2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Hassan endereza la planta y descubre una raíz firme.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Resistir y volver a crecer. Eso sí te lo reconozco."
+   **Texto impreso exacto:** "Resistir y volver a crecer. Eso sí te lo admiro."
    **Texto diegético permitido:** NINGUNO
 3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Una raíz luminosa atraviesa una pequeña piedra sin romper la maceta.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
@@ -955,7 +955,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto diegético permitido:** NINGUNO
 2. **inferior izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Una llave sencilla responde con un destello cuando el hilo rojo la roza.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Confianza. Esa sí cuesta encontrarla."
+   **Texto impreso exacto:** "Confianza. Esa sí cuesta ganársela."
    **Texto diegético permitido:** NINGUNO
 3. **inferior derecha — plano detalle, foco nítido en el objeto y profundidad de campo suave.** La llave abre un pequeño compartimento de luz en la caja de hallazgos.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
@@ -1002,7 +1002,7 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 1. **superior izquierda — plano de establecimiento, composición clara y aire alrededor del sujeto.** Ordena los hallazgos sobre la mesa en familias de color.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Todo tiene un lugar. Y esta nota también."
+   **Texto impreso exacto:** "Todo tiene un lugar. Esta nota también."
    **Texto diegético permitido:** NINGUNO
 2. **superior derecha — plano detalle, foco nítido en el objeto y profundidad de campo suave.** La nota proyecta nuevos iconos que aún faltan.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
@@ -1036,7 +1036,7 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 1. **celda izquierda alta — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Hassan compara la nota con los objetos reunidos.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Faltan cosas. Las últimas deben ser las importantes."
+   **Texto impreso exacto:** "Faltan cosas. Seguro las últimas son las importantes."
    **Texto diegético permitido:** NINGUNO
 2. **celda derecha dominante — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Los iconos restantes giran sobre la mesa, anunciando la receta completa.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
@@ -1074,7 +1074,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto diegético permitido:** NINGUNO
 2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** El laboratorio responde con líneas de constelación.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Entender para cuidar. Contigo lo veo más claro."
+   **Texto impreso exacto:** "Entender para cuidar. Contigo todo se ve más claro."
    **Texto diegético permitido:** NINGUNO
 3. **inferior central — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Lupa de luna curiosa: la lente refleja una luna con pequeños puntos de estrella. Ferry aparece como detective juvenil original, falda coral, abrigo corto y lupa plateada; energía investigadora sin vestuario reconocible.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
@@ -1208,7 +1208,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto diegético permitido:** NINGUNO
 2. **fila 1 derecha — plano medio dinámico, gesto y acción perfectamente legibles.** El líquido responde con ondas alegres.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Cuando llegas contenta, se me contagia."
+   **Texto impreso exacto:** "Cuando llegas contenta, se me contagia la alegría."
    **Texto diegético permitido:** NINGUNO
 3. **fila 2 izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Reloj de arena sereno: los granos caen despacio, suspendiendo el caos. Ferry aparece como escuchadora serena original, atuendo arena-azul y reloj de arena; energía paciente, paisaje minimalista de viento y agua.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
@@ -1237,7 +1237,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto diegético permitido:** NINGUNO
 2. **fila 1 derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Los pétalos se ordenan en espiral alrededor del vidrio.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Tus mensajes hacen que el día se sienta más cerca."
+   **Texto impreso exacto:** "Tus mensajes hacen que te sienta más cerca."
    **Texto diegético permitido:** NINGUNO
 3. **fila 2 izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Puente de pétalos: los pétalos forman un puente sobre el borde. Ferry aparece como constructora de puentes familiar original, vestido bordado coral y pétalos; energía de comprensión sin copiar personajes de cine.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
@@ -1274,7 +1274,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto diegético permitido:** NINGUNO
 4. **fila 2 derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Esa luz nutre las demás sin taparlas.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Cuidar a alguien diario también es amor."
+   **Texto impreso exacto:** "Cuidar a alguien todos los días también es amor."
    **Texto diegético permitido:** NINGUNO
 5. **fila 3 izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Llave de confianza: la llave abre una cerradura dibujada en luz. Ferry aparece como estudiosa confiable original, abrigo índigo, llave dorada y libro cerrado sin símbolos reconocibles; energía de confianza.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
@@ -1324,7 +1324,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto diegético permitido:** NINGUNO
 2. **centro izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Hassan intenta seguirlas con la lupa y se ríe de su propio esfuerzo.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Siempre estás preguntando cosas. Por eso nunca me aburro."
+   **Texto impreso exacto:** "Siempre estás preguntando cosas. Por eso contigo nunca me aburro."
    **Texto diegético permitido:** NINGUNO
 3. **centro derecha — plano medio dinámico, gesto y acción perfectamente legibles.** Las luciérnagas entran al matraz como puntos de cielo.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
@@ -1378,7 +1378,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto diegético permitido:** NINGUNO
 4. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Hassan toma aire antes de activar el mecanismo.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Ahora sí. Voy a hacerlo con cuidado."
+   **Texto impreso exacto:** "Ahora sí. Voy a hacerlo bien y con cuidado."
    **Texto diegético permitido:** NINGUNO
 
 ## 80. Primera descarga — 3 celdas
@@ -1391,7 +1391,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto diegético permitido:** NINGUNO
 2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** Una onda azul recorre la mesa como la música binaural del inicio.
    **Lettering:** pensamiento interior de Hassan; superior derecha de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Si algo va a pasar, las piezas ya están listas."
+   **Texto impreso exacto:** "Si algo va a pasar, ya están listas las piezas."
    **Texto diegético permitido:** NINGUNO
 3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** La onda se vuelve rosa-dorada al tocar el matraz.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
@@ -1412,7 +1412,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto diegético permitido:** NINGUNO
 3. **inferior central — plano medio dinámico, gesto y acción perfectamente legibles.** El matraz vibra, pero Hassan no retrocede.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Está funcionando… y no sé si debería asustarme."
+   **Texto impreso exacto:** "Está funcionando… y no sé si eso me da gusto o miedo."
    **Texto diegético permitido:** NINGUNO
 4. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Una espiral de pincel se expande desde el líquido.
    **Lettering:** efecto sonoro integrado; junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
@@ -1425,7 +1425,7 @@ Este dossier es la especificación de producción. Cada página define retícula
 
 1. **superior panorámica — plano de establecimiento, composición clara y aire alrededor del sujeto.** Hassan estabiliza un dial mientras una luz coral corre por su bata.
    **Lettering:** pensamiento interior de Hassan; superior izquierda de la celda, nube de pensamiento compacta junto a Hassan; máximo 22% del área de la celda, dos líneas legibles como máximo.
-   **Texto impreso exacto:** "Despacio. No quiero arruinarlo por querer correr."
+   **Texto impreso exacto:** "Despacio. No quiero arruinarlo por irme de golpe."
    **Texto diegético permitido:** NINGUNO
 2. **inferior izquierda — plano medio dinámico, gesto y acción perfectamente legibles.** En el reflejo del vidrio ve el escenario y el jardín del sueño.
    **Lettering:** cartela del narrador omnipresente; esquina superior izquierda de la celda, caja crema de borde negro; no cubrir rostro ni acción.
@@ -1475,7 +1475,7 @@ Este dossier es la especificación de producción. Cada página define retícula
 **Retícula:** dos celdas verticales: izquierda 42%, derecha 58%.
 
 1. **celda izquierda alta — plano de establecimiento, composición clara y aire alrededor del sujeto.** Hassan, pequeño, mira la estrella suspendida sobre el matraz.
-   **Lettering:** globo de diálogo; superior izquierda de la celda, junto a la cabeza del hablante; cola clara al personaje, máximo 18% del área de la celda.
+   **Lettering:** globo de diálogo de Hassan; superior izquierda de la celda, globo redondeado junto a Hassan; cola clara dirigida a Hassan, máximo 18% del área de la celda.
    **Texto impreso exacto:** "Ferry… te vi en sueños. Y ahora estás aquí."
    **Texto diegético permitido:** NINGUNO
 2. **celda derecha dominante — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Dentro de la estrella, las memorias de Ferry protegiendo a cada animal giran como constelaciones.
@@ -1496,7 +1496,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto impreso exacto:** "tinnn"
    **Texto diegético permitido:** NINGUNO
 3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** El hilo rojo vuelve suave hacia las muñecas de Hassan y de la silueta.
-   **Lettering:** globo de diálogo; superior izquierda de la celda, junto a la cabeza del hablante; cola clara al personaje, máximo 18% del área de la celda.
+   **Lettering:** globo de diálogo de Hassan; superior izquierda de la celda, globo redondeado junto a Hassan; cola clara dirigida a Hassan, máximo 18% del área de la celda.
    **Texto impreso exacto:** "No te inventé. Sólo te estaba buscando."
    **Texto diegético permitido:** NINGUNO
 
@@ -1530,7 +1530,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto impreso exacto:** "Al mar, obvio. Quiero enseñarte algo."
    **Texto diegético permitido:** NINGUNO
 3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Él la toma; el hilo rojo une sus muñecas con holgura y la estrella se vuelve pequeña.
-   **Lettering:** globo de diálogo; superior izquierda de la celda, junto a la cabeza del hablante; cola clara al personaje, máximo 18% del área de la celda.
+   **Lettering:** globo de diálogo de Hassan; superior izquierda de la celda, globo redondeado junto a Hassan; cola clara dirigida a Hassan, máximo 18% del área de la celda.
    **Texto impreso exacto:** "Juntos. Sin prisa y sin complicarnos la vida."
    **Texto diegético permitido:** NINGUNO
 
@@ -1568,7 +1568,7 @@ Este dossier es la especificación de producción. Cada página define retícula
    **Texto impreso exacto:** "shhh"
    **Texto diegético permitido:** NINGUNO
 2. **inferior izquierda — plano detalle, foco nítido en el objeto y profundidad de campo suave.** Hassan se une a ella y reconoce una concha dorada sobre la arena.
-   **Lettering:** globo de diálogo; superior derecha de la celda, junto a la cabeza del hablante; cola clara al personaje, máximo 18% del área de la celda.
+   **Lettering:** globo de diálogo de Hassan; superior derecha de la celda, globo redondeado junto a Hassan; cola clara dirigida a Hassan, máximo 18% del área de la celda.
    **Texto impreso exacto:** "La concha… entonces el mar también era parte de esto."
    **Texto diegético permitido:** NINGUNO
 3. **inferior derecha — primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.** Caminan de espaldas hacia el agua; el hilo rojo se vuelve luz sobre la playa y asciende hasta la estrella rosa-dorada.

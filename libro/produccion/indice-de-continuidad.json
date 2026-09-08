@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "project": "PowerPuff Ferry — índice de continuidad visual",
+  "attachment_policy": "El ejecutor adjunta siempre los assets aprobados que corresponden a la página. Los assets con estado candidate sólo se adjuntan con --include-candidate-continuity-assets después de revisión humana; el índice no constituye una aprobación editorial.",
+  "assets": [
+    {
+      "id": "style-reference",
+      "kind": "style",
+      "status": "approved",
+      "path": "../arte/referencias/chibi-superhero-comic-style-reference.png",
+      "description": "Tratamiento gráfico general original: línea, color plano, ritmo de cómic y proporción semi-chibi madura.",
+      "pages": { "ranges": [[1, 90]] }
+    },
+    {
+      "id": "hassan",
+      "kind": "character",
+      "status": "approved",
+      "path": "../arte/referencias/hassan-character-sheet-v2.png",
+      "description": "Hoja v2 aprobada de Hassan; su presencia por página la declara el campo references del plan.",
+      "pages": { "from_plan_references": true }
+    },
+    {
+      "id": "ferry",
+      "kind": "character",
+      "status": "approved",
+      "path": "../arte/referencias/ferry-character-sheet-v2.png",
+      "description": "Hoja v2 aprobada de Ferry; su presencia por página la declara el campo references del plan.",
+      "pages": { "from_plan_references": true }
+    },
+    {
+      "id": "zeus",
+      "kind": "creature",
+      "status": "candidate",
+      "path": "../arte/referencias/zeus-character-sheet-v3.png",
+      "description": "Zeus: Rottweiler adulto negro y fuego, de pelo corto, musculoso, con collar azul marino y placa Zeus.",
+      "pages": { "ranges": [[16, 19]], "values": [28, 69, 85] }
+    },
+    {
+      "id": "yohi",
+      "kind": "creature",
+      "status": "candidate",
+      "path": "../arte/referencias/yohi-character-sheet-v1.png",
+      "description": "Yohi: tortuga sulcata bebé terrestre, caparazón alto arena y patas gruesas escamosas.",
+      "pages": { "ranges": [[20, 23]], "values": [28, 69, 85] }
+    },
+    {
+      "id": "caracoles",
+      "kind": "creature",
+      "status": "candidate",
+      "path": "../arte/referencias/caracoles-character-sheet-v1.png",
+      "description": "Pareja fija de exactamente dos caracoles terrestres: cuerpos grises húmedos, conchas espiral marrón/ámbar y cuatro tentáculos.",
+      "pages": { "ranges": [[24, 25]], "values": [28, 69, 85] }
+    },
+    {
+      "id": "arana",
+      "kind": "creature",
+      "status": "candidate",
+      "path": "../arte/referencias/arana-character-sheet-v1.png",
+      "description": "Una araña tejedora pequeña de abdomen ovalado y exactamente ocho patas articuladas.",
+      "pages": { "ranges": [[26, 28]], "values": [69, 85] }
+    },
+    {
+      "id": "laboratorio-oficina",
+      "kind": "location",
+      "status": "candidate",
+      "path": "../arte/referencias/laboratorio-oficina-environment-sheet-v1.png",
+      "description": "Laboratorio/oficina minimalista de Hassan: blanco, acero y azul gris; escritorio, mesa de experimentos, monitor derecho y pasillo.",
+      "pages": { "ranges": [[1, 4], [40, 46], [62, 88]], "values": [89] }
+    },
+    {
+      "id": "casa-de-hassan",
+      "kind": "location",
+      "status": "candidate",
+      "path": "../arte/referencias/casa-de-hassan-environment-sheet-v1.png",
+      "description": "Casa minimalista de Hassan: habitación, pasillo, cocina, sala, patio y cajones de búsqueda; azul gris y blanco ordenado.",
+      "pages": { "ranges": [[5, 8], [36, 39], [47, 61]] }
+    },
+    {
+      "id": "escenario-onirico",
+      "kind": "location",
+      "status": "candidate",
+      "path": "../arte/referencias/escenario-onirico-environment-sheet-v1.png",
+      "description": "Escenario onírico del primer encuentro: plataforma coral, rosa y dorada, luces gráficas y público abstracto lejano.",
+      "pages": { "ranges": [[9, 15]] }
+    },
+    {
+      "id": "jardin-protector-de-ferry",
+      "kind": "location",
+      "status": "candidate",
+      "path": "../arte/referencias/jardin-protector-de-ferry-environment-sheet-v1.png",
+      "description": "Lugar especial de Ferry: jardín onírico de cuidado para seres pequeños, con senderos, sombra, hojas, agua y rincón de telaraña.",
+      "pages": { "ranges": [[16, 31]] }
+    },
+    {
+      "id": "costa",
+      "kind": "location",
+      "status": "candidate",
+      "path": "../arte/referencias/costa-environment-sheet-v1.png",
+      "description": "Costa final: carretera de llegada, dunas, playa abierta, mar teal y amanecer coral.",
+      "pages": { "ranges": [[89, 90]] }
+    }
+  ]
+}

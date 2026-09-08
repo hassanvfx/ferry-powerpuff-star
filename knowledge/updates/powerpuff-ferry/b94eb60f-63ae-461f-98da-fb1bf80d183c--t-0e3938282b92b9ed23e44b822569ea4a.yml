@@ -1,0 +1,32 @@
+{
+  "schema": 3,
+  "id": "b94eb60f-63ae-461f-98da-fb1bf80d183c",
+  "at": "2026-09-08T17:07:14Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "d58f3640-f4eb-4196-b350-636f4350b48e",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/d58f3640-f4eb-4196-b350-636f4350b48e--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "e54d955a428c625898694b02550d79e4aa334f0f150f7736c8e1010cde7a356d",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/b94eb60f-63ae-461f-98da-fb1bf80d183c.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [],
+  "timeline": {
+    "summary": "Los prompts guía ahora generan storyboards técnicos outline sketch draft por celda, con anotaciones visuales de dirección de arte y sin apariencia de página final."
+  },
+  "log": {
+    "summary": "Los prompts guía ahora generan storyboards técnicos outline sketch draft por celda, con anotaciones visuales de dirección de arte y sin apariencia de página final."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

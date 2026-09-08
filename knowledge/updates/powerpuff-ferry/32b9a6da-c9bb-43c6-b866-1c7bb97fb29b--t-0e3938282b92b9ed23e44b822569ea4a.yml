@@ -1,0 +1,55 @@
+{
+  "schema": 3,
+  "id": "32b9a6da-c9bb-43c6-b866-1c7bb97fb29b",
+  "at": "2026-09-08T16:26:23Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "64abe638-469e-4a52-8a81-9ad286d0e45f",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/64abe638-469e-4a52-8a81-9ad286d0e45f--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "02cb218b3b66e7142e8de55ff10633747b55c4731c2092cb6a606bf0a6f28ebc",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/32b9a6da-c9bb-43c6-b866-1c7bb97fb29b.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "queued-timeout",
+      "statement": "V5 exige queued_timeout_seconds=300 y sólo aplica el timeout a estados queued con submittedAt válido."
+    },
+    {
+      "ledger": "verification",
+      "id": "queued-timeout-test",
+      "statement": "Una prueba sin red verificó que un recibo queued de 301 segundos se archiva y programa su primer reintento."
+    },
+    {
+      "ledger": "last_session",
+      "id": "pretty-operator",
+      "statement": "El operador muestra JSON indentado con estado de trabajos, timeouts, descargas, envíos y progreso."
+    },
+    {
+      "ledger": "timeline",
+      "id": "queued-timeout-authorized",
+      "statement": "El autor autorizó explícitamente la reintención tras cinco minutos en cola."
+    }
+  ],
+  "timeline": {
+    "summary": "El autor pidió tratar un trabajo queued por más de cinco minutos como fallido reintentable y aumentar la verbosidad legible del operador."
+  },
+  "log": {
+    "summary": "V5 considera reintentable un estado queued de más de cinco minutos y muestra reportes JSON detallados."
+  },
+  "revises": [
+    "8cdc841a-2af0-4a93-8cfb-3df5e12bb3e5"
+  ],
+  "retracts": [],
+  "resolves": []
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 3,
+  "id": "63f8d469-8608-46c2-8726-9037622c9fa3",
+  "at": "2026-09-08T16:47:36Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "65c92262-e0bd-425b-a3d9-76585f900fed",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/65c92262-e0bd-425b-a3d9-76585f900fed--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "22a60714f1ed4ff1630a505ff171377b4e3d4b0f3be128419b3f213617c88348",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/63f8d469-8608-46c2-8726-9037622c9fa3.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [],
+  "timeline": {
+    "summary": "Se añadió un índice completo de texto visible por celda y se corrigió la atribución técnica de los globos hablados de Hassan."
+  },
+  "log": {
+    "summary": "Se añadió un índice completo de texto visible por celda y se corrigió la atribución técnica de los globos hablados de Hassan."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

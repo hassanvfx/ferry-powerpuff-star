@@ -230,6 +230,46 @@ function startMobilePositionTracking(reader) {
   sheets.forEach((sheet) => mobileObserver.observe(sheet));
 }
 
+function enableMouseDragScroll(reader) {
+  let pointerId;
+  let startY;
+  let startScrollTop;
+  let didDrag = false;
+  let suppressClickUntil = 0;
+
+  reader.addEventListener("pointerdown", (event) => {
+    if (event.pointerType !== "mouse" || event.button !== 0 || event.target.closest("button")) return;
+    pointerId = event.pointerId;
+    startY = event.clientY;
+    startScrollTop = reader.scrollTop;
+    didDrag = false;
+    reader.setPointerCapture(pointerId);
+  });
+  reader.addEventListener("pointermove", (event) => {
+    if (event.pointerId !== pointerId) return;
+    const distance = event.clientY - startY;
+    if (Math.abs(distance) > 5) didDrag = true;
+    if (!didDrag) return;
+    event.preventDefault();
+    reader.classList.add("is-mouse-dragging");
+    reader.scrollTop = startScrollTop - distance;
+  });
+  const finishDrag = (event) => {
+    if (event.pointerId !== pointerId) return;
+    if (reader.hasPointerCapture(pointerId)) reader.releasePointerCapture(pointerId);
+    if (didDrag) suppressClickUntil = Date.now() + 80;
+    reader.classList.remove("is-mouse-dragging");
+    pointerId = undefined;
+  };
+  reader.addEventListener("pointerup", finishDrag);
+  reader.addEventListener("pointercancel", finishDrag);
+  reader.addEventListener("click", (event) => {
+    if (Date.now() > suppressClickUntil) return;
+    event.preventDefault();
+    event.stopImmediatePropagation();
+  }, true);
+}
+
 function renderMobile() {
   if (mobileObserver) mobileObserver.disconnect();
   resetLightbox();
@@ -244,6 +284,7 @@ function renderMobile() {
     </section>`;
   const reader = root.querySelector(".mobile-reader");
   initializeLightbox(reader);
+  enableMouseDragScroll(reader);
   root.querySelector("[data-action='home']").addEventListener("click", goHome);
   root.querySelector("[data-action='toggle-guide']").addEventListener("click", toggleGuide);
   window.requestAnimationFrame(() => {

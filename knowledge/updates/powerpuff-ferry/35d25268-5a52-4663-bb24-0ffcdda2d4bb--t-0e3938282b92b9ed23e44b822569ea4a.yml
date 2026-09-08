@@ -1,0 +1,55 @@
+{
+  "schema": 3,
+  "id": "35d25268-5a52-4663-bb24-0ffcdda2d4bb",
+  "at": "2026-09-08T16:50:47Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "f1bbc83b-a749-49a4-8eb6-8af251d447e2",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/f1bbc83b-a749-49a4-8eb6-8af251d447e2--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "3b61923d141f46e6fdaad5a2014d227fb5f6e458018f6928de3cea2851b1144c",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/35d25268-5a52-4663-bb24-0ffcdda2d4bb.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "v6-guide-isolation",
+      "statement": "El flujo guia→final usa el id corrida-90-2k-2-3-v6-guia y no comparte rutas con V5."
+    },
+    {
+      "ledger": "verification",
+      "id": "v6-guide-dry-run",
+      "statement": "El dry-run V6 de página 01 pasó con fase inicial guide."
+    },
+    {
+      "ledger": "last_session",
+      "id": "v6-guide-config",
+      "statement": "La configuración anterior sin versión fue sustituida por corrida-90-2k-2-3-v6-guia.json."
+    },
+    {
+      "ledger": "timeline",
+      "id": "v6-guide-naming",
+      "statement": "El autor asignó la nueva ejecución dependiente a V6."
+    }
+  ],
+  "timeline": {
+    "summary": "El autor indicó que las salidas del nuevo flujo deben pertenecer a V6, no a una corrida guia sin versión."
+  },
+  "log": {
+    "summary": "La cola dependiente guia→final se aisló formalmente como V6."
+  },
+  "revises": [
+    "e1e888f4-9aea-468b-82da-1fb40e1b2198"
+  ],
+  "retracts": [],
+  "resolves": []
+}

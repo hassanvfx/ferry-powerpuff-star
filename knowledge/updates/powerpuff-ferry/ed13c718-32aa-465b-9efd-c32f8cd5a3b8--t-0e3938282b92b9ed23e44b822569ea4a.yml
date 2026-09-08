@@ -1,0 +1,53 @@
+{
+  "schema": 3,
+  "id": "ed13c718-32aa-465b-9efd-c32f8cd5a3b8",
+  "at": "2026-09-08T19:16:46Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "7cc9f760-f1e2-4242-b89f-26ae759adb95",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/7cc9f760-f1e2-4242-b89f-26ae759adb95--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "6d6de6f1248a9245a2c2f6e7dac022aaa6718de5cfc49f5ac7dd4ed9f2eda907",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/ed13c718-32aa-465b-9efd-c32f8cd5a3b8.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "mobile-mouse-drag",
+      "statement": "El feed vertical permite arrastrar con mouse en modo móvil y conserva touch nativo, rueda y scroll-snap."
+    },
+    {
+      "ledger": "verification",
+      "id": "mobile-mouse-drag-proof",
+      "statement": "Pruebas del publicador, sintaxis JS, diff y navegador local verificaron el feed móvil y aislamiento de PhotoSwipe."
+    },
+    {
+      "ledger": "last_session",
+      "id": "mobile-mouse-drag-ready",
+      "statement": "La edición V7 regenerada contiene la navegación por arrastre de mouse y está lista para publicación humana."
+    },
+    {
+      "ledger": "timeline",
+      "id": "mobile-mouse-drag-implemented",
+      "statement": "Se añadió umbral de arrastre y supresión de clic para evitar aperturas accidentales."
+    }
+  ],
+  "timeline": {
+    "summary": "2026-09-08: el lector móvil agregó arrastre vertical con mouse y supresión de clic tras drag."
+  },
+  "log": {
+    "summary": "El feed móvil añade navegación por arrastre de mouse sin reemplazar el gesto táctil nativo."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

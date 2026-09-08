@@ -1,0 +1,60 @@
+{
+  "schema": 3,
+  "id": "b05391d7-ba33-40df-9d03-0cc09da11e8e",
+  "at": "2026-09-08T16:02:37Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "64abe638-469e-4a52-8a81-9ad286d0e45f",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/64abe638-469e-4a52-8a81-9ad286d0e45f--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "24fd0185d20cc6a2329c25989f769727a491dba8304671d4f37c8e193e11f0ad",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/b05391d7-ba33-40df-9d03-0cc09da11e8e.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "production-contract",
+      "statement": "V5 permanece atada a los 90 prompts fuente sin cambios y no crea cron del sistema."
+    },
+    {
+      "ledger": "verification",
+      "id": "initial-receipts",
+      "statement": "Saldo autenticado 2080.0 y recibos locales para 01–05; todavía cero PNG."
+    },
+    {
+      "ledger": "goals",
+      "id": "production-progress",
+      "statement": "V5 continúa hasta las 90 páginas bajo los límites del gestor."
+    },
+    {
+      "ledger": "last_session",
+      "id": "automation",
+      "statement": "Automatización nativa de este chat activa; pausa ante no_credits, finalización o fallo."
+    },
+    {
+      "ledger": "timeline",
+      "id": "authorization",
+      "statement": "El autor autorizó reiniciar y continuar V5 tras actualizar la credencial local."
+    }
+  ],
+  "timeline": {
+    "summary": "El autor actualizó la credencial local, autorizó reiniciar V5 y autorizó la continuidad recurrente hasta completar las 90 páginas."
+  },
+  "log": {
+    "summary": "V5 inició producción con saldo renovado, cinco recibos iniciales y una automatización nativa de este chat."
+  },
+  "revises": [
+    "b6287501-3c87-4dc8-aaf8-61859aa9eea0"
+  ],
+  "retracts": [],
+  "resolves": []
+}

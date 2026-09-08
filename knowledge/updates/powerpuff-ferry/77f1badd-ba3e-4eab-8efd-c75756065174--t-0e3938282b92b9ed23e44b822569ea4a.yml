@@ -1,0 +1,32 @@
+{
+  "schema": 3,
+  "id": "77f1badd-ba3e-4eab-8efd-c75756065174",
+  "at": "2026-09-08T17:13:49Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "d58f3640-f4eb-4196-b350-636f4350b48e",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/d58f3640-f4eb-4196-b350-636f4350b48e--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "3a014cf20bf0a2c19e78470a8beb27480501ee26a0413e4cba8f37b727e554d8",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/77f1badd-ba3e-4eab-8efd-c75756065174.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [],
+  "timeline": {
+    "summary": "Los storyboards guía ahora anotan por celda siete dimensiones de continuidad: identidad, vestuario, espacio-tiempo, cámara, cuerpo, props y relevo."
+  },
+  "log": {
+    "summary": "Los storyboards guía ahora anotan por celda siete dimensiones de continuidad: identidad, vestuario, espacio-tiempo, cámara, cuerpo, props y relevo."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

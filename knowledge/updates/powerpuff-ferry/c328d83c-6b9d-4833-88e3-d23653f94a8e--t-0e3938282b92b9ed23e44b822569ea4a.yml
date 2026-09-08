@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "c328d83c-6b9d-4833-88e3-d23653f94a8e",
+  "at": "2026-09-08T15:46:37Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "64abe638-469e-4a52-8a81-9ad286d0e45f",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/64abe638-469e-4a52-8a81-9ad286d0e45f--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "38a06f2b742dab7e6905388cc067e35144247721a4e6f31422374bf5f7e1adb8",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/c328d83c-6b9d-4833-88e3-d23653f94a8e.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "parallel-v5-source-locked",
+      "statement": "V5 usa directamente los 90 prompts fuente ya materializados, sin página previa, y el gestor rechaza una fuente cuyo hash no coincida con el candado."
+    },
+    {
+      "ledger": "verification",
+      "id": "v5-independent-dry-run",
+      "statement": "El modo seco V5 confirmó 90 páginas 2K 2:3, cinco candidatos iniciales desde la página 01, pausa de tres segundos y cero estado previo."
+    },
+    {
+      "ledger": "goals",
+      "id": "v5-clean-run-prepared",
+      "statement": "Disponer de una corrida V5 limpia y aislada que pueda comenzar desde la página 01 tras autorización explícita."
+    },
+    {
+      "ledger": "last_session",
+      "id": "v5-awaiting-live-authorization",
+      "statement": "V5 está preparada y validada localmente; no existen cron ni heartbeat V5 y ningún envío remoto está autorizado todavía."
+    },
+    {
+      "ledger": "timeline",
+      "id": "v5-created-from-original-prompts",
+      "statement": "Se creó V5 desde prompts-90 originales ya materializados, sin regenerar ni copiar los ajustes de V4."
+    }
+  ],
+  "timeline": {
+    "summary": "V5 reemplaza operativamente el arranque contaminado de V4 y queda pendiente de autorización explícita para cualquier envío."
+  },
+  "log": {
+    "summary": "Se preparó V5 aislada desde los 90 prompts fuente sin regenerarlos ni reutilizar V4; el gestor ahora exige el hash bloqueado antes de cualquier ciclo."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

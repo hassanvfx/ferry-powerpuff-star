@@ -1,0 +1,32 @@
+{
+  "schema": 3,
+  "id": "15eb85c6-d6a7-4671-8ead-59fb22b99337",
+  "at": "2026-09-08T16:34:31Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "d58f3640-f4eb-4196-b350-636f4350b48e",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/d58f3640-f4eb-4196-b350-636f4350b48e--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "0419e7da2d9153f37912c5ba6442e7d48bb6f77eedeeeaf9886694a0bfbe4f3a",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/15eb85c6-d6a7-4671-8ead-59fb22b99337.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [],
+  "timeline": {
+    "summary": "Se añadieron 90 prompts de storyboard anotado, detallados por celda, para guiar al orquestador antes del arte final."
+  },
+  "log": {
+    "summary": "Se añadieron 90 prompts de storyboard anotado, detallados por celda, para guiar al orquestador antes del arte final."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

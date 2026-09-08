@@ -1,0 +1,32 @@
+{
+  "schema": 3,
+  "id": "44a11673-c1d1-4026-b903-5507d66b40c1",
+  "at": "2026-09-08T18:50:57Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "d58f3640-f4eb-4196-b350-636f4350b48e",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/d58f3640-f4eb-4196-b350-636f4350b48e--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "f4155b0569fec9274ae60860e0930061b23df4dc478584b90cca80b22220d807",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/44a11673-c1d1-4026-b903-5507d66b40c1.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [],
+  "timeline": {
+    "summary": "Las guías y prompts ahora derivan su leyenda de especies sólo de los animales activos por celda; la página 16 autoriza únicamente a Zeus y prohíbe introducir a Yohi."
+  },
+  "log": {
+    "summary": "Las guías y prompts ahora derivan su leyenda de especies sólo de los animales activos por celda; la página 16 autoriza únicamente a Zeus y prohíbe introducir a Yohi."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

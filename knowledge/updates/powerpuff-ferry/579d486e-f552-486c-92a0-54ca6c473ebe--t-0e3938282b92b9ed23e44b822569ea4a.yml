@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "579d486e-f552-486c-92a0-54ca6c473ebe",
+  "at": "2026-09-08T17:59:44Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "eb84e3fd-9970-40da-9512-6d7158f611e2",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/eb84e3fd-9970-40da-9512-6d7158f611e2--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "3ea1df9f77c29f88fa7cf03dd93f3510dc48d075836367b3d012983d0781ddc0",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/579d486e-f552-486c-92a0-54ca6c473ebe.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "v8-current-prompt-lock",
+      "statement": "V8-guia se bloquea contra los 90 prompts finales y guías actuales."
+    },
+    {
+      "ledger": "verification",
+      "id": "v8-dry-run",
+      "statement": "El dry-run confirmó 90 páginas, capacidad cinco y fase guide inicial sin red."
+    },
+    {
+      "ledger": "goals",
+      "id": "v8-isolated-run",
+      "statement": "Disponer de una corrida V8 sin arte, estado ni recibos heredados."
+    },
+    {
+      "ledger": "last_session",
+      "id": "v8-ready",
+      "statement": "V8-guia está preparada localmente y espera autorización de --live."
+    },
+    {
+      "ledger": "timeline",
+      "id": "v8-config-request",
+      "statement": "El autor pidió configurar V8 con los prompts recientes."
+    }
+  ],
+  "timeline": {
+    "summary": "El autor solicitó una V8 configurada con los prompts más recientes."
+  },
+  "log": {
+    "summary": "Se preparó V8-guia aislada y bloqueada contra las fuentes actuales; el dry-run de 90 páginas pasó."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

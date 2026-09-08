@@ -1,0 +1,55 @@
+{
+  "schema": 3,
+  "id": "a2aa4b8f-ee75-4a1b-aaf6-681c689a570a",
+  "at": "2026-09-08T17:01:15Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "f1bbc83b-a749-49a4-8eb6-8af251d447e2",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/f1bbc83b-a749-49a4-8eb6-8af251d447e2--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "1c49e180b02c2addfd8931a267f12478eb94cce7d6ff956ec88156eef4c5f3bd",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/a2aa4b8f-ee75-4a1b-aaf6-681c689a570a.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "v6-five-active",
+      "statement": "La prueba V6-guia tiene max_active=5."
+    },
+    {
+      "ledger": "verification",
+      "id": "v6-five-page-dry-run",
+      "statement": "El dry-run de cinco páginas confirmó capacidad 5 y las fases guía para 02–05; 01 aparece completa por su salida final local."
+    },
+    {
+      "ledger": "last_session",
+      "id": "v6-five-page-test",
+      "statement": "La siguiente prueba autorizada usa páginas 02–06 y sondeo de 30 segundos."
+    },
+    {
+      "ledger": "timeline",
+      "id": "v6-five-page-authorization",
+      "statement": "El autor autorizó la prueba dependiente de cinco páginas nuevas."
+    }
+  ],
+  "timeline": {
+    "summary": "El autor autorizó probar cinco páginas nuevas y redujo el sondeo a 30 segundos; la página 01 ya terminó en V6 y queda fuera de la tanda nueva."
+  },
+  "log": {
+    "summary": "V6-guia aumenta a cinco trabajos activos para una prueba de cinco páginas nuevas con sondeo de 30 segundos."
+  },
+  "revises": [
+    "35d25268-5a52-4663-bb24-0ffcdda2d4bb"
+  ],
+  "retracts": [],
+  "resolves": []
+}

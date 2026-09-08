@@ -99,6 +99,16 @@ button { font: inherit; }
 
 .mobile-reader::-webkit-scrollbar { display: none; }
 
+.mobile-reader.is-mouse-dragging {
+  scroll-snap-type: none;
+  cursor: grabbing;
+  user-select: none;
+}
+
+@media (pointer: fine) {
+  .mobile-reader { cursor: grab; }
+}
+
 .mobile-sheet {
   position: relative;
   display: grid;

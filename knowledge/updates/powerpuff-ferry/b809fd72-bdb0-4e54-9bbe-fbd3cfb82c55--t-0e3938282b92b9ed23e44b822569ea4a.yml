@@ -1,0 +1,53 @@
+{
+  "schema": 3,
+  "id": "b809fd72-bdb0-4e54-9bbe-fbd3cfb82c55",
+  "at": "2026-09-08T19:06:20Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "3b2c03f5-62b0-4ee5-85a4-837fd3edb70f",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/3b2c03f5-62b0-4ee5-85a4-837fd3edb70f--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "f224c513b81023300320185fd316a5c2479e4e49963d58ca18934ab3d7929f1d",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/b809fd72-bdb0-4e54-9bbe-fbd3cfb82c55.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "continuity-reference-catalog",
+      "statement": "El índice de continuidad define las fichas de criaturas y lugares, sus rutas, estado y páginas aplicables; las candidatas requieren inclusión explícita."
+    },
+    {
+      "ledger": "verification",
+      "id": "continuity-reference-catalog-validated",
+      "statement": "El verificador confirmó las rutas de doce assets, las asignaciones representativas y el uso obligatorio de Zeus v3."
+    },
+    {
+      "ledger": "last_session",
+      "id": "next-safe-step",
+      "statement": "Revisar visualmente las nueve fichas candidatas y promover sólo las aprobadas antes de una corrida real."
+    },
+    {
+      "ledger": "timeline",
+      "id": "continuity-reference-catalog-created",
+      "statement": "Se crearon las fichas de Zeus, Yohi, caracoles, araña y cinco lugares; el ejecutor ahora documenta cada referencia en el prompt materializado."
+    }
+  ],
+  "timeline": {
+    "summary": "Se incorporaron fichas de continuidad de criaturas y lugares y un índice que las adjunta explícitamente por página."
+  },
+  "log": {
+    "summary": "Se creó un catálogo de continuidad para criaturas y lugares, con nueve fichas candidatas y prompts que identifican cada referencia adjunta."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

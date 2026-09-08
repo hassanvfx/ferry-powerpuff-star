@@ -27,7 +27,7 @@ La realidad de Hassan es fría, limpia y geométrica; el sueño de Ferry entra e
 
 ### 04. Pasillo silencioso — 3 viñetas
 
-1. Hassan cruza el laboratorio vacío con la bata doblada sobre un brazo y el libro rosa “Volver a mí” de Ferry Beltran sujeto con naturalidad en la otra mano.
+1. Hassan cruza el laboratorio vacío con la bata doblada sobre un brazo y el libro rosa cerrado “Volver a mí” de Ferry Beltran sujeto con naturalidad en la otra mano; no lo está leyendo.
 2. Un plano bajo sigue sus pasos por el suelo pulido.
 3. Desde una repisa, el matraz vacío queda atrás como una promesa.
 

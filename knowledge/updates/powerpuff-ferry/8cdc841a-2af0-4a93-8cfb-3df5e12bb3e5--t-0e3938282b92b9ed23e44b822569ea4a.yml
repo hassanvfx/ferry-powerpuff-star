@@ -1,0 +1,55 @@
+{
+  "schema": 3,
+  "id": "8cdc841a-2af0-4a93-8cfb-3df5e12bb3e5",
+  "at": "2026-09-08T16:12:46Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "64abe638-469e-4a52-8a81-9ad286d0e45f",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/64abe638-469e-4a52-8a81-9ad286d0e45f--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "9e00c0bda1063c63766341b1d61602bc4d8bea19472a742e6d725ef158c7616a",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/8cdc841a-2af0-4a93-8cfb-3df5e12bb3e5.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "local-output-cache",
+      "statement": "Cada ciclo V5 registra como completado un PNG no vacío presente en output_dir y elimina registros cuyo archivo desapareció."
+    },
+    {
+      "ledger": "verification",
+      "id": "watch-and-cache",
+      "statement": "Compilación, un ciclo seco de watch y escaneo aislado confirmaron la salida por minuto y los PNG 02, 03 y 05."
+    },
+    {
+      "ledger": "last_session",
+      "id": "resumable-operator",
+      "statement": "El comando --live --watch --interval-seconds 60 opera desde recibos, estado y cache local y evita ciclos mutantes simultáneos."
+    },
+    {
+      "ledger": "timeline",
+      "id": "minute-watch-request",
+      "statement": "El autor solicitó observabilidad por minuto y reanudación basada en disco."
+    }
+  ],
+  "timeline": {
+    "summary": "El autor pidió un operador visible y reanudable que consulte cada minuto y use las salidas físicas como caché de terminación."
+  },
+  "log": {
+    "summary": "El gestor V5 incorpora modo continuo por minuto y caché persistente de PNGs locales terminados."
+  },
+  "revises": [
+    "b05391d7-ba33-40df-9d03-0cc09da11e8e"
+  ],
+  "retracts": [],
+  "resolves": []
+}

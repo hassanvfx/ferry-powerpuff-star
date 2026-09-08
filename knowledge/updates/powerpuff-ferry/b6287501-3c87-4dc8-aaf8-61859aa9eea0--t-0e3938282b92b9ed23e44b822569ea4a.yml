@@ -1,0 +1,55 @@
+{
+  "schema": 3,
+  "id": "b6287501-3c87-4dc8-aaf8-61859aa9eea0",
+  "at": "2026-09-08T15:52:59Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "64abe638-469e-4a52-8a81-9ad286d0e45f",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/64abe638-469e-4a52-8a81-9ad286d0e45f--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "d089794bbbe0d0f807643c6ac5f929cd16f77d19e122c2098219b7e33a60790f",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/b6287501-3c87-4dc8-aaf8-61859aa9eea0.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "v5-credit-halt",
+      "statement": "El gestor V5 debe detenerse persistentemente cuando Kie reporte créditos insuficientes, sin avanzar a otra página ni reintentar hasta una nueva autorización."
+    },
+    {
+      "ledger": "verification",
+      "id": "v5-credit-stop-verified",
+      "statement": "Kie devolvió HTTP 402 en la página 01; después del bloqueo, una invocación --live devolvió no_credits localmente y los conteos de jobs y PNGs fueron cero."
+    },
+    {
+      "ledger": "last_session",
+      "id": "v5-blocked-by-kie-credits",
+      "statement": "V5 está bloqueada por saldo insuficiente de Kie. Tras recargar saldo, requiere una autorización explícita para desbloquear y reanudar desde la página 01."
+    },
+    {
+      "ledger": "timeline",
+      "id": "v5-halted-on-credit-error",
+      "statement": "El primer envío V5 llegó a Kie, recibió saldo insuficiente y no creó un job de imagen; el estado se dejó detenido."
+    }
+  ],
+  "timeline": {
+    "summary": "El intento de iniciar V5 se detuvo en la página 01 con HTTP 402; la configuración ahora persiste el bloqueo de créditos."
+  },
+  "log": {
+    "summary": "Kie rechazó el primer envío V5 por saldo insuficiente; V5 quedó bloqueada persistentemente sin jobs ni salidas y no vuelve a intentar sin nueva autorización."
+  },
+  "revises": [
+    "c328d83c-6b9d-4833-88e3-d23653f94a8e"
+  ],
+  "retracts": [],
+  "resolves": []
+}

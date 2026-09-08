@@ -1,0 +1,53 @@
+{
+  "schema": 3,
+  "id": "1dbfa952-03e2-4c9d-b0dc-76dfebdeb5ae",
+  "at": "2026-09-08T19:09:29Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "3b2c03f5-62b0-4ee5-85a4-837fd3edb70f",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/3b2c03f5-62b0-4ee5-85a4-837fd3edb70f--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "841c4ef8a8636a6528331a2ccc873bb7f8d1a3098dff896006569261131d5c20",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/1dbfa952-03e2-4c9d-b0dc-76dfebdeb5ae.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "prompt-reference-manifest",
+      "statement": "Todo prompt fuente declara sus assets de continuidad previstos, su estado y su regla de uso antes de ejecutarse."
+    },
+    {
+      "ledger": "verification",
+      "id": "all-prompts-declare-reference-sheets",
+      "statement": "La recompilación y auditoría confirmaron que los 90 prompts contienen el encabezado de referencias y los seis casos representativos nombran sus archivos correctos."
+    },
+    {
+      "ledger": "last_session",
+      "id": "next-safe-step",
+      "statement": "Revisar visualmente las nueve fichas candidatas y promover sólo las aprobadas antes de una corrida real."
+    },
+    {
+      "ledger": "timeline",
+      "id": "source-prompt-reference-manifest-propagated",
+      "statement": "El compilador propagó el índice de continuidad a los 90 prompts fuente."
+    }
+  ],
+  "timeline": {
+    "summary": "La cola de 90 prompts incorporó la declaración estática de referencias de estilo, personaje, criatura y lugar por página."
+  },
+  "log": {
+    "summary": "Los 90 prompts fuente ahora declaran de forma explícita las fichas de continuidad previstas para su ejecución."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}
