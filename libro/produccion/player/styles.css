@@ -254,6 +254,39 @@ button { font: inherit; }
     max-height: calc(100dvh - 10.25rem);
   }
 
+  .spread:not(.spread--single) {
+    display: flex;
+    width: fit-content;
+    max-width: 94vw;
+    gap: 0;
+    overflow: hidden;
+    border: 4px solid var(--ink);
+    border-radius: 1.25rem;
+    box-shadow: var(--shadow);
+    line-height: 0;
+  }
+
+  .spread:not(.spread--single) .comic-image {
+    width: auto;
+    height: auto;
+    max-width: calc((94vw - 8px) / 2);
+    max-height: calc(100dvh - 10.75rem);
+    flex: 0 1 auto;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .spread:not(.spread--single) .spread-page {
+    display: flex;
+    overflow: hidden;
+    flex: 0 1 auto;
+  }
+
+  .spread:not(.spread--single) .comic-image {
+    transform: scale(1.015);
+  }
+
   .reader-nav {
     position: fixed;
     z-index: 3;

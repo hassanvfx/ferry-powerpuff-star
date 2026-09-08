@@ -1,0 +1,53 @@
+{
+  "schema": 3,
+  "id": "58d8704c-6c13-4ef5-86c4-c740a302fad3",
+  "at": "2026-09-08T18:45:50Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "7cc9f760-f1e2-4242-b89f-26ae759adb95",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/7cc9f760-f1e2-4242-b89f-26ae759adb95--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "cd4d97e6171fa3c704d8082f567728997513ded68d499d32497f4ddd403ccf5a",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/58d8704c-6c13-4ef5-86c4-c740a302fad3.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "desktop-spread-frame",
+      "statement": "Los interiores desktop comparten un marco exterior continuo, sin gap, con altura determinada por el arte renderizado."
+    },
+    {
+      "ledger": "verification",
+      "id": "desktop-spread-frame-proof",
+      "statement": "La revisión local a 1039x1153 confirmó páginas unidas y ausencia de franja vertical."
+    },
+    {
+      "ledger": "last_session",
+      "id": "desktop-spread-frame-ready",
+      "statement": "La edición V7 regenerada incorpora el marco único desktop y queda lista para publicación humana."
+    },
+    {
+      "ledger": "timeline",
+      "id": "desktop-spread-frame-implemented",
+      "statement": "Se eliminó letterbox y separación central del spread desktop."
+    }
+  ],
+  "timeline": {
+    "summary": "2026-09-08: el layout desktop se ajustó a las dimensiones reales del spread."
+  },
+  "log": {
+    "summary": "El spread desktop ahora muestra ambos interiores en un único marco sin letterbox ni separación central."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

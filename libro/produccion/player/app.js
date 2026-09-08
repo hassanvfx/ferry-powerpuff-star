@@ -125,7 +125,10 @@ function renderDesktop() {
   root.innerHTML = `
     <section class="desktop-reader" aria-label="Lector de cómic">
       <div class="spread ${single ? "spread--single" : ""}">
-        ${view.map((page) => imageMarkup(page, page.kind === "cover" ? "cover-image" : "")).join("")}
+        ${view.map((page) => {
+          const image = imageMarkup(page, page.kind === "cover" ? "cover-image" : "");
+          return single ? image : `<div class="spread-page">${image}</div>`;
+        }).join("")}
       </div>
       ${desktopIndex === 0 ? '<p class="cover-hint">Clic o → para comenzar</p>' : ""}
       <nav class="reader-nav" aria-label="Navegación del cómic">
