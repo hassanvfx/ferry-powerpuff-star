@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "9dbea74c-0225-48c9-bb7d-043985fe1046",
+  "at": "2026-09-08T06:02:28Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "fac1bc0b-bd9d-4b9f-b7e4-f793c51bb3d4",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/fac1bc0b-bd9d-4b9f-b7e4-f793c51bb3d4--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "75e0526479bf3df205269f3b19d27747d03d913aa8ac4d45e58077fd58e822da",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/9dbea74c-0225-48c9-bb7d-043985fe1046.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "external-reference-consent",
+      "statement": "La generación que use el rostro de Ferry sólo puede comenzar tras autorización explícita para cargar sus dos fotos privadas a Kie."
+    },
+    {
+      "ledger": "goals",
+      "id": "complete-book-production",
+      "statement": "La obra requiere ilustrar, aprobar y ensamblar las 32 páginas; ese hito está a la espera del consentimiento para el piloto Kie."
+    },
+    {
+      "ledger": "verification",
+      "id": "no-active-production-jobs",
+      "statement": "No hay trabajos activos, arte generado, arte aprobado ni PDF; el dry run no transmitió referencias ni consumió créditos."
+    },
+    {
+      "ledger": "last_session",
+      "id": "production-waiting-for-consent",
+      "statement": "El desarrollo editorial está cerrado y la producción visual espera permiso específico para la transferencia de fotos privadas a Kie."
+    },
+    {
+      "ledger": "timeline",
+      "id": "production-handoff-paused",
+      "statement": "Se verificó la ausencia de trabajos externos y se documentó el handoff pendiente de consentimiento."
+    }
+  ],
+  "timeline": {
+    "summary": "La cola Kie fue comprobada en seco sin transmisión; no hay arte externo ni salida PDF todavía."
+  },
+  "log": {
+    "summary": "Se confirmó que no hay arte ni trabajos Kie activos; el siguiente hito requiere el consentimiento explícito para referencias privadas y créditos."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

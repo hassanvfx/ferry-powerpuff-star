@@ -1,0 +1,97 @@
+#!/usr/bin/env bash
+# OS-aware, approval-gated prerequisites for the ClineFlow installer.
+
+clineflow_prereq_os() {
+  case "${CLINEFLOW_TEST_OS:-$(uname -s)}" in
+    Darwin) printf 'macOS' ;;
+    Linux) printf 'Linux' ;;
+    MINGW*|MSYS*|CYGWIN*|Windows_NT) printf 'Windows' ;;
+    *) printf 'Unsupported' ;;
+  esac
+}
+
+clineflow_prereq_manager() {
+  case "$1" in
+    macOS) if command -v brew >/dev/null 2>&1; then printf 'brew'; fi; return 0 ;;
+    Linux)
+      local manager
+      for manager in apt-get dnf pacman zypper apk; do
+        if command -v "$manager" >/dev/null 2>&1; then printf '%s' "$manager"; return 0; fi
+      done
+      return 0
+      ;;
+  esac
+  return 0
+}
+
+clineflow_prereq_manual_help() {
+  case "$1" in
+    macOS) printf 'Install Homebrew (https://brew.sh), then run: brew install git curl' ;;
+    Linux) printf 'Install Git and curl with your distribution package manager.' ;;
+    Windows) printf 'Run the native PowerShell bootstrap with winget, or install Git for Windows manually.' ;;
+    *) printf 'Install Git and curl manually, then rerun the installer.' ;;
+  esac
+}
+
+clineflow_prereq_command() {
+  local manager=$1 packages=$2
+  case "$manager" in
+    brew) printf 'brew install %s' "$packages" ;;
+    apt-get) printf 'sudo apt-get install -y %s' "$packages" ;;
+    dnf) printf 'sudo dnf install -y %s' "$packages" ;;
+    pacman) printf 'sudo pacman -S --needed --noconfirm %s' "$packages" ;;
+    zypper) printf 'sudo zypper --non-interactive install %s' "$packages" ;;
+    apk) printf 'sudo apk add %s' "$packages" ;;
+  esac
+}
+
+clineflow_prereq_install() {
+  local manager=$1 packages=$2
+  case "$manager" in
+    brew) brew install $packages ;;
+    apt-get) sudo apt-get install -y $packages ;;
+    dnf) sudo dnf install -y $packages ;;
+    pacman) sudo pacman -S --needed --noconfirm $packages ;;
+    zypper) sudo zypper --non-interactive install $packages ;;
+    apk) sudo apk add $packages ;;
+  esac
+}
+
+clineflow_prereq_run() {
+  local dry_run=$1 assume_yes=$2 os arch manager packages='' git_state downloader_state command_text answer
+  os=$(clineflow_prereq_os)
+  arch=$(uname -m 2>/dev/null || printf 'unknown')
+  if command -v git >/dev/null 2>&1; then git_state="available ($(git --version 2>/dev/null || printf 'unknown version'))"; else git_state='missing'; packages='git'; fi
+  if command -v curl >/dev/null 2>&1; then downloader_state='curl available';
+  elif command -v wget >/dev/null 2>&1; then downloader_state='wget available';
+  else downloader_state='missing'; packages="${packages:+$packages }curl"; fi
+  manager=$(clineflow_prereq_manager "$os")
+
+  printf '%s\n' 'ClineFlow prerequisite plan'
+  printf '%s\n' "  OS: $os ($arch)"
+  printf '%s\n' "  Git: $git_state"
+  printf '%s\n' "  Downloader: $downloader_state"
+  printf '%s\n' "  Package manager: ${manager:-not detected}"
+  if [ -z "$packages" ]; then printf '%s\n' '  Action: no changes; prerequisites already available'; return 0; fi
+  if [ -z "$manager" ]; then
+    printf '%s\n' '  Action: no automatic installation available'
+    printf '%s\n' "WARNING: Prerequisites are unresolved. $(clineflow_prereq_manual_help "$os")" >&2
+    return 0
+  fi
+  command_text=$(clineflow_prereq_command "$manager" "$packages")
+  printf '%s\n' "  Action: install $packages"
+  printf '%s\n' "  Command: $command_text"
+  [ "$dry_run" = true ] && return 0
+  if [ "$assume_yes" != true ]; then
+    if [ ! -r /dev/tty ]; then printf '%s\n' 'Prerequisites were not installed: explicit approval is required (rerun with --yes).' >&2; return 0; fi
+    printf 'Approve this prerequisite installation? [y/N] ' > /dev/tty
+    read -r answer < /dev/tty || answer=''
+    case "$answer" in y|Y|yes|YES) ;; *) printf '%s\n' 'Prerequisites were not installed: approval declined.' >&2; return 0;; esac
+  fi
+  if ! clineflow_prereq_install "$manager" "$packages"; then
+    printf '%s\n' "WARNING: Prerequisite installation failed. $(clineflow_prereq_manual_help "$os")" >&2
+    return 0
+  fi
+  command -v git >/dev/null 2>&1 || printf '%s\n' "WARNING: Git is still unavailable. $(clineflow_prereq_manual_help "$os")" >&2
+  command -v curl >/dev/null 2>&1 || command -v wget >/dev/null 2>&1 || printf '%s\n' "WARNING: No downloader is available. $(clineflow_prereq_manual_help "$os")" >&2
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 3,
+  "id": "fff016e5-a96b-48e5-a5ed-5631426b763d",
+  "at": "2026-09-08T05:54:06Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "fac1bc0b-bd9d-4b9f-b7e4-f793c51bb3d4",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/fac1bc0b-bd9d-4b9f-b7e4-f793c51bb3d4--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "5e7185c18a74353e9b62e32240adff341e70d353e7eef3204856e99fdc841f04",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/fff016e5-a96b-48e5-a5ed-5631426b763d.md"
+  },
+  "reviews": {
+    "specification": "unchanged",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "verification",
+      "id": "external-generation-authority",
+      "statement": "La cola local se validó; la generación real está pendiente de autorización explícita para enviar fotos privadas a Kie."
+    },
+    {
+      "ledger": "last_session",
+      "id": "awaiting-kie-photo-consent",
+      "statement": "Esperar autorización explícita para subir las dos fotos de Ferry a Kie y consumir créditos en la página piloto 07-ferry-porrista."
+    },
+    {
+      "ledger": "timeline",
+      "id": "kie-pilot-paused",
+      "statement": "La prueba piloto no creó un trabajo: la red aislada falló y la subida externa no fue autorizada."
+    }
+  ],
+  "timeline": {
+    "summary": "La obra quedó lista para generación; Kie no recibió fotos ni creó un trabajo porque la subida de referencias privadas requiere autorización específica."
+  },
+  "log": {
+    "summary": "La producción de la página piloto quedó pendiente de autorización explícita para subir las referencias privadas de Ferry a Kie."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

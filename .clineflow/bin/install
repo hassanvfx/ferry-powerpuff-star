@@ -1,0 +1,168 @@
+#!/usr/bin/env bash
+# Install ClineFlow from the release manifest without replacing user-owned content.
+set -euo pipefail
+
+BASE_URL="${CLINEFLOW_BASE_URL:-https://raw.githubusercontent.com/hassanvfx/clineflow/main/template}"
+FORCE=false
+DRY_RUN=false
+ASSUME_YES=false
+KNOWLEDGE_LOG_EXISTED=false
+BEGIN='<!-- BEGIN CLINEFLOW OKF RULES -->'
+END='<!-- END CLINEFLOW OKF RULES -->'
+
+usage() {
+  cat <<'EOF'
+Usage: curl -fsSL https://raw.githubusercontent.com/hassanvfx/clineflow/main/template/.clineflow/bin/install | bash [--] [options]
+
+Options:
+  --dry-run  Verify and show what would be installed.
+  --force    Refresh manifest-managed runtime files only.
+  --yes      Approve the detected prerequisite installation without prompting.
+  --help     Show this help.
+EOF
+}
+
+while [ "$#" -gt 0 ]; do
+  case "$1" in
+    --dry-run) DRY_RUN=true ;;
+    --force) FORCE=true ;;
+    --yes|-y) ASSUME_YES=true ;;
+    --help|-h) usage; exit 0 ;;
+    *) echo "Unknown option: $1" >&2; usage >&2; exit 2 ;;
+  esac
+  shift
+done
+
+[ -e knowledge/log.md ] && KNOWLEDGE_LOG_EXISTED=true
+
+fetch() {
+  local source=$1 destination=$2
+  if command -v curl >/dev/null 2>&1; then curl -fsSL "$BASE_URL/$source" -o "$destination"
+  elif command -v wget >/dev/null 2>&1; then wget -q "$BASE_URL/$source" -O "$destination"
+  else echo "ERROR: curl or wget is required." >&2; return 1; fi
+}
+
+sha256_file() {
+  if command -v sha256sum >/dev/null 2>&1; then sha256sum "$1" | awk '{print $1}'
+  elif command -v shasum >/dev/null 2>&1; then shasum -a 256 "$1" | awk '{print $1}'
+  else echo "ERROR: sha256sum or shasum is required." >&2; return 1; fi
+}
+
+read_value() { sed -n "s/^$1=//p" "$2" | head -n 1; }
+valid_relative_path() { case "$1" in ''|/*|..|../*|*/../*|*/..) return 1 ;; *) return 0 ;; esac; }
+
+temporary=$(mktemp -d "${TMPDIR:-/tmp}/clineflow-install-XXXXXX")
+cleanup() { rm -rf "$temporary"; }
+trap cleanup EXIT
+trap 'exit 130' HUP INT TERM
+manifest="$temporary/release-manifest"
+stage="$temporary/stage"
+mkdir -p "$stage"
+fetch ".clineflow/release-manifest" "$manifest"
+release_version=$(read_value release_version "$manifest")
+release_schema=$(read_value migration_schema "$manifest")
+[ -n "$release_version" ] && [ -n "$release_schema" ] || { echo "ERROR: invalid release manifest." >&2; exit 1; }
+
+while IFS='|' read -r record policy mode source target expected; do
+  [ "$record" = payload ] || continue
+  valid_relative_path "$source" && valid_relative_path "$target" || { echo "ERROR: unsafe manifest path." >&2; exit 1; }
+  staged="$stage/$source"
+  mkdir -p "$(dirname "$staged")"
+  fetch "$source" "$staged"
+  [ "$(sha256_file "$staged")" = "$expected" ] || { echo "ERROR: checksum mismatch for $source" >&2; exit 1; }
+  case "$mode" in 0755) chmod +x "$staged" ;; 0644) chmod 0644 "$staged" ;; *) echo "ERROR: unsupported mode $mode" >&2; exit 1 ;; esac
+done < "$manifest"
+
+if [ -f .clineflow/state ] && [ "$FORCE" != true ]; then
+  echo "ClineFlow is already installed. Update it with: ./.clineflow/bin/update" >&2
+  exit 1
+fi
+
+prereq="$stage/.clineflow/bin/prereqs"
+if [ -f "$prereq" ]; then . "$prereq"; clineflow_prereq_run "$DRY_RUN" "$ASSUME_YES" || true; fi
+
+ensure_git_repository() {
+  if ! command -v git >/dev/null 2>&1; then echo "WARNING: Git is unavailable; repository initialization was skipped." >&2; return; fi
+  if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then echo "Git repository already available."; return; fi
+  if [ "$DRY_RUN" = true ]; then echo "Would initialize a Git repository in: $(pwd)"; return; fi
+  if git init -q && git rev-parse --is-inside-work-tree >/dev/null 2>&1; then echo "Initialized Git repository in: $(pwd)"
+  else echo "WARNING: repository initialization failed; ClineFlow installation will continue." >&2; fi
+}
+ensure_git_repository
+
+if [ "$DRY_RUN" = true ]; then
+  echo "Would install ClineFlow $release_version from the verified release manifest."
+  echo "Would create missing user fixtures and merge one managed rules block into agent configurations."
+  echo "Existing knowledge, documentation, and content outside ClineFlow markers would be preserved."
+  exit 0
+fi
+
+if { [ -d clineflow/bin ] || [ -f VERSION ] || [ -f validate-okf ]; } && [ "$FORCE" != true ]; then
+  echo "A legacy ClineFlow installation was detected. Use the universal updater:" >&2
+  echo "curl -fsSL https://raw.githubusercontent.com/hassanvfx/clineflow/main/update.sh | bash" >&2
+  exit 1
+fi
+
+atomic_copy() {
+  local source=$1 destination=$2 mode=$3 temp
+  mkdir -p "$(dirname "$destination")"
+  temp="$destination.clineflow-tmp.$$"
+  cp "$source" "$temp"
+  case "$mode" in 0755) chmod +x "$temp" ;; 0644) chmod 0644 "$temp" ;; esac
+  mv "$temp" "$destination"
+}
+
+mkdir -p .clineflow/bin knowledge/journals docs
+[ -e .clineflow/.owned-agent-files ] || : > .clineflow/.owned-agent-files
+
+while IFS='|' read -r record policy mode source target expected; do
+  [ "$record" = payload ] || continue
+  case "$policy" in
+    managed)
+      if [ -e "$target" ] && [ "$FORCE" != true ]; then echo "preserved managed file: $target"
+      else atomic_copy "$stage/$source" "$target" "$mode"; echo "installed: $target"; fi
+      ;;
+    fixture)
+      if [ -e "$target" ]; then echo "preserved user fixture: $target"
+      else atomic_copy "$stage/$source" "$target" "$mode"; echo "installed fixture: $target"; fi
+      ;;
+    agent) ;;
+  esac
+done < "$manifest"
+
+record_owned_agent() { grep -qxF "$1" .clineflow/.owned-agent-files 2>/dev/null || printf '%s\n' "$1" >> .clineflow/.owned-agent-files; }
+write_block() { printf '%s\n' "$BEGIN"; cat "$stage/configs/rules.template.md"; printf '\n%s\n' "$END"; }
+block_status() {
+  local destination=$1 begins ends begin_line end_line
+  begins=$(grep -cFx "$BEGIN" "$destination" 2>/dev/null || true); ends=$(grep -cFx "$END" "$destination" 2>/dev/null || true)
+  if [ "$begins" -eq 0 ] && [ "$ends" -eq 0 ]; then echo none
+  elif [ "$begins" -eq 1 ] && [ "$ends" -eq 1 ]; then
+    begin_line=$(grep -nFx "$BEGIN" "$destination" | cut -d: -f1); end_line=$(grep -nFx "$END" "$destination" | cut -d: -f1)
+    [ "$begin_line" -lt "$end_line" ] && echo valid || echo malformed
+  else echo malformed; fi
+}
+install_agent() {
+  local destination=$1 status temp begin_line end_line
+  mkdir -p "$(dirname "$destination")"
+  if [ ! -e "$destination" ]; then write_block > "$destination"; record_owned_agent "file:$destination"; echo "installed agent configuration: $destination"; return; fi
+  status=$(block_status "$destination")
+  [ "$status" != malformed ] || { echo "WARNING: malformed ClineFlow markers; preserved $destination" >&2; return; }
+  temp="$temporary/agent.tmp"
+  if [ "$status" = none ]; then { cat "$destination"; printf '\n'; write_block; } > "$temp"; atomic_copy "$temp" "$destination" 0644; record_owned_agent "block:$destination"; echo "merged ClineFlow rules into: $destination"; return; fi
+  begin_line=$(grep -nFx "$BEGIN" "$destination" | cut -d: -f1); end_line=$(grep -nFx "$END" "$destination" | cut -d: -f1)
+  head -n $((begin_line - 1)) "$destination" > "$temp"; write_block >> "$temp"; tail -n +$((end_line + 1)) "$destination" >> "$temp"
+  atomic_copy "$temp" "$destination" 0644
+  echo "refreshed ClineFlow rules in: $destination"
+}
+for agent_file in .clinerules AGENTS.md CLAUDE.md .github/copilot-instructions.md .windsurf/rules/clineflow.md; do install_agent "$agent_file"; done
+
+if [ "$KNOWLEDGE_LOG_EXISTED" = true ]; then
+  echo "preserved existing knowledge projections; run the schema-2 migration before rebuilding them"
+else
+  ".clineflow/bin/knowledge" --root . sync
+fi
+
+atomic_copy "$manifest" .clineflow/release-manifest 0644
+printf 'release_version=%s\nmigration_schema=%s\n' "$release_version" "$release_schema" > "$temporary/state"
+atomic_copy "$temporary/state" .clineflow/state 0644
+echo "ClineFlow $release_version installed. Verify with: ./.clineflow/bin/doctor"

@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "3ca29040-26f4-4005-a3da-1939f3224c64",
+  "at": "2026-09-08T05:36:37Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "fac1bc0b-bd9d-4b9f-b7e4-f793c51bb3d4",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/fac1bc0b-bd9d-4b9f-b7e4-f793c51bb3d4--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "067c6310c738fcb9490971f42a22a206102d12e603dedeb2db8e7f5aed4d74bf",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/3ca29040-26f4-4005-a3da-1939f3224c64.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "comic-mute-format",
+      "statement": "El libro será un álbum horizontal de cómic mudo: realidad fría, sueño cálido y 29 ingredientes revelados como iconos."
+    },
+    {
+      "ledger": "goals",
+      "id": "visual-story-arc",
+      "statement": "La historia conecta el sueño de Hassan, el conjuro y la playa como un arco visual completo."
+    },
+    {
+      "ledger": "verification",
+      "id": "storyboard-structure",
+      "statement": "La escaleta debe incluir cada beat confirmado y enlazarse desde el mapa editorial."
+    },
+    {
+      "ledger": "last_session",
+      "id": "comic-storyboard-ready",
+      "statement": "El siguiente paso es escoger el ritmo final para las 29 incorporaciones y comenzar los prompts/guiones de página."
+    },
+    {
+      "ledger": "timeline",
+      "id": "comic-storyboard-defined",
+      "statement": "Se registró el formato narrativo y la escaleta visual inicial."
+    }
+  ],
+  "timeline": {
+    "summary": "El autor definió la historia visual de Hassan y Ferry; se convirtió en una escaleta lista para ilustración."
+  },
+  "log": {
+    "summary": "Se definió el formato de álbum horizontal de cómic mudo y la escaleta visual del sueño, la receta y la llegada a la playa."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "e58b45db-e906-4f32-8e71-f61c7bf7027c",
+  "at": "2026-09-08T06:04:22Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "fac1bc0b-bd9d-4b9f-b7e4-f793c51bb3d4",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/fac1bc0b-bd9d-4b9f-b7e4-f793c51bb3d4--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "317dc561a0629da34cf57df953c1f94500a06526bff2e26c46ec3be94c897846",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/e58b45db-e906-4f32-8e71-f61c7bf7027c.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "ingredient-29-creativity",
+      "statement": "El último ingrediente es Pincel de creatividad infinita; dibuja la espiral rosa-dorada que inicia la estrella."
+    },
+    {
+      "ledger": "goals",
+      "id": "complete-29-ingredient-arc",
+      "statement": "Las 29 cualidades deben incluir la creatividad como culminación independiente y visualmente decisiva."
+    },
+    {
+      "ledger": "verification",
+      "id": "creativity-replacement-propagated",
+      "statement": "La receta, escaleta, guion, lectura, mapa, plan y guía de arte usan el nuevo ingrediente; el valor anterior no permanece en los artefactos de producción."
+    },
+    {
+      "ledger": "last_session",
+      "id": "creativity-final-ingredient",
+      "statement": "El ingrediente 29 quedó definido como creatividad y se preparó un piloto sin rostros para validar el lenguaje visual."
+    },
+    {
+      "ledger": "timeline",
+      "id": "creativity-replaces-redundancy",
+      "statement": "El autor priorizó la creatividad como cierre de los 29 ingredientes."
+    }
+  ],
+  "timeline": {
+    "summary": "Se sustituyó el ingrediente 29 por Pincel de creatividad infinita y se conectó con el nacimiento de la estrella."
+  },
+  "log": {
+    "summary": "El ingrediente final ahora es creatividad; su trazo activa la estrella y reemplaza un valor afectivo ya representado."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

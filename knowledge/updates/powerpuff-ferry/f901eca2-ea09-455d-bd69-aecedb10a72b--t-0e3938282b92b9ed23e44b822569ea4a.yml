@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "f901eca2-ea09-455d-bd69-aecedb10a72b",
+  "at": "2026-09-08T07:44:32Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "2b28abab-d596-4e5f-8e63-395e04eaeef1",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/2b28abab-d596-4e5f-8e63-395e04eaeef1--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "f0a17e0131d28b4055ccb2e004466524e62377d718671f81cfcf9dabda12a7fe",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/f901eca2-ea09-455d-bd69-aecedb10a72b.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "90-page-visual-comic",
+      "statement": "La obra vigente es un cómic visual de 90 páginas individuales 6x9, con entre 2 y 6 viñetas por página y sin texto legible dentro de las imágenes."
+    },
+    {
+      "ledger": "goals",
+      "id": "complete-90-page-story",
+      "statement": "Desarrollar la historia original como corpus coherente de 90 páginas, preservando sus 29 cualidades."
+    },
+    {
+      "ledger": "verification",
+      "id": "90-page-corpus-prompt-queue",
+      "statement": "El corpus contiene 90 páginas consecutivas, el plan 90 entradas de 2–6 viñetas y la compilación materializa 90 prompts locales."
+    },
+    {
+      "ledger": "last_session",
+      "id": "90-page-corpus-ready",
+      "statement": "El corpus y la cola local de 90 prompts están listos para revisión creativa; no se generó arte ni se enviaron referencias privadas."
+    },
+    {
+      "ledger": "timeline",
+      "id": "90-page-comic-defined",
+      "statement": "Se definió y compiló la versión de 90 páginas del cómic puramente visual."
+    }
+  ],
+  "timeline": {
+    "summary": "El autor amplió la historia original a un cómic visual de 90 páginas, sin texto legible y con 2–6 viñetas por página."
+  },
+  "log": {
+    "summary": "Se desarrolló el cómic visual a 90 páginas y se derivaron 90 prompts locales desde un corpus panel a panel."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

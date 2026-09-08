@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "29e6a62c-e2ce-4d88-87a1-c40a9286d83f",
+  "at": "2026-09-08T08:01:51Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "3391fe8e-6138-4b55-a019-b70b5142debe",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/3391fe8e-6138-4b55-a019-b70b5142debe--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "07ab4e37b25ba158677b3508b636c7f6cddaa30b85387c5978d317ae3a8eadfd",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/29e6a62c-e2ce-4d88-87a1-c40a9286d83f.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "lettering-production-contract",
+      "statement": "Sólo el valor de Texto impreso exacto puede dibujarse; las etiquetas técnicas nunca aparecen dentro del arte."
+    },
+    {
+      "ledger": "goals",
+      "id": "preproduction-prompt-polish",
+      "statement": "Completar una pasada editorial de continuidad, layout y lettering antes del piloto visual."
+    },
+    {
+      "ledger": "verification",
+      "id": "lettering-cell-audit",
+      "statement": "La cola de 90 prompts fue auditada: ids consecutivos, 2–6 celdas, texto entre comillas o SILENCIO y contrato tipográfico presente."
+    },
+    {
+      "ledger": "last_session",
+      "id": "preproduction-pass-complete",
+      "statement": "Los 90 guiones técnicos fueron pulidos localmente y están listos para revisión humana antes de generar un piloto."
+    },
+    {
+      "ledger": "timeline",
+      "id": "preproduction-lettering-contract-defined",
+      "statement": "Se añadió un contrato por celda para impedir que el generador imprima instrucciones técnicas."
+    }
+  ],
+  "timeline": {
+    "summary": "Antes de producción, se separó el texto imprimible de las etiquetas técnicas y se fijó su posición segura en cada celda."
+  },
+  "log": {
+    "summary": "Se completó la pasada de preproducción: continuidad de 90 páginas y contrato seguro de lettering por celda."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

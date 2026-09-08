@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# ClineFlow 3 tenant-scoped knowledge command.
+set -euo pipefail
+SCRIPT_DIR=$(cd "$(dirname "$0")/.." && pwd)
+exec python3 "$SCRIPT_DIR/lib/knowledge.py" "$@"

@@ -1,0 +1,70 @@
+#!/usr/bin/env bash
+# Diagnose an installed ClineFlow release without changing it.
+set -u
+STRICT="${1:-}"
+[ "$STRICT" = "--help" ] && { echo "Usage: ./.clineflow/bin/doctor [--strict]"; exit 0; }
+errors=0
+check() { [ -f "$1" ] && echo "PASS: $2 ($1)" || { echo "ERROR: Missing $2: $1" >&2; errors=$((errors+1)); }; }
+sha256_file() {
+  if command -v sha256sum >/dev/null 2>&1; then sha256sum "$1" | awk '{print $1}'
+  elif command -v shasum >/dev/null 2>&1; then shasum -a 256 "$1" | awk '{print $1}'
+  else return 1; fi
+}
+read_value() { sed -n "s/^$1=//p" "$2" 2>/dev/null | head -n 1; }
+manual_help() {
+  case "$(uname -s 2>/dev/null || true)" in
+    Darwin) printf 'Install with Homebrew: brew install git curl' ;;
+    Linux) printf 'Install Git and curl with your Linux package manager.' ;;
+    MINGW*|MSYS*|CYGWIN*) printf 'Install Git for Windows, then rerun doctor.' ;;
+    *) printf 'Install Git and curl, then rerun doctor.' ;;
+  esac
+}
+
+if command -v git >/dev/null 2>&1; then
+  echo "PASS: Git executable ($(git --version 2>/dev/null || printf 'unknown version'))"
+  git rev-parse --is-inside-work-tree >/dev/null 2>&1 && echo "PASS: Git repository" || { echo "ERROR: Not inside a Git repository" >&2; errors=$((errors+1)); }
+else echo "ERROR: Missing Git executable. $(manual_help)" >&2; errors=$((errors+1)); fi
+if command -v curl >/dev/null 2>&1; then echo "PASS: downloader (curl)"
+elif command -v wget >/dev/null 2>&1; then echo "PASS: downloader (wget)"
+else echo "ERROR: Missing downloader (curl or wget). $(manual_help)" >&2; errors=$((errors+1)); fi
+
+check .clineflow/state "installed release state"
+check .clineflow/release-manifest "release manifest"
+check .clineflow/VERSION "release version"
+if [ -f .clineflow/state ] && [ -f .clineflow/release-manifest ] && [ -f .clineflow/VERSION ]; then
+  state_version=$(read_value release_version .clineflow/state)
+  state_schema=$(read_value migration_schema .clineflow/state)
+  manifest_version=$(read_value release_version .clineflow/release-manifest)
+  manifest_schema=$(read_value migration_schema .clineflow/release-manifest)
+  file_version=$(tr -d '\r\n' < .clineflow/VERSION)
+  if [ "$state_version" = "$manifest_version" ] && [ "$state_version" = "$file_version" ] && [ "$state_schema" = "$manifest_schema" ]; then
+    echo "PASS: release state ($state_version, schema $state_schema)"
+  else echo "ERROR: release version or migration schema is inconsistent" >&2; errors=$((errors+1)); fi
+
+  while IFS='|' read -r record policy mode source target expected; do
+    [ "$record" = payload ] && [ "$policy" = managed ] || continue
+    if [ ! -f "$target" ]; then echo "ERROR: Missing managed payload: $target" >&2; errors=$((errors+1)); continue; fi
+    actual=$(sha256_file "$target" 2>/dev/null || true)
+    if [ "$actual" = "$expected" ]; then echo "PASS: managed payload ($target)"
+    else echo "ERROR: Managed payload differs from its release manifest: $target" >&2; errors=$((errors+1)); fi
+    [ "$mode" != 0755 ] || [ -x "$target" ] || { echo "ERROR: Managed command is not executable: $target" >&2; errors=$((errors+1)); }
+  done < .clineflow/release-manifest
+fi
+
+managed_agent=false
+for agent_file in AGENTS.md CLAUDE.md .clinerules .github/copilot-instructions.md .windsurf/rules/clineflow.md; do
+  if [ -f "$agent_file" ] && [ "$(grep -cFx '<!-- BEGIN CLINEFLOW OKF RULES -->' "$agent_file" 2>/dev/null || true)" -eq 1 ] && [ "$(grep -cFx '<!-- END CLINEFLOW OKF RULES -->' "$agent_file" 2>/dev/null || true)" -eq 1 ]; then managed_agent=true; fi
+done
+[ "$managed_agent" = true ] && echo "PASS: managed project agent instructions" || { echo "ERROR: Missing a valid ClineFlow rules block in project agent instructions" >&2; errors=$((errors+1)); }
+
+check knowledge/index.md "OKF bundle index"
+check knowledge/log.md "OKF bundle log"
+check knowledge/journals/index.md "journal index"
+check knowledge/journals/TASK_TEMPLATE.md "Engineering Journal template"
+check .clineflow/bin/validate-okf "OKF validator"
+check .clineflow/bin/validate-knowledge-sync "knowledge synchronization validator"
+check .clineflow/bin/knowledge "tenant knowledge command"
+check .clineflow/lib/knowledge.py "tenant knowledge core"
+if [ -x .clineflow/bin/validate-okf ]; then .clineflow/bin/validate-okf ${STRICT:+"$STRICT"} || errors=$((errors+1)); fi
+[ "$errors" -eq 0 ] || exit 1
+echo "ClineFlow doctor: healthy."

@@ -1,0 +1,3 @@
+# ClineFlow core parser dependency. The command uses JSON-form YAML records,
+# and accepts PyYAML when it is already available for broader YAML inspection.
+PyYAML==6.0.2

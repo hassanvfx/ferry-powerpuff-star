@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "f9160aee-1aaf-4b4b-bea6-cac0fd92c602",
+  "at": "2026-09-08T05:45:49Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "fac1bc0b-bd9d-4b9f-b7e4-f793c51bb3d4",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/fac1bc0b-bd9d-4b9f-b7e4-f793c51bb3d4--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "9a8dc135061f5faebe0297d18bd92b9b3362c9b0c0feff81ccb1e8be79e000eb",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/f9160aee-1aaf-4b4b-bea6-cac0fd92c602.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "individual-pages-6x9",
+      "statement": "Cada escena se genera como una página de cómic vertical 2:3, compatible con el formato final individual 6x9."
+    },
+    {
+      "ledger": "goals",
+      "id": "kie-lulu-pipeline",
+      "statement": "Crear y validar una cola Kie reproducible y un ensamblador de PDF para el interior de Lulu."
+    },
+    {
+      "ledger": "verification",
+      "id": "kie-dry-run",
+      "statement": "La página 02-laboratorio produjo un payload Kie correcto de imagen a imagen, 2:3, 2K y sin transmisión de la foto."
+    },
+    {
+      "ledger": "last_session",
+      "id": "production-system-ready",
+      "statement": "El siguiente paso es revisar prompts, ejecutar una página piloto con --live y aprobarla antes de enviar la cola completa."
+    },
+    {
+      "ledger": "timeline",
+      "id": "individual-pages-defined",
+      "statement": "Se reemplazó el concepto de placas 16:9 por páginas individuales verticales 6x9."
+    }
+  ],
+  "timeline": {
+    "summary": "El formato se corrigió de placas horizontales a páginas individuales verticales 6x9; la prueba Kie en seco pasó."
+  },
+  "log": {
+    "summary": "Se implementó un sistema Kie para 22 páginas individuales 6x9 y un ensamblador de interior Lulu con sangrado."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "aa190126-41fe-439a-927a-69e3c09c434d",
+  "at": "2026-09-08T07:56:17Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "80021f4d-ff78-416b-9090-df2bebf34118",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/80021f4d-ff78-416b-9090-df2bebf34118--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "f9c0575d9e27d0eacbaf007567737cab1e183d875e74e491c30830fd2ce510fe",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/aa190126-41fe-439a-927a-69e3c09c434d.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "90-page-dialogue-comic",
+      "statement": "La obra vigente es un cómic de 90 páginas 6x9 con 2–6 celdas, diálogo, cartelas y SFX exactos entre comillas dobles."
+    },
+    {
+      "ledger": "goals",
+      "id": "production-ready-technical-script",
+      "statement": "Cada página debe disponer de un guion técnico verificable antes de generar arte."
+    },
+    {
+      "ledger": "verification",
+      "id": "technical-prompt-coverage",
+      "statement": "Los 90 prompts contienen retícula, celdas enumeradas y una instrucción de texto literal entre comillas o SILENCIO por celda."
+    },
+    {
+      "ledger": "last_session",
+      "id": "technical-prompts-ready",
+      "statement": "El dossier técnico y los 90 prompts locales están listos para revisión de voz y diseño; no se usó un generador de imágenes."
+    },
+    {
+      "ledger": "timeline",
+      "id": "technical-dialogue-prompts-defined",
+      "statement": "Se definió la producción de prompts con layout, cámara, diálogo y SFX por celda."
+    }
+  ],
+  "timeline": {
+    "summary": "El autor pidió que los prompts indiquen celda por celda el layout, la acción y el diálogo entre comillas."
+  },
+  "log": {
+    "summary": "Se convirtió la cola de 90 páginas en guiones técnicos con retícula, celdas, diálogo literal y SFX."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

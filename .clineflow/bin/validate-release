@@ -1,0 +1,121 @@
+#!/usr/bin/env bash
+# Validate the source release manifest and migration-maintenance contract.
+set -euo pipefail
+SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
+if repository_root=$(git -C "$SCRIPT_DIR" rev-parse --show-toplevel 2>/dev/null); then ROOT=$repository_root
+else ROOT=$(cd "$SCRIPT_DIR/../../.." && pwd); fi
+cd "$ROOT"
+MANIFEST=template/.clineflow/release-manifest
+DASHBOARD_MANIFEST=template/.clineflow/dashboard-component-manifest
+AGAINST=''
+[ "${1:-}" = "--against" ] && { AGAINST="${2:-}"; [ -n "$AGAINST" ] || { echo "Usage: $0 [--against GIT_REF]" >&2; exit 2; }; }
+[ "${1:-}" = "--help" ] && { echo "Usage: $0 [--against GIT_REF]"; exit 0; }
+[ -f "$MANIFEST" ] || { echo "ERROR: missing $MANIFEST" >&2; exit 1; }
+sha256_file() {
+  if command -v sha256sum >/dev/null 2>&1; then sha256sum "$1" | awk '{print $1}'
+  else shasum -a 256 "$1" | awk '{print $1}'; fi
+}
+read_value() { sed -n "s/^$1=//p" "$2" | head -n 1; }
+valid_relative_path() { case "$1" in ''|/*|..|../*|*/../*|*/..) return 1 ;; *) return 0 ;; esac; }
+version=$(read_value release_version "$MANIFEST")
+schema=$(read_value migration_schema "$MANIFEST")
+case "$version" in 20??.??.??.[0-9]*) ;; *) echo "ERROR: release_version must use YYYY.MM.DD.patch" >&2; exit 1 ;; esac
+case "$schema" in ''|*[!0-9]*) echo "ERROR: migration_schema must be numeric" >&2; exit 1 ;; esac
+[ "$(tr -d '\r\n' < template/.clineflow/VERSION)" = "$version" ] || { echo "ERROR: .clineflow/VERSION differs from the manifest" >&2; exit 1; }
+
+sources="$({ sed -n 's/^payload|[^|]*|[^|]*|\([^|]*\)|.*$/\1/p' "$MANIFEST"; } | sort)"
+targets="$({ sed -n 's/^payload|[^|]*|[^|]*|[^|]*|\([^|]*\)|.*$/\1/p' "$MANIFEST"; } | sort)"
+[ -n "$sources" ] || { echo "ERROR: manifest has no payloads" >&2; exit 1; }
+[ "$(printf '%s\n' "$sources" | uniq -d)" = '' ] || { echo "ERROR: duplicate manifest source" >&2; exit 1; }
+[ "$(printf '%s\n' "$targets" | uniq -d)" = '' ] || { echo "ERROR: duplicate manifest target" >&2; exit 1; }
+
+while IFS='|' read -r record policy mode source target expected; do
+  [ "$record" = payload ] || continue
+  valid_relative_path "$source" && valid_relative_path "$target" || { echo "ERROR: unsafe manifest path" >&2; exit 1; }
+  case "$policy" in managed|fixture|agent) ;; *) echo "ERROR: invalid policy for $source" >&2; exit 1 ;; esac
+  case "$mode" in 0644|0755) ;; *) echo "ERROR: invalid mode for $source" >&2; exit 1 ;; esac
+  [ -f "template/$source" ] || { echo "ERROR: missing source template/$source" >&2; exit 1; }
+  [ "$(sha256_file "template/$source")" = "$expected" ] || { echo "ERROR: stale checksum for $source" >&2; exit 1; }
+  if [ "$mode" = 0755 ]; then [ -x "template/$source" ] || { echo "ERROR: $source must be executable" >&2; exit 1; }; fi
+done < "$MANIFEST"
+
+while IFS= read -r runtime_source; do
+  relative=${runtime_source#template/}
+  [ "$relative" = .clineflow/release-manifest ] && continue
+  printf '%s\n' "$sources" | grep -qxF "$relative" || { echo "ERROR: unmanaged runtime file $relative" >&2; exit 1; }
+done < <(find template/.clineflow -type f | sort)
+while IFS= read -r fixture_source; do
+  relative=${fixture_source#template/}
+  printf '%s\n' "$sources" | grep -qxF "$relative" || { echo "ERROR: unmanaged fixture $relative" >&2; exit 1; }
+done < <(find template/knowledge -type f | sort)
+for required_source in configs/rules.template.md docs/durable-development-methodology.md; do
+  printf '%s\n' "$sources" | grep -qxF "$required_source" || { echo "ERROR: unmanaged required source $required_source" >&2; exit 1; }
+done
+
+[ -f "$DASHBOARD_MANIFEST" ] || { echo "ERROR: missing optional dashboard manifest" >&2; exit 1; }
+for required_dashboard_source in .clineflow/bin/dashboard .clineflow/dashboard-component-manifest; do
+  printf '%s\n' "$sources" | grep -qxF "$required_dashboard_source" || { echo "ERROR: unmanaged dashboard bootstrap source $required_dashboard_source" >&2; exit 1; }
+done
+dashboard_sources=$(sed -n 's/^file|\([^|]*\)|.*$/\1/p' "$DASHBOARD_MANIFEST" | sort)
+while IFS='|' read -r record source target expected; do
+  [ "$record" = file ] || continue
+  valid_relative_path "$source" && valid_relative_path "$target" || { echo "ERROR: unsafe optional dashboard path" >&2; exit 1; }
+  [ -f "template/optional/dashboard/$source" ] || { echo "ERROR: missing optional dashboard source $source" >&2; exit 1; }
+  [ "$(sha256_file "template/optional/dashboard/$source")" = "$expected" ] || { echo "ERROR: stale optional dashboard checksum for $source" >&2; exit 1; }
+done < "$DASHBOARD_MANIFEST"
+while IFS= read -r optional_source; do
+  relative=${optional_source#template/optional/dashboard/}
+  printf '%s\n' "$dashboard_sources" | grep -qxF "$relative" || { echo "ERROR: unmanaged optional dashboard source $relative" >&2; exit 1; }
+done < <(find template/optional/dashboard -type f | sort)
+grep -q '^runtime|darwin-arm64|' "$DASHBOARD_MANIFEST" || { echo "ERROR: dashboard omits macOS arm64 runtime" >&2; exit 1; }
+grep -q '^runtime|linux-x86_64-gnu|' "$DASHBOARD_MANIFEST" || { echo "ERROR: dashboard omits Linux x86-64 runtime" >&2; exit 1; }
+grep -q '^runtime|windows-x86_64|' "$DASHBOARD_MANIFEST" || { echo "ERROR: dashboard omits Windows x86-64 runtime" >&2; exit 1; }
+grep -q '^asset|javascript|echarts.min.js|' "$DASHBOARD_MANIFEST" || { echo "ERROR: dashboard omits ECharts" >&2; exit 1; }
+grep -q '^asset|javascript|gsap.min.js|' "$DASHBOARD_MANIFEST" || { echo "ERROR: dashboard omits GSAP" >&2; exit 1; }
+grep -q '^asset|font|space-grotesk.woff2|' "$DASHBOARD_MANIFEST" || { echo "ERROR: dashboard omits Space Grotesk" >&2; exit 1; }
+grep -Eq '^asset\|[^|]+\|[^|]+\|[^|]+\|https://[^|]+\|[^|]+\|[0-9a-f]{64}\|' "$DASHBOARD_MANIFEST" || { echo "ERROR: dashboard assets are not pinned" >&2; exit 1; }
+grep -qiE '(^|[|/@])latest([|/]|$)' "$DASHBOARD_MANIFEST" && { echo "ERROR: dashboard manifest uses a mutable latest alias" >&2; exit 1; }
+
+grep -q "migrate_0_to_1()" template/.clineflow/bin/update || { echo "ERROR: migration chain does not include schema 0 -> 1" >&2; exit 1; }
+grep -q "migrate_1_to_2()" template/.clineflow/bin/update || { echo "ERROR: migration chain does not include schema 1 -> 2" >&2; exit 1; }
+grep -qF '.clineflow/bin/knowledge' template/.clineflow/bin/install || { echo "ERROR: fresh installation does not initialize tenant knowledge projections" >&2; exit 1; }
+for required in README.md template/configs/rules.template.md template/docs/durable-development-methodology.md template/.clineflow/WORKING_WITH_CODEX.md template/.clineflow/WORKING_WITH_CLINE.md; do
+  grep -q 'Please update ClineFlow\.' "$required" || { echo "ERROR: canonical update prompt missing from $required" >&2; exit 1; }
+  grep -qF 'https://raw.githubusercontent.com/hassanvfx/clineflow/main/update.sh' "$required" || { echo "ERROR: authoritative remote update entrypoint missing from $required" >&2; exit 1; }
+  grep -qF 'Do not run any existing local updater first' "$required" || { echo "ERROR: stale-local-updater warning missing from $required" >&2; exit 1; }
+  grep -q 'Please remove ClineFlow\.' "$required" || { echo "ERROR: canonical removal prompt missing from $required" >&2; exit 1; }
+  grep -qF './.clineflow/bin/uninstall --dry-run' "$required" || { echo "ERROR: removal preview missing from $required" >&2; exit 1; }
+  grep -q 'Please commit\.' "$required" || { echo "ERROR: canonical commit prompt missing from $required" >&2; exit 1; }
+  grep -q 'Please show me the ClineFlow dashboard\.' "$required" || { echo "ERROR: canonical dashboard prompt missing from $required" >&2; exit 1; }
+done
+grep -qF 'Old install or prompt not recognized?' README.md || { echo "ERROR: README omits the old-install rescue path" >&2; exit 1; }
+grep -qF 'curl -fsSL https://raw.githubusercontent.com/hassanvfx/clineflow/main/update.sh | bash -s -- --yes' README.md || { echo "ERROR: README rescue command is incomplete" >&2; exit 1; }
+grep -qF 'Rescue an old installation' docs/installation-and-lifecycle.md || { echo "ERROR: lifecycle guide omits the old-install rescue path" >&2; exit 1; }
+for required_test in tests/certify-release.sh tests/test-dashboard.sh tests/test-installation-flow.sh tests/test-update-migrations.sh tests/test-uninstall-safety.sh tests/test-release-contract.sh tests/test-okf-validator.sh tests/test-knowledge-sync.sh tests/test-tenant-knowledge.sh; do
+  [ -x "$required_test" ] || { echo "ERROR: missing executable lifecycle check $required_test" >&2; exit 1; }
+done
+grep -qF './tests/test-uninstall-safety.sh' tests/certify-release.sh || { echo "ERROR: release certification omits uninstall safety" >&2; exit 1; }
+grep -qF './tests/test-installation-flow.sh' tests/certify-release.sh || { echo "ERROR: release certification omits installation" >&2; exit 1; }
+grep -qF './tests/test-update-migrations.sh' tests/certify-release.sh || { echo "ERROR: release certification omits updates" >&2; exit 1; }
+grep -qF './tests/test-knowledge-sync.sh' tests/certify-release.sh || { echo "ERROR: release certification omits knowledge synchronization" >&2; exit 1; }
+grep -qF './tests/test-tenant-knowledge.sh' tests/certify-release.sh || { echo "ERROR: release certification omits tenant knowledge coverage" >&2; exit 1; }
+grep -qF './tests/test-dashboard.sh' tests/certify-release.sh || { echo "ERROR: release certification omits the optional dashboard boundary" >&2; exit 1; }
+grep -qF './template/.clineflow/bin/knowledge sync' tests/certify-release.sh || { echo "ERROR: release certification does not rebuild generated knowledge projections" >&2; exit 1; }
+grep -qF 'validate-knowledge-sync --staged' template/configs/rules.template.md || { echo "ERROR: shared agent rules omit the staged knowledge synchronization gate" >&2; exit 1; }
+grep -qF 'single handoff only for one cohesive, independently verifiable slice' template/configs/rules.template.md || { echo "ERROR: shared agent rules omit the handoff topology boundary" >&2; exit 1; }
+grep -qF 'Every substantial plan must choose either a single handoff or a milestone chain before execution.' template/.clineflow/PROCEDURES.md || { echo "ERROR: managed procedures omit the handoff topology rule" >&2; exit 1; }
+grep -qF '# Handoff Topology' template/knowledge/journals/TASK_TEMPLATE.md || { echo "ERROR: generated journal template omits handoff topology" >&2; exit 1; }
+grep -qF 'Please show me the ClineFlow dashboard.' template/configs/rules.template.md || { echo "ERROR: shared agent rules omit the explicit dashboard invocation" >&2; exit 1; }
+grep -qF 'this is an execution request, not a request to check for releases' template/configs/rules.template.md || { echo "ERROR: shared agent rules do not distinguish update execution from release checks" >&2; exit 1; }
+grep -qF 'never claim the installation is up to date' template/configs/rules.template.md || { echo "ERROR: shared agent rules permit unverified update claims" >&2; exit 1; }
+[ -f template/.claude/commands/update-clineflow.md ] || { echo "ERROR: deterministic Claude update command is missing" >&2; exit 1; }
+grep -qF 'curl -fsSL https://raw.githubusercontent.com/hassanvfx/clineflow/main/update.sh | bash -s -- --yes' template/.claude/commands/update-clineflow.md || { echo "ERROR: Claude update command omits the remote bootstrap" >&2; exit 1; }
+grep -qF './tests/certify-release.sh' .github/workflows/test.yml || { echo "ERROR: CI does not run lifecycle certification" >&2; exit 1; }
+grep -qF './template/.clineflow/bin/validate-knowledge-sync --against' .github/workflows/test.yml || { echo "ERROR: pull-request CI does not enforce knowledge synchronization" >&2; exit 1; }
+
+if [ -n "$AGAINST" ]; then
+  old_version=$(git show "${AGAINST}:template/.clineflow/VERSION" 2>/dev/null || true)
+  changed=$(git diff --name-only "$AGAINST" -- template/.clineflow template/configs/rules.template.md template/knowledge template/docs/durable-development-methodology.md)
+  if [ -n "$changed" ] && [ "$old_version" = "$version" ]; then echo "ERROR: managed payloads changed without a release-version bump" >&2; exit 1; fi
+fi
+echo "ClineFlow release contract passed: $version (schema $schema)"

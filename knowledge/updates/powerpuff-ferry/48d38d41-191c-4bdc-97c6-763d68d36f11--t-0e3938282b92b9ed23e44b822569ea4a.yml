@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "48d38d41-191c-4bdc-97c6-763d68d36f11",
+  "at": "2026-09-08T05:30:26Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "fac1bc0b-bd9d-4b9f-b7e4-f793c51bb3d4",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/fac1bc0b-bd9d-4b9f-b7e4-f793c51bb3d4--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "689d98edae7f3c436b7f8be72bd25ac82bf9acf5c1735e83abcdd6a5c52c21b7",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/48d38d41-191c-4bdc-97c6-763d68d36f11.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "workspace-foundation",
+      "statement": "Se definió un libro-regalo simbólico, poético y visual, con arquetipos como guía no literal."
+    },
+    {
+      "ledger": "goals",
+      "id": "powerpuff-ferry-workspace",
+      "statement": "Se creó la base editorial para convertir las 29 cualidades confirmadas en un libro romántico."
+    },
+    {
+      "ledger": "verification",
+      "id": "workspace-foundation",
+      "statement": "La estructura, el brief y la tabla se comprobarán con validadores OKF y enlaces internos."
+    },
+    {
+      "ledger": "last_session",
+      "id": "workspace-opened",
+      "statement": "El siguiente paso es escoger formato y extensión por ingrediente antes de redactar la versión final."
+    },
+    {
+      "ledger": "timeline",
+      "id": "workspace-opened",
+      "statement": "Se creó el primer hito editorial y sus documentos de trabajo."
+    }
+  ],
+  "timeline": {
+    "summary": "El autor aportó las notas fundacionales y se abrió el primer hito editorial de PowerPuff Ferry."
+  },
+  "log": {
+    "summary": "Se abrió el workspace editorial de PowerPuff Ferry con el brief, la receta simbólica de 29 ingredientes y guía inicial de arte."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

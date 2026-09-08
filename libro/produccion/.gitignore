@@ -1,0 +1,9 @@
+# Personal photo paths, generated prompts, KIE job records, and high-resolution art stay local.
+referencias.local.json
+prompts/
+jobs/
+arte-generado/
+arte-aprobado/
+salida/
+scripts/__pycache__/
+*.pyc

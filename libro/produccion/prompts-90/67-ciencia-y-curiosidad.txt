@@ -1,0 +1,24 @@
+Create one original vertical 6x9 comic-book page in a 2:3 aspect ratio.
+Use exactly 4 distinct comic panels separated by clean, consistent gutters; do not make a collage or a poster.
+Exact page reticle: tira superior de ancho completo y tres celdas inferiores: izquierda, centro, derecha. Read from upper left to lower right.
+The only letters permitted in the art are the phrases after “Texto impreso exacto:”. Render each phrase character for character, including accents and punctuation, using the double quotes shown. “CELDA”, “Tipo de lettering”, “Posición de lettering” and every other label are production instructions only: never render those labels in the image. Place the lettering exactly as specified per cell. If “Texto impreso exacto” says SILENCIO, draw no bubble and no letters in that cell. Do not add, alter, translate or invent any other text, number, logo or watermark. The recipe note, when present, must show only deliberately illegible numbered-looking strokes.
+Original retro chibi-superhero graphic novel: adult characters with compact proportions, expressive round faces, crisp black ink lines, flat color with restrained cel shading, cinematic framing and readable action. Hassan is a gentle, meticulous adult scientist with dark hair and a full beard. Ferry is an original adult pop heroine: warm, athletic and protective, with long brown hair; never portray her as created, owned or controlled by Hassan.
+Cool white, steel and blue-gray laboratory reality; dream and magic in warm pink, coral, gold and carmine. Repeat the red thread, empty-to-full flask and pink-gold star only when the beats call for them. Keep faces, hands and focal objects at least 10% inside every edge.
+
+Page 67 — Ciencia y curiosidad
+CELDA 1 — posición: superior panorámica; cámara: plano de establecimiento, composición clara y aire alrededor del sujeto.
+Acción y arte: Frasco de luz científica: un vial azul vierte luz ordenada, no líquido.
+Tipo de lettering: cartela. Posición de lettering: esquina superior izquierda de la celda, caja crema de borde negro; no cubrir rostro ni acción.
+Texto impreso exacto: "Inteligencia: entender para cuidar."
+CELDA 2 — posición: inferior izquierda; cámara: plano medio dinámico, gesto y acción perfectamente legibles.
+Acción y arte: El laboratorio responde con líneas de constelación.
+Tipo de lettering: efecto sonoro integrado. Posición de lettering: junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
+Texto impreso exacto: "tinnn"
+CELDA 3 — posición: inferior central; cámara: plano detalle, foco nítido en el objeto y profundidad de campo suave.
+Acción y arte: Lupa de luna curiosa: la lente refleja una luna con pequeños puntos de estrella.
+Tipo de lettering: cartela. Posición de lettering: esquina superior izquierda de la celda, caja crema de borde negro; no cubrir rostro ni acción.
+Texto impreso exacto: "Curiosidad: preguntar sin miedo."
+CELDA 4 — posición: inferior derecha; cámara: primer plano emocional o plano de cierre; dirigir la mirada hacia la siguiente página.
+Acción y arte: Esa constelación cae al matraz y gira con el líquido.
+Tipo de lettering: efecto sonoro integrado. Posición de lettering: junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
+Texto impreso exacto: "fwoom"

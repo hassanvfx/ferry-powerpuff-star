@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+# Validate ClineFlow's dependency-free OKF structural contract.
+set -u
+STRICT=false
+[ "${1:-}" = "--strict" ] && { STRICT=true; shift; }
+[ "${1:-}" = "--help" ] || [ "${1:-}" = "-h" ] && { echo "Usage: ./.clineflow/bin/validate-okf [--strict] [BUNDLE_PATH]"; exit 0; }
+BUNDLE="${1:-knowledge}"; ERRORS=0
+error() { echo "ERROR: $1: $2" >&2; ERRORS=$((ERRORS + 1)); }
+has_field() { grep -Eq "^[[:space:]]*$1:|^[[:space:]]*\\\"$1\\\"[[:space:]]*:" "$2" 2>/dev/null; }
+[ -d "$BUNDLE" ] || { error "$BUNDLE" "bundle directory does not exist"; exit 1; }
+for file in clineflow_specification.yml clineflow_verification.yml clineflow_goals.yml clineflow_last_session.yml clineflow_timeline.yml; do
+  [ -f "$BUNDLE/$file" ] || error "$BUNDLE/$file" "required ClineFlow master index is missing"
+  has_field version "$BUNDLE/$file" || error "$BUNDLE/$file" "must declare version"
+  has_field updated_at "$BUNDLE/$file" || error "$BUNDLE/$file" "must declare updated_at"
+done
+for field in confirmed assumptions constraints non_goals open_questions journal_refs; do has_field "$field" "$BUNDLE/clineflow_specification.yml" || error "$BUNDLE/clineflow_specification.yml" "must declare $field"; done
+for field in acceptance_criteria regression_checks evidence_refs open_verification journal_refs; do has_field "$field" "$BUNDLE/clineflow_verification.yml" || error "$BUNDLE/clineflow_verification.yml" "must declare $field"; done
+for field in active_goals priorities success_measures blocked_goals completed_goals journal_refs; do has_field "$field" "$BUNDLE/clineflow_goals.yml" || error "$BUNDLE/clineflow_goals.yml" "must declare $field"; done
+for field in latest_change specification_summary verification_summary goals_summary next_recommended_step next_step_refs journal_refs; do has_field "$field" "$BUNDLE/clineflow_last_session.yml" || error "$BUNDLE/clineflow_last_session.yml" "must declare $field"; done
+has_field events "$BUNDLE/clineflow_timeline.yml" || error "$BUNDLE/clineflow_timeline.yml" "must declare events"
+while IFS= read -r -d '' path; do
+  name=$(basename "$path"); first=$(sed -n '1p' "$path")
+  if [ "$name" = "log.md" ]; then
+    previous=""
+    while IFS= read -r date; do
+      if [ -n "$previous" ] && [ "$date" \> "$previous" ]; then
+        error "$path" "log.md date headings must be newest first"
+      fi
+      previous="$date"
+    done < <(sed -nE 's/^## ([0-9]{4}-[0-9]{2}-[0-9]{2})[[:space:]]*$/\1/p' "$path")
+    continue
+  fi
+  if [ "$name" = "index.md" ]; then
+    if [ "$(dirname "$path")" = "$BUNDLE" ]; then
+      [ "$first" = "---" ] && grep -q 'okf_version: "0.2"' "$path" || error "$path" "bundle-root index.md must declare okf_version: 0.2"
+    elif [ "$first" = "---" ]; then
+      error "$path" "nested index.md files must not contain frontmatter"
+    fi
+    continue
+  fi
+  [ "$first" = "---" ] || { error "$path" "must start with YAML frontmatter"; continue; }
+  awk 'NR>1 && $0=="---" { found=1; exit } END { exit !found }' "$path" || error "$path" "has an unclosed YAML frontmatter block"
+  awk 'NR>1 && $0=="---" { exit } /^type:[[:space:]]*[^[:space:]#]/ { found=1 } END { exit !found }' "$path" || error "$path" "frontmatter must contain a non-empty type"
+done < <(find "$BUNDLE" -type f -name '*.md' -print0)
+[ "$ERRORS" -eq 0 ] || exit 1
+if [ "$STRICT" = true ]; then
+  python3 -c 'import yaml' 2>/dev/null || { echo "ERROR: --strict requires optional PyYAML" >&2; exit 2; }
+  python3 -c 'import pathlib, sys, yaml; bundle = pathlib.Path(sys.argv[1]); [yaml.safe_load(path.read_text()) for path in bundle.glob("clineflow_*.yml")]' "$BUNDLE" || { echo "ERROR: invalid ClineFlow master-index YAML" >&2; exit 1; }
+fi
+echo "OKF v0.2 $([ "$STRICT" = true ] && echo strict || echo structural) validation passed: $BUNDLE"

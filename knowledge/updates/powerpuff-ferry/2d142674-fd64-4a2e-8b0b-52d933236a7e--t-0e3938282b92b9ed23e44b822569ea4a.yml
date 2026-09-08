@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "2d142674-fd64-4a2e-8b0b-52d933236a7e",
+  "at": "2026-09-08T07:57:27Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "f33a219e-0305-4d37-ba38-b20b372def1d",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/f33a219e-0305-4d37-ba38-b20b372def1d--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "5b1c3beed41e515b1fcf4b189981dee81f3e7a9691669bc65662bd2c5e54f7ef",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/2d142674-fd64-4a2e-8b0b-52d933236a7e.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "approved-character-sheets-v2",
+      "statement": "Las hojas profesionales v2 de Ferry y Hassan son la fuente aprobada de continuidad visual para producción futura; las v1 permanecen como historial."
+    },
+    {
+      "ledger": "verification",
+      "id": "approved-character-sheets-v2-available",
+      "statement": "Dos assets PNG v2 existen en libro/arte/referencias y el ejecutor verifica sus rutas antes de incluirlos como referencias."
+    },
+    {
+      "ledger": "goals",
+      "id": "v2-character-sheet-production-reference",
+      "statement": "Usar las hojas v2 aprobadas para sostener la continuidad de personajes en las futuras páginas narrativas."
+    },
+    {
+      "ledger": "last_session",
+      "id": "v2-approved-character-sheet-reference",
+      "statement": "Las hojas v2 están aprobadas y configuradas para adjuntarse automáticamente cuando una página use a Ferry o Hassan."
+    },
+    {
+      "ledger": "timeline",
+      "id": "v2-character-sheets-approved",
+      "statement": "El autor aceptó las nuevas hojas profesionales de Ferry y Hassan y se registraron como referencias de producción."
+    }
+  ],
+  "timeline": {
+    "summary": "Se guardaron las hojas v2 aprobadas y el ejecutor de producción las incorpora automáticamente para los personajes correspondientes."
+  },
+  "log": {
+    "summary": "El autor aprobó las hojas de personaje profesionales v2 de Ferry y Hassan como referencias de producción futura."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

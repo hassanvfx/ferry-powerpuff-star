@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+# Validate ClineFlow 3 immutable tenant knowledge records.
+set -euo pipefail
+
+MODE=working
+ROOT=.
+usage() {
+  echo "Usage: ./.clineflow/bin/validate-knowledge-sync [--staged | --against GIT_REF] [PROJECT_ROOT]"
+}
+while [ "$#" -gt 0 ]; do
+  case "$1" in
+    --staged) [ "$MODE" = working ] || { usage >&2; exit 2; }; MODE=staged ;;
+    --against)
+      [ "$MODE" = working ] && [ "$#" -ge 2 ] || { usage >&2; exit 2; }
+      MODE=against; AGAINST=$2; shift
+      ;;
+    --help|-h) usage; exit 0 ;;
+    --*) usage >&2; exit 2 ;;
+    *) ROOT=$1 ;;
+  esac
+  shift
+done
+
+COMMAND="$ROOT/.clineflow/bin/knowledge"
+if [ ! -x "$COMMAND" ]; then
+  SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
+  [ -x "$SCRIPT_DIR/knowledge" ] && COMMAND="$SCRIPT_DIR/knowledge"
+fi
+[ -x "$COMMAND" ] || { echo "ERROR: ClineFlow knowledge command is missing." >&2; exit 1; }
+case "$MODE" in
+  working) exec "$COMMAND" --root "$ROOT" validate --mode working ;;
+  staged) exec "$COMMAND" --root "$ROOT" validate --mode staged ;;
+  against)
+    git -C "$ROOT" rev-parse --verify "$AGAINST^{commit}" >/dev/null 2>&1 || { echo "ERROR: comparison ref does not resolve: $AGAINST" >&2; exit 2; }
+    if git -C "$ROOT" diff --name-status "$AGAINST...HEAD" -- knowledge/updates/ | awk '$1 ~ /^[MDR]/ { found=1 } END { exit !found }'; then
+      echo "ERROR: published update records are immutable across the reviewed change set." >&2; exit 1
+    fi
+    exec "$COMMAND" --root "$ROOT" validate --mode working
+    ;;
+esac

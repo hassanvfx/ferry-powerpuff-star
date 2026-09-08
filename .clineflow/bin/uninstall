@@ -1,0 +1,212 @@
+#!/usr/bin/env bash
+# Transactionally remove ClineFlow-managed tooling while preserving user content.
+set -euo pipefail
+
+DRY_RUN=false
+ASSUME_YES=false
+BEGIN='<!-- BEGIN CLINEFLOW OKF RULES -->'
+END='<!-- END CLINEFLOW OKF RULES -->'
+DASHBOARD_BEGIN='# BEGIN CLINEFLOW DASHBOARD GENERATED REPORTS'
+DASHBOARD_END='# END CLINEFLOW DASHBOARD GENERATED REPORTS'
+TRANSACTION_ACTIVE=false
+COMMITTED=false
+TRANSACTION_DIR=''
+DASHBOARD_EXCLUDE=''
+SELF_TEMP=${CLINEFLOW_UNINSTALL_SELF_TEMP:-}
+
+if [ -z "$SELF_TEMP" ]; then
+  platform=$(uname -s 2>/dev/null || printf unknown)
+  case "$platform" in MINGW*|MSYS*|CYGWIN*) external_reexec=true ;; *) external_reexec=false ;; esac
+  [ "${CLINEFLOW_TEST_FORCE_EXTERNAL_REEXEC:-false}" != true ] || external_reexec=true
+  if [ "$external_reexec" = true ]; then
+    self_copy=$(mktemp "${TMPDIR:-/tmp}/clineflow-uninstall-XXXXXX")
+    if ! cp "$0" "$self_copy"; then rm -f "$self_copy"; echo "ERROR: could not prepare the Windows removal transaction." >&2; exit 1; fi
+    chmod +x "$self_copy"
+    CLINEFLOW_UNINSTALL_SELF_TEMP="$self_copy" exec bash "$self_copy" "$@"
+  fi
+fi
+
+usage() {
+  cat <<'EOF'
+Usage: ./.clineflow/bin/uninstall [options]
+
+Options:
+  --dry-run  Show the complete removal plan without changing files.
+  --yes      Apply the plan without prompting.
+  --help     Show this help.
+EOF
+}
+
+while [ "$#" -gt 0 ]; do
+  case "$1" in
+    --dry-run) DRY_RUN=true ;;
+    --yes|-y) ASSUME_YES=true ;;
+    --help|-h) usage; exit 0 ;;
+    *) echo "Unknown option: $1" >&2; usage >&2; exit 2 ;;
+  esac
+  shift
+done
+
+[ ! -L .clineflow ] || { echo "ERROR: .clineflow is a symbolic link; no files were changed." >&2; exit 1; }
+[ -d .clineflow ] || { echo "No ClineFlow directory found."; exit 0; }
+
+manifest=.clineflow/.owned-agent-files
+entries=$(mktemp "${TMPDIR:-/tmp}/clineflow-uninstall-entries-XXXXXX")
+cleanup_entries() {
+  rm -f "$entries"
+  [ -z "$SELF_TEMP" ] || rm -f "$SELF_TEMP" 2>/dev/null || true
+}
+allowed_agent_path() {
+  case "$1" in
+    .clinerules|AGENTS.md|CLAUDE.md|.github/copilot-instructions.md|.windsurf/rules/clineflow.md) return 0 ;;
+    *) return 1 ;;
+  esac
+}
+block_status() {
+  local destination=$1 begins ends begin_line end_line
+  begins=$(grep -cFx "$BEGIN" "$destination" 2>/dev/null || true)
+  ends=$(grep -cFx "$END" "$destination" 2>/dev/null || true)
+  if [ "$begins" -eq 0 ] && [ "$ends" -eq 0 ]; then echo none
+  elif [ "$begins" -eq 1 ] && [ "$ends" -eq 1 ]; then
+    begin_line=$(grep -nFx "$BEGIN" "$destination" | cut -d: -f1)
+    end_line=$(grep -nFx "$END" "$destination" | cut -d: -f1)
+    [ "$begin_line" -lt "$end_line" ] && echo valid || echo malformed
+  else echo malformed; fi
+}
+file_mode() {
+  if stat -c '%a' "$1" >/dev/null 2>&1; then stat -c '%a' "$1"
+  else stat -f '%Lp' "$1"; fi
+}
+
+preflight() {
+  local entry kind path prior status begins ends
+  : > "$entries"
+  if [ ! -f "$manifest" ]; then
+    echo "WARNING: no ownership manifest found; all agent configurations will be preserved." >&2
+    return
+  fi
+  while IFS= read -r entry || [ -n "$entry" ]; do
+    [ -n "$entry" ] || continue
+    kind=${entry%%:*}; path=${entry#*:}
+    case "$kind" in file|block) ;; *) echo "ERROR: invalid ownership entry: $entry" >&2; return 1 ;; esac
+    allowed_agent_path "$path" || { echo "ERROR: unsafe ownership path: $path" >&2; return 1; }
+    prior=$(awk -F'|' -v path="$path" '$2 == path { print $1; exit }' "$entries")
+    [ -z "$prior" ] || [ "$prior" = "$kind" ] || { echo "ERROR: conflicting ownership entries for $path" >&2; return 1; }
+    grep -qxF "$kind|$path" "$entries" 2>/dev/null || printf '%s|%s\n' "$kind" "$path" >> "$entries"
+    [ ! -L "$path" ] || { echo "ERROR: managed agent path is a symbolic link: $path" >&2; return 1; }
+    [ ! -e "$path" ] && continue
+    [ -f "$path" ] || { echo "ERROR: managed agent path is not a regular file: $path" >&2; return 1; }
+    status=$(block_status "$path")
+    [ "$status" = valid ] || { echo "ERROR: malformed or missing ClineFlow markers in $path; no files were changed." >&2; return 1; }
+  done < "$manifest"
+  if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+    DASHBOARD_EXCLUDE=$(git rev-parse --git-path info/exclude)
+    if [ -f "$DASHBOARD_EXCLUDE" ]; then
+      begins=$(grep -cFx "$DASHBOARD_BEGIN" "$DASHBOARD_EXCLUDE" 2>/dev/null || true)
+      ends=$(grep -cFx "$DASHBOARD_END" "$DASHBOARD_EXCLUDE" 2>/dev/null || true)
+      { [ "$begins" -eq 0 ] && [ "$ends" -eq 0 ]; } || { [ "$begins" -eq 1 ] && [ "$ends" -eq 1 ]; } || {
+        echo "ERROR: malformed ClineFlow dashboard markers in $DASHBOARD_EXCLUDE; no files were changed." >&2
+        return 1
+      }
+    fi
+  fi
+}
+
+show_plan() {
+  local kind path
+  echo "ClineFlow removal plan:"
+  if [ -s "$entries" ]; then
+    while IFS='|' read -r kind path; do
+      [ -e "$path" ] && echo "  - remove the managed rules block from $path; delete the file only if no user content remains"
+    done < "$entries"
+  else
+    echo "  - preserve every agent configuration (no trusted ownership entries)"
+  fi
+  echo "  - remove the .clineflow/ managed runtime"
+  [ -n "$DASHBOARD_EXCLUDE" ] && grep -qFx "$DASHBOARD_BEGIN" "$DASHBOARD_EXCLUDE" 2>/dev/null && echo "  - remove the owned dashboard report exclusion from $DASHBOARD_EXCLUDE"
+  echo "  - preserve knowledge/, generated dashboard reports, docs/journals/, user documentation, and unrelated files"
+}
+
+restore_transaction() {
+  local kind path backup
+  [ -n "$TRANSACTION_DIR" ] && [ -d "$TRANSACTION_DIR" ] || return
+  echo "Removal failed; restoring the previous installation." >&2
+  if [ -f "$TRANSACTION_DIR/agent-paths" ]; then
+    while IFS='|' read -r kind path; do
+      backup="$TRANSACTION_DIR/files/$path"
+      rm -f "$path"
+      if [ "$kind" = existing ]; then mkdir -p "$(dirname "$path")"; cp -pP "$backup" "$path"; fi
+    done < "$TRANSACTION_DIR/agent-paths"
+  fi
+  if [ -d "$TRANSACTION_DIR/runtime" ] && [ ! -e .clineflow ]; then mv "$TRANSACTION_DIR/runtime" .clineflow; fi
+  if [ -f "$TRANSACTION_DIR/dashboard-exclude" ] && [ -n "$DASHBOARD_EXCLUDE" ]; then cp -pP "$TRANSACTION_DIR/dashboard-exclude" "$DASHBOARD_EXCLUDE"; fi
+  echo "Removal rollback complete." >&2
+}
+
+on_exit() {
+  local status=$?
+  trap - EXIT HUP INT TERM
+  cleanup_entries
+  if [ "$TRANSACTION_ACTIVE" = true ] && [ "$COMMITTED" != true ]; then restore_transaction; fi
+  [ -z "$TRANSACTION_DIR" ] || rm -rf "$TRANSACTION_DIR"
+  exit "$status"
+}
+trap on_exit EXIT
+trap 'exit 130' HUP INT TERM
+
+preflight
+show_plan
+if [ "$DRY_RUN" = true ]; then echo "Dry run complete. No project files were changed."; exit 0; fi
+if [ "$ASSUME_YES" != true ]; then
+  if ! exec 3<>/dev/tty 2>/dev/null; then echo "ERROR: confirmation is required; rerun with --yes." >&2; exit 1; fi
+  printf 'Proceed with this removal? [y/N] ' >&3
+  read -r answer <&3 || answer=''
+  exec 3>&-
+  case "$answer" in y|Y|yes|YES) ;; *) echo "Removal cancelled."; exit 0 ;; esac
+fi
+
+TRANSACTION_DIR=".clineflow-uninstall-transaction-$(date -u +%Y%m%dT%H%M%SZ)-$$"
+[ ! -e "$TRANSACTION_DIR" ] || { echo "ERROR: transaction path already exists." >&2; exit 1; }
+mkdir -p "$TRANSACTION_DIR/files"
+: > "$TRANSACTION_DIR/agent-paths"
+if [ -n "$DASHBOARD_EXCLUDE" ] && [ -f "$DASHBOARD_EXCLUDE" ]; then cp -pP "$DASHBOARD_EXCLUDE" "$TRANSACTION_DIR/dashboard-exclude"; fi
+while IFS='|' read -r kind path; do
+  if [ -e "$path" ]; then
+    mkdir -p "$TRANSACTION_DIR/files/$(dirname "$path")"
+    cp -pP "$path" "$TRANSACTION_DIR/files/$path"
+    printf 'existing|%s\n' "$path" >> "$TRANSACTION_DIR/agent-paths"
+  else
+    printf 'absent|%s\n' "$path" >> "$TRANSACTION_DIR/agent-paths"
+  fi
+done < "$entries"
+
+mv .clineflow "$TRANSACTION_DIR/runtime"
+TRANSACTION_ACTIVE=true
+if [ -n "$DASHBOARD_EXCLUDE" ] && [ -f "$DASHBOARD_EXCLUDE" ] && grep -qFx "$DASHBOARD_BEGIN" "$DASHBOARD_EXCLUDE"; then
+  temp="$DASHBOARD_EXCLUDE.clineflow-uninstall-tmp.$$"
+  awk -v begin="$DASHBOARD_BEGIN" -v end="$DASHBOARD_END" '$0 == begin { skip=1; next } $0 == end { skip=0; next } !skip { print }' "$DASHBOARD_EXCLUDE" > "$temp"
+  mv "$temp" "$DASHBOARD_EXCLUDE"
+  echo "removed ClineFlow dashboard exclusion: $DASHBOARD_EXCLUDE"
+fi
+while IFS='|' read -r kind path; do
+  [ -f "$path" ] || continue
+  temp="$path.clineflow-uninstall-tmp.$$"
+  awk -v begin="$BEGIN" -v end="$END" '$0 == begin { skip=1; next } $0 == end { skip=0; next } !skip { print }' "$path" > "$temp"
+  if grep -q '[^[:space:]]' "$temp"; then
+    chmod "$(file_mode "$path")" "$temp"
+    mv "$temp" "$path"
+    echo "removed ClineFlow rules and preserved user content: $path"
+  else
+    rm -f "$temp" "$path"
+    echo "removed owned agent configuration: $path"
+  fi
+done < "$entries"
+
+if [ "${CLINEFLOW_TEST_FAIL_AFTER_APPLY:-false}" = true ]; then echo "ERROR: injected removal failure." >&2; false; fi
+if [ "${CLINEFLOW_TEST_SIGNAL_AFTER_APPLY:-false}" = true ]; then kill -TERM $$; fi
+
+COMMITTED=true
+rm -rf "$TRANSACTION_DIR"
+TRANSACTION_DIR=''
+echo "removed: .clineflow/"
+echo "knowledge/, generated dashboard reports, docs/journals/, user documentation, and unrelated files were preserved."

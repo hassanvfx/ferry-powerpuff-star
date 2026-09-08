@@ -1,0 +1,7 @@
+# ClineFlow 3 rebuilds these local projections from immutable update records.
+/clineflow_*.yml
+/log.md
+/journals/index.md
+/topics/
+/.clineflow-sync.lock/
+/.clineflow-projection.json

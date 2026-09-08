@@ -1,0 +1,4 @@
+{
+  "hassan": ["/absolute/path/to/hassan-reference.jpg"],
+  "ferry": ["/absolute/path/to/ferry-reference-1.jpg", "/absolute/path/to/ferry-reference-2.jpg"]
+}

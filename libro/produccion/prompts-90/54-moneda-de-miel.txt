@@ -1,0 +1,20 @@
+Create one original vertical 6x9 comic-book page in a 2:3 aspect ratio.
+Use exactly 3 distinct comic panels separated by clean, consistent gutters; do not make a collage or a poster.
+Exact page reticle: una viñeta superior de 48%; dos viñetas inferiores iguales. Read from upper left to lower right.
+The only letters permitted in the art are the phrases after “Texto impreso exacto:”. Render each phrase character for character, including accents and punctuation, using the double quotes shown. “CELDA”, “Tipo de lettering”, “Posición de lettering” and every other label are production instructions only: never render those labels in the image. Place the lettering exactly as specified per cell. If “Texto impreso exacto” says SILENCIO, draw no bubble and no letters in that cell. Do not add, alter, translate or invent any other text, number, logo or watermark. The recipe note, when present, must show only deliberately illegible numbered-looking strokes.
+Original retro chibi-superhero graphic novel: adult characters with compact proportions, expressive round faces, crisp black ink lines, flat color with restrained cel shading, cinematic framing and readable action. Hassan is a gentle, meticulous adult scientist with dark hair and a full beard. Ferry is an original adult pop heroine: warm, athletic and protective, with long brown hair; never portray her as created, owned or controlled by Hassan.
+Cool white, steel and blue-gray laboratory reality; dream and magic in warm pink, coral, gold and carmine. Repeat the red thread, empty-to-full flask and pink-gold star only when the beats call for them. Keep faces, hands and focal objects at least 10% inside every edge.
+
+Page 54 — Moneda de miel
+CELDA 1 — posición: superior panorámica; cámara: plano de establecimiento, composición clara y aire alrededor del sujeto.
+Acción y arte: Abre una alacena alta con un banco pequeño.
+Tipo de lettering: efecto sonoro integrado. Posición de lettering: junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
+Texto impreso exacto: "scrape"
+CELDA 2 — posición: inferior izquierda; cámara: plano detalle, foco nítido en el objeto y profundidad de campo suave.
+Acción y arte: Encuentra una moneda color miel entre objetos cotidianos.
+Tipo de lettering: globo de diálogo. Posición de lettering: superior derecha de la celda, junto a la cabeza del hablante; cola clara al personaje, máximo 18% del área de la celda.
+Texto impreso exacto: "¿Una moneda?"
+CELDA 3 — posición: inferior derecha; cámara: plano detalle, foco nítido en el objeto y profundidad de campo suave.
+Acción y arte: La moneda gira y proyecta engranes de luz sobre su cara.
+Tipo de lettering: efecto sonoro integrado. Posición de lettering: junto a la línea de acción, detrás del foco narrativo; letras expresivas sin cubrir cara, manos ni objeto clave.
+Texto impreso exacto: "vrrr"

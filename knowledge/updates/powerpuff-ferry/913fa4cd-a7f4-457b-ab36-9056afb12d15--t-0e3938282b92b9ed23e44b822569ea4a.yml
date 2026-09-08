@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "913fa4cd-a7f4-457b-ab36-9056afb12d15",
+  "at": "2026-09-08T07:45:37Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "fac1bc0b-bd9d-4b9f-b7e4-f793c51bb3d4",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/fac1bc0b-bd9d-4b9f-b7e4-f793c51bb3d4--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "e8b208059d6eb8d1bdb715db6ff493d901f2802cb6aec19a209ae8b1fce1d418",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/913fa4cd-a7f4-457b-ab36-9056afb12d15.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "character-sheet-review-gate",
+      "statement": "Las hojas de personaje se deben revisar y aprobar antes de aplicarlas a las páginas narrativas."
+    },
+    {
+      "ledger": "goals",
+      "id": "character-sheets-before-story-pages",
+      "statement": "Las hojas de Ferry y Hassan ya se generaron; la aprobación visual es la puerta hacia las páginas narrativas."
+    },
+    {
+      "ledger": "verification",
+      "id": "character-sheet-kie-jobs-succeeded",
+      "statement": "Kie confirmó éxito para ambas hojas; el navegador bloqueó su vista directa y no se descargó arte remoto."
+    },
+    {
+      "ledger": "last_session",
+      "id": "commit-ready-character-sheet-pipeline",
+      "statement": "El workspace queda listo para commit con dos hojas generadas y pendiente de revisión manual en Kie."
+    },
+    {
+      "ledger": "timeline",
+      "id": "character-sheets-generated",
+      "statement": "Se generaron con referencias autorizadas las hojas de personaje de Ferry y Hassan."
+    }
+  ],
+  "timeline": {
+    "summary": "Kie completó las hojas de Ferry y Hassan; el checkpoint preserva el pipeline y la decisión de no copiar resultados remotos al repositorio."
+  },
+  "log": {
+    "summary": "Las hojas de personaje se generaron en Kie con referencias autorizadas; su revisión manual queda pendiente antes de aprobar arte."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "3fb114fe-91f8-4b22-b852-bd8392c9f484",
+  "at": "2026-09-08T05:57:01Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "fac1bc0b-bd9d-4b9f-b7e4-f793c51bb3d4",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/fac1bc0b-bd9d-4b9f-b7e4-f793c51bb3d4--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "42923c5eef0938373fceaa90084e823027dc1f58de0352b057de0f6c25db2e56",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/3fb114fe-91f8-4b22-b852-bd8392c9f484.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "cover-delivery-brief",
+      "statement": "Se definió frente, contracubierta y flujo de plantilla Lulu sin adivinar el tamaño del lomo."
+    },
+    {
+      "ledger": "goals",
+      "id": "complete-book-package",
+      "statement": "El paquete editorial incluye guion interior de 32 páginas y definición de cubierta."
+    },
+    {
+      "ledger": "verification",
+      "id": "cover-brief-linked",
+      "statement": "La guía de cubierta está enlazada desde los mapas editorial y de producción."
+    },
+    {
+      "ledger": "last_session",
+      "id": "book-package-defined",
+      "statement": "Historia, interior y cubierta están definidos; el arte externo espera consentimiento específico."
+    },
+    {
+      "ledger": "timeline",
+      "id": "cover-package-defined",
+      "statement": "Se documentó la cubierta y metadata de entrega."
+    }
+  ],
+  "timeline": {
+    "summary": "Se añadió el brief de cubierta y su secuencia de entrega para Lulu."
+  },
+  "log": {
+    "summary": "Se definió la cubierta y los metadatos de entrega sin fijar un lomo antes de seleccionar la plantilla oficial."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

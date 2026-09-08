@@ -1,0 +1,22 @@
+{
+  "project": "PowerPuff Ferry — hojas de personaje",
+  "aspect_ratio": "2:3",
+  "model": "gpt-image-2",
+  "resolution": "2K",
+  "pages": [
+    {
+      "id": "ferry-character-sheet-v1",
+      "panels": 6,
+      "layout": "hoja de personaje con seis viñetas claras, cuadrícula 2 por 3, fondo de estudio azul muy pálido",
+      "references": ["ferry"],
+      "scene": "Hoja de personaje de Ferry, mujer adulta y heroína chibi original. Usa las referencias privadas sólo para reconocer su rostro, tono de piel y cabello largo castaño con luces; no copies una persona ficticia. Viñeta 1: cuerpo entero de frente, postura firme y sonrisa cálida, vestido corto coral-rosa de heroína con chaqueta blanca corta, medias color crema y tenis blancos sin logotipo; cartel superior exacto: «FERRY — MI CHICA SUPER PODEROSA». Viñeta 2: tres cuartos, mano sobre el corazón y una hebra roja luminosa flotando; globo exacto: «Mi poder es cuidar». Viñeta 3: perfil, cabello movido por viento de playa; globo exacto: «Y soñar contigo». Viñeta 4: vuelo suave sobre una trayectoria rosa-dorada, brazos abiertos, sin rayo ni marca; globo exacto: «¡Vamos al mar!». Viñeta 5: primer plano con expresión protectora y curiosa; globo exacto: «Todo ser pequeño importa». Viñeta 6: pose de cuidado junto a una concha dorada, una estrella rosa y un pequeño moño coral, sin animales; globo exacto: «La magia vive en los detalles». Mantenerla adulta, cálida, fuerte, atlética y libre; ojos grandes originales, no idénticos a personajes existentes. Todos los textos deben estar escritos exactamente en español."
+    },
+    {
+      "id": "hassan-character-sheet-v1",
+      "panels": 6,
+      "layout": "hoja de personaje con seis viñetas claras, cuadrícula 2 por 3, fondo de estudio azul muy pálido",
+      "references": ["hassan"],
+      "scene": "Hoja de personaje de Hassan, hombre adulto y científico chibi original. Usa la referencia privada sólo para reconocer su rostro, cabello oscuro y barba completa; no copies una persona ficticia. Viñeta 1: cuerpo entero de frente con bata de laboratorio blanca minimalista, camiseta azul marino, pantalón oscuro y tenis sencillos sin logotipo; cartel superior exacto: «HASSAN — CIENTÍFICO DEL AMOR». Viñeta 2: tres cuartos sosteniendo un matraz vacío con las dos manos; globo exacto: «Tengo una teoría». Viñeta 3: perfil concentrado ajustando audífonos grandes sin marca; globo exacto: «La música abre portales». Viñeta 4: corriendo de forma cómica con una lupa, una libreta cerrada y una nube luminosa dentro de un frasco; globo exacto: «¡Me falta un ingrediente!». Viñeta 5: primer plano asombrado con un pequeño reflejo rosa-dorado en los ojos; globo exacto: «Ferry…». Viñeta 6: pose tranquila frente a un laboratorio frío, acompañado sólo por hilo rojo y estrella pequeña; globo exacto: «La magia también es método». Mantenerlo adulto, sensible, meticuloso y amable; ojos grandes originales, no idénticos a personajes existentes. Todos los textos deben estar escritos exactamente en español."
+    }
+  ]
+}

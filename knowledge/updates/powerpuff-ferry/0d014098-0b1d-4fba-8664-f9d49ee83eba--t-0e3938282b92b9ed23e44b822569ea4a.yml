@@ -1,0 +1,63 @@
+{
+  "schema": 3,
+  "id": "0d014098-0b1d-4fba-8664-f9d49ee83eba",
+  "at": "2026-09-08T07:35:00Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "fac1bc0b-bd9d-4b9f-b7e4-f793c51bb3d4",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/fac1bc0b-bd9d-4b9f-b7e4-f793c51bb3d4--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "285a872197a3062a3d1d9261bee6fa85d24f807dcb426c4e6533c9011aaae445",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/0d014098-0b1d-4fba-8664-f9d49ee83eba.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "comic-mute-format",
+      "statement": "La obra usa páginas 6x9 con viñetas y diálogos en español exactos; ya no es un cómic estrictamente mudo."
+    },
+    {
+      "ledger": "specification",
+      "id": "original-chibi-superhero-style",
+      "statement": "Ferry y Hassan se representan como adultos originales en un lenguaje chibi-superhero retro, sin personajes ni marcas de franquicia."
+    },
+    {
+      "ledger": "goals",
+      "id": "character-sheets-before-story-pages",
+      "statement": "Crear y aprobar hojas de Ferry y Hassan antes de usar su diseño como continuidad en páginas narrativas."
+    },
+    {
+      "ledger": "verification",
+      "id": "character-sheet-prompts-validated",
+      "statement": "Dos hojas de seis viñetas se validaron en seco con referencias locales, texto exacto, 2:3 y 2K."
+    },
+    {
+      "ledger": "last_session",
+      "id": "character-sheet-submission-ready",
+      "statement": "El estilo, diálogo y hojas de personaje están listos para enviarse a Kie tras la aprobación de transferencia de fotos privadas."
+    },
+    {
+      "ledger": "timeline",
+      "id": "dialogue-and-character-direction-defined",
+      "statement": "Se sustituyó el criterio de cómic mudo por diálogos exactos y se introdujo el paso de hojas de personaje."
+    }
+  ],
+  "timeline": {
+    "summary": "El autor cambió la dirección de arte y autorizó la preparación de hojas de personaje con diálogos para GPT Image 2."
+  },
+  "log": {
+    "summary": "Se definió un estilo chibi-superhero original con diálogo en español y dos hojas de personaje como puente de continuidad."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

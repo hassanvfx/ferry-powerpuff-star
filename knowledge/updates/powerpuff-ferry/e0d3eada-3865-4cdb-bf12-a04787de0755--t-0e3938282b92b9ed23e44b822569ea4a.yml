@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "e0d3eada-3865-4cdb-bf12-a04787de0755",
+  "at": "2026-09-08T06:01:16Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "fac1bc0b-bd9d-4b9f-b7e4-f793c51bb3d4",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/fac1bc0b-bd9d-4b9f-b7e4-f793c51bb3d4--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "e7d5946f3d6a2725c1d1d7e2b3a813a225f4b0a28a5d913dffb6664052d7affb",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/e0d3eada-3865-4cdb-bf12-a04787de0755.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "ingredient-traceability",
+      "statement": "Las 29 cualidades tienen una viñeta concreta dentro de las páginas 17–21 y un eco narrativo posterior."
+    },
+    {
+      "ledger": "goals",
+      "id": "preserve-all-29-qualities",
+      "statement": "La producción visual debe conservar las 29 cualidades del autor sin perderlas ni sustituirlas."
+    },
+    {
+      "ledger": "verification",
+      "id": "ingredient-map-complete",
+      "statement": "El mapa contiene 29 filas, una por ingrediente, y el brief no conserva la especificación horizontal obsoleta."
+    },
+    {
+      "ledger": "last_session",
+      "id": "story-and-ingredient-map-ready",
+      "statement": "El guion, la lectura muda y el mapa de los 29 ingredientes están listos; el arte Kie requiere consentimiento externo específico."
+    },
+    {
+      "ledger": "timeline",
+      "id": "ingredient-traceability-defined",
+      "statement": "Se enlazaron las 29 cualidades a acciones visuales de las páginas 17–21."
+    }
+  ],
+  "timeline": {
+    "summary": "Cada ingrediente recibió viñeta, acción y eco; el brief editorial se corrigió al formato vertical individual."
+  },
+  "log": {
+    "summary": "Se aseguró la trazabilidad de las 29 cualidades y se alineó el brief con el formato final vertical 6x9."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

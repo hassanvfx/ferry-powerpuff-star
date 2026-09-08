@@ -1,0 +1,443 @@
+#!/usr/bin/env bash
+# Update and migrate supported ClineFlow OKF installations transactionally.
+set -Eeuo pipefail
+
+BASE_URL="${CLINEFLOW_BASE_URL:-https://raw.githubusercontent.com/hassanvfx/clineflow/main/template}"
+DRY_RUN=false
+ASSUME_YES=false
+BEGIN='<!-- BEGIN CLINEFLOW OKF RULES -->'
+END='<!-- END CLINEFLOW OKF RULES -->'
+TEMP_ROOT=''
+BACKUP_DIR=''
+TRANSACTION_ACTIVE=false
+COMMITTED=false
+MANIFEST=''
+STAGE=''
+CURRENT_LAYOUT=''
+CURRENT_VERSION='unknown'
+CURRENT_SCHEMA=0
+RELEASE_VERSION=''
+RELEASE_SCHEMA=''
+MINIMUM_OKF_VERSION='2026.08.15.0'
+
+usage() {
+  cat <<'EOF'
+Usage: ./.clineflow/bin/update [options]
+       curl -fsSL https://raw.githubusercontent.com/hassanvfx/clineflow/main/update.sh | bash -s -- [options]
+
+Options:
+  --dry-run  Download, verify, and display the update plan without changing files.
+  --yes      Display the plan and proceed without prompting.
+  --help     Show this help.
+EOF
+}
+
+while [ "$#" -gt 0 ]; do
+  case "$1" in
+    --dry-run) DRY_RUN=true ;;
+    --yes|-y) ASSUME_YES=true ;;
+    --help|-h) usage; exit 0 ;;
+    *) echo "Unknown option: $1" >&2; usage >&2; exit 2 ;;
+  esac
+  shift
+done
+
+fetch() {
+  local source=$1 destination=$2
+  if command -v curl >/dev/null 2>&1; then curl -fsSL "$BASE_URL/$source" -o "$destination"
+  elif command -v wget >/dev/null 2>&1; then wget -q "$BASE_URL/$source" -O "$destination"
+  else echo "ERROR: curl or wget is required." >&2; return 1; fi
+}
+
+sha256_file() {
+  if command -v sha256sum >/dev/null 2>&1; then sha256sum "$1" | awk '{print $1}'
+  elif command -v shasum >/dev/null 2>&1; then shasum -a 256 "$1" | awk '{print $1}'
+  else echo "ERROR: sha256sum or shasum is required." >&2; return 1; fi
+}
+
+valid_release_version() {
+  [[ "$1" =~ ^20[0-9]{2}\.[0-9]{2}\.[0-9]{2}\.[0-9]+$ ]]
+}
+
+# Return success when the first YYYY.MM.DD.patch version is numerically older.
+# Bash's string operators are lexicographic, so they must not guard upgrades.
+version_is_older() {
+  local left=$1 right=$2 index
+  local -a left_parts right_parts
+  valid_release_version "$left" && valid_release_version "$right" || return 2
+  IFS=. read -r -a left_parts <<< "$left"
+  IFS=. read -r -a right_parts <<< "$right"
+  for index in 0 1 2 3; do
+    if (( 10#${left_parts[index]} < 10#${right_parts[index]} )); then return 0; fi
+    if (( 10#${left_parts[index]} > 10#${right_parts[index]} )); then return 1; fi
+  done
+  return 1
+}
+
+version_is_newer() {
+  version_is_older "$2" "$1"
+}
+
+valid_relative_path() {
+  case "$1" in ''|/*|..|../*|*/../*|*/..) return 1 ;; *) return 0 ;; esac
+}
+
+read_state_value() {
+  local key=$1 file=$2
+  sed -n "s/^${key}=//p" "$file" 2>/dev/null | head -n 1
+}
+
+block_status() {
+  local destination=$1 begins ends begin_line end_line
+  begins=$(grep -cFx "$BEGIN" "$destination" 2>/dev/null || true)
+  ends=$(grep -cFx "$END" "$destination" 2>/dev/null || true)
+  if [ "$begins" -eq 0 ] && [ "$ends" -eq 0 ]; then echo none; return; fi
+  if [ "$begins" -eq 1 ] && [ "$ends" -eq 1 ]; then
+    begin_line=$(grep -nFx "$BEGIN" "$destination" | cut -d: -f1)
+    end_line=$(grep -nFx "$END" "$destination" | cut -d: -f1)
+    [ "$begin_line" -lt "$end_line" ] && { echo valid; return; }
+  fi
+  echo malformed
+}
+
+detect_installation() {
+  if [ -f .clineflow/state ]; then
+    CURRENT_LAYOUT=hidden
+    CURRENT_SCHEMA=$(read_state_value migration_schema .clineflow/state)
+    CURRENT_VERSION=$(read_state_value release_version .clineflow/state)
+    [ -n "$CURRENT_SCHEMA" ] && [ -n "$CURRENT_VERSION" ] || { echo "ERROR: malformed .clineflow/state" >&2; return 1; }
+    return
+  fi
+  if [ -d .clineflow ] && [ -f knowledge/index.md ]; then
+    CURRENT_LAYOUT=hidden
+    CURRENT_VERSION=$(cat .clineflow/VERSION 2>/dev/null || printf unknown)
+  elif [ -d clineflow/bin ] && [ -f knowledge/index.md ]; then
+    CURRENT_LAYOUT=visible
+    CURRENT_VERSION=$(cat clineflow/VERSION 2>/dev/null || printf unknown)
+  elif [ -f knowledge/index.md ] && { [ -f VERSION ] || [ -f validate-okf ] || [ -f clineflow/WORKING_WITH_CLINE.md ]; }; then
+    CURRENT_LAYOUT=root-okf
+    CURRENT_VERSION=$(cat VERSION 2>/dev/null || printf unknown)
+  elif [ -d clineflow ] || [ -d docs/journals ]; then
+    echo "ERROR: a pre-OKF or unidentified ClineFlow installation was detected." >&2
+    echo "Automatic migration starts at 2026.08.15.0; no files were changed." >&2
+    return 1
+  else
+    echo "ERROR: ClineFlow is not installed in this directory." >&2
+    return 1
+  fi
+  CURRENT_SCHEMA=0
+  grep -q 'okf_version: "0.2"' knowledge/index.md 2>/dev/null || {
+    echo "ERROR: the detected installation is not a supported OKF v0.2 layout; no files were changed." >&2
+    return 1
+  }
+}
+
+stage_release() {
+  TEMP_ROOT=$(mktemp -d "${TMPDIR:-/tmp}/clineflow-update-XXXXXX")
+  MANIFEST="$TEMP_ROOT/release-manifest"
+  STAGE="$TEMP_ROOT/stage"
+  mkdir -p "$STAGE"
+  fetch ".clineflow/release-manifest" "$MANIFEST"
+  RELEASE_VERSION=$(read_state_value release_version "$MANIFEST")
+  RELEASE_SCHEMA=$(read_state_value migration_schema "$MANIFEST")
+  [ -n "$RELEASE_VERSION" ] && [ -n "$RELEASE_SCHEMA" ] || { echo "ERROR: release manifest is missing version metadata." >&2; return 1; }
+
+  local record policy mode source target expected staged actual
+  while IFS='|' read -r record policy mode source target expected; do
+    [ "$record" = payload ] || continue
+    valid_relative_path "$source" && valid_relative_path "$target" || { echo "ERROR: unsafe manifest path." >&2; return 1; }
+    staged="$STAGE/$source"
+    mkdir -p "$(dirname "$staged")"
+    fetch "$source" "$staged"
+    actual=$(sha256_file "$staged")
+    [ "$actual" = "$expected" ] || { echo "ERROR: checksum mismatch for $source" >&2; return 1; }
+    case "$mode" in 0755) chmod +x "$staged" ;; 0644) chmod 0644 "$staged" ;; *) echo "ERROR: unsupported mode $mode" >&2; return 1 ;; esac
+  done < "$MANIFEST"
+
+  local confirmation="$TEMP_ROOT/release-manifest.confirm"
+  fetch ".clineflow/release-manifest" "$confirmation"
+  cmp -s "$MANIFEST" "$confirmation" || { echo "ERROR: release changed while it was being staged; rerun the updater." >&2; return 1; }
+}
+
+known_agent_fingerprint() {
+  case "$1" in
+    2849002be503282ddfe2e0748a49a12f487a28ddba8e3ff05a6692bb369ed006|3bf0d3e0a94819b504e3aad7fdb9fda51ea1c8f594117903d169d92fd1f287b8|3fc4254c15c8b84753bc1b7f8f5209993cbb3cc4e324e8697c5974d6a45fdc29|ca3994b22940ea282e49e8a8b3e9b0903f0efd62f7ff1390bf0e0f044c16c914) return 0 ;;
+    *) return 1 ;;
+  esac
+}
+
+known_legacy_fingerprint() {
+  case "$1" in
+    02ee9466736a44116882f475198d37dcce3d43b7604c97f058ccca8e2b271f2b|3109b216f40df8bee1033cf2e6a6e148d45f72ad920d9bcdddc2b873f84d7620|479c55be81743b41f48df7c0b10e15d6f989170f7ee143d9a791dad48de1bfe9|98474785b6db6362937808743c385f7f8994c4e5056d97cb2c155751d7c452d8|b95ee247aaabffdbf57a487271d7873365c9dd926c0daa2b2aa594d754c35fb5|d5f14add72203a1dd73db72a2a73df9c29584a715fef98a94ddcd39d6a962aff|38b23f38b7f4eefe4eb512b3f4203714ecbfdf284ef298c7c4ba46f1db9fdd85|f45b77d3547914dda357ed793f113b0d9dab35dde22ac172801621d0f52a21cc|1caa7f2703a783b2bad79e6be4d0b1a5df7199ab4b4e86b9f093d40dd48efb07|4ffa7eacbe2739f0a841f63ced7f307f6b9a5ec2adca629539694d0393d8b162|10fc0bd4ba41816089d533da8cdee50e97321265c9da3a5a878d24bdbcd928bf|f39bcde0ace96fb441a53756b55cb656a563162d74edeb0854063e433bc92a39|873009ab2d7120ce910fa0ddbd9aad1e14c88033b204be70a863ed9b73129b06|0cfcd3a77461ea815fc3f25e13e7e8dc396a8d27086782f1e0f67d3b1ed5c2bf|131cc6f8894fb146d8550722dcc4c507ea9fd82f974616d7f525ce6c5b9d6a9b|ae3ddc4be437045dadbe8f7c3e22591ffb2099be28a19edad429bdee55eb75a9|80ff91e3ec538a68e58854aac4c989c14434e03c83fbfa3fab19674250692455|0f597aaaa2eefb1304d01935d2c393c37e0a71967f3efeb8ffccc87615659a39) return 0 ;;
+    *) return 1 ;;
+  esac
+}
+
+legacy_paths() {
+  printf '%s\n' VERSION validate-okf clineflow-doctor clineflow/JOURNAL_TEMPLATE.md clineflow/PROCEDURES.md clineflow/README.md clineflow/WORKING_WITH_CLINE.md clineflow/WORKING_WITH_CODEX.md clineflow/VERSION clineflow/bin/install clineflow/bin/update clineflow/bin/uninstall clineflow/bin/validate-okf clineflow/bin/doctor
+}
+
+verify_markers() {
+  local destination status
+  for destination in .clinerules AGENTS.md CLAUDE.md .github/copilot-instructions.md .windsurf/rules/clineflow.md; do
+    [ -f "$destination" ] || continue
+    status=$(block_status "$destination")
+    [ "$status" != malformed ] || { echo "ERROR: malformed ClineFlow markers in $destination; no files were changed." >&2; return 1; }
+  done
+}
+
+show_plan() {
+  echo "ClineFlow update plan"
+  echo "  Detected layout: $CURRENT_LAYOUT"
+  echo "  Current version: $CURRENT_VERSION"
+  echo "  Target version: $RELEASE_VERSION"
+  echo "  Migration schema: $CURRENT_SCHEMA -> $RELEASE_SCHEMA"
+  echo "  Runtime: refresh manifest-managed files under .clineflow/"
+  echo "  Knowledge: create missing fixtures only; preserve all existing content"
+  echo "  Agent rules: refresh managed blocks; fingerprint or merge unowned legacy rules"
+  if [ -e setup-refs.sh ] || [ -e .clineflow.example ] || [ -e .clineflow.local ]; then echo "  Retired references: preserve and report existing artifacts"; fi
+  echo "  Recovery: back up changed paths and automatically roll back failures"
+}
+
+agent_is_current() {
+  local destination=$1 temp expected begin_line end_line
+  [ -f "$destination" ] && [ "$(block_status "$destination")" = valid ] || return 1
+  temp="$TEMP_ROOT/current-agent"
+  expected="$TEMP_ROOT/expected-agent"
+  begin_line=$(grep -nFx "$BEGIN" "$destination" | cut -d: -f1)
+  end_line=$(grep -nFx "$END" "$destination" | cut -d: -f1)
+  sed -n "${begin_line},${end_line}p" "$destination" > "$temp"
+  write_rules_block > "$expected"
+  cmp -s "$temp" "$expected"
+}
+
+installation_is_current() {
+  local record policy mode source target expected
+  [ "$CURRENT_SCHEMA" -eq "$RELEASE_SCHEMA" ] && [ "$CURRENT_VERSION" = "$RELEASE_VERSION" ] || return 1
+  [ -f .clineflow/release-manifest ] && cmp -s .clineflow/release-manifest "$MANIFEST" || return 1
+  while IFS='|' read -r record policy mode source target expected; do
+    [ "$record" = payload ] || continue
+    case "$policy" in
+      managed) [ -f "$target" ] && [ "$(sha256_file "$target")" = "$expected" ] || return 1 ;;
+      fixture) [ -e "$target" ] || return 1 ;;
+    esac
+  done < "$MANIFEST"
+  for target in .clinerules AGENTS.md CLAUDE.md .github/copilot-instructions.md .windsurf/rules/clineflow.md; do agent_is_current "$target" || return 1; done
+  return 0
+}
+
+record_path() {
+  local destination=$1 ledger="$BACKUP_DIR/transaction.paths" copy
+  grep -Fqx "existing|$destination" "$ledger" 2>/dev/null && return
+  grep -Fqx "created|$destination" "$ledger" 2>/dev/null && return
+  if [ -e "$destination" ] || [ -L "$destination" ]; then
+    copy="$BACKUP_DIR/files/$destination"
+    mkdir -p "$(dirname "$copy")"
+    if [ -d "$destination" ] && [ ! -L "$destination" ]; then cp -pPR "$destination" "$copy"
+    else cp -pP "$destination" "$copy"; fi
+    printf 'existing|%s\n' "$destination" >> "$ledger"
+  else
+    printf 'created|%s\n' "$destination" >> "$ledger"
+  fi
+}
+
+atomic_install() {
+  local source=$1 destination=$2 mode=$3 temp
+  record_path "$destination"
+  mkdir -p "$(dirname "$destination")"
+  temp="$destination.clineflow-tmp.$$"
+  cp "$source" "$temp"
+  case "$mode" in 0755) chmod +x "$temp" ;; 0644) chmod 0644 "$temp" ;; esac
+  mv "$temp" "$destination"
+}
+
+remove_if_stock() {
+  local destination=$1 digest
+  [ -f "$destination" ] || return 0
+  digest=$(sha256_file "$destination")
+  if known_legacy_fingerprint "$digest"; then
+    record_path "$destination"
+    rm -f "$destination"
+    echo "removed stock legacy runtime: $destination"
+  else echo "preserved customized or unidentified legacy file: $destination"; fi
+}
+
+write_rules_block() {
+  printf '%s\n' "$BEGIN"
+  cat "$STAGE/configs/rules.template.md"
+  printf '\n%s\n' "$END"
+}
+
+record_owned_agent() {
+  local entry=$1
+  grep -qxF "$entry" .clineflow/.owned-agent-files 2>/dev/null || printf '%s\n' "$entry" >> .clineflow/.owned-agent-files
+}
+
+update_agent() {
+  local destination=$1 status digest temp ownership begin_line end_line
+  mkdir -p "$(dirname "$destination")"
+  if [ ! -e "$destination" ]; then
+    record_path "$destination"
+    write_rules_block > "$destination"
+    record_owned_agent "file:$destination"
+    echo "installed agent configuration: $destination"
+    return
+  fi
+  status=$(block_status "$destination")
+  if [ "$status" = valid ]; then
+    temp="$TEMP_ROOT/agent.$$.tmp"
+    begin_line=$(grep -nFx "$BEGIN" "$destination" | cut -d: -f1)
+    end_line=$(grep -nFx "$END" "$destination" | cut -d: -f1)
+    if [ "$begin_line" -gt 1 ]; then sed -n "1,$((begin_line - 1))p" "$destination" > "$temp"
+    else : > "$temp"; fi
+    write_rules_block >> "$temp"
+    tail -n +$((end_line + 1)) "$destination" >> "$temp"
+    atomic_install "$temp" "$destination" 0644
+    ownership=$(grep -E "^(file|block):$destination$" .clineflow/.owned-agent-files 2>/dev/null | head -n 1 || true)
+    [ -n "$ownership" ] || record_owned_agent "block:$destination"
+    echo "refreshed ClineFlow rules in: $destination"
+    return
+  fi
+  digest=$(sha256_file "$destination")
+  if known_agent_fingerprint "$digest"; then
+    temp="$TEMP_ROOT/agent.$$.tmp"
+    write_rules_block > "$temp"
+    atomic_install "$temp" "$destination" 0644
+    record_owned_agent "file:$destination"
+    echo "adopted stock legacy agent configuration: $destination"
+  else
+    temp="$TEMP_ROOT/agent.$$.tmp"
+    { cat "$destination"; printf '\n'; write_rules_block; } > "$temp"
+    atomic_install "$temp" "$destination" 0644
+    record_owned_agent "block:$destination"
+    echo "WARNING: preserved modified legacy guidance and appended current rules in $destination" >&2
+  fi
+}
+
+migrate_0_to_1() {
+  local destination
+  while IFS= read -r destination; do remove_if_stock "$destination"; done < <(legacy_paths)
+  rmdir clineflow/bin 2>/dev/null || true
+  rmdir clineflow 2>/dev/null || true
+}
+
+migrate_1_to_2() {
+  local path
+  # The Python migration preserves every prior projection byte-for-byte in the
+  # baseline archive. Record all replaced views so an updater failure restores
+  # them; new source files are removed by the normal rollback ledger.
+  record_path knowledge
+  for path in knowledge/clineflow_specification.yml knowledge/clineflow_verification.yml knowledge/clineflow_goals.yml knowledge/clineflow_last_session.yml knowledge/clineflow_timeline.yml knowledge/log.md knowledge/journals/index.md; do
+    record_path "$path"
+  done
+  "$STAGE/.clineflow/bin/knowledge" --root . migrate
+}
+
+run_migrations() {
+  local schema=$CURRENT_SCHEMA
+  while [ "$schema" -lt "$RELEASE_SCHEMA" ]; do
+    case "$schema" in
+      0) migrate_0_to_1; schema=1 ;;
+      1) migrate_1_to_2; schema=2 ;;
+      *) echo "ERROR: no migration is available from schema $schema." >&2; return 1 ;;
+    esac
+  done
+  [ "$schema" -eq "$RELEASE_SCHEMA" ] || { echo "ERROR: installed schema is newer than this updater." >&2; return 1; }
+}
+
+install_payloads() {
+  local record policy mode source target expected destination
+  while IFS='|' read -r record policy mode source target expected; do
+    [ "$record" = payload ] || continue
+    case "$policy" in
+      managed) atomic_install "$STAGE/$source" "$target" "$mode"; echo "updated: $target" ;;
+      fixture)
+        if [ -e "$target" ]; then echo "preserved user fixture: $target"
+        else atomic_install "$STAGE/$source" "$target" "$mode"; echo "installed fixture: $target"; fi
+        ;;
+      agent) ;;
+      *) echo "ERROR: unknown manifest policy $policy" >&2; return 1 ;;
+    esac
+  done < "$MANIFEST"
+  for destination in .clinerules AGENTS.md CLAUDE.md .github/copilot-instructions.md .windsurf/rules/clineflow.md; do update_agent "$destination"; done
+}
+
+write_release_state() {
+  local state="$TEMP_ROOT/state"
+  printf 'release_version=%s\nmigration_schema=%s\n' "$RELEASE_VERSION" "$RELEASE_SCHEMA" > "$state"
+  atomic_install "$MANIFEST" .clineflow/release-manifest 0644
+  atomic_install "$state" .clineflow/state 0644
+}
+
+rollback() {
+  local ledger="$BACKUP_DIR/transaction.paths" kind destination source
+  [ -f "$ledger" ] || return
+  echo "Update failed; restoring the previous installation." >&2
+  while IFS='|' read -r kind destination; do
+    case "$kind" in
+      existing)
+        source="$BACKUP_DIR/files/$destination"
+        mkdir -p "$(dirname "$destination")"
+        if [ -d "$source" ] && [ ! -L "$source" ]; then rm -rf "$destination"; cp -pPR "$source" "$destination"
+        else cp -pP "$source" "$destination"; fi
+        ;;
+      created) rm -f "$destination" ;;
+    esac
+  done < "$ledger"
+  printf 'rollback completed at %s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$BACKUP_DIR/update.log"
+  echo "Rollback complete. Recovery evidence: $BACKUP_DIR" >&2
+}
+
+on_exit() {
+  local status=$?
+  trap - EXIT HUP INT TERM
+  if [ "$TRANSACTION_ACTIVE" = true ] && [ "$COMMITTED" != true ]; then rollback; fi
+  [ -z "$TEMP_ROOT" ] || rm -rf "$TEMP_ROOT"
+  exit "$status"
+}
+trap on_exit EXIT
+trap 'exit 130' HUP INT TERM
+
+detect_installation
+verify_markers
+stage_release
+case "$CURRENT_SCHEMA" in ''|*[!0-9]*) echo "ERROR: invalid installed migration schema." >&2; exit 1 ;; esac
+case "$RELEASE_SCHEMA" in ''|*[!0-9]*) echo "ERROR: invalid release migration schema." >&2; exit 1 ;; esac
+[ "$CURRENT_SCHEMA" -le "$RELEASE_SCHEMA" ] || { echo "ERROR: this installation uses a newer migration schema." >&2; exit 1; }
+case "$CURRENT_VERSION" in
+  20??.??.??.[0-9]*)
+    valid_release_version "$CURRENT_VERSION" || { echo "ERROR: invalid installed release version: $CURRENT_VERSION" >&2; exit 1; }
+    valid_release_version "$RELEASE_VERSION" || { echo "ERROR: invalid release version: $RELEASE_VERSION" >&2; exit 1; }
+    if version_is_older "$CURRENT_VERSION" "$MINIMUM_OKF_VERSION"; then echo "ERROR: automatic migration starts at $MINIMUM_OKF_VERSION; no files were changed." >&2; exit 1; fi
+    if version_is_newer "$CURRENT_VERSION" "$RELEASE_VERSION"; then echo "ERROR: downgrades are not supported ($CURRENT_VERSION -> $RELEASE_VERSION)." >&2; exit 1; fi
+    ;;
+esac
+show_plan
+if installation_is_current; then echo "ClineFlow $RELEASE_VERSION is already up to date."; exit 0; fi
+
+if [ "$DRY_RUN" = true ]; then echo "Dry run complete. No project files were changed."; exit 0; fi
+if [ "$ASSUME_YES" != true ]; then
+  if ! exec 3<>/dev/tty 2>/dev/null; then echo "ERROR: confirmation is required; rerun with --yes for authorized automation." >&2; exit 1; fi
+  printf 'Proceed with this update? [y/N] ' >&3
+  read -r answer <&3 || answer=''
+  exec 3>&-
+  case "$answer" in y|Y|yes|YES) ;; *) echo "Update cancelled."; exit 0 ;; esac
+fi
+
+mkdir -p .clineflow/backups
+BACKUP_DIR=".clineflow/backups/$(date -u +%Y%m%dT%H%M%SZ)-$$"
+mkdir -p "$BACKUP_DIR/files"
+printf 'from=%s\nto=%s\nlayout=%s\n' "$CURRENT_VERSION" "$RELEASE_VERSION" "$CURRENT_LAYOUT" > "$BACKUP_DIR/update.log"
+TRANSACTION_ACTIVE=true
+record_path .clineflow/.owned-agent-files
+[ -e .clineflow/.owned-agent-files ] || : > .clineflow/.owned-agent-files
+run_migrations
+install_payloads
+write_release_state
+if [ "${CLINEFLOW_TEST_FAIL_AFTER_APPLY:-false}" = true ]; then echo "ERROR: injected post-apply failure." >&2; false; fi
+./.clineflow/bin/validate-okf
+./.clineflow/bin/doctor
+COMMITTED=true
+printf 'update completed at %s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$BACKUP_DIR/update.log"
+echo "ClineFlow updated to $RELEASE_VERSION. Backup: $BACKUP_DIR"
+if [ -e setup-refs.sh ] || [ -e .clineflow.example ] || [ -e .clineflow.local ]; then echo "Retired reference-system artifacts were preserved; remove them manually only if no longer needed."; fi

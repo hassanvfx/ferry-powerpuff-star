@@ -1,0 +1,280 @@
+#!/usr/bin/env bash
+# Activate and run the optional ClineFlow Knowledge Visor only on explicit invocation.
+set -euo pipefail
+
+SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
+if repository_root=$(git -C "$SCRIPT_DIR" rev-parse --show-toplevel 2>/dev/null); then ROOT=$repository_root
+else ROOT=$(cd "$SCRIPT_DIR/../.." && pwd); fi
+cd "$ROOT"
+MANIFEST=.clineflow/dashboard-component-manifest
+OPTIONAL=.clineflow/optional
+RUNTIME=$OPTIONAL/dashboard
+UV_DIR=$OPTIONAL/bin
+ACTIVE=$RUNTIME/.active
+BASE_URL=${CLINEFLOW_DASHBOARD_BASE_URL:-https://raw.githubusercontent.com/hassanvfx/clineflow/main/template/optional/dashboard}
+ASSUME_YES=${CLINEFLOW_DASHBOARD_YES:-false}
+BEGIN='# BEGIN CLINEFLOW DASHBOARD GENERATED REPORTS'
+END='# END CLINEFLOW DASHBOARD GENERATED REPORTS'
+NEW_ACTIVATION=false
+COMMAND_COMPLETE=false
+DASHBOARD_EXISTED=false
+[ ! -e knowledge/dashboard ] || DASHBOARD_EXISTED=true
+
+usage() {
+  cat <<'EOF'
+Usage: ./.clineflow/bin/dashboard [--yes] [command] [options]
+
+Commands:
+  generate --insights FILE Generate and open a dashboard with optional agent observations.
+  collect --output FILE    Collect normalized facts for agent analysis.
+  observe --facts FILE --insights FILE  Bind optional agent observations to normalized facts.
+  render --facts FILE      Render previously collected facts.
+  settings --show          Show dashboard report-retention settings.
+  settings --retain VALUE  Set retention (positive integer or unlimited).
+  export --output DIR      Export sanitized report data.
+  doctor                   Inspect optional dashboard health without activation.
+  assets --status          Show asset activation status without activation.
+  assets --refresh         Reinstall pinned optional assets transactionally.
+
+Global option:
+  --yes                    Approve first-use downloads without an interactive prompt.
+EOF
+}
+
+sha256_file() {
+  if command -v sha256sum >/dev/null 2>&1; then sha256sum "$1" | awk '{print $1}'
+  elif command -v shasum >/dev/null 2>&1; then shasum -a 256 "$1" | awk '{print $1}'
+  else echo "ERROR: sha256sum or shasum is required." >&2; return 1; fi
+}
+read_value() { sed -n "s/^$1=//p" "$2" | head -n 1; }
+host_from_url() { printf '%s\n' "$1" | sed -E 's#^[a-z]+://([^/]+).*#\1#'; }
+allowed_host() {
+  case "$1" in
+    raw.githubusercontent.com|github.com|objects.githubusercontent.com|release-assets.githubusercontent.com|cdn.jsdelivr.net|cdnjs.cloudflare.com|fonts.gstatic.com) return 0 ;;
+    file) [ "${CLINEFLOW_DASHBOARD_TEST_ALLOW_FILE:-false}" = true ] ;;
+    *) return 1 ;;
+  esac
+}
+download() {
+  local url=$1 destination=$2 expected=$3 effective host
+  host=$(host_from_url "$url")
+  case "$url" in file://*) host=file ;; esac
+  allowed_host "$host" || { echo "ERROR: dashboard download host is not allowed: $host" >&2; return 1; }
+  command -v curl >/dev/null 2>&1 || { echo "ERROR: the optional dashboard requires curl for redirect verification." >&2; return 1; }
+  effective=$(curl -L --fail --silent --show-error --proto '=https,file' --tlsv1.2 -w '%{url_effective}' "$url" -o "$destination")
+  host=$(host_from_url "$effective")
+  case "$effective" in file://*) host=file ;; esac
+  allowed_host "$host" || { echo "ERROR: dashboard download redirected to an unapproved host: $host" >&2; return 1; }
+  [ "$(sha256_file "$destination")" = "$expected" ] || { echo "ERROR: checksum mismatch for $url" >&2; return 1; }
+}
+
+platform_key() {
+  local os arch libc
+  case "$(uname -s)" in Darwin) os=darwin ;; Linux) os=linux ;; MINGW*|MSYS*|CYGWIN*) os=windows ;; *) echo unsupported; return ;; esac
+  case "$(uname -m)" in arm64|aarch64) arch=arm64 ;; x86_64|amd64) arch=x86_64 ;; *) echo unsupported; return ;; esac
+  if [ "$os" = linux ]; then
+    if ldd --version 2>&1 | grep -qi musl; then libc=musl; else libc=gnu; fi
+    echo "$os-$arch-$libc"
+  else echo "$os-$arch"; fi
+}
+
+component_version() { read_value component_version "$MANIFEST"; }
+is_active() { [ -f "$ACTIVE" ] && [ "$(read_value component_version "$ACTIVE")" = "$(component_version)" ] && [ -x "$UV_DIR/uv" -o -x "$UV_DIR/uv.exe" ]; }
+
+show_status() {
+  local errors=0 record kind name version primary fallback expected license
+  [ -f "$MANIFEST" ] || { echo "dashboard manifest: missing"; return 1; }
+  if is_active; then
+    echo "dashboard: active ($(component_version))"
+    echo "runtime: $RUNTIME"
+    echo "reports: knowledge/dashboard/runs/"
+    while IFS='|' read -r record kind name version primary fallback expected license; do
+      [ "$record" = asset ] || continue
+      [ -f "$RUNTIME/assets/$name" ] && [ "$(sha256_file "$RUNTIME/assets/$name")" = "$expected" ] || { echo "ERROR: cached asset failed verification: $name" >&2; errors=$((errors + 1)); }
+    done < "$MANIFEST"
+  else
+    echo "dashboard: optional, not activated"
+    echo "No optional runtime or report is required for normal ClineFlow operation."
+  fi
+  [ "$errors" -eq 0 ]
+}
+
+show_plan() {
+  local key=$1 record kind name version primary fallback expected license
+  echo "ClineFlow Knowledge Visor activation plan:"
+  echo "  Platform: $key"
+  echo "  Runtime boundary: .clineflow/optional/"
+  echo "  Report boundary: knowledge/dashboard/"
+  echo "  Python: managed 3.12 environment with locked PyYAML, markdown-it-py, and Bleach"
+  echo "  Package hosts: pypi.org, files.pythonhosted.org, python-build-standalone releases"
+  while IFS='|' read -r record kind name version primary fallback expected license; do
+    [ "$record" = asset ] || continue
+    echo "  Asset: $name $version [$license]"
+    echo "    primary: $primary"
+    [ "$fallback" = - ] || echo "    fallback: $fallback"
+    echo "    sha256: $expected"
+  done < "$MANIFEST"
+}
+
+approve() {
+  [ "$ASSUME_YES" = true ] && return
+  if ! exec 3<>/dev/tty 2>/dev/null; then
+    echo "ERROR: first-use approval is required; rerun with --yes for authorized automation." >&2
+    return 1
+  fi
+  printf 'Install this optional dashboard runtime and generate the report? [y/N] ' >&3
+  read -r answer <&3 || answer=''
+  exec 3>&-
+  case "$answer" in y|Y|yes|YES) ;; *) echo "Dashboard activation cancelled."; return 1 ;; esac
+}
+
+write_asset_manifest() {
+  local source=$1 destination=$2 first=true record kind name version primary fallback expected license
+  printf '{"component_version":"%s","assets":[' "$(component_version)" > "$destination"
+  while IFS='|' read -r record kind name version primary fallback expected license; do
+    [ "$record" = asset ] || continue
+    if [ "$first" = true ]; then first=false; else printf ',' >> "$destination"; fi
+    printf '\n{"name":"%s","kind":"%s","version":"%s","sha256":"%s","license":"%s","primary":"%s","fallback":%s}' \
+      "$name" "$kind" "$version" "$expected" "$license" "$primary" "$([ "$fallback" = - ] && printf null || printf '"%s"' "$fallback")" >> "$destination"
+  done < "$MANIFEST"
+  printf '\n]}\n' >> "$destination"
+}
+
+install_ignore_marker() {
+  local exclude temp
+  exclude=$(git rev-parse --git-path info/exclude)
+  mkdir -p "$(dirname "$exclude")"
+  [ -f "$exclude" ] || : > "$exclude"
+  if grep -qFx "$BEGIN" "$exclude" 2>/dev/null; then return; fi
+  temp="$exclude.clineflow-dashboard.$$"
+  { cat "$exclude"; printf '\n%s\n/.clineflow/optional/\n/knowledge/dashboard/\n%s\n' "$BEGIN" "$END"; } > "$temp"
+  mv "$temp" "$exclude"
+}
+
+remove_ignore_marker() {
+  local exclude temp
+  exclude=$(git rev-parse --git-path info/exclude 2>/dev/null) || return 0
+  [ -f "$exclude" ] || return 0
+  temp="$exclude.clineflow-dashboard-remove.$$"
+  awk -v begin="$BEGIN" -v end="$END" '
+    $0 == begin { inside=1; next }
+    $0 == end { inside=0; next }
+    !inside { print }
+  ' "$exclude" > "$temp"
+  mv "$temp" "$exclude"
+}
+
+rollback_new_activation() {
+  local status=$?
+  trap - EXIT
+  if [ "$NEW_ACTIVATION" = true ] && [ "$COMMAND_COMPLETE" != true ]; then
+    rm -rf "$OPTIONAL"
+    [ "$DASHBOARD_EXISTED" = true ] || rm -rf knowledge/dashboard
+    remove_ignore_marker
+    echo "Dashboard activation rolled back; the repository remains dormant." >&2
+  fi
+  exit "$status"
+}
+
+trap rollback_new_activation EXIT
+
+activate() {
+  local force=${1:-false} key runtime_record format runtime_url runtime_hash temp stage uv_archive uv_path project_stage backup
+  [ -f "$MANIFEST" ] || { echo "ERROR: missing $MANIFEST" >&2; return 1; }
+  key=$(platform_key)
+  [ "$key" != unsupported ] || { echo "ERROR: unsupported dashboard platform: $(uname -s)/$(uname -m)" >&2; return 1; }
+  runtime_record=$(awk -F'|' -v key="$key" '$1=="runtime" && $2==key {print; exit}' "$MANIFEST")
+  [ -n "$runtime_record" ] || { echo "ERROR: no pinned uv runtime for $key" >&2; return 1; }
+  show_plan "$key"
+  approve || return 1
+  temp=$(mktemp -d "${TMPDIR:-/tmp}/clineflow-dashboard-XXXXXX")
+  trap 'rm -rf "${temp:-}"' RETURN
+  stage="$temp/dashboard"
+  mkdir -p "$stage/assets" "$temp/bin"
+  while IFS='|' read -r record source target expected; do
+    [ "$record" = file ] || continue
+    mkdir -p "$(dirname "$stage/$target")"
+    download "$BASE_URL/$source" "$stage/$target" "$expected"
+  done < "$MANIFEST"
+  while IFS='|' read -r record kind name version primary fallback expected license; do
+    [ "$record" = asset ] || continue
+    if ! download "$primary" "$stage/assets/$name" "$expected"; then
+      [ "$fallback" != - ] || return 1
+      echo "Primary asset source failed verification; trying pinned fallback for $name." >&2
+      download "$fallback" "$stage/assets/$name" "$expected"
+    fi
+    case "$kind" in
+      font) [ "$(dd if="$stage/assets/$name" bs=1 count=4 2>/dev/null)" = wOF2 ] || { echo "ERROR: invalid WOFF2 asset: $name" >&2; return 1; } ;;
+      javascript) grep -q '[[:alpha:]]' "$stage/assets/$name" || { echo "ERROR: invalid JavaScript asset: $name" >&2; return 1; } ;;
+      *) echo "ERROR: unsupported asset kind: $kind" >&2; return 1 ;;
+    esac
+  done < "$MANIFEST"
+  write_asset_manifest "$MANIFEST" "$stage/asset-manifest.json"
+  IFS='|' read -r _ _ format runtime_url runtime_hash <<< "$runtime_record"
+  uv_archive="$temp/uv.$format"
+  download "$runtime_url" "$uv_archive" "$runtime_hash"
+  case "$format" in
+    tar.gz) tar -xzf "$uv_archive" -C "$temp/bin" ;;
+    zip) command -v unzip >/dev/null 2>&1 || { echo "ERROR: unzip is required on Windows." >&2; return 1; }; unzip -q "$uv_archive" -d "$temp/bin" ;;
+    *) echo "ERROR: unsupported runtime archive: $format" >&2; return 1 ;;
+  esac
+  uv_path=$(find "$temp/bin" -type f \( -name uv -o -name uv.exe \) | head -n 1)
+  [ -n "$uv_path" ] || { echo "ERROR: verified uv archive did not contain uv" >&2; return 1; }
+  chmod +x "$uv_path"
+  printf 'component_version=%s\nactivated_at=%s\n' "$(component_version)" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$stage/.active"
+  project_stage=".clineflow/optional-stage.$$"
+  backup=".clineflow/optional-backup.$$"
+  [ ! -e "$project_stage" ] && [ ! -e "$backup" ] || { echo "ERROR: optional dashboard transaction path already exists" >&2; return 1; }
+  mkdir -p "$project_stage/bin"
+  cp -R "$stage" "$project_stage/dashboard"
+  if [[ "$uv_path" = *.exe ]]; then cp "$uv_path" "$project_stage/bin/uv.exe"; chmod +x "$project_stage/bin/uv.exe"
+  else cp "$uv_path" "$project_stage/bin/uv"; chmod +x "$project_stage/bin/uv"; fi
+  if [ -e "$OPTIONAL" ]; then
+    [ "$force" = true ] || { rm -rf "$project_stage"; echo "ERROR: dashboard runtime exists with an unexpected version" >&2; return 1; }
+    mv "$OPTIONAL" "$backup"
+  fi
+  mv "$project_stage" "$OPTIONAL"
+  if ! install_ignore_marker; then
+    rm -rf "$OPTIONAL"
+    [ ! -e "$backup" ] || mv "$backup" "$OPTIONAL"
+    return 1
+  fi
+  rm -rf "$backup"
+  trap - RETURN
+  rm -rf "$temp"
+  echo "ClineFlow Knowledge Visor activated: $(component_version)"
+}
+
+run_engine() {
+  local uv=$UV_DIR/uv
+  [ -x "$uv" ] || uv=$UV_DIR/uv.exe
+  UV_CACHE_DIR="$OPTIONAL/cache/uv" UV_PYTHON_INSTALL_DIR="$OPTIONAL/python" UV_TOOL_DIR="$OPTIONAL/tools" UV_NO_CONFIG=1 \
+    "$uv" run --locked --python "$(read_value python_version "$MANIFEST")" "$RUNTIME/dashboard.py" --root "$ROOT" --runtime "$RUNTIME" "$@"
+}
+
+args=()
+for argument in "$@"; do
+  case "$argument" in --yes|-y) ASSUME_YES=true ;; --help|-h) usage; exit 0 ;; *) args+=("$argument") ;; esac
+done
+set -- ${args[@]+"${args[@]}"}
+command=${1:-generate}
+[ "$#" -gt 0 ] || set -- "$command"
+if [ "$command" = doctor ] || { [ "$command" = assets ] && [ "${2:-status}" = status ]; }; then show_status; exit; fi
+if [ "$command" = assets ] && [ "${2:-}" = refresh ]; then activate true; exit; fi
+if ! is_active; then
+  [ -e "$OPTIONAL" ] || NEW_ACTIVATION=true
+  activate false
+fi
+if [ "$command" = export ] && [ "$ASSUME_YES" != true ]; then
+  echo "Sanitized export excludes journal bodies, repository identity, remotes, commit identities, dirty diffs, and usage data."
+  if ! exec 3<>/dev/tty 2>/dev/null; then echo "ERROR: export confirmation is required; rerun with --yes." >&2; exit 1; fi
+  printf 'Create this sanitized export? [y/N] ' >&3
+  read -r answer <&3 || answer=''
+  exec 3>&-
+  case "$answer" in y|Y|yes|YES) ;; *) echo "Dashboard export cancelled."; exit 1 ;; esac
+fi
+if run_engine "$@"; then
+  COMMAND_COMPLETE=true
+else
+  exit $?
+fi

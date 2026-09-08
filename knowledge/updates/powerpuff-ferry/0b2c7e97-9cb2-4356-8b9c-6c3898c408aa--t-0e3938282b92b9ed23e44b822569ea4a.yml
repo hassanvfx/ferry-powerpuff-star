@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "0b2c7e97-9cb2-4356-8b9c-6c3898c408aa",
+  "at": "2026-09-08T05:59:19Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "fac1bc0b-bd9d-4b9f-b7e4-f793c51bb3d4",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/fac1bc0b-bd9d-4b9f-b7e4-f793c51bb3d4--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "b6e117d4919379ce1265216615277785aa478be6ec350fd49721a7577ece14b7",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/0b2c7e97-9cb2-4356-8b9c-6c3898c408aa.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "silent-page-reading",
+      "statement": "Cada página interior debe comunicar emoción, acción y paso narrativo sin texto dentro de las viñetas."
+    },
+    {
+      "ledger": "goals",
+      "id": "complete-silent-comic-direction",
+      "statement": "Se completó la pauta de lectura y transición de las 32 páginas del cómic mudo."
+    },
+    {
+      "ledger": "verification",
+      "id": "page-reading-coverage",
+      "statement": "La pauta contiene exactamente 32 entradas y seis secuencias de transición para revisar antes de aprobar arte."
+    },
+    {
+      "ledger": "last_session",
+      "id": "silent-reading-ready",
+      "statement": "Guion, dirección de lectura y cola Kie coinciden en el mismo recorrido de 32 páginas; la generación externa sigue pendiente de consentimiento."
+    },
+    {
+      "ledger": "timeline",
+      "id": "silent-reading-defined",
+      "statement": "Se documentó el recorrido visual sin texto para toda la obra."
+    }
+  ],
+  "timeline": {
+    "summary": "Se añadieron recorridos de mirada y transiciones visuales para las 32 páginas interiores."
+  },
+  "log": {
+    "summary": "Se fijó la dirección de lectura muda de las 32 páginas para que la historia se entienda sólo por imagen."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

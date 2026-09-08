@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "181681de-e796-4ea4-9651-b3c9adb6c1a6",
+  "at": "2026-09-08T06:08:15Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "fac1bc0b-bd9d-4b9f-b7e4-f793c51bb3d4",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/fac1bc0b-bd9d-4b9f-b7e4-f793c51bb3d4--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "7bba2313b9d55fdb06218298819a206357842dd20a5275a73faef0dbd77e7178",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/181681de-e796-4ea4-9651-b3c9adb6c1a6.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "pilot-pages-no-private-photos",
+      "statement": "Las pruebas iniciales usan escenas sin rostros para validar el lenguaje visual antes de transferir referencias privadas."
+    },
+    {
+      "ledger": "goals",
+      "id": "validate-comic-art-direction",
+      "statement": "Las páginas 17 y 25 son pilotos de ingredientes y revelación para decidir el estándar de arte del resto del libro."
+    },
+    {
+      "ledger": "verification",
+      "id": "kie-pilots-succeeded",
+      "statement": "Kie confirmó éxito para los trabajos 7a82eda334b142957f2cc214704c5c2b y c885e3815165608f048cda039c8b0a2d; falta inspección visual humana."
+    },
+    {
+      "ledger": "last_session",
+      "id": "pilots-awaiting-visual-review",
+      "statement": "Dos pilotos Kie sin referencias privadas están disponibles para revisión; no hay arte aprobado ni PDF todavía."
+    },
+    {
+      "ledger": "timeline",
+      "id": "two-kie-pilots-generated",
+      "statement": "Se generaron dos páginas de prueba sin transferir fotos privadas."
+    }
+  ],
+  "timeline": {
+    "summary": "Se enviaron y finalizaron las páginas piloto 17 y 25 para validar estilo y composición sin rostros."
+  },
+  "log": {
+    "summary": "Kie generó dos pilotos sin referencias privadas; la aprobación visual humana queda pendiente."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}
