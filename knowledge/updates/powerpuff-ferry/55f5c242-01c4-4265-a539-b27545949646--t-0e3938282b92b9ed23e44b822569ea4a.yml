@@ -1,0 +1,53 @@
+{
+  "schema": 3,
+  "id": "55f5c242-01c4-4265-a539-b27545949646",
+  "at": "2026-09-08T18:59:22Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "7cc9f760-f1e2-4242-b89f-26ae759adb95",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/7cc9f760-f1e2-4242-b89f-26ae759adb95--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "295a8f563167ed9fdeb0c976565b2a297eca8d972340f021cfe6fc314133e5a4",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/55f5c242-01c4-4265-a539-b27545949646.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "reader-motion-lightbox",
+      "statement": "El player ofrece animación ambiental, transiciones responsive y lightbox fullscreen para cada página."
+    },
+    {
+      "ledger": "verification",
+      "id": "reader-motion-lightbox-proof",
+      "statement": "Pruebas Python, sintaxis JS, chequeo de diff y navegador local confirmaron el flujo desktop y móvil."
+    },
+    {
+      "ledger": "last_session",
+      "id": "reader-motion-lightbox-ready",
+      "statement": "La edición V7 regenerada incorpora el lightbox y queda lista para publicación humana."
+    },
+    {
+      "ledger": "timeline",
+      "id": "reader-motion-lightbox-implemented",
+      "statement": "Se añadieron movimiento sutil de fondo, entrada de páginas y zoom pinch/arrastre."
+    }
+  ],
+  "timeline": {
+    "summary": "2026-09-08: se incorporaron animación ambiental y lightbox con zoom al player publicado."
+  },
+  "log": {
+    "summary": "El lector incorpora animación ambiental y una vista ampliada accesible para cada página."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}
