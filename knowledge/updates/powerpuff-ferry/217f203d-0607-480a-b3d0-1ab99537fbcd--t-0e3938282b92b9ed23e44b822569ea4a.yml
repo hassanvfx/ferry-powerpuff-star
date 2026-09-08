@@ -1,0 +1,53 @@
+{
+  "schema": 3,
+  "id": "217f203d-0607-480a-b3d0-1ab99537fbcd",
+  "at": "2026-09-08T18:35:18Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "7cc9f760-f1e2-4242-b89f-26ae759adb95",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/7cc9f760-f1e2-4242-b89f-26ae759adb95--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "8fe8cc803e66fafaa026e490c98f7a9a0e7cacd7991231507c1c513496e24768",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/217f203d-0607-480a-b3d0-1ab99537fbcd.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "reader-control-visibility",
+      "statement": "Portada no muestra Inicio ni avatar; contraportada conserva Inicio y oculta avatar."
+    },
+    {
+      "ledger": "verification",
+      "id": "reader-control-visibility-proof",
+      "statement": "El navegador local verificó portada, interior y contraportada en ambos breakpoints."
+    },
+    {
+      "ledger": "last_session",
+      "id": "reader-control-visibility-delivered",
+      "statement": "La edición V7 regenerada aplica visibilidad contextual de controles."
+    },
+    {
+      "ledger": "timeline",
+      "id": "reader-control-visibility-implemented",
+      "statement": "Se añadió ocultamiento contextual de Inicio y avatar."
+    }
+  ],
+  "timeline": {
+    "summary": "2026-09-08: controles del lector se ajustaron por posición en desktop y móvil."
+  },
+  "log": {
+    "summary": "Se ocultaron Inicio y avatar en portada y el avatar en contraportada del visor."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

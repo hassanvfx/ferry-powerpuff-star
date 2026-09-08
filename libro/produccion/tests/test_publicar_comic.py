@@ -27,8 +27,10 @@ def make_image(path: Path, color: str = "#f75bab") -> None:
 
 def make_run(root: Path, run_id: str, count: int) -> Path:
     finales = root / run_id / "finales"
+    guias = root / run_id / "guias"
     for number in range(1, count + 1):
         make_image(finales / f"{number:02d}-page.png", "#bde5ff")
+        make_image(guias / f"{number:02d}-page.png", "#ffd7eb")
     return finales
 
 
@@ -38,8 +40,10 @@ class ComicPublisherTests(unittest.TestCase):
         self.root = Path(self.temp.name)
         self.cover = self.root / "cover.png"
         self.back_cover = self.root / "back-cover.png"
+        self.avatar = self.root / "avatar.png"
         make_image(self.cover, "#ffc653")
         make_image(self.back_cover, "#ffd7eb")
+        make_image(self.avatar, "#15122b")
 
     def tearDown(self) -> None:
         self.temp.cleanup()
@@ -48,7 +52,9 @@ class ComicPublisherTests(unittest.TestCase):
         finales = make_run(self.root / "salidas", "v7", 2)
         output = self.root / "docs"
 
-        publisher.build_site("v7", publisher.collect_pages(finales), self.cover, self.back_cover, output)
+        publisher.build_site(
+            "v7", publisher.collect_pages(finales), self.cover, self.back_cover, self.avatar, output
+        )
 
         manifest = json.loads((output / "manifest.json").read_text(encoding="utf-8"))
         self.assertEqual("v7", manifest["edition"])
@@ -57,12 +63,17 @@ class ComicPublisherTests(unittest.TestCase):
         self.assertTrue((output / ".nojekyll").is_file())
         self.assertTrue((output / manifest["cover"]["large"]).is_file())
         self.assertTrue((output / manifest["backCover"]["large"]).is_file())
+        self.assertTrue((output / manifest["guideAvatar"]["src"]).is_file())
+        self.assertEqual(160, manifest["guideAvatar"]["width"])
+        self.assertTrue((output / manifest["pages"][0]["guide"]["small"]).is_file())
         self.assertFalse(list(output.rglob("*.png")))
 
     def test_collect_pages_rejects_a_gap_and_an_odd_interior(self) -> None:
         finales = self.root / "gap" / "finales"
         make_image(finales / "01-page.png")
         make_image(finales / "03-page.png")
+        make_image(finales.parent / "guias" / "01-page.png")
+        make_image(finales.parent / "guias" / "03-page.png")
         with self.assertRaisesRegex(publisher.PublicationError, "consecutivas"):
             publisher.collect_pages(finales)
 
@@ -89,7 +100,21 @@ class ComicPublisherTests(unittest.TestCase):
         (output / "keep.txt").write_text("preserve", encoding="utf-8")
 
         with self.assertRaisesRegex(publisher.PublicationError, "contracubierta"):
-            publisher.build_site("v7", publisher.collect_pages(finales), self.cover, self.root / "missing.png", output)
+            publisher.build_site(
+                "v7", publisher.collect_pages(finales), self.cover, self.root / "missing.png", self.avatar, output
+            )
+
+        self.assertEqual("preserve", (output / "keep.txt").read_text(encoding="utf-8"))
+
+    def test_missing_guide_does_not_replace_existing_docs(self) -> None:
+        finales = make_run(self.root / "salidas", "v7", 2)
+        (finales.parent / "guias" / "02-page.png").unlink()
+        output = self.root / "docs"
+        output.mkdir()
+        (output / "keep.txt").write_text("preserve", encoding="utf-8")
+
+        with self.assertRaisesRegex(publisher.PublicationError, "guía correspondiente"):
+            publisher.collect_pages(finales)
 
         self.assertEqual("preserve", (output / "keep.txt").read_text(encoding="utf-8"))
 

@@ -13,9 +13,10 @@ cuando se quiere publicar una edición concreta. No se edita esa carpeta a mano.
 python3 -m pip install -r libro/produccion/requirements-publicador.txt
 ```
 
-La portada y la contracubierta obligatorias se guardan en
+La portada, la contracubierta y el avatar del modo guía obligatorios se guardan en
 `libro/arte/referencias/ferry-powerpuff-star-cover.png` y
-`libro/arte/referencias/ferry-powerpuff-star-back-cover.png`.
+`libro/arte/referencias/ferry-powerpuff-star-back-cover.png` y
+`libro/arte/referencias/ferry-guide-avatar.png`.
 
 ## Crear una edición
 
@@ -33,8 +34,12 @@ python3 libro/produccion/scripts/publicar_comic.py --latest
 ```
 
 El comando sólo sustituye `docs/` después de validar que hay portada,
-contracubierta y páginas PNG consecutivas desde 01 en número par. El manifest
-deja registrada la corrida que se publicó.
+contracubierta, avatar y páginas PNG consecutivas desde 01 en número par. Para
+cada archivo en `finales/` debe existir una guía PNG con el mismo nombre en
+`guias/`; guías válidas de páginas aún no finalizadas se permiten. Una guía
+faltante, corrupta, duplicada o con nombre inválido detiene la publicación y
+preserva el `docs/` anterior. El manifest deja registrada la corrida, sus assets
+finales, guías y avatar optimizados como WebP.
 
 ## Revisar antes de publicar
 
@@ -46,8 +51,11 @@ python3 -m http.server 4173 --directory docs
 ```
 
 Abre `http://localhost:4173/`. En desktop se avanza por dobles páginas con los
-botones, clic lateral o flechas; a menos de 768 px el lector cambia a un feed
-vertical con scroll-snap.
+botones, clic lateral o flechas; Inicio vuelve a portada. El avatar de la barra
+alterna las páginas interiores entre final y guía durante la sesión. A menos de
+768 px el lector cambia a un feed vertical con scroll-snap, Inicio queda arriba
+a la izquierda y el avatar arriba a la derecha. La última posición se guarda
+por edición en el navegador; el modo guía vuelve a final al recargar.
 
 Las pruebas del publicador se ejecutan así:
 

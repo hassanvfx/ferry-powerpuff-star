@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "e3002e04-8166-4959-8169-48549b664581",
+  "at": "2026-09-08T18:31:47Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "7cc9f760-f1e2-4242-b89f-26ae759adb95",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/7cc9f760-f1e2-4242-b89f-26ae759adb95--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "f20205ef2ae13422c8666022af90ea8a64611525000d1399c0f31368e37ecb7f",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/e3002e04-8166-4959-8169-48549b664581.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "guide-reader-mode",
+      "statement": "El player alterna cada interior final/guía, conserva cubiertas y mantiene el modo sólo en memoria."
+    },
+    {
+      "ledger": "verification",
+      "id": "guide-reader-proof",
+      "statement": "Pruebas Python y revisión local desktop/móvil confirmaron empaquetado, toggle, Inicio, scroll y reanudación."
+    },
+    {
+      "ledger": "goals",
+      "id": "guided-comic-review",
+      "statement": "Facilitar la comparación visual entre guía y arte final durante la lectura del cómic."
+    },
+    {
+      "ledger": "last_session",
+      "id": "guide-reader-delivered",
+      "statement": "V7 se regeneró con 20 pares WebP guía/final y avatar WebP; queda revisión y publicación humana."
+    },
+    {
+      "ledger": "timeline",
+      "id": "guide-reader-implemented",
+      "statement": "Se añadió el modo guía con navegación rápida y recuperación de posición por edición."
+    }
+  ],
+  "timeline": {
+    "summary": "2026-09-08: el visor V7 recibió alternancia final/guía, controles responsive y persistencia por edición."
+  },
+  "log": {
+    "summary": "Se incorporaron modo guía, avatar, navegación Inicio y reanudación de lectura al visor publicado."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

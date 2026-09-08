@@ -25,6 +25,7 @@ ROOT = Path(__file__).resolve().parents[3]
 DEFAULT_OUTPUT = ROOT / "docs"
 DEFAULT_COVER = ROOT / "libro/arte/referencias/ferry-powerpuff-star-cover.png"
 DEFAULT_BACK_COVER = ROOT / "libro/arte/referencias/ferry-powerpuff-star-back-cover.png"
+DEFAULT_GUIDE_AVATAR = ROOT / "libro/arte/referencias/ferry-guide-avatar.png"
 PLAYER_SOURCE = ROOT / "libro/produccion/player"
 OUTPUT_FILES = ("index.html", "styles.css", "app.js")
 
@@ -37,6 +38,7 @@ class PublicationError(ValueError):
 class Page:
     number: int
     source: Path
+    guide: Path
 
 
 def image_dimensions(path: Path) -> tuple[int, int]:
@@ -49,19 +51,38 @@ def image_dimensions(path: Path) -> tuple[int, int]:
         raise PublicationError(f"Imagen inválida: {path}") from error
 
 
-def collect_pages(finales_dir: Path) -> list[Page]:
-    if not finales_dir.is_dir():
-        raise PublicationError(f"No existe el directorio de finales: {finales_dir}")
-    pages: list[Page] = []
-    seen: set[int] = set()
+def collect_pngs(directory: Path, label: str) -> list[Path]:
+    if not directory.is_dir():
+        raise PublicationError(f"No existe el directorio de {label}: {directory}")
     ignored = [
         path.name
-        for path in finales_dir.iterdir()
+        for path in directory.iterdir()
         if path.is_file() and not path.name.startswith(".") and path.suffix.lower() != ".png"
     ]
     if ignored:
-        raise PublicationError(f"Finales contiene archivos no PNG: {', '.join(sorted(ignored))}")
-    for path in sorted(finales_dir.glob("*.png")):
+        raise PublicationError(f"{label.capitalize()} contiene archivos no PNG: {', '.join(sorted(ignored))}")
+    return sorted(directory.glob("*.png"))
+
+
+def collect_pages(finales_dir: Path) -> list[Page]:
+    if not finales_dir.is_dir():
+        raise PublicationError(f"No existe el directorio de finales: {finales_dir}")
+    guides_dir = finales_dir.parent / "guias"
+    guide_paths = collect_pngs(guides_dir, "guias")
+    guides_by_name = {path.name: path for path in guide_paths}
+    guide_numbers: set[int] = set()
+    for guide in guide_paths:
+        match = PAGE_NAME.match(guide.name)
+        if not match:
+            raise PublicationError(f"Nombre de guía inválido: {guide.name}")
+        number = int(match.group("number"))
+        if number in guide_numbers:
+            raise PublicationError(f"Número de guía duplicado: {number:02d}")
+        guide_numbers.add(number)
+        image_dimensions(guide)
+    pages: list[Page] = []
+    seen: set[int] = set()
+    for path in collect_pngs(finales_dir, "finales"):
         match = PAGE_NAME.match(path.name)
         if not match:
             raise PublicationError(f"Nombre de página inválido: {path.name}")
@@ -69,8 +90,11 @@ def collect_pages(finales_dir: Path) -> list[Page]:
         if number in seen:
             raise PublicationError(f"Número de página duplicado: {number:02d}")
         image_dimensions(path)
+        guide = guides_by_name.get(path.name)
+        if guide is None:
+            raise PublicationError(f"Falta la guía correspondiente a {path.name}")
         seen.add(number)
-        pages.append(Page(number=number, source=path))
+        pages.append(Page(number=number, source=path, guide=guide))
     pages.sort(key=lambda page: page.number)
     if not pages:
         raise PublicationError(f"No hay PNG finales en {finales_dir}")
@@ -141,6 +165,20 @@ def asset_record(source: Path, directory: Path, stem: str) -> dict[str, object]:
     }
 
 
+def avatar_record(source: Path, directory: Path) -> dict[str, object]:
+    destination = directory / "guide-avatar.webp"
+    with Image.open(source) as image:
+        image = ImageOps.exif_transpose(image).convert("RGB")
+        image = ImageOps.fit(image, (160, 160), method=Image.Resampling.LANCZOS)
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        image.save(destination, "WEBP", quality=85, method=6)
+    return {
+        "src": destination.relative_to(directory.parents[1]).as_posix(),
+        "width": 160,
+        "height": 160,
+    }
+
+
 def copy_player(destination: Path) -> None:
     for filename in OUTPUT_FILES:
         source = PLAYER_SOURCE / filename
@@ -154,11 +192,13 @@ def build_site(
     pages: list[Page],
     cover: Path,
     back_cover: Path,
+    guide_avatar: Path,
     output: Path,
     title: str = DEFAULT_TITLE,
 ) -> None:
     require_file(cover, "la portada")
     require_file(back_cover, "la contracubierta")
+    require_file(guide_avatar, "el avatar de guía")
     output_parent = output.parent
     staging = Path(tempfile.mkdtemp(prefix=f".{output.name}-staging-", dir=output_parent))
     try:
@@ -166,10 +206,12 @@ def build_site(
         assets = staging / "assets"
         cover_record = asset_record(cover, assets / "covers", "cover")
         back_cover_record = asset_record(back_cover, assets / "covers", "back-cover")
+        guide_avatar_record = avatar_record(guide_avatar, assets / "ui")
         page_records = []
         for page in pages:
             record = asset_record(page.source, assets / "pages", f"{page.number:02d}")
-            page_records.append({"number": page.number, **record})
+            guide_record = asset_record(page.guide, assets / "guides", f"{page.number:02d}")
+            page_records.append({"number": page.number, **record, "guide": guide_record})
         manifest = {
             "title": title,
             "edition": run_id,
@@ -177,6 +219,7 @@ def build_site(
             "generatedAt": datetime.now(UTC).replace(microsecond=0).isoformat(),
             "cover": cover_record,
             "backCover": back_cover_record,
+            "guideAvatar": guide_avatar_record,
             "pages": page_records,
         }
         (staging / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -205,6 +248,7 @@ def parse_args() -> argparse.Namespace:
     selection.add_argument("--latest", action="store_true", help="Publica la corrida válida con finales más recientes.")
     parser.add_argument("--cover", type=Path, default=DEFAULT_COVER, help="PNG/JPG de portada.")
     parser.add_argument("--back-cover", type=Path, default=DEFAULT_BACK_COVER, help="PNG/JPG de contracubierta.")
+    parser.add_argument("--guide-avatar", type=Path, default=DEFAULT_GUIDE_AVATAR, help="PNG/JPG del avatar para alternar guías.")
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT, help="Directorio estático publicado.")
     parser.add_argument("--title", default=DEFAULT_TITLE, help="Título mostrado por el player.")
     return parser.parse_args()
@@ -214,7 +258,15 @@ def main() -> int:
     args = parse_args()
     try:
         run_id, pages = resolve_run(ROOT / "libro/arte/salidas", args.run, args.latest)
-        build_site(run_id, pages, args.cover.resolve(), args.back_cover.resolve(), args.output.resolve(), args.title)
+        build_site(
+            run_id,
+            pages,
+            args.cover.resolve(),
+            args.back_cover.resolve(),
+            args.guide_avatar.resolve(),
+            args.output.resolve(),
+            args.title,
+        )
     except PublicationError as error:
         print(f"Publicación detenida: {error}", file=sys.stderr)
         return 2
