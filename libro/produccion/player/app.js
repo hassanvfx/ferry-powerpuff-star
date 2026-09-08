@@ -394,8 +394,9 @@ function reviewButtonMarkup(hidden = false) {
 }
 
 function homeButtonMarkup(hidden = false) {
-  return `<button class="reader-button" type="button" data-action="home" aria-label="Volver a la portada" ${hidden ? "hidden" : ""}>
-    ${materialIcon("home")}<span class="reader-button__label">Inicio</span>
+  return `<button class="home-avatar" type="button" data-action="home" aria-label="Volver a la portada" ${hidden ? "hidden" : ""}>
+    <img src="${comic.homeAvatar.src}" width="${comic.homeAvatar.width}" height="${comic.homeAvatar.height}" alt="">
+    <span class="sr-only">Volver a la portada</span>
   </button>`;
 }
 
@@ -617,7 +618,7 @@ fetch("./manifest.json")
   })
   .then((manifest) => {
     const hasGuideAssets = Array.isArray(manifest.pages) && manifest.pages.every((page) => page.guide?.small && page.guide?.large);
-    if (!manifest.cover || !manifest.backCover || !manifest.guideAvatar?.src || !hasGuideAssets) {
+    if (!manifest.cover || !manifest.backCover || !manifest.guideAvatar?.src || !manifest.homeAvatar?.src || !hasGuideAssets) {
       throw new Error("El manifiesto de la edición no incluye los assets requeridos.");
     }
     comic = manifest;

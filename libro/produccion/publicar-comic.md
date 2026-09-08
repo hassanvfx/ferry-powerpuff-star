@@ -13,10 +13,12 @@ cuando se quiere publicar una edición concreta. No se edita esa carpeta a mano.
 python3 -m pip install -r libro/produccion/requirements-publicador.txt
 ```
 
-La portada, la contracubierta y el avatar del modo guía obligatorios se guardan en
+La portada, la contracubierta, el avatar de Hassan del modo guía y el avatar de
+Ferry que devuelve a portada son obligatorios. Se guardan en
 `libro/arte/referencias/ferry-powerpuff-star-cover.png` y
 `libro/arte/referencias/ferry-powerpuff-star-back-cover.png` y
-`libro/arte/referencias/ferry-guide-avatar.png`.
+`libro/arte/referencias/ferry-guide-avatar.png` y
+`libro/arte/referencias/ferry-home-avatar.png`.
 
 ## Crear una edición
 
@@ -34,12 +36,12 @@ python3 libro/produccion/scripts/publicar_comic.py --latest
 ```
 
 El comando sólo sustituye `docs/` después de validar que hay portada,
-contracubierta, avatar y páginas PNG consecutivas desde 01 en número par. Para
+contracubierta, ambos avatares y páginas PNG consecutivas desde 01 en número par. Para
 cada archivo en `finales/` debe existir una guía PNG con el mismo nombre en
 `guias/`; guías válidas de páginas aún no finalizadas se permiten. Una guía
 faltante, corrupta, duplicada o con nombre inválido detiene la publicación y
 preserva el `docs/` anterior. El manifest deja registrada la corrida, sus assets
-finales, guías y avatar optimizados como WebP.
+finales, guías y avatares optimizados como WebP.
 
 ### Edición parcial explícita
 
@@ -67,11 +69,12 @@ python3 -m http.server 4173 --directory docs
 ```
 
 Abre `http://localhost:4173/`. En desktop se avanza por dobles páginas con los
-botones, clic lateral o flechas; Inicio vuelve a portada. El avatar de la barra
-alterna las páginas interiores entre final y guía durante la sesión. A menos de
-768 px el lector cambia a un feed vertical con scroll-snap, Inicio queda arriba
-a la izquierda y el avatar arriba a la derecha. La última posición se guarda
-por edición en el navegador; el modo guía vuelve a final al recargar.
+botones, clic lateral o flechas; el avatar circular de Ferry vuelve a portada y
+no aparece en ella. El avatar de Hassan alterna las páginas interiores entre
+final y guía durante la sesión. A menos de 768 px el lector cambia a un feed
+vertical con scroll-snap, Ferry queda arriba a la izquierda y Hassan arriba a
+la derecha. La última posición se guarda por edición en el navegador; el modo
+guía vuelve a final al recargar.
 
 Las pruebas del publicador se ejecutan así:
 

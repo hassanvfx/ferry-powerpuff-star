@@ -41,9 +41,11 @@ class ComicPublisherTests(unittest.TestCase):
         self.cover = self.root / "cover.png"
         self.back_cover = self.root / "back-cover.png"
         self.avatar = self.root / "avatar.png"
+        self.home_avatar = self.root / "home-avatar.png"
         make_image(self.cover, "#ffc653")
         make_image(self.back_cover, "#ffd7eb")
         make_image(self.avatar, "#15122b")
+        make_image(self.home_avatar, "#f75bab")
 
     def tearDown(self) -> None:
         self.temp.cleanup()
@@ -53,7 +55,7 @@ class ComicPublisherTests(unittest.TestCase):
         output = self.root / "docs"
 
         publisher.build_site(
-            "v7", publisher.collect_pages(finales), self.cover, self.back_cover, self.avatar, output
+            "v7", publisher.collect_pages(finales), self.cover, self.back_cover, self.avatar, self.home_avatar, output
         )
 
         manifest = json.loads((output / "manifest.json").read_text(encoding="utf-8"))
@@ -65,6 +67,8 @@ class ComicPublisherTests(unittest.TestCase):
         self.assertTrue((output / manifest["backCover"]["large"]).is_file())
         self.assertTrue((output / manifest["guideAvatar"]["src"]).is_file())
         self.assertEqual(160, manifest["guideAvatar"]["width"])
+        self.assertTrue((output / manifest["homeAvatar"]["src"]).is_file())
+        self.assertEqual(160, manifest["homeAvatar"]["width"])
         self.assertTrue((output / manifest["pages"][0]["guide"]["small"]).is_file())
         self.assertEqual(180, manifest["pages"][0]["largeHeight"])
         self.assertTrue((output / "vendor/photoswipe/photoswipe.css").is_file())
@@ -114,7 +118,7 @@ class ComicPublisherTests(unittest.TestCase):
 
         with self.assertRaisesRegex(publisher.PublicationError, "contracubierta"):
             publisher.build_site(
-                "v7", publisher.collect_pages(finales), self.cover, self.root / "missing.png", self.avatar, output
+                "v7", publisher.collect_pages(finales), self.cover, self.root / "missing.png", self.avatar, self.home_avatar, output
             )
 
         self.assertEqual("preserve", (output / "keep.txt").read_text(encoding="utf-8"))

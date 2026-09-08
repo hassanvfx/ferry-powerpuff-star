@@ -1,0 +1,53 @@
+{
+  "schema": 3,
+  "id": "ae10b7f5-9312-4d7a-8a52-d9678be7a6e2",
+  "at": "2026-09-08T22:13:42Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "7beb3f03-b636-4469-9366-a1e0df67b955",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/7beb3f03-b636-4469-9366-a1e0df67b955--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "3450a6531789790381bd89964adca0b806b787127a1a537452b4f0ca44251c8a",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/ae10b7f5-9312-4d7a-8a52-d9678be7a6e2.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "ferry-home-avatar-published",
+      "statement": "La edición V9 publicada incluye homeAvatar de Ferry separado del guideAvatar de Hassan."
+    },
+    {
+      "ledger": "verification",
+      "id": "ferry-home-avatar-artifact-proof",
+      "statement": "La regeneración V9 validó ambos avatares WebP, 90 páginas, cero PNG y coincidencia player fuente/artifact."
+    },
+    {
+      "ledger": "last_session",
+      "id": "ferry-home-avatar-ready-to-deploy",
+      "statement": "El cambio de Ferry está preparado para el commit/push manual autorizado."
+    },
+    {
+      "ledger": "timeline",
+      "id": "ferry-home-avatar-integrated",
+      "statement": "El avatar de Ferry se integró al artefacto docs de V9."
+    }
+  ],
+  "timeline": {
+    "summary": "2026-09-08: se regeneró docs con el avatar de Ferry para volver a portada."
+  },
+  "log": {
+    "summary": "El avatar de Ferry quedó integrado en el artefacto V9 versionado, listo para el push que despliega GitHub Pages."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

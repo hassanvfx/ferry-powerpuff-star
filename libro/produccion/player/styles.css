@@ -173,6 +173,7 @@ button { font: inherit; }
 
 .reader-button,
 .guide-toggle,
+.home-avatar,
 .review-button {
   border: 2px solid var(--ink);
   background: var(--cream);
@@ -203,6 +204,16 @@ button { font: inherit; }
   border-radius: 50%;
 }
 
+.home-avatar {
+  display: grid;
+  width: 3rem;
+  height: 3rem;
+  place-items: center;
+  padding: .14rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
 .review-button {
   display: grid;
   width: 3rem;
@@ -212,7 +223,8 @@ button { font: inherit; }
   border-radius: 50%;
 }
 
-.guide-toggle img {
+.guide-toggle img,
+.home-avatar img {
   width: 100%;
   height: 100%;
   border-radius: inherit;
@@ -233,6 +245,8 @@ button { font: inherit; }
 .reader-button:focus-visible:not(:disabled),
 .guide-toggle:hover,
 .guide-toggle:focus-visible,
+.home-avatar:hover,
+.home-avatar:focus-visible,
 .review-button:hover,
 .review-button:focus-visible {
   background: var(--pink-light);
@@ -245,6 +259,7 @@ button { font: inherit; }
 
 .reader-button:active:not(:disabled),
 .guide-toggle:active,
+.home-avatar:active,
 .review-button:active {
   box-shadow: 0 1px 0 var(--ink);
   transform: translateY(3px);
@@ -275,7 +290,8 @@ button { font: inherit; }
   pointer-events: auto;
 }
 
-.mobile-controls .reader-button {
+.mobile-controls .reader-button,
+.mobile-controls .home-avatar {
   width: 3rem;
   padding: 0;
 }

@@ -26,6 +26,7 @@ DEFAULT_OUTPUT = ROOT / "docs"
 DEFAULT_COVER = ROOT / "libro/arte/referencias/ferry-powerpuff-star-cover.png"
 DEFAULT_BACK_COVER = ROOT / "libro/arte/referencias/ferry-powerpuff-star-back-cover.png"
 DEFAULT_GUIDE_AVATAR = ROOT / "libro/arte/referencias/ferry-guide-avatar.png"
+DEFAULT_HOME_AVATAR = ROOT / "libro/arte/referencias/ferry-home-avatar.png"
 PLAYER_SOURCE = ROOT / "libro/produccion/player"
 OUTPUT_FILES = ("index.html", "styles.css", "app.js")
 PLAYER_DIRECTORIES = ("vendor",)
@@ -170,8 +171,8 @@ def asset_record(source: Path, directory: Path, stem: str) -> dict[str, object]:
     }
 
 
-def avatar_record(source: Path, directory: Path) -> dict[str, object]:
-    destination = directory / "guide-avatar.webp"
+def avatar_record(source: Path, directory: Path, filename: str) -> dict[str, object]:
+    destination = directory / filename
     with Image.open(source) as image:
         image = ImageOps.exif_transpose(image).convert("RGB")
         image = ImageOps.fit(image, (160, 160), method=Image.Resampling.LANCZOS)
@@ -203,12 +204,14 @@ def build_site(
     cover: Path,
     back_cover: Path,
     guide_avatar: Path,
+    home_avatar: Path,
     output: Path,
     title: str = DEFAULT_TITLE,
 ) -> None:
     require_file(cover, "la portada")
     require_file(back_cover, "la contracubierta")
     require_file(guide_avatar, "el avatar de guía")
+    require_file(home_avatar, "el avatar de Ferry para volver a portada")
     output_parent = output.parent
     staging = Path(tempfile.mkdtemp(prefix=f".{output.name}-staging-", dir=output_parent))
     try:
@@ -216,7 +219,8 @@ def build_site(
         assets = staging / "assets"
         cover_record = asset_record(cover, assets / "covers", "cover")
         back_cover_record = asset_record(back_cover, assets / "covers", "back-cover")
-        guide_avatar_record = avatar_record(guide_avatar, assets / "ui")
+        guide_avatar_record = avatar_record(guide_avatar, assets / "ui", "guide-avatar.webp")
+        home_avatar_record = avatar_record(home_avatar, assets / "ui", "home-avatar.webp")
         page_records = []
         for page in pages:
             record = asset_record(page.source, assets / "pages", f"{page.number:02d}")
@@ -230,6 +234,7 @@ def build_site(
             "cover": cover_record,
             "backCover": back_cover_record,
             "guideAvatar": guide_avatar_record,
+            "homeAvatar": home_avatar_record,
             "pages": page_records,
         }
         (staging / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -259,6 +264,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--cover", type=Path, default=DEFAULT_COVER, help="PNG/JPG de portada.")
     parser.add_argument("--back-cover", type=Path, default=DEFAULT_BACK_COVER, help="PNG/JPG de contracubierta.")
     parser.add_argument("--guide-avatar", type=Path, default=DEFAULT_GUIDE_AVATAR, help="PNG/JPG del avatar para alternar guías.")
+    parser.add_argument("--home-avatar", type=Path, default=DEFAULT_HOME_AVATAR, help="PNG/JPG del avatar de Ferry para volver a portada.")
     parser.add_argument(
         "--allow-gaps",
         action="store_true",
@@ -281,6 +287,7 @@ def main() -> int:
             args.cover.resolve(),
             args.back_cover.resolve(),
             args.guide_avatar.resolve(),
+            args.home_avatar.resolve(),
             args.output.resolve(),
             args.title,
         )
