@@ -1,0 +1,32 @@
+{
+  "schema": 3,
+  "id": "9cb93024-c1d1-4434-95a6-20a972308d0c",
+  "at": "2026-09-08T17:55:46Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "908c2512-9868-4cb5-9002-0768270ec4a6",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/908c2512-9868-4cb5-9002-0768270ec4a6--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "d42d9da0f8f6311959beb6c5db1688ad83066117afc7ade8f81a269becda8bf4",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/9cb93024-c1d1-4434-95a6-20a972308d0c.md"
+  },
+  "reviews": {
+    "specification": "unchanged",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [],
+  "timeline": {
+    "summary": "La validación estructural y la sincronización de conocimiento confirmaron la entrega del visor web."
+  },
+  "log": {
+    "summary": "Se registró la validación OKF y de sincronización posterior a la entrega del visor web."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

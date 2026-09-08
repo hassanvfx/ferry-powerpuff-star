@@ -1,0 +1,58 @@
+{
+  "schema": 3,
+  "id": "cc4715b2-649f-4e62-a8dd-450b28eb9827",
+  "at": "2026-09-08T17:55:15Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "908c2512-9868-4cb5-9002-0768270ec4a6",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/908c2512-9868-4cb5-9002-0768270ec4a6--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "6b8f2fa8caec1ab72eb638d3b4181af09f4f71fd247b68e925f5434cb3e97d26",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/cc4715b2-649f-4e62-a8dd-450b28eb9827.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "changed",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "web-comic-pages-publication",
+      "statement": "El visor se publica desde docs/ con portada y contracubierta obligatorias; desktop agrupa interiores en pares y móvil los muestra como feed vertical."
+    },
+    {
+      "ledger": "verification",
+      "id": "web-comic-pages-publication",
+      "statement": "Cuatro pruebas del publicador y una revisión visual desktop/móvil verificaron V7 con 20 páginas y assets WebP."
+    },
+    {
+      "ledger": "goals",
+      "id": "web-comic-pages-publication",
+      "statement": "Disponer de un lector web del cómic publicable manualmente en GitHub Pages sin backend ni framework."
+    },
+    {
+      "ledger": "last_session",
+      "id": "web-comic-pages-publication",
+      "statement": "El sitio V7 está generado localmente en docs/ y espera configuración de Pages, remoto y push humano."
+    },
+    {
+      "ledger": "timeline",
+      "id": "web-comic-pages-publication",
+      "statement": "2026-09-08: se añadió el publicador, player, cubiertas, docs/ y workflow de Pages."
+    }
+  ],
+  "timeline": {
+    "summary": "Se implementó la publicación manual del visor desde docs/ y el despliegue automático de Pages tras push humano."
+  },
+  "log": {
+    "summary": "Se entregó un visor estático de 20 páginas V7, un publicador atómico de docs y el workflow manual de GitHub Pages."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

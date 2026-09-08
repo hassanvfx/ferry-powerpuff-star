@@ -1,0 +1,32 @@
+{
+  "schema": 3,
+  "id": "9cd058c7-a408-4e47-bac9-5138d742fa4c",
+  "at": "2026-09-08T18:04:25Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "908c2512-9868-4cb5-9002-0768270ec4a6",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/908c2512-9868-4cb5-9002-0768270ec4a6--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "3716217d3f7e3e604830648511e95ff452a07a9d8d0ba131f8aa0767e45159f6",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/9cd058c7-a408-4e47-bac9-5138d742fa4c.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "unchanged",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [],
+  "timeline": {
+    "summary": "El visor recibió guía de operación y un remoto privado de GitHub antes de su primer despliegue."
+  },
+  "log": {
+    "summary": "Se documentó la operación del visor y se creó el repositorio privado hassanvfx/ferry-powerpuff-star para su publicación."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

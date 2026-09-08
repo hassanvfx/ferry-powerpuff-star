@@ -1,0 +1,195 @@
+:root {
+  --ink: #15122b;
+  --ink-soft: #302958;
+  --cream: #fff8ec;
+  --pink: #f75bab;
+  --pink-light: #ffd7eb;
+  --gold: #ffc653;
+  --blue: #bde5ff;
+  --shadow: 0 18px 60px rgb(21 18 43 / 25%);
+  color: var(--ink);
+  font-family: ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body { min-height: 100%; margin: 0; }
+
+body {
+  background:
+    radial-gradient(circle at 50% 5%, rgb(255 255 255 / 92%), transparent 34rem),
+    radial-gradient(circle at 90% 82%, rgb(247 91 171 / 26%), transparent 38rem),
+    linear-gradient(160deg, var(--blue), #f7e8f5 56%, #ffe5f3);
+}
+
+button { font: inherit; }
+
+.loading,
+.error-message {
+  display: grid;
+  min-height: 100dvh;
+  place-items: center;
+  margin: 0;
+  padding: 2rem;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.desktop-reader { display: none; }
+
+.mobile-reader {
+  height: 100dvh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+}
+
+.mobile-reader::-webkit-scrollbar { display: none; }
+
+.mobile-sheet {
+  position: relative;
+  display: grid;
+  min-height: 100dvh;
+  place-items: center;
+  padding: 1.1rem;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.mobile-sheet::before,
+.desktop-reader::before {
+  position: absolute;
+  z-index: 0;
+  content: "";
+  width: min(90vw, 44rem);
+  aspect-ratio: 1;
+  border: 2px solid rgb(255 255 255 / 65%);
+  border-radius: 50%;
+  background: rgb(255 255 255 / 26%);
+  filter: blur(.2px);
+}
+
+.comic-image {
+  position: relative;
+  z-index: 1;
+  display: block;
+  max-width: 100%;
+  max-height: calc(100dvh - 2.2rem);
+  border: 4px solid var(--ink);
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow);
+  object-fit: contain;
+}
+
+.cover-image { border-color: var(--ink); }
+
+.cover-hint {
+  position: absolute;
+  z-index: 2;
+  right: 1.65rem;
+  bottom: 1.55rem;
+  margin: 0;
+  padding: .62rem .86rem;
+  border: 2px solid var(--ink);
+  border-radius: 99px;
+  background: var(--cream);
+  box-shadow: 0 4px 0 var(--ink);
+  color: var(--ink);
+  font-size: .78rem;
+  font-weight: 900;
+  letter-spacing: .03em;
+}
+
+.mobile-sheet:not(:first-child) .cover-hint { display: none; }
+
+@media (min-width: 768px) {
+  .mobile-reader { display: none; }
+  .desktop-reader {
+    position: relative;
+    display: grid;
+    min-height: 100dvh;
+    place-items: center;
+    overflow: hidden;
+    padding: 4.75rem 2rem 5.5rem;
+  }
+
+  .desktop-reader::before {
+    width: min(88vw, 72rem);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .spread {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    width: min(94vw, 1210px);
+    max-height: calc(100dvh - 10.25rem);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(.6rem, 1.3vw, 1.35rem);
+    place-items: center;
+  }
+
+  .spread--single { grid-template-columns: minmax(0, 1fr); }
+
+  .spread .comic-image {
+    max-width: 100%;
+    max-height: calc(100dvh - 10.25rem);
+  }
+
+  .reader-nav {
+    position: fixed;
+    z-index: 3;
+    bottom: 1.25rem;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    transform: translateX(-50%);
+  }
+
+  .reader-nav button {
+    min-width: 7.3rem;
+    padding: .65rem .9rem;
+    border: 2px solid var(--ink);
+    border-radius: 99px;
+    background: var(--cream);
+    box-shadow: 0 4px 0 var(--ink);
+    color: var(--ink);
+    cursor: pointer;
+    font-size: .85rem;
+    font-weight: 900;
+  }
+
+  .reader-nav button:hover:not(:disabled),
+  .reader-nav button:focus-visible:not(:disabled) {
+    background: var(--pink-light);
+    transform: translateY(-1px);
+  }
+
+  .reader-nav button:active:not(:disabled) {
+    box-shadow: 0 1px 0 var(--ink);
+    transform: translateY(3px);
+  }
+
+  .reader-nav button:disabled { cursor: not-allowed; opacity: .45; }
+
+  .page-status {
+    min-width: 5.5rem;
+    padding: .45rem .65rem;
+    border: 2px solid var(--ink);
+    border-radius: 99px;
+    background: var(--ink);
+    color: var(--cream);
+    font-size: .76rem;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .cover-hint { right: max(2rem, calc(50% - 34rem)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto !important; transition: none !important; }
+}
