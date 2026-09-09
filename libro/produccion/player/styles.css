@@ -87,6 +87,16 @@ body::before {
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  .release-lock__spread {
+    width: min(94vw, 30rem);
+  }
+
+  .release-lock__spread img:first-child { display: none; }
+
+  .release-lock__spread img:last-child { width: 100%; }
+}
+
 button { font: inherit; }
 
 .comic-page-button {

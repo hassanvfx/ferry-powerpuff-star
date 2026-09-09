@@ -85,11 +85,13 @@ guía vuelve a final al recargar.
 
 Antes del 10 de septiembre de 2026 a las 00:00 de Ciudad de México, el sitio
 muestra una capa fullscreen sin interacción con la contracubierta a la izquierda,
-la portada a la derecha y una cuenta regresiva. El player no cambia: queda inerte
-sólo mientras esa capa esté presente. Para probarla sin cambiar el reloj del
-equipo, abre `http://localhost:4173/?bypass-wait=true`; ese parámetro inyecta una
-hora de prueba previa a la liberación y avanza al ritmo normal. Sin el parámetro,
-se usa el reloj real del navegador.
+la portada a la derecha y una cuenta regresiva. En móvil se muestra únicamente la
+portada. El player no cambia: queda inerte sólo mientras esa capa esté presente.
+Para entrar directamente al lector sin cambiar el reloj del equipo, abre
+`http://localhost:4173/?bypass-wait=true`; ese parámetro inyecta una fecha apenas
+posterior a la liberación. Para previsualizar la capa y su contador, usa
+`http://localhost:4173/?wait-preview=true`, que inyecta una hora previa y avanza al
+ritmo normal. Sin parámetro se usa el reloj real del navegador.
 
 Las pruebas del publicador se ejecutan así:
 

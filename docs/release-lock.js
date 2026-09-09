@@ -3,12 +3,14 @@ const RELEASE_AT_MS = Date.parse(RELEASE_AT);
 const TEST_OFFSET_MS = 60 * 60 * 1000;
 const query = new URLSearchParams(window.location.search);
 const bypassWait = query.get("bypass-wait") === "true";
+const previewWait = query.get("wait-preview") === "true";
 const browserStartedAt = Date.now();
 const player = document.querySelector("#comic-player");
 
 function effectiveNow() {
-  if (!bypassWait) return Date.now();
-  return RELEASE_AT_MS - TEST_OFFSET_MS + (Date.now() - browserStartedAt);
+  if (bypassWait) return RELEASE_AT_MS + 1000;
+  if (previewWait) return RELEASE_AT_MS - TEST_OFFSET_MS + (Date.now() - browserStartedAt);
+  return Date.now();
 }
 
 function remainingMilliseconds() {

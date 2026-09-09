@@ -1,0 +1,48 @@
+{
+  "schema": 3,
+  "id": "95ae99f6-a618-4793-8e01-aec432f5d933",
+  "at": "2026-09-09T01:24:59Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "eb577923-15aa-4f87-a56c-79117d599919",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/eb577923-15aa-4f87-a56c-79117d599919--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "e6c3a0a0527aaaed4307dddc788e0eaa19c6c045c0df19b7556748d8d6871f1f",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/95ae99f6-a618-4793-8e01-aec432f5d933.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "unchanged",
+    "timeline": "unchanged"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "mobile-release-lock",
+      "statement": "Below 768px only the cover is shown; desktop retains both covers."
+    },
+    {
+      "ledger": "specification",
+      "id": "release-bypass",
+      "statement": "bypass-wait true simulates after-release access, while wait-preview true simulates one hour before launch."
+    },
+    {
+      "ledger": "verification",
+      "id": "release-lock-layout",
+      "statement": "Publisher tests and desktop/mobile browser checks passed."
+    }
+  ],
+  "timeline": {
+    "summary": "Mobile lock layout and artificial-clock query behavior verified locally."
+  },
+  "log": {
+    "summary": "Made the launch lock show only the cover on mobile and corrected bypass access."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}
