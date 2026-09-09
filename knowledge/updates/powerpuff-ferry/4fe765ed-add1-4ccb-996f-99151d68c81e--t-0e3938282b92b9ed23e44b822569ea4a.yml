@@ -1,0 +1,43 @@
+{
+  "schema": 3,
+  "id": "4fe765ed-add1-4ccb-996f-99151d68c81e",
+  "at": "2026-09-09T01:30:52Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "7ee39bf0-55c4-483e-a078-19ee9e56404d",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/7ee39bf0-55c4-483e-a078-19ee9e56404d--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "53c63bd9ab593f0906e3717617d67130ff282d6c65f87697dcf9eb71bf71a7cd",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/4fe765ed-add1-4ccb-996f-99151d68c81e.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "unchanged",
+    "timeline": "unchanged"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "release-lock-sizing",
+      "statement": "Desktop spread preserves 4:3 and mobile cover preserves 2:3 inside the available height."
+    },
+    {
+      "ledger": "verification",
+      "id": "release-lock-covers",
+      "statement": "Local desktop and mobile previews showed complete uncropped art."
+    }
+  ],
+  "timeline": {
+    "summary": "Adjusted lock sizing from available height and verified full cover visibility."
+  },
+  "log": {
+    "summary": "Prevented the launch-lock cover art from being cropped by viewport height."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

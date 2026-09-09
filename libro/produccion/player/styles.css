@@ -57,8 +57,7 @@ body::before {
 
 .release-lock__spread {
   display: flex;
-  width: min(94vw, 58rem);
-  max-height: calc(100dvh - 9rem);
+  width: min(94vw, 58rem, calc(133.333dvh - 12rem));
   overflow: hidden;
   border: 4px solid var(--ink);
   border-radius: 1.25rem;
@@ -89,7 +88,7 @@ body::before {
 
 @media (max-width: 767px) {
   .release-lock__spread {
-    width: min(94vw, 30rem);
+    width: min(94vw, 30rem, calc(66.667dvh - 6rem));
   }
 
   .release-lock__spread img:first-child { display: none; }
