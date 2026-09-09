@@ -37,8 +37,11 @@ python3 libro/produccion/scripts/publicar_comic.py --latest
 
 El comando sólo sustituye `docs/` después de validar que hay portada,
 contracubierta, ambos avatares y páginas PNG consecutivas desde 01 en número par. Para
-cada archivo en `finales/` debe existir una guía PNG con el mismo nombre en
-`guias/`; guías válidas de páginas aún no finalizadas se permiten. Una guía
+cada página seleccionada debe existir una guía PNG del mismo número en `guias/`;
+guías válidas de páginas aún no finalizadas se permiten. Para cada página, el
+publicador escoge la primera capa que exista en este orden: `final-patched/`,
+`finales-4k/`, `finales-2k/` y, sólo por compatibilidad con corridas anteriores,
+`finales/`. Una guía
 faltante, corrupta, duplicada o con nombre inválido detiene la publicación y
 preserva el `docs/` anterior. El manifest deja registrada la corrida, sus assets
 finales, guías y avatares optimizados como WebP.

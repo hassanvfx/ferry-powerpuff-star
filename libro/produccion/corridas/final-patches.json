@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "description": "Correcciones manuales de finales. Cada payload sólo adjunta la final existente y un prompt breve de edición; nunca adjunta prompts fuente ni fichas. La final de origen no se modifica.",
+  "patches": [
+    {
+      "run_id": "corrida-90-2k-2-3-v11-4k-opcional",
+      "page_id": "20-yohi-y-la-hoja-fresca",
+      "resolution": "2K",
+      "enabled": true,
+      "replace_existing": true,
+      "instruction": "En el globo de diálogo superior, reemplaza exactamente el nombre Yohi por Yoshi, de modo que diga: «Buenos días, Yoshi. ¿Lista para tu hoja favorita?». No cambies ninguna otra letra, texto ni elemento de la página."
+    }
+  ]
+}

@@ -95,6 +95,14 @@ Para esperar un trabajo y obtener su URL:
 
 Descarga el resultado aprobado como `arte-aprobado/07-ferry-porrista.png`. El ensamblador exige exactamente una imagen aprobada por cada id del plan.
 
+## Corregir una final ya generada
+
+Una corrección puntual no reabre la generación de la página ni modifica su
+prompt fuente. El [mecanismo de parches finales](final-patches.md) adjunta sólo
+la final elegida (2K o 4K) junto con una instrucción breve y guarda una
+derivada aislada en `final-patched/`. El publicador web prefiere esa derivada
+por página antes de las capas 4K y 2K.
+
 ## Adaptacion a Lulu 6×9
 
 Cada imagen ya es una página vertical 2:3. El ensamblador la coloca a sangre en la página PDF de 6.25×9.25 in; el ajuste de sangrado recorta sólo 0.0625 in arriba y abajo, por eso todos los elementos importantes quedan a un 10% de los bordes.

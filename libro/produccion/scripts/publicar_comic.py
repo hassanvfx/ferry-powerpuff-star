@@ -67,6 +67,7 @@ def collect_pngs(directory: Path, label: str) -> list[Path]:
 
 
 def collect_pages(finales_dir: Path, *, allow_gaps: bool = False) -> list[Page]:
+    """Collect one legacy directory of finals and its sibling guides."""
     if not finales_dir.is_dir():
         raise PublicationError(f"No existe el directorio de finales: {finales_dir}")
     guides_dir = finales_dir.parent / "guias"
@@ -109,34 +110,80 @@ def collect_pages(finales_dir: Path, *, allow_gaps: bool = False) -> list[Page]:
     return pages
 
 
+FINAL_LAYER_PRIORITY = ("final-patched", "finales-4k", "finales-2k", "finales")
+
+
+def indexed_pages(directory: Path, label: str) -> dict[int, Path]:
+    """Validate one final layer and index its PNGs by page number."""
+    if not directory.is_dir():
+        return {}
+    indexed: dict[int, Path] = {}
+    for path in collect_pngs(directory, label):
+        match = PAGE_NAME.match(path.name)
+        if not match:
+            raise PublicationError(f"Nombre de página inválido en {label}: {path.name}")
+        number = int(match.group("number"))
+        if number in indexed:
+            raise PublicationError(f"Número de página duplicado en {label}: {number:02d}")
+        image_dimensions(path)
+        indexed[number] = path
+    return indexed
+
+
+def collect_run_pages(run_dir: Path, *, allow_gaps: bool = False) -> list[Page]:
+    """Select each page from the highest available final layer of a run.
+
+    Layer selection is intentionally per page, so one corrected page does not
+    require copying the rest of a 2K or 4K production run.
+    """
+    if not run_dir.is_dir():
+        raise PublicationError(f"No existe el directorio de la corrida: {run_dir}")
+    guides_dir = run_dir / "guias"
+    guides = indexed_pages(guides_dir, "guias")
+    selected: dict[int, Path] = {}
+    for layer in FINAL_LAYER_PRIORITY:
+        for number, path in indexed_pages(run_dir / layer, layer).items():
+            selected.setdefault(number, path)
+    if not selected:
+        raise PublicationError(f"No hay PNG finales en {run_dir}")
+    pages = []
+    for number, source in selected.items():
+        guide = guides.get(number)
+        if guide is None:
+            raise PublicationError(f"Falta la guía correspondiente a {source.name}")
+        pages.append(Page(number=number, source=source, guide=guide))
+    pages.sort(key=lambda page: page.number)
+    actual = [page.number for page in pages]
+    expected = list(range(1, len(pages) + 1))
+    if not allow_gaps and actual != expected:
+        raise PublicationError(f"Las páginas deben ser consecutivas desde 01; se encontró {actual}")
+    if len(pages) % 2:
+        raise PublicationError("El interior debe tener un número par de páginas para formar dobles páginas.")
+    return pages
+
+
 def valid_run_candidates(outputs_root: Path) -> Iterable[tuple[float, str, Path]]:
     if not outputs_root.is_dir():
         raise PublicationError(f"No existe la raíz de salidas: {outputs_root}")
     for run_dir in outputs_root.iterdir():
-        finales = run_dir / "finales"
-        if not finales.is_dir():
-            continue
-        pngs = list(finales.glob("*.png"))
-        if not pngs:
-            continue
         try:
-            collect_pages(finales)
+            pages = collect_run_pages(run_dir)
         except PublicationError:
             continue
-        yield (max(path.stat().st_mtime for path in pngs), run_dir.name, run_dir)
+        yield (max(page.source.stat().st_mtime for page in pages), run_dir.name, run_dir)
 
 
 def resolve_run(
     outputs_root: Path, run_id: str | None, latest: bool, *, allow_gaps: bool = False
 ) -> tuple[str, list[Page]]:
     if run_id:
-        final_dir = outputs_root / run_id / "finales"
-        return run_id, collect_pages(final_dir, allow_gaps=allow_gaps)
+        run_dir = outputs_root / run_id
+        return run_id, collect_run_pages(run_dir, allow_gaps=allow_gaps)
     candidates = sorted(valid_run_candidates(outputs_root), reverse=True)
     if not latest or not candidates:
         raise PublicationError("No se encontró una corrida válida para publicar.")
     _, run_name, run_dir = candidates[0]
-    return run_name, collect_pages(run_dir / "finales")
+    return run_name, collect_run_pages(run_dir)
 
 
 def require_file(path: Path, label: str) -> tuple[int, int]:

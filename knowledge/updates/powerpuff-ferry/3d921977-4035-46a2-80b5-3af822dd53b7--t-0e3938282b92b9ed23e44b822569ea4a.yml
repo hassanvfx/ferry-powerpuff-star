@@ -1,0 +1,32 @@
+{
+  "schema": 3,
+  "id": "3d921977-4035-46a2-80b5-3af822dd53b7",
+  "at": "2026-09-09T00:02:46Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "fd46e226-2c5a-49b4-876e-514a222d8adb",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/fd46e226-2c5a-49b4-876e-514a222d8adb--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "b6d442286ce67d709237be4806e03ca701754693b81571fa05d5b42a02d405e0",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/3d921977-4035-46a2-80b5-3af822dd53b7.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [],
+  "timeline": {
+    "summary": "La guía final-patches formaliza el postpaso manual y el despliegue ahora prefiere parches por página."
+  },
+  "log": {
+    "summary": "Se documentó el mecanismo final-patched: payload de una sola final, selección 2K/4K, polling sin reenvío y prioridad de publicación por capas."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

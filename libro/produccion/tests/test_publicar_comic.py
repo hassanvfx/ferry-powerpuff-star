@@ -110,6 +110,23 @@ class ComicPublisherTests(unittest.TestCase):
         self.assertEqual("newest", run_id)
         self.assertEqual([1, 2], [page.number for page in pages])
 
+    def test_run_prefers_patched_then_4k_then_2k_per_page(self) -> None:
+        run = self.root / "salidas" / "v11"
+        for number in (1, 2, 3, 4):
+            make_image(run / "finales-2k" / f"{number:02d}-page.png", "#bde5ff")
+            make_image(run / "guias" / f"{number:02d}-page.png", "#ffd7eb")
+        for number in (2, 3):
+            make_image(run / "finales-4k" / f"{number:02d}-page.png", "#ffc653")
+        make_image(run / "final-patched" / "03-page.png", "#f75bab")
+
+        pages = publisher.collect_run_pages(run)
+
+        self.assertEqual([1, 2, 3, 4], [page.number for page in pages])
+        self.assertEqual("finales-2k", pages[0].source.parent.name)
+        self.assertEqual("finales-4k", pages[1].source.parent.name)
+        self.assertEqual("final-patched", pages[2].source.parent.name)
+        self.assertEqual("finales-2k", pages[3].source.parent.name)
+
     def test_missing_back_cover_does_not_replace_existing_docs(self) -> None:
         finales = make_run(self.root / "salidas", "v7", 2)
         output = self.root / "docs"

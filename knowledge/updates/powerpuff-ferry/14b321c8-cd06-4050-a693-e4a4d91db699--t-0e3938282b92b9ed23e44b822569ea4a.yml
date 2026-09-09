@@ -1,0 +1,32 @@
+{
+  "schema": 3,
+  "id": "14b321c8-cd06-4050-a693-e4a4d91db699",
+  "at": "2026-09-09T00:01:13Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "fd46e226-2c5a-49b4-876e-514a222d8adb",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/fd46e226-2c5a-49b4-876e-514a222d8adb--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "c3fc3482c21ce3c8c9f712639a3379037a68d137409dd8712c328a5c5a3a7828",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/14b321c8-cd06-4050-a693-e4a4d91db699.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [],
+  "timeline": {
+    "summary": "La página 20 se corrigió a Yoshi mediante un payload 2K aislado y se guardó en final-patched."
+  },
+  "log": {
+    "summary": "Se añadió el postpaso manual de parches finales con manifiesto, payload aislado de una sola imagen y selección web por capas; la corrección 2K de página 20 ahora muestra Yoshi."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}
