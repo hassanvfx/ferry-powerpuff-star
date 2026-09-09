@@ -40,10 +40,12 @@ contracubierta, ambos avatares y páginas PNG consecutivas desde 01 en número p
 cada página seleccionada debe existir una guía PNG del mismo número en `guias/`;
 guías válidas de páginas aún no finalizadas se permiten. Para cada página, el
 publicador escoge la primera capa que exista en este orden: `final-patched/`,
-`finales-4k/`, `finales-2k/` y, sólo por compatibilidad con corridas anteriores,
-`finales/`. Una guía
+`finales-4k/`, `finales-2k/`, `guias/` y, sólo por compatibilidad con corridas
+anteriores, `finales/`. Una guía
 faltante, corrupta, duplicada o con nombre inválido detiene la publicación y
-preserva el `docs/` anterior. El manifest deja registrada la corrida, sus assets
+preserva el `docs/` anterior. Si falta cualquier final, su guía se usa como arte
+final de último recurso, manteniendo esa misma guía indexada. El manifest deja
+registrada la corrida, sus assets
 finales, guías y avatares optimizados como WebP.
 
 ### Edición parcial explícita

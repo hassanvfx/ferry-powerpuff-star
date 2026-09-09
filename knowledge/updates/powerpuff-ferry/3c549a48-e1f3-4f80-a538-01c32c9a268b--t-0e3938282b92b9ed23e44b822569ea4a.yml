@@ -1,0 +1,53 @@
+{
+  "schema": 3,
+  "id": "3c549a48-e1f3-4f80-a538-01c32c9a268b",
+  "at": "2026-09-09T00:47:34Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "cbeeb0ca-be0c-4598-801b-550aefc7929c",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/cbeeb0ca-be0c-4598-801b-550aefc7929c--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "72dd18adc5e671fe715f25dbedd515850a75fabeaa096d0e7c12e3da3f3118c8",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/3c549a48-e1f3-4f80-a538-01c32c9a268b.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "changed"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "final-layer-priority",
+      "statement": "El publicador prioriza por página final-patched, finales-4k, finales-2k y guias antes del formato final legado."
+    },
+    {
+      "ledger": "verification",
+      "id": "v11-full-publication-proof",
+      "statement": "V11 se generó con 90 páginas, manifest consecutivo, assets WebP válidos y siete pruebas correctas."
+    },
+    {
+      "ledger": "last_session",
+      "id": "v11-ready-to-deploy",
+      "statement": "El artifact docs de V11 está listo para commit/push manual a main."
+    },
+    {
+      "ledger": "timeline",
+      "id": "v11-full-artifact-generated",
+      "statement": "Se regeneró docs desde la corrida V11 con su final corregida y fallback de guía."
+    }
+  ],
+  "timeline": {
+    "summary": "2026-09-09: se publicó localmente V11 con selección por capa final y guía como último fallback."
+  },
+  "log": {
+    "summary": "V11 se generó completa desde la prioridad permanente parche, 4K, 2K y guía, y está lista para desplegar."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

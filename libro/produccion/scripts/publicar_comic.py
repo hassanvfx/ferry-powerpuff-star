@@ -110,7 +110,7 @@ def collect_pages(finales_dir: Path, *, allow_gaps: bool = False) -> list[Page]:
     return pages
 
 
-FINAL_LAYER_PRIORITY = ("final-patched", "finales-4k", "finales-2k", "finales")
+FINAL_LAYER_PRIORITY = ("final-patched", "finales-4k", "finales-2k", "guias", "finales")
 
 
 def indexed_pages(directory: Path, label: str) -> dict[int, Path]:
@@ -134,7 +134,8 @@ def collect_run_pages(run_dir: Path, *, allow_gaps: bool = False) -> list[Page]:
     """Select each page from the highest available final layer of a run.
 
     Layer selection is intentionally per page, so one corrected page does not
-    require copying the rest of a 2K or 4K production run.
+    require copying the rest of a 2K or 4K production run. When no final
+    exists, the matching guide is the final fallback rather than an omission.
     """
     if not run_dir.is_dir():
         raise PublicationError(f"No existe el directorio de la corrida: {run_dir}")

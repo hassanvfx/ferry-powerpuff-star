@@ -1,8 +1,8 @@
 {
   "title": "Ferry PowerPuff Star",
-  "edition": "corrida-90-2k-2-3-v9-referencias-guia",
+  "edition": "corrida-90-2k-2-3-v11-4k-opcional",
   "pageCount": 90,
-  "generatedAt": "2026-09-08T22:13:06+00:00",
+  "generatedAt": "2026-09-09T00:46:35+00:00",
   "cover": {
     "small": "assets/covers/cover-small.webp",
     "smallWidth": 780,
@@ -43,8 +43,8 @@
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/01-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -75,10 +75,10 @@
       "guide": {
         "small": "assets/guides/03-small.webp",
         "smallWidth": 780,
-        "smallHeight": 1175,
+        "smallHeight": 1170,
         "large": "assets/guides/03-large.webp",
-        "largeWidth": 1360,
-        "largeHeight": 2048
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -160,10 +160,10 @@
       "guide": {
         "small": "assets/guides/08-small.webp",
         "smallWidth": 780,
-        "smallHeight": 1175,
+        "smallHeight": 1170,
         "large": "assets/guides/08-large.webp",
-        "largeWidth": 1360,
-        "largeHeight": 2048
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -177,10 +177,10 @@
       "guide": {
         "small": "assets/guides/09-small.webp",
         "smallWidth": 780,
-        "smallHeight": 1175,
+        "smallHeight": 1170,
         "large": "assets/guides/09-large.webp",
-        "largeWidth": 1360,
-        "largeHeight": 2048
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -194,27 +194,27 @@
       "guide": {
         "small": "assets/guides/10-small.webp",
         "smallWidth": 780,
-        "smallHeight": 1170,
+        "smallHeight": 1175,
         "large": "assets/guides/10-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1360,
+        "largeHeight": 2048
       }
     },
     {
       "number": 11,
       "small": "assets/pages/11-small.webp",
       "smallWidth": 780,
-      "smallHeight": 1175,
+      "smallHeight": 1170,
       "large": "assets/pages/11-large.webp",
-      "largeWidth": 1360,
-      "largeHeight": 2048,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/11-small.webp",
         "smallWidth": 780,
-        "smallHeight": 1170,
+        "smallHeight": 1175,
         "large": "assets/guides/11-large.webp",
-        "largeWidth": 1440,
-        "largeHeight": 2160
+        "largeWidth": 1360,
+        "largeHeight": 2048
       }
     },
     {
@@ -238,17 +238,17 @@
       "number": 13,
       "small": "assets/pages/13-small.webp",
       "smallWidth": 780,
-      "smallHeight": 1175,
+      "smallHeight": 1170,
       "large": "assets/pages/13-large.webp",
-      "largeWidth": 1360,
-      "largeHeight": 2048,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/13-small.webp",
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/13-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -340,10 +340,10 @@
       "number": 19,
       "small": "assets/pages/19-small.webp",
       "smallWidth": 780,
-      "smallHeight": 1170,
+      "smallHeight": 1175,
       "large": "assets/pages/19-large.webp",
-      "largeWidth": 1440,
-      "largeHeight": 2160,
+      "largeWidth": 1360,
+      "largeHeight": 2048,
       "guide": {
         "small": "assets/guides/19-small.webp",
         "smallWidth": 780,
@@ -383,8 +383,8 @@
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/21-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -398,10 +398,10 @@
       "guide": {
         "small": "assets/guides/22-small.webp",
         "smallWidth": 780,
-        "smallHeight": 1170,
+        "smallHeight": 1175,
         "large": "assets/guides/22-large.webp",
-        "largeWidth": 1440,
-        "largeHeight": 2160
+        "largeWidth": 1360,
+        "largeHeight": 2048
       }
     },
     {
@@ -444,25 +444,25 @@
       "smallWidth": 780,
       "smallHeight": 1170,
       "large": "assets/pages/25-large.webp",
-      "largeWidth": 1344,
-      "largeHeight": 2016,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/25-small.webp",
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/25-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
       "number": 26,
       "small": "assets/pages/26-small.webp",
       "smallWidth": 780,
-      "smallHeight": 1175,
+      "smallHeight": 1170,
       "large": "assets/pages/26-large.webp",
-      "largeWidth": 1360,
-      "largeHeight": 2048,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/26-small.webp",
         "smallWidth": 780,
@@ -483,10 +483,10 @@
       "guide": {
         "small": "assets/guides/27-small.webp",
         "smallWidth": 780,
-        "smallHeight": 1175,
+        "smallHeight": 1170,
         "large": "assets/guides/27-large.webp",
-        "largeWidth": 1360,
-        "largeHeight": 2048
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -529,8 +529,8 @@
       "smallWidth": 780,
       "smallHeight": 1170,
       "large": "assets/pages/30-large.webp",
-      "largeWidth": 1344,
-      "largeHeight": 2016,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/30-small.webp",
         "smallWidth": 780,
@@ -544,17 +544,17 @@
       "number": 31,
       "small": "assets/pages/31-small.webp",
       "smallWidth": 780,
-      "smallHeight": 1170,
+      "smallHeight": 1175,
       "large": "assets/pages/31-large.webp",
-      "largeWidth": 1344,
-      "largeHeight": 2016,
+      "largeWidth": 1360,
+      "largeHeight": 2048,
       "guide": {
         "small": "assets/guides/31-small.webp",
         "smallWidth": 780,
-        "smallHeight": 1170,
+        "smallHeight": 1175,
         "large": "assets/guides/31-large.webp",
-        "largeWidth": 1440,
-        "largeHeight": 2160
+        "largeWidth": 1360,
+        "largeHeight": 2048
       }
     },
     {
@@ -568,10 +568,10 @@
       "guide": {
         "small": "assets/guides/32-small.webp",
         "smallWidth": 780,
-        "smallHeight": 1175,
+        "smallHeight": 1170,
         "large": "assets/guides/32-large.webp",
-        "largeWidth": 1360,
-        "largeHeight": 2048
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -585,10 +585,10 @@
       "guide": {
         "small": "assets/guides/33-small.webp",
         "smallWidth": 780,
-        "smallHeight": 1175,
+        "smallHeight": 1170,
         "large": "assets/guides/33-large.webp",
-        "largeWidth": 1360,
-        "largeHeight": 2048
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -614,15 +614,15 @@
       "smallWidth": 780,
       "smallHeight": 1170,
       "large": "assets/pages/35-large.webp",
-      "largeWidth": 1344,
-      "largeHeight": 2016,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/35-small.webp",
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/35-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -638,8 +638,8 @@
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/36-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -680,10 +680,10 @@
       "number": 39,
       "small": "assets/pages/39-small.webp",
       "smallWidth": 780,
-      "smallHeight": 1170,
+      "smallHeight": 1175,
       "large": "assets/pages/39-large.webp",
-      "largeWidth": 1440,
-      "largeHeight": 2160,
+      "largeWidth": 1360,
+      "largeHeight": 2048,
       "guide": {
         "small": "assets/guides/39-small.webp",
         "smallWidth": 780,
@@ -706,8 +706,8 @@
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/40-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -733,8 +733,8 @@
       "smallWidth": 780,
       "smallHeight": 1170,
       "large": "assets/pages/42-large.webp",
-      "largeWidth": 1344,
-      "largeHeight": 2016,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/42-small.webp",
         "smallWidth": 780,
@@ -801,15 +801,15 @@
       "smallWidth": 780,
       "smallHeight": 1170,
       "large": "assets/pages/46-large.webp",
-      "largeWidth": 1344,
-      "largeHeight": 2016,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/46-small.webp",
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/46-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -825,8 +825,8 @@
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/47-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -835,15 +835,15 @@
       "smallWidth": 780,
       "smallHeight": 1170,
       "large": "assets/pages/48-large.webp",
-      "largeWidth": 1344,
-      "largeHeight": 2016,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/48-small.webp",
         "smallWidth": 780,
-        "smallHeight": 1170,
+        "smallHeight": 1175,
         "large": "assets/guides/48-large.webp",
-        "largeWidth": 1440,
-        "largeHeight": 2160
+        "largeWidth": 1360,
+        "largeHeight": 2048
       }
     },
     {
@@ -859,8 +859,8 @@
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/49-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -869,8 +869,8 @@
       "smallWidth": 780,
       "smallHeight": 1170,
       "large": "assets/pages/50-large.webp",
-      "largeWidth": 1344,
-      "largeHeight": 2016,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/50-small.webp",
         "smallWidth": 780,
@@ -910,8 +910,8 @@
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/52-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -927,18 +927,18 @@
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/53-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
       "number": 54,
       "small": "assets/pages/54-small.webp",
       "smallWidth": 780,
-      "smallHeight": 1170,
+      "smallHeight": 1175,
       "large": "assets/pages/54-large.webp",
-      "largeWidth": 1344,
-      "largeHeight": 2016,
+      "largeWidth": 1360,
+      "largeHeight": 2048,
       "guide": {
         "small": "assets/guides/54-small.webp",
         "smallWidth": 780,
@@ -952,10 +952,10 @@
       "number": 55,
       "small": "assets/pages/55-small.webp",
       "smallWidth": 780,
-      "smallHeight": 1175,
+      "smallHeight": 1170,
       "large": "assets/pages/55-large.webp",
-      "largeWidth": 1360,
-      "largeHeight": 2048,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/55-small.webp",
         "smallWidth": 780,
@@ -1005,8 +1005,8 @@
       "smallWidth": 780,
       "smallHeight": 1170,
       "large": "assets/pages/58-large.webp",
-      "largeWidth": 1344,
-      "largeHeight": 2016,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/58-small.webp",
         "smallWidth": 780,
@@ -1029,8 +1029,8 @@
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/59-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -1046,8 +1046,8 @@
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/60-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -1056,8 +1056,8 @@
       "smallWidth": 780,
       "smallHeight": 1170,
       "large": "assets/pages/61-large.webp",
-      "largeWidth": 1344,
-      "largeHeight": 2016,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/61-small.webp",
         "smallWidth": 780,
@@ -1073,15 +1073,15 @@
       "smallWidth": 780,
       "smallHeight": 1170,
       "large": "assets/pages/62-large.webp",
-      "largeWidth": 1344,
-      "largeHeight": 2016,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/62-small.webp",
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/62-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -1107,15 +1107,15 @@
       "smallWidth": 780,
       "smallHeight": 1170,
       "large": "assets/pages/64-large.webp",
-      "largeWidth": 1344,
-      "largeHeight": 2016,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/64-small.webp",
         "smallWidth": 780,
-        "smallHeight": 1175,
+        "smallHeight": 1170,
         "large": "assets/guides/64-large.webp",
-        "largeWidth": 1360,
-        "largeHeight": 2048
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -1141,15 +1141,15 @@
       "smallWidth": 780,
       "smallHeight": 1170,
       "large": "assets/pages/66-large.webp",
-      "largeWidth": 1344,
-      "largeHeight": 2016,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/66-small.webp",
         "smallWidth": 780,
-        "smallHeight": 1170,
+        "smallHeight": 1175,
         "large": "assets/guides/66-large.webp",
-        "largeWidth": 1440,
-        "largeHeight": 2160
+        "largeWidth": 1360,
+        "largeHeight": 2048
       }
     },
     {
@@ -1158,8 +1158,8 @@
       "smallWidth": 780,
       "smallHeight": 1170,
       "large": "assets/pages/67-large.webp",
-      "largeWidth": 1344,
-      "largeHeight": 2016,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/67-small.webp",
         "smallWidth": 780,
@@ -1173,17 +1173,17 @@
       "number": 68,
       "small": "assets/pages/68-small.webp",
       "smallWidth": 780,
-      "smallHeight": 1170,
+      "smallHeight": 1175,
       "large": "assets/pages/68-large.webp",
-      "largeWidth": 1440,
-      "largeHeight": 2160,
+      "largeWidth": 1360,
+      "largeHeight": 2048,
       "guide": {
         "small": "assets/guides/68-small.webp",
         "smallWidth": 780,
-        "smallHeight": 1170,
+        "smallHeight": 1175,
         "large": "assets/guides/68-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1360,
+        "largeHeight": 2048
       }
     },
     {
@@ -1192,15 +1192,15 @@
       "smallWidth": 780,
       "smallHeight": 1170,
       "large": "assets/pages/69-large.webp",
-      "largeWidth": 1344,
-      "largeHeight": 2016,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/69-small.webp",
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/69-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -1241,10 +1241,10 @@
       "number": 72,
       "small": "assets/pages/72-small.webp",
       "smallWidth": 780,
-      "smallHeight": 1170,
+      "smallHeight": 1175,
       "large": "assets/pages/72-large.webp",
-      "largeWidth": 1440,
-      "largeHeight": 2160,
+      "largeWidth": 1360,
+      "largeHeight": 2048,
       "guide": {
         "small": "assets/guides/72-small.webp",
         "smallWidth": 780,
@@ -1299,20 +1299,20 @@
       "guide": {
         "small": "assets/guides/75-small.webp",
         "smallWidth": 780,
-        "smallHeight": 1175,
+        "smallHeight": 1170,
         "large": "assets/guides/75-large.webp",
-        "largeWidth": 1360,
-        "largeHeight": 2048
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
       "number": 76,
       "small": "assets/pages/76-small.webp",
       "smallWidth": 780,
-      "smallHeight": 1175,
+      "smallHeight": 1170,
       "large": "assets/pages/76-large.webp",
-      "largeWidth": 1360,
-      "largeHeight": 2048,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/76-small.webp",
         "smallWidth": 780,
@@ -1352,8 +1352,8 @@
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/78-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -1362,15 +1362,15 @@
       "smallWidth": 780,
       "smallHeight": 1170,
       "large": "assets/pages/79-large.webp",
-      "largeWidth": 1344,
-      "largeHeight": 2016,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/79-small.webp",
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/79-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -1379,8 +1379,8 @@
       "smallWidth": 780,
       "smallHeight": 1170,
       "large": "assets/pages/80-large.webp",
-      "largeWidth": 1344,
-      "largeHeight": 2016,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/80-small.webp",
         "smallWidth": 780,
@@ -1403,8 +1403,8 @@
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/81-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -1413,25 +1413,25 @@
       "smallWidth": 780,
       "smallHeight": 1170,
       "large": "assets/pages/82-large.webp",
-      "largeWidth": 1344,
-      "largeHeight": 2016,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/82-small.webp",
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/82-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
       "number": 83,
       "small": "assets/pages/83-small.webp",
       "smallWidth": 780,
-      "smallHeight": 1170,
+      "smallHeight": 1175,
       "large": "assets/pages/83-large.webp",
-      "largeWidth": 1344,
-      "largeHeight": 2016,
+      "largeWidth": 1360,
+      "largeHeight": 2048,
       "guide": {
         "small": "assets/guides/83-small.webp",
         "smallWidth": 780,
@@ -1462,17 +1462,17 @@
       "number": 85,
       "small": "assets/pages/85-small.webp",
       "smallWidth": 780,
-      "smallHeight": 1175,
+      "smallHeight": 1170,
       "large": "assets/pages/85-large.webp",
-      "largeWidth": 1360,
-      "largeHeight": 2048,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/85-small.webp",
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/85-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -1481,15 +1481,15 @@
       "smallWidth": 780,
       "smallHeight": 1170,
       "large": "assets/pages/86-large.webp",
-      "largeWidth": 1344,
-      "largeHeight": 2016,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/86-small.webp",
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/86-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -1498,15 +1498,15 @@
       "smallWidth": 780,
       "smallHeight": 1170,
       "large": "assets/pages/87-large.webp",
-      "largeWidth": 1344,
-      "largeHeight": 2016,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/87-small.webp",
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/87-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -1522,8 +1522,8 @@
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/88-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     },
     {
@@ -1532,8 +1532,8 @@
       "smallWidth": 780,
       "smallHeight": 1170,
       "large": "assets/pages/89-large.webp",
-      "largeWidth": 1344,
-      "largeHeight": 2016,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/89-small.webp",
         "smallWidth": 780,
@@ -1556,8 +1556,8 @@
         "smallWidth": 780,
         "smallHeight": 1170,
         "large": "assets/guides/90-large.webp",
-        "largeWidth": 1344,
-        "largeHeight": 2016
+        "largeWidth": 1440,
+        "largeHeight": 2160
       }
     }
   ]
