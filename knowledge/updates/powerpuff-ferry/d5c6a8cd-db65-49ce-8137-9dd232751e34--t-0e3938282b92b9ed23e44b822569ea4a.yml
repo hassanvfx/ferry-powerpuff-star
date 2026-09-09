@@ -1,0 +1,43 @@
+{
+  "schema": 3,
+  "id": "d5c6a8cd-db65-49ce-8137-9dd232751e34",
+  "at": "2026-09-09T02:04:35Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "d25f4162-3b1b-4f84-96f0-52db60027de4",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/d25f4162-3b1b-4f84-96f0-52db60027de4--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "6e4d19167c646dcb6c631981ac29b34dba6c8f3a103141bb52b95e2a18b94863",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/d5c6a8cd-db65-49ce-8137-9dd232751e34.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "unchanged",
+    "timeline": "unchanged"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "v11-republish",
+      "statement": "Generated docs from corrida-90-2k-2-3-v11-4k-opcional using the established layer priority."
+    },
+    {
+      "ledger": "verification",
+      "id": "v11-republish",
+      "statement": "Manifest has 90 V11 pages, no PNGs, and all publisher tests passed."
+    }
+  ],
+  "timeline": {
+    "summary": "Regenerated the selected V11 artifact and prepared it for GitHub Pages."
+  },
+  "log": {
+    "summary": "Republished V11 with updated optimized page artwork."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

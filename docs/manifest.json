@@ -2,7 +2,7 @@
   "title": "Ferry PowerPuff Star",
   "edition": "corrida-90-2k-2-3-v11-4k-opcional",
   "pageCount": 90,
-  "generatedAt": "2026-09-09T01:29:39+00:00",
+  "generatedAt": "2026-09-09T02:04:01+00:00",
   "cover": {
     "small": "assets/covers/cover-small.webp",
     "smallWidth": 780,
@@ -340,10 +340,10 @@
       "number": 19,
       "small": "assets/pages/19-small.webp",
       "smallWidth": 780,
-      "smallHeight": 1175,
+      "smallHeight": 1170,
       "large": "assets/pages/19-large.webp",
-      "largeWidth": 1360,
-      "largeHeight": 2048,
+      "largeWidth": 1440,
+      "largeHeight": 2160,
       "guide": {
         "small": "assets/guides/19-small.webp",
         "smallWidth": 780,
