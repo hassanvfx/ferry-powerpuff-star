@@ -81,6 +81,16 @@ vertical con scroll-snap, Ferry queda arriba a la izquierda y Hassan arriba a
 la derecha. La última posición se guarda por edición en el navegador; el modo
 guía vuelve a final al recargar.
 
+## Bloqueo temporal de lanzamiento
+
+Antes del 10 de septiembre de 2026 a las 00:00 de Ciudad de México, el sitio
+muestra una capa fullscreen sin interacción con la contracubierta a la izquierda,
+la portada a la derecha y una cuenta regresiva. El player no cambia: queda inerte
+sólo mientras esa capa esté presente. Para probarla sin cambiar el reloj del
+equipo, abre `http://localhost:4173/?bypass-wait=true`; ese parámetro inyecta una
+hora de prueba previa a la liberación y avanza al ritmo normal. Sin el parámetro,
+se usa el reloj real del navegador.
+
 Las pruebas del publicador se ejecutan así:
 
 ```bash

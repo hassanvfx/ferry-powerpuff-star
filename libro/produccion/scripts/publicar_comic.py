@@ -28,7 +28,7 @@ DEFAULT_BACK_COVER = ROOT / "libro/arte/referencias/ferry-powerpuff-star-back-co
 DEFAULT_GUIDE_AVATAR = ROOT / "libro/arte/referencias/ferry-guide-avatar.png"
 DEFAULT_HOME_AVATAR = ROOT / "libro/arte/referencias/ferry-home-avatar.png"
 PLAYER_SOURCE = ROOT / "libro/produccion/player"
-OUTPUT_FILES = ("index.html", "styles.css", "app.js")
+OUTPUT_FILES = ("index.html", "styles.css", "app.js", "release-lock.js")
 PLAYER_DIRECTORIES = ("vendor",)
 
 

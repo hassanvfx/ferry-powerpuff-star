@@ -1,0 +1,48 @@
+{
+  "schema": 3,
+  "id": "ec71f9c1-66d6-4c3f-98c2-cbfe8f2efd3a",
+  "at": "2026-09-09T01:03:39Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "fe23bab4-b7ad-4139-b09a-d1f550120b4e",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/fe23bab4-b7ad-4139-b09a-d1f550120b4e--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "7c319b7a4260a5d94a39f5a68734ea8c4e447b44142dc05ccdd10fecc7803f6e",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/ec71f9c1-66d6-4c3f-98c2-cbfe8f2efd3a.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "changed",
+    "timeline": "unchanged"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "release-lock",
+      "statement": "Countdown overlay targets 2026-09-10T00:00:00-06:00 with back cover left and cover right."
+    },
+    {
+      "ledger": "verification",
+      "id": "release-lock",
+      "statement": "Publisher tests, static artifact checks, and normal/bypass browser checks passed."
+    },
+    {
+      "ledger": "last_session",
+      "id": "release-lock",
+      "statement": "Ready for commit and Pages deployment."
+    }
+  ],
+  "timeline": {
+    "summary": "Release lock implemented, regenerated for V11, and verified locally."
+  },
+  "log": {
+    "summary": "Added an isolated date-based release lock to the published comic."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

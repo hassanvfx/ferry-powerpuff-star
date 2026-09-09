@@ -62,6 +62,7 @@ class ComicPublisherTests(unittest.TestCase):
         self.assertEqual("v7", manifest["edition"])
         self.assertEqual(2, manifest["pageCount"])
         self.assertTrue((output / "index.html").is_file())
+        self.assertTrue((output / "release-lock.js").is_file())
         self.assertTrue((output / ".nojekyll").is_file())
         self.assertTrue((output / manifest["cover"]["large"]).is_file())
         self.assertTrue((output / manifest["backCover"]["large"]).is_file())
