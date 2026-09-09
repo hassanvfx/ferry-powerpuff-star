@@ -84,9 +84,9 @@ guía vuelve a final al recargar.
 ## Bloqueo temporal de lanzamiento
 
 Antes del 10 de septiembre de 2026 a las 00:00 de Ciudad de México, el sitio
-muestra una capa fullscreen sin interacción con la contracubierta a la izquierda,
-la portada a la derecha y una cuenta regresiva. En móvil se muestra únicamente la
-portada. El player no cambia: queda inerte sólo mientras esa capa esté presente.
+muestra una capa fullscreen sin interacción con la portada y una cuenta regresiva.
+La composición es la misma en escritorio y móvil. El player no cambia: queda
+inerte sólo mientras esa capa esté presente.
 Para entrar directamente al lector sin cambiar el reloj del equipo, abre
 `http://localhost:4173/?bypass-wait=true`; ese parámetro inyecta una fecha apenas
 posterior a la liberación. Para previsualizar la capa y su contador, usa

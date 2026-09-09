@@ -1,0 +1,43 @@
+{
+  "schema": 3,
+  "id": "fa0cd785-c4a2-4a8c-9ff1-025f67ddb22e",
+  "at": "2026-09-09T02:55:01Z",
+  "author": {
+    "id": "t-0e3938282b92b9ed23e44b822569ea4a"
+  },
+  "topic": "powerpuff-ferry",
+  "stream": "35df076c-a083-4dc9-b483-b79644a00379",
+  "journal": {
+    "path": "knowledge/journals/powerpuff-ferry/35df076c-a083-4dc9-b483-b79644a00379--t-0e3938282b92b9ed23e44b822569ea4a.md",
+    "sha256": "ea30594beadf567726a3de3da2b5783dace4a419355e21db5e3b9fd2d927aa09",
+    "snapshot": "knowledge/updates/powerpuff-ferry/snapshots/fa0cd785-c4a2-4a8c-9ff1-025f67ddb22e.md"
+  },
+  "reviews": {
+    "specification": "changed",
+    "verification": "changed",
+    "goals": "unchanged",
+    "last_session": "unchanged",
+    "timeline": "unchanged"
+  },
+  "ledger_changes": [
+    {
+      "ledger": "specification",
+      "id": "release-lock-layout",
+      "statement": "The launch overlay uses only manifest.cover in every viewport."
+    },
+    {
+      "ledger": "verification",
+      "id": "release-lock-single-cover",
+      "statement": "Local desktop and mobile previews contained exactly one cover image."
+    }
+  ],
+  "timeline": {
+    "summary": "Removed the back-cover dependency from the lock and verified one-cover previews."
+  },
+  "log": {
+    "summary": "Made the release lock use a single cover composition across desktop and mobile."
+  },
+  "revises": [],
+  "retracts": [],
+  "resolves": []
+}

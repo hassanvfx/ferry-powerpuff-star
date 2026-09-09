@@ -39,7 +39,7 @@ function restoreReader(overlay) {
 }
 
 function mountOverlay(manifest) {
-  if (remainingMilliseconds() <= 0 || !manifest.cover?.large || !manifest.backCover?.large) return;
+  if (remainingMilliseconds() <= 0 || !manifest.cover?.large) return;
   player.setAttribute("inert", "");
   player.setAttribute("aria-hidden", "true");
   document.body.classList.add("is-release-locked");
@@ -49,7 +49,6 @@ function mountOverlay(manifest) {
   overlay.setAttribute("aria-label", "Cuenta regresiva para el lanzamiento");
   overlay.innerHTML = `
     <div class="release-lock__spread" aria-hidden="true">
-      <img src="${manifest.backCover.large}" alt="">
       <img src="${manifest.cover.large}" alt="">
     </div>
     <p class="release-lock__countdown" aria-live="polite"></p>`;
